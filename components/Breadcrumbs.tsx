@@ -4,6 +4,7 @@ import { usePathname } from "@/i18n/navigation";
 import { Link } from "@/i18n/navigation";
 import { ChevronRight } from "lucide-react";
 import { useLocale } from "next-intl";
+import { getBreadcrumbPath } from "@/lib/breadcrumbs";
 
 export function Breadcrumbs() {
     const pathname = usePathname();
@@ -41,14 +42,17 @@ export function Breadcrumbs() {
                         Home
                     </Link>
                 </li>
+
                 {pathSegments.map((segment, index) => {
-                    // Reconstruct path for next-intl Link (which handles locale prefix automatically)
+                    // Reconstruct path for next-intl Link
                     let href = `/${pathSegments.slice(0, index + 1).join("/")}`;
                     const isLast = index === pathSegments.length - 1;
 
-                    // Manual mapping for singular canonical segments to plural routes
-                    if (segment === 'school') href = '/schools';
-                    if (segment === 'neighborhood') href = '/neighborhoods';
+                    // Use centralized mapping for parent routes
+                    const mappedPath = getBreadcrumbPath(segment);
+                    if (mappedPath) {
+                        href = mappedPath;
+                    }
 
                     // Format segment for display
                     const formatSegment = (str: string) => {
