@@ -5,7 +5,7 @@ export default function Footer() {
         <footer className="py-8 px-6 mt-auto bg-background border-t">
             <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
-                    <Link href="/" className="text-xl font-bold mb-2 block">Relocate Portugal Insights</Link>
+                    <Link href="/" className="text-xl font-bold mb-2 block">LOGO AND NAME</Link>
                     <p className="text-muted-foreground">Trust-first platform for expat families relocating to Portugal.</p>
                 </div>
                 <div className="flex flex-col gap-2">
