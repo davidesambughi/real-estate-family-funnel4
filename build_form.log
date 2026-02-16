@@ -1,0 +1,22 @@
+
+> trustfamily-relocation-funnel@0.1.0 build
+> next build
+
+Γû▓ Next.js 16.1.6 (Turbopack)
+
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 4.6s
+  Running TypeScript ...
+Failed to compile.
+
+./components/ui/form.tsx:14:8
+Type error: Cannot find module 'react-hook-form' or its corresponding type declarations.
+
+  12 |   type FieldPath,
+  13 |   type FieldValues,
+> 14 | } from "react-hook-form"
+     |        ^
+  15 |
+  16 | import { cn } from "@/lib/utils"
+  17 | import { Label } from "@/components/ui/label"
+Next.js build worker exited with code: 1 and signal: null
