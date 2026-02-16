@@ -1,0 +1,82 @@
+Project Structure:
++ app
+  + [locale]
+    + about
+      - page.tsx
+    + best-private-and-public-international-schools-portugal-2026
+      - page.tsx
+    + blog
+    + family-friendly-neighborhoods-portugal
+      - page.tsx
+    + family-relocation-guide-2026
+      - page.tsx
+    + neighborhoods
+      + [slug]
+        - page.tsx
+    + school-finder
+      - page.tsx
+    + schools
+      + [slug]
+        - page.tsx
+    - layout.tsx
+    - page.tsx
+  - favicon.ico
+  - globals.css
+  - page.tsx
+  - sitemap.ts
++ components
+  + ui
+    - button.tsx
+    - card.tsx
+    - form.tsx
+    - input.tsx
+    - label.tsx
+    - select.tsx
+    - textarea.tsx
+  - Breadcrumbs.tsx
+  - Footer.tsx
+  - form.tsx
+  - Header.tsx
+  - Hero.tsx
+  - LeadMagnetSection.tsx
+  - NeighborhoodsList.tsx
+  - PillarsCardsSection.tsx
+  - SchoolsList.tsx
+  - Testimonials.tsx
++ i18n
+  - navigation.ts
+  - request.ts
+  - routing.ts
++ lib
+  + schemas
+    - lead-form.ts
+  - neighborhoods-data.ts
+  - schools-data.ts
+  - utils.ts
++ messages
+  - de.json
+  - en.json
+  - es.json
+  - fr.json
+  - nl.json
+  - pt.json
++ public
+  - file.svg
+  - globe.svg
+  - next.svg
+  - vercel.svg
+  - window.svg
+- README.md
+- proxy.ts
+- postcss.config.mjs
+- package.json
+- package-lock.json
+- next.config.ts
+- build.log
+- eslint.config.mjs
+- components.json
+- structure.txt
+- build_final.log
+- .gitignore
+- next-env.d.ts
+- tsconfig.json

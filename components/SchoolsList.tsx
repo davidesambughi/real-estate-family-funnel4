@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { Card, CardHeader, CardTitle, CardContent, CardDescription, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { schoolsData } from "@/lib/schools-data";
@@ -32,7 +32,7 @@ export function SchoolsList() {
                     </CardContent>
                     <CardFooter>
                         <Button asChild className="w-full">
-                            <Link href={`/schools/${school.slug}`}>
+                            <Link href={{ pathname: '/schools/[slug]', params: { slug: school.slug } }}>
                                 View Details
                             </Link>
                         </Button>

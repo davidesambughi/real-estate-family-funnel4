@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { Card, CardHeader, CardTitle, CardContent, CardDescription, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { neighborhoodsData } from "@/lib/neighborhoods-data";
@@ -25,7 +25,7 @@ export function NeighborhoodsList() {
                     </CardContent>
                     <CardFooter>
                         <Button asChild className="w-full" variant="outline">
-                            <Link href={`/neighborhoods/${neighborhood.slug}`}>
+                            <Link href={{ pathname: '/neighborhoods/[slug]', params: { slug: neighborhood.slug } }}>
                                 Explore Area
                             </Link>
                         </Button>

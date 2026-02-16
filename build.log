@@ -1,0 +1,67 @@
+
+> trustfamily-relocation-funnel@0.1.0 build
+> next build
+
+Γû▓ Next.js 16.1.6 (Turbopack)
+
+  Creating an optimized production build ...
+Γ£ô Compiled successfully in 3.9s
+  Running TypeScript ...
+  Collecting page data using 15 workers ...
+  Generating static pages using 15 workers (0/94) ...
+  Generating static pages using 15 workers (23/94) 
+  Generating static pages using 15 workers (46/94) 
+  Generating static pages using 15 workers (70/94) 
+Γ£ô Generating static pages using 15 workers (94/94) in 1906.8ms
+  Finalizing page optimization ...
+
+Route (app)
+Γöî Γùï /
+Γö£ Γùï /_not-found
+Γö£ ΓùÅ /[locale]
+Γöé Γö£ /en
+Γöé Γö£ /pt
+Γöé Γö£ /de
+Γöé Γöö [+3 more paths]
+Γö£ ΓùÅ /[locale]/about
+Γöé Γö£ /en/about
+Γöé Γö£ /pt/about
+Γöé Γö£ /de/about
+Γöé Γöö [+3 more paths]
+Γö£ ΓùÅ /[locale]/best-private-and-public-international-schools-portugal-2026
+Γöé Γö£ /en/best-private-and-public-international-schools-portugal-2026
+Γöé Γö£ /pt/best-private-and-public-international-schools-portugal-2026
+Γöé Γö£ /de/best-private-and-public-international-schools-portugal-2026
+Γöé Γöö [+3 more paths]
+Γö£ ΓùÅ /[locale]/family-friendly-neighborhoods-portugal
+Γöé Γö£ /en/family-friendly-neighborhoods-portugal
+Γöé Γö£ /pt/family-friendly-neighborhoods-portugal
+Γöé Γö£ /de/family-friendly-neighborhoods-portugal
+Γöé Γöö [+3 more paths]
+Γö£ ΓùÅ /[locale]/family-relocation-guide-2026
+Γöé Γö£ /en/family-relocation-guide-2026
+Γöé Γö£ /pt/family-relocation-guide-2026
+Γöé Γö£ /de/family-relocation-guide-2026
+Γöé Γöö [+3 more paths]
+Γö£ ΓùÅ /[locale]/neighborhoods/[slug]
+Γöé Γö£ /en/neighborhoods/cascais
+Γöé Γö£ /en/neighborhoods/estoril
+Γöé Γö£ /en/neighborhoods/campodeourique
+Γöé Γöö [+27 more paths]
+Γö£ ΓùÅ /[locale]/school-finder
+Γöé Γö£ /en/school-finder
+Γöé Γö£ /pt/school-finder
+Γöé Γö£ /de/school-finder
+Γöé Γöö [+3 more paths]
+Γöö ΓùÅ /[locale]/schools/[slug]
+  Γö£ /en/schools/st-julians-school
+  Γö£ /en/schools/tasis-portugal
+  Γö£ /en/schools/carlucci-american-international-school
+  Γöö [+21 more paths]
+
+
+╞Æ Proxy (Middleware)
+
+Γùï  (Static)  prerendered as static content
+ΓùÅ  (SSG)     prerendered as static HTML (uses generateStaticParams)
+
