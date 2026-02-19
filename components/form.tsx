@@ -1,7 +1,7 @@
 "use client";
 
 import { useActionState } from "react";
-import { submitLead, State } from "@/app/actions";
+import { submitLead, State } from "@/lib/actions";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";

@@ -1,6 +1,14 @@
 {
   "HomePage": {
-    "title": "Home"
+    "title": "Início"
+  },
+  "Locale": {
+    "en": "Inglês",
+    "pt": "Português",
+    "de": "Alemão",
+    "fr": "Francês",
+    "nl": "Holandês",
+    "es": "Espanhol"
   },
   "Navigation": {
     "home": "Home",
@@ -10,5 +18,23 @@
   "Metadata": {
     "title": "TrustFamily Relocation - Best Schools & Neighborhoods in Portugal",
     "description": "Expert guide for family relocation to Portugal. Find top international schools and family-friendly neighborhoods."
+  },
+  "Hero": {
+    "title": "A Escola Internacional Certa em Lisboa Muda Tudo",
+    "subtitle": "Verificamos escolas e bairros para que você não precise. Dados de 200+ avaliações de pais e 50+ inspeções.",
+    "cta": "Encontre a Escola Ideal"
+  },
+  "TrustBar": {
+    "independent": "Dados 100% Independentes",
+    "validated": "Validado por Famílias",
+    "updated": "Atualizado para Admissões 2026"
+  },
+  "Pillars": {
+    "educationTitle": "Educação Primeiro",
+    "educationDesc": "Compare currículos IB, Britânico e Americano com dados de desempenho imparciais.",
+    "livingTitle": "Estratégia de Vida",
+    "livingDesc": "Encontre bairros seguros para famílias com trajetos otimizados para a escola.",
+    "softLandingTitle": "Integração Suave",
+    "softLandingDesc": "Um sistema de integração completo para ajudar seus filhos a prosperar desde o Dia 1."
   }
 }

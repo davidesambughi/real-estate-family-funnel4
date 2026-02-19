@@ -70,7 +70,7 @@ export default function LanguageSwitcher() {
 
     return (
         <Select defaultValue={locale} onValueChange={handleValueChange}>
-            <SelectTrigger className="w-auto gap-2 border-none shadow-none font-medium text-slate-600 hover:text-slate-900 focus:ring-0 px-2 bg-transparent">
+            <SelectTrigger className="w-auto gap-2 border-none shadow-none font-medium text-slate-600 hover:text-slate-900 focus:ring-0 px-2 bg-transparent" suppressHydrationWarning>
                 <div className="flex items-center gap-2">
                     <FlagIcon code={locale} />
                     <span className="uppercase text-xs font-bold tracking-wide">{locale}</span>

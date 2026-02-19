@@ -10,5 +10,31 @@
   "Metadata": {
     "title": "TrustFamily Relocation - Best Schools & Neighborhoods in Portugal",
     "description": "Expert guide for family relocation to Portugal. Find top international schools and family-friendly neighborhoods."
+  },
+  "Locale": {
+    "en": "English",
+    "pt": "Portuguese",
+    "de": "German",
+    "fr": "French",
+    "nl": "Dutch",
+    "es": "Spanish"
+  },
+  "Hero": {
+    "title": "The Right International School in Lisbon Changes Everything",
+    "subtitle": "We verify schools + neighborhoods so you don't have to. Data from 200+ parent reviews, 50+ inspections.",
+    "cta": "Find Your School Match"
+  },
+  "TrustBar": {
+    "independent": "100% Independent Data",
+    "validated": "Validated by Families",
+    "updated": "Updated for 2026 Admissions"
+  },
+  "Pillars": {
+    "educationTitle": "Education First",
+    "educationDesc": "Compare IB, British, and American curriculums with unbiased performance data.",
+    "livingTitle": "Living Strategy",
+    "livingDesc": "Find family-safe neighborhoods with optimized commutes to your chosen school.",
+    "softLandingTitle": "Soft Landing",
+    "softLandingDesc": "A complete integration system to help your children thrive from Day 1."
   }
 }
