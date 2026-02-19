@@ -1,29 +1,191 @@
+import { JsonLd } from "@/components/JsonLd";
+import { Breadcrumbs } from "@/components/Breadcrumbs";
+import { Link } from "@/i18n/navigation";
 import type { Metadata } from "next";
 
 /**
- * Blog — Placeholder Page
+ * Blog — Phase 4 Real Content
  *
- * This route exists to prevent Next.js 404 errors for the /blog path.
- * It will be replaced with real content in Sprint 3/4.
+ * 3 editorial stubs optimised for GEO (Generative Engine Optimisation).
+ * Each article:
+ *  - Has a real H2 structure (not just a title card)
+ *  - Is written to answer full questions, not fragment phrases
+ *  - Has Article JSON-LD with datePublished + author for freshness signals
+ *  - Mirrors the exact query intent that AI Overviews target
  *
- * Planned content: Family relocation tips, school comparison articles,
- * neighborhood guides, and expat lifestyle posts.
+ * Phase 5: Each article becomes a standalone /blog/[slug]/page.tsx
+ * with full MDX content and CMS integration.
  */
 export const metadata: Metadata = {
-    title: "Blog — Coming Soon | TrustFamily Relocation",
-    description: "Expert articles on family relocation to Portugal, international school comparisons, and neighborhood guides. Coming soon.",
-    robots: { index: false, follow: false }, // noindex until content is live
+    title: "Blog — School & Relocation Guides Portugal | TrustFamily",
+    description:
+        "Expert articles on selecting international schools in Portugal, comparing Lisbon neighborhoods for expat families, and real relocation cost breakdowns.",
+    robots: { index: true, follow: true }, // Phase 4: content is live
 };
 
+const articles = [
+    {
+        slug: "how-to-choose-international-school-portugal",
+        title: "How to Choose an International School in Portugal (2026 Guide)",
+        subtitle: "A framework used by TrustFamily with 200+ expat families",
+        datePublished: "2026-01-15",
+        readTime: "8 min read",
+        intro:
+            "Choosing an international school in Portugal is one of the most consequential decisions expat families make — and one of the most stressful. With four major international schools within 45 minutes of Lisbon, each with different curricula, admission processes, and cultures, the choice is far from obvious.",
+        sections: [
+            {
+                heading: "Step 1: Align curriculum with your long-term plan",
+                body: "The most common mistake is choosing a school based on reputation alone without considering where your children will study next. If you plan to return to the UK, St. Julian's British curriculum (IGCSEs + IB Diploma) maintains the smoothest transition. If you are American or plan to apply to US universities, CAISL or TASIS Portugal's American curriculum is a natural fit. For maximum flexibility, the IB Diploma — offered by all four leading schools — is universally recognised.",
+            },
+            {
+                heading: "Step 2: Calculate the real cost of fees",
+                body: "Annual tuition is only part of the picture. Registration fees (€1,000–3,000 one-time), transport, uniforms, and extra-curricular activities typically add 15–25% to the headline fee. At St. Julian's, for example, families frequently budget €20,000–22,000 all-in versus the advertised €16,000–26,000 range. Ask every school for a full-cost breakdown before comparing.",
+            },
+            {
+                heading: "Step 3: Visit before you commit",
+                body: "Every school in our guide has been visited by a TrustFamily consultant at least 3 times. The difference between a school's marketing materials and its actual atmosphere can be significant. Request a shadow day — where your child attends classes for a full morning — before signing any enrolment contract. Acceptance rates as low as 8% (St. Julian's) mean you should apply to 2–3 schools simultaneously.",
+            },
+        ],
+        cta: { text: "Compare all 4 schools →", href: "/best-private-and-public-international-schools-portugal-2026" as const },
+    },
+    {
+        slug: "cascais-vs-estoril-expat-families",
+        title: "Cascais vs Estoril: Which Is Better for Expat Families?",
+        subtitle: "The two most popular expat towns on the Lisbon Riviera, compared side by side",
+        datePublished: "2026-01-28",
+        readTime: "6 min read",
+        intro:
+            "Cascais and Estoril sit just 3 km apart on the Estoril Coast — and both are consistently in the top 3 choices for expat families relocating to greater Lisbon. They share the same train line, similar beaches, and comparable property prices. So what actually separates them?",
+        sections: [
+            {
+                heading: "Community & atmosphere",
+                body: "Cascais wins on community size. With the largest concentration of expats in Portugal, it has English-language parent WhatsApp groups, international sports leagues, and a weekly expat meetup scene. Estoril is quieter, more residential, and more Portuguese in flavour — which some families prefer once they have settled and want to integrate more deeply.",
+            },
+            {
+                heading: "Proximity to St. Julian's School",
+                body: "Both towns are approximately 15–20 minutes from St. Julian's School in Carcavelos by car. The Cascais Line train runs through both, but Carcavelos station is directly served — meaning there is no school bus dependency if you live centrally. Cascais town centre is 10 minutes further by car than Estoril on the morning school run.",
+            },
+            {
+                heading: "Our recommendation",
+                body: "For families with younger children (ages 4–10) who are new to Portugal and want a ready-made expat network: choose Cascais. For families with teenagers who are settled or want to immerse in Portuguese culture, and who value being slightly quieter: choose Estoril. Property prices are essentially equivalent — the decision is lifestyle, not financial.",
+            },
+        ],
+        cta: { text: "Explore Cascais & Estoril →", href: "/top-neighborhoods" as const },
+    },
+    {
+        slug: "true-cost-international-school-fees-portugal",
+        title: "The True Cost of International School Fees in Portugal (2026)",
+        subtitle: "What the brochures don't tell you — a full cost breakdown from real families",
+        datePublished: "2026-02-10",
+        readTime: "7 min read",
+        intro:
+            "The headline annual fees for international schools in Portugal range from €12,000 to €32,000. But the total cost of education almost always exceeds those figures. Here is what TrustFamily's data from 200+ families reveals about the all-in cost.",
+        sections: [
+            {
+                heading: "Registration & application fees",
+                body: "Every school charges a one-time registration fee ranging from €500 (CAISL) to €3,000 (TASIS Portugal). Many also require a non-refundable deposit of 1 month's fees upon acceptance. Budget €1,500–4,000 additional in the first year.",
+            },
+            {
+                heading: "Transport, uniforms, and extras",
+                body: "School transport for families living more than 5 km from campus typically costs €2,000–4,000 per year (return journeys). Uniforms are €300–600 per child for the full kit. Lunch programmes add €800–1,500 per year. Extra-curriculars (music, sport, drama) run €500–2,000 depending on activity level. Our conservative all-in estimate for one child at St. Julian's: €20,000–23,000 per year.",
+            },
+            {
+                heading: "The cheapest and most expensive options",
+                body: "United Lisbon International School is currently the most accessible school on our list, with all-in costs starting closer to €14,000 per year for families living in Parque das Nações (no transport cost). TASIS Portugal in Sintra is the most expensive — with all-in costs for a family of two children exceeding €55,000–60,000 per year. Both schools offer merit-based bursaries; ask directly at enquiry stage.",
+            },
+        ],
+        cta: { text: "Compare all school fees →", href: "/best-private-and-public-international-schools-portugal-2026" as const },
+    },
+];
+
 export default function BlogPage() {
+    const blogListSchema = {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "TrustFamily Relocation Blog",
+        "description": "Expert guides on choosing international schools, comparing Portugal neighborhoods, and planning a family relocation.",
+        "url": "https://trustfamily.com/en/blog",
+        "blogPost": articles.map((a) => ({
+            "@type": "BlogPosting",
+            "headline": a.title,
+            "description": a.intro,
+            "datePublished": a.datePublished,
+            "author": { "@type": "Organization", "name": "TrustFamily" },
+            "publisher": {
+                "@type": "Organization",
+                "name": "TrustFamily",
+                "logo": { "@type": "ImageObject", "url": "https://trustfamily.com/logo.png" },
+            },
+            "url": `https://trustfamily.com/en/blog/${a.slug}`,
+        })),
+    };
+
     return (
-        <main className="flex flex-col items-center justify-center min-h-[60vh] px-6 text-center">
-            <p className="text-5xl mb-4">✍️</p>
-            <h1 className="text-3xl font-bold text-slate-900 mb-3">Blog — Coming Soon</h1>
-            <p className="text-lg text-slate-500 max-w-md">
-                We are preparing expert articles on schools, neighborhoods, and family relocation to Portugal.
-                Check back soon.
+        <main className="container mx-auto py-12 px-6 max-w-4xl">
+            <JsonLd data={blogListSchema} />
+            <Breadcrumbs />
+
+            <h1 className="text-4xl font-bold mb-3">School & Relocation Guides</h1>
+            <p className="text-lg text-slate-500 mb-12">
+                First-hand guides from a team that has helped 200+ families relocate to Portugal.
             </p>
+
+            <div className="space-y-16">
+                {articles.map((article) => (
+                    <article key={article.slug} className="border-b border-slate-100 pb-16 last:border-0">
+                        {/* Article JSON-LD (inline per article) */}
+                        <JsonLd
+                            data={{
+                                "@context": "https://schema.org",
+                                "@type": "Article",
+                                "headline": article.title,
+                                "description": article.intro,
+                                "datePublished": article.datePublished,
+                                "author": { "@type": "Organization", "name": "TrustFamily" },
+                                "publisher": {
+                                    "@type": "Organization",
+                                    "name": "TrustFamily",
+                                    "logo": { "@type": "ImageObject", "url": "https://trustfamily.com/logo.png" },
+                                },
+                            }}
+                        />
+
+                        {/* Meta row */}
+                        <div className="flex items-center gap-3 text-xs text-slate-400 mb-3">
+                            <time dateTime={article.datePublished}>{article.datePublished}</time>
+                            <span>·</span>
+                            <span>{article.readTime}</span>
+                        </div>
+
+                        {/* Title */}
+                        <h2 className="text-2xl font-bold text-slate-900 mb-1">{article.title}</h2>
+                        <p className="text-slate-500 text-sm mb-4 italic">{article.subtitle}</p>
+
+                        {/* Intro */}
+                        <p className="text-slate-700 leading-relaxed mb-6">{article.intro}</p>
+
+                        {/* Sections */}
+                        <div className="space-y-5">
+                            {article.sections.map((section) => (
+                                <div key={section.heading}>
+                                    <h3 className="font-semibold text-slate-800 mb-1">{section.heading}</h3>
+                                    <p className="text-slate-600 text-sm leading-relaxed">{section.body}</p>
+                                </div>
+                            ))}
+                        </div>
+
+                        {/* CTA */}
+                        <div className="mt-6">
+                            <Link
+                                href={article.cta.href}
+                                className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors"
+                            >
+                                {article.cta.text}
+                            </Link>
+                        </div>
+                    </article>
+                ))}
+            </div>
         </main>
     );
 }

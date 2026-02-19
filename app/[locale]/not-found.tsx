@@ -9,7 +9,7 @@ import { Link } from '@/i18n/navigation';
 export default function NotFound() {
     // Note: useTranslations is available here because this file lives inside
     // the [locale] layout, which wraps it with NextIntlClientProvider.
-    // However, not-found.tsx runs as a Server Component, so we use the
+    // However, not-found.tsx runs as a Server Comdponent, so we use the
     // server-side hook pattern here.
     const t = useTranslations('NotFound');
 

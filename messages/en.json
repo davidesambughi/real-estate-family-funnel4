@@ -25,9 +25,10 @@
     "description": "Expert guide for family relocation to Portugal. Find top international schools and family-friendly neighborhoods."
   },
   "Hero": {
-    "title": "The Right International School in Lisbon Changes Everything",
+    "title": "Secure Your Children's Future in Portugal",
     "subtitle": "We verify schools + neighborhoods so you don't have to. Data from 200+ parent reviews, 50+ inspections.",
-    "cta": "Find Your School Match"
+    "cta": "Find Your School Match",
+    "ctaSecondary": "Start School Review"
   },
   "TrustBar": {
     "independent": "100% Independent Data",
@@ -41,6 +42,51 @@
     "livingDesc": "Find family-safe neighborhoods with optimized commutes to your chosen school.",
     "softLandingTitle": "Soft Landing",
     "softLandingDesc": "A complete integration system to help your children thrive from Day 1."
+  },
+  "LeadMagnet": {
+    "heading": "Relocating to Portugal?",
+    "headingHighlight": "Don't do it alone.",
+    "subheading": "Get free, unbiased advice from locals and expats who have been in your shoes. Skip the confusion and make informed decisions for your family's future.",
+    "benefit1Title": "Ask Any Question",
+    "benefit1Desc": "Unsure about schools or neighborhoods? Send us your specific questions and get a personalized answer.",
+    "benefit2Title": "Stay Updated for 2026",
+    "benefit2Desc": "School fees and availability change fast. Join our list to get the latest 2026 admission updates.",
+    "benefit3Title": "Get Your Free Guide",
+    "benefit3Desc": "Receive our comprehensive relocation checklist and school comparison guide instantly.",
+    "trustBadge1": "100% Free & Unbiased",
+    "trustBadge2": "Privacy Protected",
+    "formTitle": "Get Personalized Help",
+    "formSubtitle": "Fill out the form below to start your journey"
+  },
+  "Quiz": {
+    "badge": "Free School Finder",
+    "title": "Find Your Perfect Fit in 60 Seconds",
+    "subtitle": "Answer 4 quick questions and we'll match you with the right schools and neighborhoods.",
+    "stepLabel": "Question {current} of {total}",
+    "nextBtn": "Next",
+    "backBtn": "Back",
+    "restartBtn": "Start Over",
+    "budgetQuestion": "What's your annual school budget?",
+    "budgetLow": "Under €15,000",
+    "budgetMid": "€15,000 – €25,000",
+    "budgetHigh": "€25,000+",
+    "lifestyleQuestion": "What's your preferred living environment?",
+    "lifestyleCoastal": "By the coast",
+    "lifestyleCity": "City centre",
+    "lifestyleNature": "Near nature",
+    "curriculumQuestion": "Which curriculum do you prefer?",
+    "curriculumBritish": "British / IGCSE",
+    "curriculumAmerican": "American / IB",
+    "curriculumFlexible": "Open to anything",
+    "timelineQuestion": "When are you planning to move?",
+    "timelineUrgent": "In the next 3 months",
+    "timelinePlanning": "Within 6–12 months",
+    "timelineExploring": "Just exploring",
+    "resultsTitle": "Your Perfect Matches",
+    "resultsSchoolsHeading": "Recommended Schools",
+    "resultsNeighborhoodsHeading": "Recommended Neighborhoods",
+    "viewSchoolBtn": "View School Profile",
+    "viewNeighborhoodBtn": "Explore Neighborhood"
   },
   "NotFound": {
     "title": "Page not found",

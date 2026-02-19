@@ -25,9 +25,10 @@
     "description": "Guide expert pour la relocation familiale au Portugal. Trouvez les meilleures écoles internationales et les quartiers familiaux."
   },
   "Hero": {
-    "title": "La bonne école internationale à Lisbonne change tout",
+    "title": "Assurez l'Avenir de Vos Enfants au Portugal",
     "subtitle": "Nous vérifions les écoles et les quartiers pour vous. Données issues de 200+ avis de parents et 50+ inspections.",
-    "cta": "Trouver votre école"
+    "cta": "Trouver votre école",
+    "ctaSecondary": "Commencer l'évaluation"
   },
   "TrustBar": {
     "independent": "Données 100% indépendantes",
@@ -41,6 +42,51 @@
     "livingDesc": "Trouvez des quartiers sûrs pour les familles avec des trajets optimisés vers l'école choisie.",
     "softLandingTitle": "Intégration en douceur",
     "softLandingDesc": "Un système d'intégration complet pour aider vos enfants à s'épanouir dès le premier jour."
+  },
+  "LeadMagnet": {
+    "heading": "Vous déménagez au Portugal?",
+    "headingHighlight": "Ne le faites pas seul.",
+    "subheading": "Obtenez des conseils gratuits et impartiaux de locaux et d'expatriés qui ont vécu la même situation. Évitez la confusion et prenez des décisions éclairées pour l'avenir de votre famille.",
+    "benefit1Title": "Posez n'importe quelle question",
+    "benefit1Desc": "Incertain sur les écoles ou les quartiers? Envoyez-nous vos questions et obtenez une réponse personnalisée.",
+    "benefit2Title": "Restez informé pour 2026",
+    "benefit2Desc": "Les frais de scolarité et les disponibilités changent vite. Rejoignez notre liste pour les dernières informations.",
+    "benefit3Title": "Obtenez votre guide gratuit",
+    "benefit3Desc": "Recevez instantanément notre checklist de relocation et notre guide de comparaison des écoles.",
+    "trustBadge1": "100% gratuit et impartial",
+    "trustBadge2": "Confidentialité protégée",
+    "formTitle": "Obtenez une aide personnalisée",
+    "formSubtitle": "Remplissez le formulaire pour commencer votre parcours"
+  },
+  "Quiz": {
+    "badge": "Recherche d'école gratuite",
+    "title": "Trouvez votre école idéale en 60 secondes",
+    "subtitle": "Répondez à 4 questions rapides et nous vous trouverons les meilleures écoles et quartiers.",
+    "stepLabel": "Question {current} sur {total}",
+    "nextBtn": "Suivant",
+    "backBtn": "Retour",
+    "restartBtn": "Recommencer",
+    "budgetQuestion": "Quel est votre budget annuel pour la scolarité?",
+    "budgetLow": "Moins de €15 000",
+    "budgetMid": "€15 000 – €25 000",
+    "budgetHigh": "€25 000+",
+    "lifestyleQuestion": "Quel est votre environnement de vie préféré?",
+    "lifestyleCoastal": "En bord de mer",
+    "lifestyleCity": "Centre-ville",
+    "lifestyleNature": "Proche de la nature",
+    "curriculumQuestion": "Quel programme éducatif préférez-vous?",
+    "curriculumBritish": "Britannique / IGCSE",
+    "curriculumAmerican": "Américain / IB",
+    "curriculumFlexible": "Ouvert à tout",
+    "timelineQuestion": "Quand prévoyez-vous de déménager?",
+    "timelineUrgent": "Dans les 3 prochains mois",
+    "timelinePlanning": "Dans 6 à 12 mois",
+    "timelineExploring": "Juste en exploration",
+    "resultsTitle": "Vos correspondances parfaites",
+    "resultsSchoolsHeading": "Écoles recommandées",
+    "resultsNeighborhoodsHeading": "Quartiers recommandés",
+    "viewSchoolBtn": "Voir le profil de l'école",
+    "viewNeighborhoodBtn": "Explorer le quartier"
   },
   "NotFound": {
     "title": "Page introuvable",

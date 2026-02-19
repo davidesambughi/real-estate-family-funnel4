@@ -10,8 +10,8 @@ export default function Footer() {
                 </div>
                 <div className="flex flex-col gap-2">
                     <Link href="/best-private-and-public-international-schools-portugal-2026" className="hover:underline hover:text-primary transition-colors">Schools</Link>
-                    <Link href="/family-friendly-neighborhoods-portugal" className="hover:underline hover:text-primary transition-colors">Neighborhoods</Link>
-                    <Link href="/family-relocation-guide-2026" className="hover:underline hover:text-primary transition-colors">Relocation Guide</Link>
+                    <Link href="/top-neighborhoods" className="hover:underline hover:text-primary transition-colors">Neighborhoods</Link>
+                    <Link href="/relocation-guide" className="hover:underline hover:text-primary transition-colors">Relocation Guide</Link>
                     <Link href="/school-finder" className="hover:underline hover:text-primary transition-colors">School Finder</Link>
                 </div>
                 <div className="flex flex-col gap-2">

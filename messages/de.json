@@ -25,9 +25,10 @@
     "description": "Expertenratgeber für Familienumzüge nach Portugal. Finden Sie die besten internationalen Schulen und familienfreundlichen Stadtteile."
   },
   "Hero": {
-    "title": "Die richtige internationale Schule in Lissabon verändert alles",
+    "title": "Sichern Sie die Zukunft Ihrer Kinder in Portugal",
     "subtitle": "Wir überprüfen Schulen und Stadtteile für Sie. Daten aus 200+ Elternbewertungen und 50+ Inspektionen.",
-    "cta": "Ihre Schule finden"
+    "cta": "Ihre Schule finden",
+    "ctaSecondary": "Schulbewertung starten"
   },
   "TrustBar": {
     "independent": "100% unabhängige Daten",
@@ -41,6 +42,51 @@
     "livingDesc": "Finden Sie familienfreundliche Stadtteile mit optimalen Schulwegen.",
     "softLandingTitle": "Sanfte Integration",
     "softLandingDesc": "Ein vollständiges Integrationssystem, damit Ihre Kinder vom ersten Tag an aufblühen."
+  },
+  "LeadMagnet": {
+    "heading": "Umzug nach Portugal?",
+    "headingHighlight": "Tun Sie es nicht alleine.",
+    "subheading": "Erhalten Sie kostenlose, unvoreingenommene Beratung von Einheimischen und Expats, die in Ihrer Situation waren. Überwinden Sie die Verwirrung und treffen Sie fundierte Entscheidungen für die Zukunft Ihrer Familie.",
+    "benefit1Title": "Stellen Sie jede Frage",
+    "benefit1Desc": "Unsicher bei Schulen oder Stadtteilen? Senden Sie uns Ihre spezifischen Fragen und erhalten Sie eine persönliche Antwort.",
+    "benefit2Title": "Bleiben Sie für 2026 informiert",
+    "benefit2Desc": "Schulgebühren und Verfügbarkeit ändern sich schnell. Treten Sie unserer Liste bei, um die neuesten Aufnahmeinformationen für 2026 zu erhalten.",
+    "benefit3Title": "Holen Sie sich Ihren kostenlosen Leitfaden",
+    "benefit3Desc": "Erhalten Sie sofort unsere umfassende Umzugs-Checkliste und den Schulvergleichsleitfaden.",
+    "trustBadge1": "100% kostenlos & unvoreingenommen",
+    "trustBadge2": "Datenschutz gewährleistet",
+    "formTitle": "Persönliche Hilfe erhalten",
+    "formSubtitle": "Füllen Sie das Formular aus, um Ihre Reise zu beginnen"
+  },
+  "Quiz": {
+    "badge": "Kostenloser Schulfinder",
+    "title": "Finden Sie Ihre perfekte Schule in 60 Sekunden",
+    "subtitle": "Beantworten Sie 4 kurze Fragen und wir empfehlen Ihnen die passenden Schulen und Stadtteile.",
+    "stepLabel": "Frage {current} von {total}",
+    "nextBtn": "Weiter",
+    "backBtn": "Zurück",
+    "restartBtn": "Neu starten",
+    "budgetQuestion": "Was ist Ihr jährliches Schulbudget?",
+    "budgetLow": "Unter €15.000",
+    "budgetMid": "€15.000 – €25.000",
+    "budgetHigh": "€25.000+",
+    "lifestyleQuestion": "Was ist Ihre bevorzugte Wohnumgebung?",
+    "lifestyleCoastal": "An der Küste",
+    "lifestyleCity": "Stadtzentrum",
+    "lifestyleNature": "In der Natur",
+    "curriculumQuestion": "Welchen Lehrplan bevorzugen Sie?",
+    "curriculumBritish": "Britisch / IGCSE",
+    "curriculumAmerican": "Amerikanisch / IB",
+    "curriculumFlexible": "Offen für alles",
+    "timelineQuestion": "Wann planen Sie den Umzug?",
+    "timelineUrgent": "In den nächsten 3 Monaten",
+    "timelinePlanning": "In 6–12 Monaten",
+    "timelineExploring": "Nur erkunden",
+    "resultsTitle": "Ihre perfekten Treffer",
+    "resultsSchoolsHeading": "Empfohlene Schulen",
+    "resultsNeighborhoodsHeading": "Empfohlene Stadtteile",
+    "viewSchoolBtn": "Schulprofil ansehen",
+    "viewNeighborhoodBtn": "Stadtteil erkunden"
   },
   "NotFound": {
     "title": "Seite nicht gefunden",

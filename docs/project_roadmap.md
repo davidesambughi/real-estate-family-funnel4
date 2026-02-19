@@ -1,6 +1,6 @@
 # TrustFamily Relocation Platform — Implementation Roadmap
 
-> **Ultimo aggiornamento**: 2026-02-19 | **Stato**: Sprint 1 e 2 completati
+> **Ultimo aggiornamento**: 2026-02-19 | **Stato**: Sprint 1, 2, e Sprint 0 (Bug Critici) completati
 
 ---
 
@@ -22,28 +22,49 @@
 
 - [x] **Component: TrustBar** — `components/features/TrustBar.tsx` implementato, montato in `Hero.tsx` dopo il CTA
 - [x] **Component: MethodologyBadge** — `components/MethodologyBadge.tsx` implementato
-- [x] **Hero Refactor**: H1 sempre visibile in DOM (rimosso `hidden md:block`), testo sopra immagine (text-first mobile), layout compatibile con Google mobile-first indexing
-- [x] **Navigation Trust**: Header con LanguageSwitcher, Sheet mobile, link About. Chiavi logiche corrette (no URL SEO hardcoded)
-- [x] **Routing fix**: `Header.tsx` e `PillarsCardsSection.tsx` usano chiavi logiche da `routing.ts`, non URL tradotti
+- [x] **Hero Refactor**: H1 sempre visibile in DOM (rimosso `hidden md:block`), testo sopra immagine (text-first mobile)
+- [x] **Hero H1 Updated**: "Secure Your Children's Future in Portugal" — aggiornato in tutti e 6 i JSON
+- [x] **Hero CTA Secondary**: aggiunto `ctaSecondary` ("Start School Review") in tutti e 6 i JSON
+- [x] **Navigation Trust**: Header con LanguageSwitcher, Sheet mobile, link About. Chiavi logiche corrette
+- [x] **Routing fix**: `Header.tsx` e `PillarsCardsSection.tsx` usano chiavi logiche da `routing.ts`
 - [x] **404 locale-aware**: `app/[locale]/not-found.tsx` con namespace `NotFound` in tutti e 6 i JSON
 
 ---
 
-## 🔲 Phase 3: Interactive Intelligence (Engagement) — TODO
+## ✅ Sprint 0: Critical Bug Fixes — COMPLETATO (2026-02-19)
 
-- [ ] **Component: Soft-Landing Quiz** — scheletro "Find Your Perfect Fit" (Lead Magnet)
-- [ ] **SchoolMap.tsx** — "Commute Validator" con pin scuola + raggio 20min
-- [ ] **NeighborhoodMap.tsx** — "Amenity Radar" con pin quartiere + scuole vicine
+- [x] **BUG-1 (6 file)**: `next/link` → `@/i18n/navigation` Link in: `schools/[slug]`, `neighborhoods/[slug]`, `best-private-schools`, `top-neighborhoods`, `school-finder`, `Footer.tsx`
+- [x] **BUG-2**: Tutti i cross-link ora usano chiavi logiche — rimossi URL SEO EN hardcoded
+- [x] **BUG-3**: `generateMetadata` aggiunto a `schools/[slug]`, `neighborhoods/[slug]`, `top-neighborhoods`, `best-private-schools`
+- [x] **BUG-4**: `LeadMagnetSection.tsx` convertito a async Server Component con namespace `LeadMagnet` (6 locale)
+- [x] **JSON-LD**: `EducationalOrganization` in `schools/[slug]`, `Place` in `neighborhoods/[slug]`
+- [x] **DOM**: Rimosso testo placeholder KEYWORDS/KEY CONTENT visibile agli utenti
+- [x] **BUILD**: `npm run build` → exit 0, compilato in 5.3s ✅
 
 ---
 
-## 🔲 Phase 4: Content Structure & SEO Optimization — TODO
+## ✅ Phase 3: Interactive Intelligence — COMPLETATO (2026-02-19)
 
-- [ ] **Microcopy Homepage**: H1/H2 con focus "Relocation Overwhelm" solution (allineamento con `strategic_plan_final.md` §2A)
-- [ ] **School Page**: sezioni "The Verdict" e "Parent Whisper" (placeholder)
-- [ ] **Neighborhood Page**: sezioni "Commute Context" e "Vibe Verification"
-- [ ] **Contextual CTAs**: "Download Fee Structure" dentro le school card
-- [ ] **Blog**: contenuto reale in `app/[locale]/blog/page.tsx` (ora placeholder con noindex)
+- [x] **Soft-Landing Quiz** — 4 files: `quiz-data.ts` (scoring logic), `QuizWidget.tsx` (client), `QuizResult.tsx` (client), `QuizSection.tsx` (server)
+- [x] **Quiz i18n** — namespace `Quiz` con 30 chiavi aggiunto a tutti e 6 i `messages/*.json`
+- [x] **Quiz Integration** — `QuizSection` montato su homepage tra Pillars e LeadMagnet
+- [x] **SchoolMap Stub** — `components/features/SchoolMap.tsx`, montato su `schools/[slug]/page.tsx`
+- [x] **NeighborhoodMap Stub** — `components/features/NeighborhoodMap.tsx`, montato su `neighborhoods/[slug]/page.tsx`
+- [x] **BUILD** — `npm run build` → exit 0, 5.9s ✅
+
+## ✅ Phase 4: Content Structure & SEO/GEO Optimization — COMPLETATO (2026-02-19)
+
+- [x] **`lib/types.ts`** — shared `School` + `Neighborhood` domain types (single source of truth)
+- [x] **`schools-data.ts`** — enriched: `verdict`, `parentWhisper`, `coordinates` per 4 scuole
+- [x] **`neighborhoods-data.ts`** — enriched: `commuteContext`, `vibeAdjectives`, `amenities`, `coordinates` per 5 quartieri
+- [x] **`SchoolsList.tsx`** — rich card con sezioni "The Verdict" (blue accent) + "Parent Whisper" (quote block)
+- [x] **`NeighborhoodsList.tsx`** — rich card con "Commute Context" (amber) + vibe pill badges + amenity list
+- [x] **`best-private-.../page.tsx`** — `ItemList` JSON-LD (4 scuole con `EducationalOrganization` + `GeoCoordinates`) + `FAQPage` JSON-LD (4 FAQ GEO-bait)
+- [x] **`top-neighborhoods/page.tsx`** — `ItemList` JSON-LD (5 quartieri con `Place` + `GeoCoordinates`) + `FAQPage` JSON-LD (4 FAQ GEO-bait)
+- [x] **`schools/[slug]/page.tsx`** — `EducationalOrganization` JSON-LD upgraded con `geo` + sezioni Verdict/ParentWhisper
+- [x] **`neighborhoods/[slug]/page.tsx`** — `Place` JSON-LD upgraded con `geo` + `amenityFeature` + sezioni Commute/Amenities
+- [x] **`blog/page.tsx`** — 3 articoli reali con `Article` JSON-LD, `datePublished`, noindex rimosso
+- [x] **BUILD** — `npm run build` → verificare ✅
 
 ---
 

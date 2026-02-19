@@ -1,6 +1,7 @@
 import Hero from "@/components/features/Hero";
 import { PillarsCardsSection } from "@/components/features/PillarsCardsSection";
 import { LeadMagnetSection } from "@/components/features/LeadMagnetSection";
+import { QuizSection } from "@/components/features/quiz/QuizSection";
 import { Testimonials } from "@/components/features/Testimonials";
 import { JsonLd } from "@/components/JsonLd";
 import { Metadata } from "next";
@@ -37,7 +38,8 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <JsonLd data={organizationSchema} />
       <Hero />
       <PillarsCardsSection />
-      <LeadMagnetSection />
+      <QuizSection locale={locale} />
+      <LeadMagnetSection locale={locale} />
       <Testimonials />
     </main>
   );

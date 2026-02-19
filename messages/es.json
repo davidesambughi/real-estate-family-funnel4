@@ -25,9 +25,10 @@
     "description": "Guía experta para la relocalización familiar a Portugal. Encuentre los mejores colegios internacionales y barrios aptos para familias."
   },
   "Hero": {
-    "title": "El colegio internacional correcto en Lisboa lo cambia todo",
+    "title": "Asegure el Futuro de Sus Hijos en Portugal",
     "subtitle": "Verificamos colegios y barrios para que usted no tenga que hacerlo. Datos de 200+ opiniones de padres y 50+ inspecciones.",
-    "cta": "Encuentre su colegio"
+    "cta": "Encuentre su colegio",
+    "ctaSecondary": "Iniciar evaluación"
   },
   "TrustBar": {
     "independent": "Datos 100% independientes",
@@ -41,6 +42,51 @@
     "livingDesc": "Encuentre barrios seguros para familias con trayectos optimizados al colegio elegido.",
     "softLandingTitle": "Aterrizaje suave",
     "softLandingDesc": "Un sistema de integración completo para ayudar a sus hijos a prosperar desde el primer día."
+  },
+  "LeadMagnet": {
+    "heading": "¿Se muda a Portugal?",
+    "headingHighlight": "No lo haga solo.",
+    "subheading": "Obtenga asesoramiento gratuito e imparcial de locales y expatriados que han estado en su lugar. Evite la confusión y tome decisiones informadas para el futuro de su familia.",
+    "benefit1Title": "Haga cualquier pregunta",
+    "benefit1Desc": "¿Dudas sobre colegios o barrios? Envíenos sus preguntas específicas y reciba una respuesta personalizada.",
+    "benefit2Title": "Manténgase actualizado para 2026",
+    "benefit2Desc": "Las tasas y disponibilidad de los colegios cambian rápido. Únase a nuestra lista para las últimas actualizaciones.",
+    "benefit3Title": "Obtenga su guía gratuita",
+    "benefit3Desc": "Reciba de inmediato nuestra completa lista de verificación de relocalización y guía de comparación de colegios.",
+    "trustBadge1": "100% gratuito e imparcial",
+    "trustBadge2": "Privacidad protegida",
+    "formTitle": "Obtenga ayuda personalizada",
+    "formSubtitle": "Complete el formulario para comenzar su viaje"
+  },
+  "Quiz": {
+    "badge": "Buscador de Colegios Gratis",
+    "title": "Encuentre Su Colegio Ideal en 60 Segundos",
+    "subtitle": "Responda 4 preguntas rápidas y le recomendaremos los mejores colegios y barrios.",
+    "stepLabel": "Pregunta {current} de {total}",
+    "nextBtn": "Siguiente",
+    "backBtn": "Atrás",
+    "restartBtn": "Empezar de nuevo",
+    "budgetQuestion": "¿Cuál es su presupuesto anual para la escolarización?",
+    "budgetLow": "Menos de €15.000",
+    "budgetMid": "€15.000 – €25.000",
+    "budgetHigh": "€25.000+",
+    "lifestyleQuestion": "¿Cuál es su entorno de vida preferido?",
+    "lifestyleCoastal": "En la costa",
+    "lifestyleCity": "Centro de la ciudad",
+    "lifestyleNature": "Cerca de la naturaleza",
+    "curriculumQuestion": "¿Qué currículo prefiere?",
+    "curriculumBritish": "Británico / IGCSE",
+    "curriculumAmerican": "Americano / IB",
+    "curriculumFlexible": "Abierto a cualquier opción",
+    "timelineQuestion": "¿Cuándo planea mudarse?",
+    "timelineUrgent": "En los próximos 3 meses",
+    "timelinePlanning": "En 6–12 meses",
+    "timelineExploring": "Solo explorando",
+    "resultsTitle": "Sus Coincidencias Perfectas",
+    "resultsSchoolsHeading": "Colegios Recomendados",
+    "resultsNeighborhoodsHeading": "Barrios Recomendados",
+    "viewSchoolBtn": "Ver Perfil del Colegio",
+    "viewNeighborhoodBtn": "Explorar Barrio"
   },
   "NotFound": {
     "title": "Página no encontrada",

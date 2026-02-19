@@ -1,16 +1,43 @@
 import { notFound } from "next/navigation";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
+import { getTranslations } from "next-intl/server";
+import { JsonLd } from "@/components/JsonLd";
 import { neighborhoodsData } from "@/lib/neighborhoods-data";
 import { schoolsData } from "@/lib/schools-data";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Card, CardHeader, CardTitle, CardContent, CardDescription, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { MapPin, Check, GraduationCap, Coins } from "lucide-react";
+import { NeighborhoodMap } from "@/components/features/NeighborhoodMap";
 
 interface PageProps {
     params: Promise<{
+        locale: string;
         slug: string;
     }>;
+}
+
+export async function generateMetadata({ params }: PageProps) {
+    const { slug, locale } = await params;
+    const neighborhood = neighborhoodsData.find((n) => n.slug === slug);
+    const t = await getTranslations({ locale, namespace: "Metadata" });
+
+    if (!neighborhood) return { title: t("title") };
+
+    return {
+        title: `${neighborhood.name} — Family Friendly Neighborhood Portugal | TrustFamily`,
+        description: `${neighborhood.description} Vibe: ${neighborhood.vibe}. ${neighborhood.highlights.join(", ")}.`,
+        alternates: {
+            languages: {
+                en: `/en/neighborhood/${neighborhood.slug}`,
+                pt: `/pt/bairro/${neighborhood.slug}`,
+                de: `/de/nachbarschaft/${neighborhood.slug}`,
+                fr: `/fr/quartier/${neighborhood.slug}`,
+                nl: `/nl/buurt/${neighborhood.slug}`,
+                es: `/es/barrio/${neighborhood.slug}`,
+            },
+        },
+    };
 }
 
 // Generate static params for all neighborhoods
@@ -28,11 +55,38 @@ export default async function NeighborhoodDetailPage(props: PageProps) {
         notFound();
     }
 
+    const placeSchema = {
+        "@context": "https://schema.org",
+        "@type": "Place",
+        "name": neighborhood.name,
+        "description": neighborhood.description,
+        "url": `${process.env.NEXT_PUBLIC_BASE_URL || "https://trustfamily.com"}/neighborhood/${neighborhood.slug}`,
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": neighborhood.name,
+            "addressRegion": neighborhood.location,
+            "addressCountry": "PT",
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": neighborhood.coordinates.lat,
+            "longitude": neighborhood.coordinates.lng,
+        },
+        ...(neighborhood.amenities?.length && {
+            "amenityFeature": neighborhood.amenities.map((a: string) => ({
+                "@type": "LocationFeatureSpecification",
+                "name": a,
+                "value": true,
+            })),
+        }),
+    };
+
     // Find schools in this neighborhood
     const schoolsInArea = schoolsData.filter((s) => s.neighborhoodSlug === neighborhood.slug);
 
     return (
         <div className="container mx-auto py-12 px-6">
+            <JsonLd data={placeSchema} />
             <Breadcrumbs />
 
             <div className="flex flex-col md:flex-row gap-8 justify-between items-start mb-8">
@@ -59,7 +113,7 @@ export default async function NeighborhoodDetailPage(props: PageProps) {
                     <section>
                         <h2 className="text-2xl font-bold mb-4">Why Families Love It</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            {neighborhood.highlights.map((highlight, index) => (
+                            {neighborhood.highlights.map((highlight: string, index: number) => (
                                 <div key={index} className="flex items-center gap-3 p-4 bg-slate-50 rounded-lg">
                                     <Check className="h-5 w-5 text-green-600" />
                                     <span className="font-medium">{highlight}</span>
@@ -67,6 +121,40 @@ export default async function NeighborhoodDetailPage(props: PageProps) {
                             ))}
                         </div>
                     </section>
+
+                    {/* COMMUTE CONTEXT */}
+                    {neighborhood.commuteContext && (
+                        <section className="rounded-xl bg-amber-50 border border-amber-100 px-6 py-5">
+                            <div className="flex items-center gap-2 mb-2">
+                                <span className="text-amber-600">🚗</span>
+                                <h2 className="text-sm font-bold text-amber-700 uppercase tracking-wide">Commute Context</h2>
+                            </div>
+                            <p className="text-amber-800 text-sm leading-snug">{neighborhood.commuteContext}</p>
+                        </section>
+                    )}
+
+                    {/* VIBE ADJECTIVES + AMENITIES */}
+                    {(neighborhood.vibeAdjectives?.length || neighborhood.amenities?.length) && (
+                        <section>
+                            <h2 className="text-2xl font-bold mb-4">Lifestyle & Amenities</h2>
+                            {neighborhood.vibeAdjectives?.length && (
+                                <div className="flex flex-wrap gap-2 mb-4">
+                                    {neighborhood.vibeAdjectives.map((adj: string) => (
+                                        <span key={adj} className="inline-block bg-slate-100 text-slate-600 text-sm px-3 py-1 rounded-full">{adj}</span>
+                                    ))}
+                                </div>
+                            )}
+                            {neighborhood.amenities?.length && (
+                                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                                    {neighborhood.amenities.map((amenity: string) => (
+                                        <li key={amenity} className="flex items-center gap-2 text-sm text-slate-700 bg-white border border-slate-100 rounded-lg px-3 py-2">
+                                            {amenity}
+                                        </li>
+                                    ))}
+                                </ul>
+                            )}
+                        </section>
+                    )}
 
                     <section>
                         <h2 className="text-2xl font-bold mb-4">Schools in {neighborhood.name}</h2>
@@ -83,7 +171,7 @@ export default async function NeighborhoodDetailPage(props: PageProps) {
                                                     </CardDescription>
                                                 </div>
                                                 <Button variant="outline" size="sm" asChild>
-                                                    <Link href={`/schools/${school.slug}`}>View School</Link>
+                                                    <Link href={{ pathname: '/schools/[slug]', params: { slug: school.slug } }}>View School</Link>
                                                 </Button>
                                             </div>
                                         </CardHeader>
@@ -123,6 +211,15 @@ export default async function NeighborhoodDetailPage(props: PageProps) {
                             </p>
                         </CardContent>
                     </Card>
+
+                    {/* Amenity Radar stub */}
+                    <div>
+                        <h3 className="text-lg font-semibold mb-3">Explore the Area</h3>
+                        <NeighborhoodMap
+                            neighborhoodName={neighborhood.name}
+                            city="Lisbon"
+                        />
+                    </div>
                 </div>
             </div>
         </div>

@@ -24,6 +24,9 @@ export default function Hero() {
                     <Button size="lg" className="text-lg px-8 py-6 h-auto w-full sm:w-auto shadow-xl shadow-blue-900/10 hover:shadow-blue-900/20 transition-all duration-300">
                         {t('cta')}
                     </Button>
+                    <Button size="lg" variant="outline" className="text-lg px-8 py-6 h-auto w-full sm:w-auto">
+                        {t('ctaSecondary')}
+                    </Button>
                 </div>
             </div>
 

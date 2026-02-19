@@ -25,9 +25,10 @@
     "description": "Guia especializado para relocalização familiar em Portugal. Encontre as melhores escolas internacionais e bairros seguros para famílias."
   },
   "Hero": {
-    "title": "A Escola Internacional Certa em Lisboa Muda Tudo",
+    "title": "Garanta o Futuro dos Seus Filhos em Portugal",
     "subtitle": "Verificamos escolas e bairros para que você não precise. Dados de 200+ avaliações de pais e 50+ inspeções.",
-    "cta": "Encontre a Escola Ideal"
+    "cta": "Encontre a Escola Ideal",
+    "ctaSecondary": "Iniciar Revisão de Escolas"
   },
   "TrustBar": {
     "independent": "Dados 100% Independentes",
@@ -41,6 +42,51 @@
     "livingDesc": "Encontre bairros seguros para famílias com trajetos otimizados para a escola.",
     "softLandingTitle": "Integração Suave",
     "softLandingDesc": "Um sistema de integração completo para ajudar seus filhos a prosperar desde o Dia 1."
+  },
+  "LeadMagnet": {
+    "heading": "Mudando para Portugal?",
+    "headingHighlight": "Não faça isso sozinho.",
+    "subheading": "Obtenha conselhos gratuitos e imparciais de locais e expatriados que já passaram pela mesma situação. Evite a confusão e tome decisões informadas para o futuro da sua família.",
+    "benefit1Title": "Faça Qualquer Pergunta",
+    "benefit1Desc": "Dúvidas sobre escolas ou bairros? Envie suas perguntas específicas e receba uma resposta personalizada.",
+    "benefit2Title": "Fique Atualizado para 2026",
+    "benefit2Desc": "As propinas e a disponibilidade das escolas mudam rapidamente. Junte-se à nossa lista para receber as últimas atualizações de 2026.",
+    "benefit3Title": "Obtenha o Seu Guia Grátis",
+    "benefit3Desc": "Receba instantaneamente o nosso checklist de relocalização e guia de comparação de escolas.",
+    "trustBadge1": "100% Gratuito e Imparcial",
+    "trustBadge2": "Privacidade Protegida",
+    "formTitle": "Obtenha Ajuda Personalizada",
+    "formSubtitle": "Preencha o formulário para começar a sua jornada"
+  },
+  "Quiz": {
+    "badge": "Localizador de Escolas Grátis",
+    "title": "Encontre a Escola Ideal em 60 Segundos",
+    "subtitle": "Responda a 4 perguntas rápidas e vamos encontrar as escolas e bairros certos para si.",
+    "stepLabel": "Pergunta {current} de {total}",
+    "nextBtn": "Próximo",
+    "backBtn": "Voltar",
+    "restartBtn": "Recomeçar",
+    "budgetQuestion": "Qual é o seu orçamento anual para escolaridade?",
+    "budgetLow": "Até €15.000",
+    "budgetMid": "€15.000 – €25.000",
+    "budgetHigh": "€25.000+",
+    "lifestyleQuestion": "Qual é o seu ambiente de vida preferido?",
+    "lifestyleCoastal": "Perto da costa",
+    "lifestyleCity": "Centro da cidade",
+    "lifestyleNature": "Próximo da natureza",
+    "curriculumQuestion": "Qual currículo prefere?",
+    "curriculumBritish": "Britânico / IGCSE",
+    "curriculumAmerican": "Americano / IB",
+    "curriculumFlexible": "Aberto a qualquer um",
+    "timelineQuestion": "Quando planeia mudar-se?",
+    "timelineUrgent": "Nos próximos 3 meses",
+    "timelinePlanning": "Em 6–12 meses",
+    "timelineExploring": "Só a explorar",
+    "resultsTitle": "Os Seus Combinados Perfeitos",
+    "resultsSchoolsHeading": "Escolas Recomendadas",
+    "resultsNeighborhoodsHeading": "Bairros Recomendados",
+    "viewSchoolBtn": "Ver Perfil da Escola",
+    "viewNeighborhoodBtn": "Explorar Bairro"
   },
   "NotFound": {
     "title": "Página não encontrada",

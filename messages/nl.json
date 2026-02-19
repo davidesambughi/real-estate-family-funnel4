@@ -25,9 +25,10 @@
     "description": "Expertgids voor gezinsverhuizingen naar Portugal. Vind de beste internationale scholen en gezinsvriendelijke buurten."
   },
   "Hero": {
-    "title": "De juiste internationale school in Lissabon verandert alles",
+    "title": "Zeker de Toekomst van Uw Kinderen in Portugal",
     "subtitle": "Wij verifiëren scholen en buurten zodat u dat niet hoeft te doen. Data van 200+ ouderbeoordeling en 50+ inspecties.",
-    "cta": "Vind uw school"
+    "cta": "Vind uw school",
+    "ctaSecondary": "Schoolbeoordeling starten"
   },
   "TrustBar": {
     "independent": "100% onafhankelijke data",
@@ -41,6 +42,51 @@
     "livingDesc": "Vind gezinsveilige buurten met geoptimaliseerde reistijden naar de gekozen school.",
     "softLandingTitle": "Zachte landing",
     "softLandingDesc": "Een volledig integratiesysteem om uw kinderen vanaf dag 1 te laten floreren."
+  },
+  "LeadMagnet": {
+    "heading": "Verhuist u naar Portugal?",
+    "headingHighlight": "Doe het niet alleen.",
+    "subheading": "Ontvang gratis, onbevooroordeeld advies van locals en expats die in uw schoenen hebben gestaan. Vermijd verwarring en neem weloverwogen beslissingen voor de toekomst van uw gezin.",
+    "benefit1Title": "Stel elke vraag",
+    "benefit1Desc": "Twijfelt u over scholen of buurten? Stuur ons uw specifieke vragen en ontvang een persoonlijk antwoord.",
+    "benefit2Title": "Blijf bijgewerkt voor 2026",
+    "benefit2Desc": "Schoolgeld en beschikbaarheid veranderen snel. Meld u aan voor de laatste toelatingsinfo van 2026.",
+    "benefit3Title": "Ontvang uw gratis gids",
+    "benefit3Desc": "Ontvang direct onze uitgebreide verhuischecklist en schoolvergelijkingsgids.",
+    "trustBadge1": "100% gratis & onbevooroordeeld",
+    "trustBadge2": "Privacy beschermd",
+    "formTitle": "Ontvang persoonlijke hulp",
+    "formSubtitle": "Vul het formulier in om uw reis te beginnen"
+  },
+  "Quiz": {
+    "badge": "Gratis Schoolzoeker",
+    "title": "Vind Uw Perfecte School in 60 Seconden",
+    "subtitle": "Beantwoord 4 vragen en wij koppelen u aan de juiste scholen en buurten.",
+    "stepLabel": "Vraag {current} van {total}",
+    "nextBtn": "Volgende",
+    "backBtn": "Terug",
+    "restartBtn": "Opnieuw beginnen",
+    "budgetQuestion": "Wat is uw jaarlijks schoolbudget?",
+    "budgetLow": "Onder €15.000",
+    "budgetMid": "€15.000 – €25.000",
+    "budgetHigh": "€25.000+",
+    "lifestyleQuestion": "Wat is uw voorkeur voor woonomgeving?",
+    "lifestyleCoastal": "Aan de kust",
+    "lifestyleCity": "Stadscentrum",
+    "lifestyleNature": "Dicht bij de natuur",
+    "curriculumQuestion": "Welk curriculum heeft u voorkeur?",
+    "curriculumBritish": "Brits / IGCSE",
+    "curriculumAmerican": "Amerikaans / IB",
+    "curriculumFlexible": "Open voor alles",
+    "timelineQuestion": "Wanneer plant u uw verhuizing?",
+    "timelineUrgent": "Binnen 3 maanden",
+    "timelinePlanning": "Binnen 6–12 maanden",
+    "timelineExploring": "Gewoon verkennen",
+    "resultsTitle": "Uw Perfecte Matches",
+    "resultsSchoolsHeading": "Aanbevolen Scholen",
+    "resultsNeighborhoodsHeading": "Aanbevolen Buurten",
+    "viewSchoolBtn": "Schoolprofiel bekijken",
+    "viewNeighborhoodBtn": "Buurt verkennen"
   },
   "NotFound": {
     "title": "Pagina niet gevonden",

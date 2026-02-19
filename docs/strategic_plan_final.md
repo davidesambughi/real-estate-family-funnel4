@@ -12,8 +12,8 @@
 | -------------------------------------- | ------------- | ---------------------------------------------------------------- |
 | **Phase 1** — Multilingual Core        | ✅ Completata | Routing, i18n, SEO metadata, sitemap, robots, OG image           |
 | **Phase 2** — Trust-First UI           | ✅ Completata | TrustBar, MethodologyBadge, Hero H1 mobile fix, 404 locale-aware |
-| **Phase 3** — Interactive Intelligence | 🔲 TODO       | Quiz, Maps                                                       |
-| **Phase 4** — Content Structure        | 🔲 TODO       | Microcopy, Verdict, Whisper, CTAs                                |
+| **Phase 3** — Interactive Intelligence | ✅ Completata | Quiz, Maps                                                       |
+| **Phase 4** — Content Structure        | ✅ Completata | Microcopy, Verdict, Whisper, CTAs                                |
 
 ---
 
@@ -45,17 +45,17 @@
 - Aggiornare H1 a "Secure Your Children's Future in Portugal" (da `strategic_plan_final.md §2A`)
 - Implementare microcopy "The Intelligence Engine" sotto TrustBar
 
-### B. The "Objective Advisor" Schools Page — 🔲 Struttura esistente, contenuto da completare
+### B. The "Objective Advisor" Schools Page — ✅ Struttura esistente, contenuto da completare
 
 - ✅ SchoolsList component creato, MethodologyBadge integrato
-- 🔲 "The Verdict" e "Parent Whisper" per ogni scuola (Phase 4)
-- 🔲 Dati fees reali (Phase 4)
+- ✅ "The Verdict" e "Parent Whisper" per ogni scuola (Phase 4)
+- ✅ Dati fees reali (Phase 4)
 
-### C. The "Lifestyle Matcher" Neighborhoods Page — 🔲 Struttura esistente, contenuto da completare
+### C. The "Lifestyle Matcher" Neighborhoods Page — ✅ Struttura esistente, contenuto da completare
 
 - ✅ NeighborhoodsList component creato
-- 🔲 "Commute Context" — distanza da scuole top (Phase 4)
-- 🔲 "Vibe Verification" — 3 aggettivi per quartiere (Phase 4, già parzialmente nei dati)
+- ✅ "Commute Context" — distanza da scuole top (Phase 4)
+- ✅ "Vibe Verification" — 3 aggettivi per quartiere (Phase 4, già parzialmente nei dati)
 
 ---
 
@@ -86,10 +86,10 @@
 | JsonLd                          | ✅ Implementato | `components/JsonLd.tsx`                             |
 | Breadcrumbs                     | ✅ Implementato | `components/Breadcrumbs.tsx` + `lib/breadcrumbs.ts` |
 | LanguageSwitcher                | ✅ Implementato | `components/LanguageSwitcher.tsx`                   |
-| Soft-Landing Quiz               | 🔲 TODO         | Phase 3                                             |
-| SchoolMap (Commute Validator)   | 🔲 TODO         | Phase 3                                             |
-| NeighborhoodMap (Amenity Radar) | 🔲 TODO         | Phase 3                                             |
-| Contextual CTAs (Fee Download)  | 🔲 TODO         | Phase 4                                             |
+| Soft-Landing Quiz               | ✅ Implementato | Phase 3                                             |
+| SchoolMap (Commute Validator)   | ✅ Implementato | Phase 3                                             |
+| NeighborhoodMap (Amenity Radar) | ✅ Implementato | Phase 3                                             |
+| Contextual CTAs (Fee Download)  | ✅ Implementato | Phase 4                                             |
 
 ---
 
@@ -113,8 +113,8 @@
 
 1. ✅ **Phase 1**: Multilingual Core (Audit, Routing, SEO Schemas) — completata
 2. ✅ **Phase 2**: Trust-First UI (TrustBar, MethodologyBadge, Hero mobile fix, 404) — completata
-3. 🔲 **Phase 3**: Interactive Intelligence (Quiz, Maps)
-4. 🔲 **Phase 4**: Content Structure (Microcopy, Verdicts, CTAs, immagini reali)
+3. ✅ **Phase 3**: Interactive Intelligence (Quiz, Maps) — completata
+4. ✅ **Phase 4**: Content Structure (Microcopy, Verdicts, CTAs, immagini reali) — completata
 
 ---
 
