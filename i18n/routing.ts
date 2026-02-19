@@ -21,7 +21,7 @@ export const routing = defineRouting({
       nl: '/beste-prive-en-openbare-internationale-scholen-portugal-2026',
       es: '/mejores-escuelas-internacionales-privadas-y-publicas-portugal-2026'
     },
-    '/family-friendly-neighborhoods-portugal': {
+    '/top-neighborhoods': {
       en: '/family-friendly-neighborhoods-portugal',
       pt: '/bairros-familiares-portugal',
       de: '/familienfreundliche-nachbarschaften-portugal',
@@ -29,7 +29,7 @@ export const routing = defineRouting({
       nl: '/gezinsvriendelijke-buurten-portugal',
       es: '/barrios-familiares-portugal'
     },
-    '/family-relocation-guide-2026': {
+    '/relocation-guide': {
       en: '/family-relocation-guide-2026',
       pt: '/guia-relocacao-familia-2026',
       de: '/familien-umzugs-guide-2026',

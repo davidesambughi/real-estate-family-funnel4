@@ -1,6 +1,8 @@
 {
   "HomePage": {
-    "title": "Home"
+    "title": "Home",
+    "metaTitle": "TrustFamily Relocation - Best International Schools & Neighborhoods in Portugal",
+    "metaDescription": "Verified independent guide for moving to Portugal. Compare top international schools, find safe family neighborhoods, and get expert relocation advice."
   },
   "Locale": {
     "en": "English",
@@ -12,8 +14,11 @@
   },
   "Navigation": {
     "home": "Home",
-    "about": "About",
-    "blog": "Blog"
+    "schools": "Schools",
+    "neighborhoods": "Neighborhoods",
+    "guides": "Guides",
+    "schoolFinder": "School Finder",
+    "about": "About"
   },
   "Metadata": {
     "title": "TrustFamily Relocation - Best Schools & Neighborhoods in Portugal",
@@ -36,5 +41,10 @@
     "livingDesc": "Find family-safe neighborhoods with optimized commutes to your chosen school.",
     "softLandingTitle": "Soft Landing",
     "softLandingDesc": "A complete integration system to help your children thrive from Day 1."
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "description": "Sorry, the page you are looking for doesn't exist or has been moved.",
+    "backHome": "Back to Home"
   }
 }

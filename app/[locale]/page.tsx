@@ -1,10 +1,24 @@
-import Hero from "@/components/Hero";
-import { PillarsCardsSection } from "@/components/PillarsCardsSection";
-import { LeadMagnetSection } from "@/components/LeadMagnetSection";
-import { Testimonials } from "@/components/Testimonials";
+import Hero from "@/components/features/Hero";
+import { PillarsCardsSection } from "@/components/features/PillarsCardsSection";
+import { LeadMagnetSection } from "@/components/features/LeadMagnetSection";
+import { Testimonials } from "@/components/features/Testimonials";
 import { JsonLd } from "@/components/JsonLd";
+import { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 
-export default function Home() {
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "HomePage" });
+
+  return {
+    title: t("metaTitle"),
+    description: t("metaDescription"),
+  };
+}
+
+export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",

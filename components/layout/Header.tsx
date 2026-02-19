@@ -1,6 +1,6 @@
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
-import LanguageSwitcher from "./LanguageSwitcher";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle, SheetHeader } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
@@ -8,13 +8,16 @@ import { Menu } from "lucide-react";
 export function Header() {
     const t = useTranslations('Navigation');
 
+    // IMPORTANT: these are the LOGICAL route keys from i18n/routing.ts
+    // next-intl's Link component handles the locale-aware URL translation automatically.
+    // Do NOT use the translated SEO slugs here (e.g. '/family-friendly-neighborhoods-portugal').
     const navItems = [
-        { href: "/", label: t('home') },
-        { href: "/best-private-and-public-international-schools-portugal-2026", label: "Schools" }, // TODO: Add translation keys
-        { href: "/family-friendly-neighborhoods-portugal", label: "Neighborhoods" }, // TODO: Add translation keys
-        { href: "/family-relocation-guide-2026", label: "Guides" }, // TODO: Add translation keys
-        { href: "/school-finder", label: "School Finder" }, // TODO: Add translation keys
-        { href: "/about", label: t('about') },
+        { href: "/" as const, label: t('home') },
+        { href: "/best-private-and-public-international-schools-portugal-2026" as const, label: t('schools') },
+        { href: "/top-neighborhoods" as const, label: t('neighborhoods') },
+        { href: "/relocation-guide" as const, label: t('guides') },
+        { href: "/school-finder" as const, label: t('schoolFinder') },
+        { href: "/about" as const, label: t('about') },
     ];
 
     return (
@@ -31,7 +34,7 @@ export function Header() {
                     {navItems.map((item) => (
                         <Link
                             key={item.href}
-                            href={item.href as any}
+                            href={item.href}
                             className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
                         >
                             {item.label}
@@ -60,7 +63,7 @@ export function Header() {
                                 {navItems.map((item) => (
                                     <Link
                                         key={item.href}
-                                        href={item.href as any}
+                                        href={item.href}
                                         className="text-lg font-medium hover:text-primary transition-colors"
                                     >
                                         {item.label}

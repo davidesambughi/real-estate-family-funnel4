@@ -1,40 +1,50 @@
 {
   "HomePage": {
-    "title": "Home"
+    "title": "Home",
+    "metaTitle": "TrustFamily Relocation - Beste internationale scholen & buurten in Portugal",
+    "metaDescription": "Onafhankelijke gids voor verhuizen naar Portugal. Vergelijk de beste internationale scholen, vind gezinsvriendelijke buurten en krijg deskundig advies."
+  },
+  "Locale": {
+    "en": "Engels",
+    "pt": "Portugees",
+    "de": "Duits",
+    "fr": "Frans",
+    "nl": "Nederlands",
+    "es": "Spaans"
   },
   "Navigation": {
     "home": "Home",
-    "about": "About",
-    "blog": "Blog"
+    "schools": "Scholen",
+    "neighborhoods": "Buurten",
+    "guides": "Gidsen",
+    "schoolFinder": "Schoolzoeker",
+    "about": "Over ons"
   },
   "Metadata": {
-    "title": "TrustFamily Relocation - Best Schools & Neighborhoods in Portugal",
-    "description": "Expert guide for family relocation to Portugal. Find top international schools and family-friendly neighborhoods."
-  },
-  "Locale": {
-    "en": "English",
-    "pt": "Portuguese",
-    "de": "German",
-    "fr": "French",
-    "nl": "Dutch",
-    "es": "Spanish"
+    "title": "TrustFamily Relocation - Beste scholen & buurten in Portugal",
+    "description": "Expertgids voor gezinsverhuizingen naar Portugal. Vind de beste internationale scholen en gezinsvriendelijke buurten."
   },
   "Hero": {
-    "title": "The Right International School in Lisbon Changes Everything",
-    "subtitle": "We verify schools + neighborhoods so you don't have to. Data from 200+ parent reviews, 50+ inspections.",
-    "cta": "Find Your School Match"
+    "title": "De juiste internationale school in Lissabon verandert alles",
+    "subtitle": "Wij verifiëren scholen en buurten zodat u dat niet hoeft te doen. Data van 200+ ouderbeoordeling en 50+ inspecties.",
+    "cta": "Vind uw school"
   },
   "TrustBar": {
-    "independent": "100% Independent Data",
-    "validated": "Validated by Families",
-    "updated": "Updated for 2026 Admissions"
+    "independent": "100% onafhankelijke data",
+    "validated": "Gevalideerd door gezinnen",
+    "updated": "Bijgewerkt voor toelating 2026"
   },
   "Pillars": {
-    "educationTitle": "Education First",
-    "educationDesc": "Compare IB, British, and American curriculums with unbiased performance data.",
-    "livingTitle": "Living Strategy",
-    "livingDesc": "Find family-safe neighborhoods with optimized commutes to your chosen school.",
-    "softLandingTitle": "Soft Landing",
-    "softLandingDesc": "A complete integration system to help your children thrive from Day 1."
+    "educationTitle": "Onderwijs eerst",
+    "educationDesc": "Vergelijk IB-, Britse en Amerikaanse curricula met onbevooroordeelde prestatiegegevens.",
+    "livingTitle": "Woonstrategie",
+    "livingDesc": "Vind gezinsveilige buurten met geoptimaliseerde reistijden naar de gekozen school.",
+    "softLandingTitle": "Zachte landing",
+    "softLandingDesc": "Een volledig integratiesysteem om uw kinderen vanaf dag 1 te laten floreren."
+  },
+  "NotFound": {
+    "title": "Pagina niet gevonden",
+    "description": "De pagina die u zoekt bestaat niet of is verplaatst.",
+    "backHome": "Terug naar home"
   }
 }

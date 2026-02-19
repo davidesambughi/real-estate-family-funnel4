@@ -1,7 +1,4 @@
-Next Steps
+⚠️ QUESTO FILE È DEPRECATO — vedi docs/nextstep.md per la lista aggiornata dei task.
 
-1. Content Translation: Populate the messages/\*.json files with actual content.
-2. Component Translation: Use useTranslations in your components (e.g.,
-   Hero.tsx
-   ) to replace static text.
-3.
+Il file originale conteneva placeholder obsoleti (Content Translation, Component Translation).
+Tutti i task sono ora tracciati in docs/nextstep.md e nel task.md dell'agente.

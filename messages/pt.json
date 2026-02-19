@@ -1,6 +1,8 @@
 {
   "HomePage": {
-    "title": "Início"
+    "title": "Início",
+    "metaTitle": "TrustFamily Relocation - Melhores Escolas Internacionais e Bairros em Portugal",
+    "metaDescription": "Guia independente para se mudar para Portugal. Compare as melhores escolas internacionais, encontre bairros seguros para famílias e obtenha conselhos especializados de relocalização."
   },
   "Locale": {
     "en": "Inglês",
@@ -11,13 +13,16 @@
     "es": "Espanhol"
   },
   "Navigation": {
-    "home": "Home",
-    "about": "About",
-    "blog": "Blog"
+    "home": "Início",
+    "schools": "Escolas",
+    "neighborhoods": "Bairros",
+    "guides": "Guias",
+    "schoolFinder": "Encontrar Escola",
+    "about": "Sobre nós"
   },
   "Metadata": {
-    "title": "TrustFamily Relocation - Best Schools & Neighborhoods in Portugal",
-    "description": "Expert guide for family relocation to Portugal. Find top international schools and family-friendly neighborhoods."
+    "title": "TrustFamily Relocation - Melhores Escolas & Bairros em Portugal",
+    "description": "Guia especializado para relocalização familiar em Portugal. Encontre as melhores escolas internacionais e bairros seguros para famílias."
   },
   "Hero": {
     "title": "A Escola Internacional Certa em Lisboa Muda Tudo",
@@ -36,5 +41,10 @@
     "livingDesc": "Encontre bairros seguros para famílias com trajetos otimizados para a escola.",
     "softLandingTitle": "Integração Suave",
     "softLandingDesc": "Um sistema de integração completo para ajudar seus filhos a prosperar desde o Dia 1."
+  },
+  "NotFound": {
+    "title": "Página não encontrada",
+    "description": "A página que procura não existe ou foi movida.",
+    "backHome": "Voltar ao início"
   }
 }

@@ -1,40 +1,50 @@
 {
   "HomePage": {
-    "title": "Home"
-  },
-  "Navigation": {
-    "home": "Home",
-    "about": "About",
-    "blog": "Blog"
-  },
-  "Metadata": {
-    "title": "TrustFamily Relocation - Best Schools & Neighborhoods in Portugal",
-    "description": "Expert guide for family relocation to Portugal. Find top international schools and family-friendly neighborhoods."
+    "title": "Startseite",
+    "metaTitle": "TrustFamily Relocation - Beste internationale Schulen & Nachbarschaften in Portugal",
+    "metaDescription": "Unabhängiger Leitfaden für den Umzug nach Portugal. Vergleichen Sie die besten internationalen Schulen, finden Sie familienfreundliche Stadtteile und erhalten Sie Expertenberatung für Ihren Umzug."
   },
   "Locale": {
-    "en": "English",
-    "pt": "Portuguese",
-    "de": "German",
-    "fr": "French",
-    "nl": "Dutch",
-    "es": "Spanish"
+    "en": "Englisch",
+    "pt": "Portugiesisch",
+    "de": "Deutsch",
+    "fr": "Französisch",
+    "nl": "Niederländisch",
+    "es": "Spanisch"
+  },
+  "Navigation": {
+    "home": "Startseite",
+    "schools": "Schulen",
+    "neighborhoods": "Stadtteile",
+    "guides": "Ratgeber",
+    "schoolFinder": "Schulfinder",
+    "about": "Über uns"
+  },
+  "Metadata": {
+    "title": "TrustFamily Relocation - Beste Schulen & Stadtteile in Portugal",
+    "description": "Expertenratgeber für Familienumzüge nach Portugal. Finden Sie die besten internationalen Schulen und familienfreundlichen Stadtteile."
   },
   "Hero": {
-    "title": "The Right International School in Lisbon Changes Everything",
-    "subtitle": "We verify schools + neighborhoods so you don't have to. Data from 200+ parent reviews, 50+ inspections.",
-    "cta": "Find Your School Match"
+    "title": "Die richtige internationale Schule in Lissabon verändert alles",
+    "subtitle": "Wir überprüfen Schulen und Stadtteile für Sie. Daten aus 200+ Elternbewertungen und 50+ Inspektionen.",
+    "cta": "Ihre Schule finden"
   },
   "TrustBar": {
-    "independent": "100% Independent Data",
-    "validated": "Validated by Families",
-    "updated": "Updated for 2026 Admissions"
+    "independent": "100% unabhängige Daten",
+    "validated": "Von Familien validiert",
+    "updated": "Aktualisiert für Aufnahmen 2026"
   },
   "Pillars": {
-    "educationTitle": "Education First",
-    "educationDesc": "Compare IB, British, and American curriculums with unbiased performance data.",
-    "livingTitle": "Living Strategy",
-    "livingDesc": "Find family-safe neighborhoods with optimized commutes to your chosen school.",
-    "softLandingTitle": "Soft Landing",
-    "softLandingDesc": "A complete integration system to help your children thrive from Day 1."
+    "educationTitle": "Bildung zuerst",
+    "educationDesc": "Vergleichen Sie IB-, britische und amerikanische Lehrpläne mit unvoreingenommenen Leistungsdaten.",
+    "livingTitle": "Wohnstrategie",
+    "livingDesc": "Finden Sie familienfreundliche Stadtteile mit optimalen Schulwegen.",
+    "softLandingTitle": "Sanfte Integration",
+    "softLandingDesc": "Ein vollständiges Integrationssystem, damit Ihre Kinder vom ersten Tag an aufblühen."
+  },
+  "NotFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+    "backHome": "Zurück zur Startseite"
   }
 }

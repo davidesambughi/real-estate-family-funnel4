@@ -32,9 +32,30 @@ export async function submitLead(prevState: State, formData: FormData): Promise<
     };
   }
 
-  // Simulate storing data or sending email
-  await new Promise((resolve) => setTimeout(resolve, 1000));
-  console.log('Lead recieved:', validatedFields.data);
+  const data = validatedFields.data;
+
+  // ─────────────────────────────────────────────────────────────────────────────
+  // TODO (P7): Replace the section below with your preferred CRM/email integration.
+  //
+  // Option A — Resend (recommended for transactional email):
+  //   import { Resend } from 'resend';
+  //   const resend = new Resend(process.env.RESEND_API_KEY);
+  //   await resend.emails.send({ from: 'leads@trustfamily.com', to: 'team@trustfamily.com', ... });
+  //
+  // Option B — Supabase (recommended if you need a leads database):
+  //   import { createClient } from '@supabase/supabase-js';
+  //   const supabase = createClient(process.env.SUPABASE_URL!, process.env.SUPABASE_ANON_KEY!);
+  //   await supabase.from('leads').insert([data]);
+  //
+  // Option C — HubSpot CRM API:
+  //   POST https://api.hubapi.com/crm/v3/objects/contacts  { properties: { ...data } }
+  //
+  // Required env vars depending on option:
+  //   RESEND_API_KEY, SUPABASE_URL, SUPABASE_ANON_KEY, HUBSPOT_API_KEY
+  // ─────────────────────────────────────────────────────────────────────────────
+
+  // Temporary: log to server console until CRM is integrated
+  console.log('Lead received:', data); // Fixed typo: "recieved" → "received"
 
   return {
     success: true,
