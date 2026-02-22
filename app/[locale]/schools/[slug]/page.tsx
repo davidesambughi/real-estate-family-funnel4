@@ -81,7 +81,7 @@ export default async function SchoolDetailPage(props: PageProps) {
 
             <div className="flex flex-col md:flex-row gap-8 justify-between items-start mb-8">
                 <div>
-                    <h1 className="text-4xl font-bold mb-2">{school.name}</h1>
+                    <h1 className="font-serif font-semibold text-4xl text-ink-primary mb-2">{school.name}</h1>
                     <div className="flex items-center gap-2 text-muted-foreground">
                         <MapPin className="h-5 w-5" />
                         <span className="text-lg">{school.location}</span>
@@ -96,15 +96,14 @@ export default async function SchoolDetailPage(props: PageProps) {
                 {/* Main Content */}
                 <div className="lg:col-span-2 space-y-8">
                     <section className="prose max-w-none">
-                        <h2 className="text-2xl font-bold mb-4">About the School</h2>
+                        <h2 className="font-serif font-semibold text-2xl text-ink-primary mb-4">About the School</h2>
                         <p className="text-lg leading-relaxed text-muted-foreground">{school.description}</p>
                     </section>
 
                     {/* THE VERDICT */}
-                    <section className="rounded-xl bg-blue-50 border border-blue-100 px-6 py-5">
+                    <section className="rounded-xl bg-brand-50 border border-border px-6 py-5">
                         <div className="flex items-center gap-2 mb-2">
-                            <span className="text-blue-600">✨</span>
-                            <h2 className="text-sm font-bold text-blue-700 uppercase tracking-wide">The Verdict</h2>
+                            <p className="section-overline">The Verdict</p>
                         </div>
                         <p className="text-blue-900 font-medium leading-snug">{school.verdict}</p>
                     </section>
@@ -119,7 +118,7 @@ export default async function SchoolDetailPage(props: PageProps) {
                     </section>
 
                     <section>
-                        <h2 className="text-2xl font-bold mb-4">Key Highlights</h2>
+                        <h2 className="font-serif font-semibold text-2xl text-ink-primary mb-4">Key Highlights</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             {school.highlights.map((highlight: string, index: number) => (
                                 <div key={index} className="flex items-center gap-3 p-4 bg-slate-50 rounded-lg">

@@ -125,14 +125,14 @@ export default function BlogPage() {
             <JsonLd data={blogListSchema} />
             <Breadcrumbs />
 
-            <h1 className="text-4xl font-bold mb-3">School & Relocation Guides</h1>
-            <p className="text-lg text-slate-500 mb-12">
+            <h1 className="font-serif font-semibold text-4xl text-ink-primary mb-3">School & Relocation Guides</h1>
+            <p className="text-lg text-ink-muted mb-12">
                 First-hand guides from a team that has helped 200+ families relocate to Portugal.
             </p>
 
             <div className="space-y-16">
                 {articles.map((article) => (
-                    <article key={article.slug} className="border-b border-slate-100 pb-16 last:border-0">
+                    <article key={article.slug} className="border-b border-border pb-16 last:border-0">
                         {/* Article JSON-LD (inline per article) */}
                         <JsonLd
                             data={{
@@ -151,25 +151,25 @@ export default function BlogPage() {
                         />
 
                         {/* Meta row */}
-                        <div className="flex items-center gap-3 text-xs text-slate-400 mb-3">
+                        <div className="flex items-center gap-3 text-xs text-ink-muted mb-3">
                             <time dateTime={article.datePublished}>{article.datePublished}</time>
                             <span>·</span>
                             <span>{article.readTime}</span>
                         </div>
 
                         {/* Title */}
-                        <h2 className="text-2xl font-bold text-slate-900 mb-1">{article.title}</h2>
-                        <p className="text-slate-500 text-sm mb-4 italic">{article.subtitle}</p>
+                        <h2 className="font-serif font-semibold text-2xl text-ink-primary mb-1">{article.title}</h2>
+                        <p className="text-ink-muted text-sm mb-4 italic">{article.subtitle}</p>
 
                         {/* Intro */}
-                        <p className="text-slate-700 leading-relaxed mb-6">{article.intro}</p>
+                        <p className="text-ink-secondary leading-relaxed mb-6">{article.intro}</p>
 
                         {/* Sections */}
                         <div className="space-y-5">
                             {article.sections.map((section) => (
                                 <div key={section.heading}>
-                                    <h3 className="font-semibold text-slate-800 mb-1">{section.heading}</h3>
-                                    <p className="text-slate-600 text-sm leading-relaxed">{section.body}</p>
+                                    <h3 className="font-serif font-semibold text-ink-primary mb-1">{section.heading}</h3>
+                                    <p className="text-ink-secondary text-sm leading-relaxed">{section.body}</p>
                                 </div>
                             ))}
                         </div>
@@ -178,7 +178,7 @@ export default function BlogPage() {
                         <div className="mt-6">
                             <Link
                                 href={article.cta.href}
-                                className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors"
+                                className="inline-flex items-center text-sm font-medium text-brand hover:text-[var(--brand-hover)] transition-colors"
                             >
                                 {article.cta.text}
                             </Link>

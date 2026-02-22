@@ -48,30 +48,31 @@ const testimonials = [
 
 export function Testimonials() {
     return (
-        <section className="py-16 bg-slate-50">
-            <div className="container mx-auto px-6">
-                <h2 className="text-3xl font-bold text-center mb-3">What Families Say</h2>
-                <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+        <section className="py-20 px-6">
+            <div className="max-w-7xl mx-auto">
+                <p className="section-overline text-center mb-3">What families say</p>
+                <h2 className="section-heading text-center mb-3">Real stories from real families</h2>
+                <p className="text-center text-ink-secondary mb-12 max-w-2xl mx-auto">
                     Families who used TrustFamily to choose a school and neighborhood before relocating to Portugal.
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {testimonials.map((testimonial) => (
-                        <Card key={testimonial.id} className="h-full flex flex-col hover:shadow-md transition-shadow">
+                        <Card key={testimonial.id} className="h-full flex flex-col">
                             <CardHeader>
                                 <div className="flex items-center gap-1 mb-2">
                                     {[...Array(5)].map((_, i) => (
                                         <Star
                                             key={i}
-                                            className={`h-4 w-4 ${i < testimonial.rating ? "text-yellow-400 fill-yellow-400" : "text-gray-300"}`}
+                                            className={`h-4 w-4 ${i < testimonial.rating ? "text-yellow-500 fill-yellow-500" : "text-border"}`}
                                         />
                                     ))}
                                 </div>
-                                <CardTitle className="text-base">{testimonial.name}</CardTitle>
-                                <p className="text-xs text-muted-foreground">{testimonial.role}</p>
+                                <CardTitle className="text-base text-ink-primary">{testimonial.name}</CardTitle>
+                                <p className="text-xs text-ink-muted">{testimonial.role}</p>
                             </CardHeader>
                             <CardContent className="flex-1">
-                                <p className="text-muted-foreground italic text-sm leading-relaxed">"{testimonial.content}"</p>
+                                <p className="text-ink-secondary italic text-sm leading-relaxed">"{testimonial.content}"</p>
                             </CardContent>
                         </Card>
                     ))}

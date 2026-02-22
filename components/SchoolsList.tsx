@@ -22,10 +22,10 @@ import { MethodologyBadge } from "./MethodologyBadge";
 export function SchoolsList() {
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {schoolsData.map((school, index) => (
+            {schoolsData.map((school) => (
                 <Card
                     key={school.id}
-                    className="flex flex-col h-full hover:shadow-xl transition-all duration-300 border-slate-200 group"
+                    className="flex flex-col h-full group"
                 >
                     <CardHeader className="pb-3">
                         {/* Trust badges + acceptance rate row */}
@@ -36,15 +36,15 @@ export function SchoolsList() {
                                 ))}
                             </div>
                             {school.acceptanceRate && (
-                                <div className="flex items-center gap-1 text-xs text-slate-500 whitespace-nowrap shrink-0">
+                                <div className="flex items-center gap-1 text-xs text-ink-muted whitespace-nowrap shrink-0">
                                     <Users className="h-3 w-3" />
-                                    <span>Acceptance: <strong className="text-slate-700">{school.acceptanceRate}</strong></span>
+                                    <span>Acceptance: <strong className="text-ink-secondary">{school.acceptanceRate}</strong></span>
                                 </div>
                             )}
                         </div>
 
                         {/* School name */}
-                        <CardTitle className="text-xl leading-tight group-hover:text-blue-700 transition-colors">
+                        <CardTitle className="text-xl leading-tight group-hover:text-brand transition-colors">
                             {school.name}
                         </CardTitle>
                         <CardDescription className="flex items-center gap-1.5 mt-1.5">
@@ -55,24 +55,24 @@ export function SchoolsList() {
 
                     <CardContent className="flex-1 space-y-4">
                         {/* Description */}
-                        <p className="text-sm text-muted-foreground line-clamp-3 leading-relaxed">
+                        <p className="text-sm text-ink-secondary line-clamp-3 leading-relaxed">
                             {school.description}
                         </p>
 
                         {/* Key stats */}
-                        <div className="flex flex-col gap-2 text-sm border-t border-slate-100 pt-3">
+                        <div className="flex flex-col gap-2 text-sm border-t border-border pt-3">
                             <div className="flex items-center gap-2">
-                                <GraduationCap className="h-4 w-4 text-blue-500 shrink-0" />
-                                <span className="font-medium text-slate-700">Curriculum:</span>
-                                <span className="text-slate-600">{school.curriculum}</span>
+                                <GraduationCap className="h-4 w-4 text-brand shrink-0" />
+                                <span className="font-medium text-ink-primary">Curriculum:</span>
+                                <span className="text-ink-secondary">{school.curriculum}</span>
                             </div>
                             <div className="flex items-center gap-2">
-                                <Coins className="h-4 w-4 text-yellow-500 shrink-0" />
-                                <span className="font-medium text-slate-700">Annual Fees:</span>
-                                <span className="text-slate-600">{school.fees}</span>
+                                <Coins className="h-4 w-4 text-warm shrink-0" />
+                                <span className="font-medium text-ink-primary">Annual Fees:</span>
+                                <span className="text-ink-secondary">{school.fees}</span>
                             </div>
                             {school.inspectionDate && (
-                                <div className="flex items-center gap-2 text-xs text-slate-400">
+                                <div className="flex items-center gap-2 text-xs text-ink-muted">
                                     <CalendarCheck className="h-3 w-3 shrink-0" />
                                     <span>TrustFamily inspected: {school.inspectionDate}</span>
                                     {school.visitCount && <span>· {school.visitCount} visits</span>}
@@ -81,30 +81,30 @@ export function SchoolsList() {
                         </div>
 
                         {/* THE VERDICT */}
-                        <div className="rounded-lg bg-blue-50 border border-blue-100 px-4 py-3">
+                        <div className="rounded-xl bg-brand-light border border-brand/20 px-4 py-3">
                             <div className="flex items-center gap-1.5 mb-1.5">
-                                <Sparkles className="h-3.5 w-3.5 text-blue-600" />
-                                <span className="text-xs font-bold text-blue-700 uppercase tracking-wide">The Verdict</span>
+                                <Sparkles className="h-3.5 w-3.5 text-brand" />
+                                <span className="text-xs font-bold text-brand uppercase tracking-wide">The Verdict</span>
                             </div>
-                            <p className="text-sm font-medium text-blue-900 leading-snug">
+                            <p className="text-sm font-medium text-ink-primary leading-snug">
                                 {school.verdict}
                             </p>
                         </div>
 
                         {/* PARENT WHISPER */}
-                        <div className="rounded-lg bg-slate-50 border border-slate-100 px-4 py-3">
+                        <div className="rounded-xl bg-surface-subtle border border-border px-4 py-3">
                             <div className="flex items-center gap-1.5 mb-1.5">
-                                <Quote className="h-3.5 w-3.5 text-slate-400" />
-                                <span className="text-xs font-bold text-slate-500 uppercase tracking-wide">Parent Whisper</span>
+                                <Quote className="h-3.5 w-3.5 text-ink-muted" />
+                                <span className="text-xs font-bold text-ink-muted uppercase tracking-wide">Parent Whisper</span>
                             </div>
-                            <p className="text-sm text-slate-600 italic leading-snug">
+                            <p className="text-sm text-ink-secondary italic leading-snug">
                                 {school.parentWhisper}
                             </p>
                         </div>
                     </CardContent>
 
                     <CardFooter className="pt-2">
-                        <Button asChild className="w-full group-hover:bg-blue-700 transition-colors">
+                        <Button asChild className="w-full">
                             <Link href={{ pathname: "/schools/[slug]", params: { slug: school.slug } }}>
                                 View Full School Profile →
                             </Link>

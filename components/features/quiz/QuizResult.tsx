@@ -34,24 +34,24 @@ export function QuizResult({ schoolSlugs, neighborhoodSlugs, translations: t, on
     return (
         <div className="w-full max-w-2xl mx-auto animate-in fade-in duration-500">
             <div className="text-center mb-8">
-                <div className="text-5xl mb-4">🎯</div>
-                <h3 className="text-2xl font-bold text-slate-900">{t.resultsTitle}</h3>
+                <p className="section-overline mb-2">Your Results</p>
+                <h3 className="font-serif font-semibold text-3xl text-ink-primary mb-2">{t.resultsTitle}</h3>
             </div>
 
             {/* Matched Schools */}
             <section className="mb-8">
-                <h4 className="text-lg font-semibold text-slate-700 mb-4 flex items-center gap-2">
-                    <GraduationCap className="h-5 w-5 text-blue-600" />
+                <h4 className="text-base font-semibold text-ink-secondary mb-4 flex items-center gap-2">
+                    <GraduationCap className="h-5 w-5 text-brand" />
                     {t.resultsSchoolsHeading}
                 </h4>
                 <div className="space-y-4">
                     {matchedSchools.map((school, idx) => (
-                        <Card key={school.id} className="border-blue-100 hover:shadow-md transition-shadow">
+                        <Card key={school.id}>
                             <CardHeader className="pb-2">
                                 <div className="flex items-start justify-between gap-2">
                                     <div>
                                         {idx === 0 && (
-                                            <Badge className="bg-amber-500 text-white mb-2 text-xs">
+                                            <Badge className="bg-warm text-primary-foreground mb-2 text-xs">
                                                 <Star className="h-3 w-3 mr-1" /> Best Match
                                             </Badge>
                                         )}
@@ -60,11 +60,11 @@ export function QuizResult({ schoolSlugs, neighborhoodSlugs, translations: t, on
                                             <MapPin className="h-3 w-3" /> {school.location} · {school.curriculum}
                                         </CardDescription>
                                     </div>
-                                    <span className="text-sm font-semibold text-slate-600 whitespace-nowrap">{school.fees}</span>
+                                    <span className="text-sm font-semibold text-ink-secondary whitespace-nowrap">{school.fees}</span>
                                 </div>
                             </CardHeader>
                             <CardContent>
-                                <p className="text-sm text-slate-600 mb-4 line-clamp-2">{school.description}</p>
+                                <p className="text-sm text-ink-secondary mb-4 line-clamp-2">{school.description}</p>
                                 <Button asChild size="sm" className="w-full">
                                     <Link href={{ pathname: "/schools/[slug]", params: { slug: school.slug } }}>
                                         {t.viewSchoolBtn}
@@ -78,13 +78,13 @@ export function QuizResult({ schoolSlugs, neighborhoodSlugs, translations: t, on
 
             {/* Matched Neighborhoods */}
             <section className="mb-8">
-                <h4 className="text-lg font-semibold text-slate-700 mb-4 flex items-center gap-2">
-                    <MapPin className="h-5 w-5 text-green-600" />
+                <h4 className="text-base font-semibold text-ink-secondary mb-4 flex items-center gap-2">
+                    <MapPin className="h-5 w-5 text-trust" />
                     {t.resultsNeighborhoodsHeading}
                 </h4>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     {matchedNeighborhoods.map((neighborhood) => (
-                        <Card key={neighborhood.id} className="border-green-100 hover:shadow-md transition-shadow">
+                        <Card key={neighborhood.id}>
                             <CardHeader className="pb-2">
                                 <CardTitle className="text-base">{neighborhood.name}</CardTitle>
                                 <CardDescription>{neighborhood.vibe}</CardDescription>
@@ -103,7 +103,7 @@ export function QuizResult({ schoolSlugs, neighborhoodSlugs, translations: t, on
 
             {/* Restart */}
             <div className="text-center">
-                <Button variant="ghost" onClick={onRestart} className="text-slate-500">
+                <Button variant="ghost" onClick={onRestart} className="text-ink-muted">
                     <RotateCcw className="mr-2 h-4 w-4" />
                     {t.restartBtn}
                 </Button>

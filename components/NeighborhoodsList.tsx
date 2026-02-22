@@ -25,10 +25,10 @@ export function NeighborhoodsList() {
             {neighborhoodsData.map((neighborhood) => (
                 <Card
                     key={neighborhood.id}
-                    className="flex flex-col h-full hover:shadow-xl transition-all duration-300 group"
+                    className="flex flex-col h-full group"
                 >
                     <CardHeader className="pb-3">
-                        <CardTitle className="text-lg leading-tight group-hover:text-green-700 transition-colors">
+                        <CardTitle className="text-lg leading-tight group-hover:text-trust transition-colors">
                             {neighborhood.name}
                         </CardTitle>
                         <CardDescription className="flex items-center gap-1.5 mt-1">
@@ -38,7 +38,7 @@ export function NeighborhoodsList() {
 
                         {/* Vibe tagline badge */}
                         <div className="mt-2">
-                            <span className="inline-block bg-green-50 text-green-700 text-xs font-semibold px-2.5 py-1 rounded-full border border-green-100">
+                            <span className="inline-block bg-trust-light text-trust text-xs font-semibold px-2.5 py-1 rounded-full border border-trust/20">
                                 ✨ {neighborhood.vibe}
                             </span>
                         </div>
@@ -46,17 +46,17 @@ export function NeighborhoodsList() {
 
                     <CardContent className="flex-1 space-y-4">
                         {/* Description */}
-                        <p className="text-sm text-muted-foreground line-clamp-3 leading-relaxed">
+                        <p className="text-sm text-ink-secondary line-clamp-3 leading-relaxed">
                             {neighborhood.description}
                         </p>
 
                         {/* COMMUTE CONTEXT */}
-                        <div className="rounded-lg bg-amber-50 border border-amber-100 px-3 py-2.5">
+                        <div className="rounded-xl bg-warm-light border border-warm/20 px-3 py-2.5">
                             <div className="flex items-center gap-1.5 mb-1.5">
-                                <Car className="h-3.5 w-3.5 text-amber-600" />
-                                <span className="text-xs font-bold text-amber-700 uppercase tracking-wide">Commute</span>
+                                <Car className="h-3.5 w-3.5 text-warm shrink-0" />
+                                <span className="text-xs font-bold text-warm uppercase tracking-wide">Commute</span>
                             </div>
-                            <p className="text-xs text-amber-800 leading-snug">
+                            <p className="text-xs text-ink-primary leading-snug">
                                 {neighborhood.commuteContext}
                             </p>
                         </div>
@@ -67,7 +67,7 @@ export function NeighborhoodsList() {
                                 {neighborhood.vibeAdjectives.map((adj: string) => (
                                     <span
                                         key={adj}
-                                        className="inline-block bg-slate-100 text-slate-600 text-xs px-2 py-0.5 rounded-full"
+                                        className="inline-block bg-surface-subtle text-ink-secondary text-xs px-2 py-0.5 rounded-full border border-border"
                                     >
                                         {adj}
                                     </span>
@@ -77,13 +77,13 @@ export function NeighborhoodsList() {
 
                         {/* Amenity list */}
                         {neighborhood.amenities && (
-                            <div className="border-t border-slate-100 pt-3">
-                                <p className="text-xs font-semibold text-slate-500 uppercase tracking-wide mb-2">
+                            <div className="border-t border-border pt-3">
+                                <p className="text-xs font-semibold text-ink-muted uppercase tracking-wide mb-2">
                                     Nearby
                                 </p>
                                 <ul className="space-y-1">
                                     {neighborhood.amenities.slice(0, 4).map((amenity: string) => (
-                                        <li key={amenity} className="text-xs text-slate-600">
+                                        <li key={amenity} className="text-xs text-ink-secondary">
                                             {amenity}
                                         </li>
                                     ))}

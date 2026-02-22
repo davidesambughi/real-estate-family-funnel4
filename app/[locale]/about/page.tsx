@@ -61,10 +61,10 @@ export default function AboutPage() {
 
             {/* Hero */}
             <div className="mb-14">
-                <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-5 leading-tight">
+                <h1 className="font-serif font-semibold text-4xl md:text-5xl text-ink-primary mb-5 leading-tight">
                     The trusted guide for families<br className="hidden md:block" /> relocating to Portugal
                 </h1>
-                <p className="text-lg text-slate-600 leading-relaxed max-w-3xl">
+                <p className="text-lg text-ink-secondary leading-relaxed max-w-3xl">
                     TrustFamily was built on a single premise: relocating families deserve
                     verified, unbiased information — not sponsored content dressed up as advice.
                     We provide independent school and neighborhood intelligence so you can make
@@ -75,17 +75,17 @@ export default function AboutPage() {
             {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
                 {stats.map((stat) => (
-                    <div key={stat.label} className="text-center bg-slate-50 rounded-xl p-6 border border-slate-100">
-                        <p className="text-3xl font-bold text-blue-600 mb-1">{stat.value}</p>
-                        <p className="text-sm text-slate-500">{stat.label}</p>
+                    <div key={stat.label} className="text-center bg-surface-subtle rounded-xl p-6 border border-border">
+                        <p className="font-serif text-3xl font-semibold text-brand mb-1">{stat.value}</p>
+                        <p className="text-sm text-ink-muted">{stat.label}</p>
                     </div>
                 ))}
             </div>
 
             {/* What we do */}
             <section className="mb-14">
-                <h2 className="text-2xl font-bold text-slate-900 mb-5">What TrustFamily does</h2>
-                <div className="prose prose-slate max-w-none text-slate-600 space-y-4">
+                <h2 className="font-serif font-semibold text-2xl text-ink-primary mb-5">What TrustFamily does</h2>
+                <div className="prose max-w-none text-ink-secondary space-y-4">
                     <p>
                         We research, visit, and verify the top international schools and expat-friendly
                         neighborhoods in Portugal — then publish that information for free. Our coverage
@@ -108,12 +108,12 @@ export default function AboutPage() {
 
             {/* Principles */}
             <section className="mb-14">
-                <h2 className="text-2xl font-bold text-slate-900 mb-6">How we operate</h2>
+                <h2 className="font-serif font-semibold text-2xl text-ink-primary mb-6">How we operate</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {principles.map((p) => (
-                        <div key={p.title} className="bg-slate-50 border border-slate-100 rounded-xl p-6">
-                            <h3 className="font-semibold text-slate-900 mb-2">{p.title}</h3>
-                            <p className="text-sm text-slate-600 leading-relaxed">{p.body}</p>
+                        <div key={p.title} className="bg-surface-subtle border border-border rounded-xl p-6">
+                            <h3 className="font-semibold text-ink-primary mb-2">{p.title}</h3>
+                            <p className="text-sm text-ink-secondary leading-relaxed">{p.body}</p>
                         </div>
                     ))}
                 </div>
@@ -121,14 +121,14 @@ export default function AboutPage() {
 
             {/* Who we serve */}
             <section className="mb-14">
-                <h2 className="text-2xl font-bold text-slate-900 mb-5">Who uses TrustFamily</h2>
-                <p className="text-slate-600 leading-relaxed mb-4">
+                <h2 className="font-serif font-semibold text-2xl text-ink-primary mb-5">Who uses TrustFamily</h2>
+                <p className="text-ink-secondary leading-relaxed mb-4">
                     Our primary audience is affluent international families — typically from the UK,
                     USA, Germany, France, the Netherlands, and the UAE — who are considering
                     relocating to Portugal and want to make school and neighborhood decisions based
                     on verified data, not marketing.
                 </p>
-                <p className="text-slate-600 leading-relaxed">
+                <p className="text-ink-secondary leading-relaxed">
                     These are families for whom school quality is the primary filter for where to live,
                     and who are prepared to invest significantly in their children's education.
                     They are experienced enough to be skeptical of generic relocation advice — and
@@ -137,9 +137,9 @@ export default function AboutPage() {
             </section>
 
             {/* What we don't do */}
-            <section className="mb-14 rounded-2xl bg-blue-50 border border-blue-100 p-8">
-                <h2 className="text-xl font-bold text-blue-900 mb-4">What TrustFamily does not do</h2>
-                <ul className="space-y-3 text-blue-800 text-sm">
+            <section className="mb-14 rounded-2xl bg-brand-50 border border-border p-8">
+                <h2 className="font-serif font-semibold text-xl text-ink-primary mb-4">What TrustFamily does not do</h2>
+                <ul className="space-y-3 text-ink-secondary text-sm">
                     {[
                         "We do not accept payment from schools, agencies, or any third party in exchange for editorial coverage.",
                         "We do not rank schools based on advertising spend or partnership agreements.",
@@ -148,7 +148,7 @@ export default function AboutPage() {
                         "We do not provide legal or visa advice — always consult a licensed immigration lawyer.",
                     ].map((item) => (
                         <li key={item} className="flex items-start gap-3">
-                            <span className="text-blue-500 mt-0.5 font-bold text-base leading-none">✗</span>
+                            <span className="text-brand mt-0.5 font-bold text-base leading-none">✗</span>
                             <span>{item}</span>
                         </li>
                     ))}
@@ -156,9 +156,9 @@ export default function AboutPage() {
             </section>
 
             {/* CTA */}
-            <section className="text-center py-10 border-t border-slate-100">
-                <h2 className="text-2xl font-bold text-slate-900 mb-3">Ready to find your match?</h2>
-                <p className="text-slate-500 mb-6">
+            <section className="text-center py-10 border-t border-border">
+                <h2 className="font-serif font-semibold text-2xl text-ink-primary mb-3">Ready to find your match?</h2>
+                <p className="text-ink-muted mb-6">
                     Start with our School Finder quiz or browse the full school comparison.
                 </p>
                 <div className="flex flex-col sm:flex-row justify-center gap-4">

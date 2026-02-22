@@ -22,37 +22,37 @@ export function SchoolMap({ schoolName, location, googleMapsUrl }: SchoolMapProp
         `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(schoolName + " " + location + " Portugal")}`;
 
     return (
-        <div className="rounded-xl border border-slate-200 overflow-hidden">
+        <div className="rounded-xl border border-border overflow-hidden">
             {/* Static map placeholder */}
             <div
                 aria-label={`Map showing location of ${schoolName}`}
-                className="relative h-48 bg-gradient-to-br from-blue-100 via-blue-50 to-slate-100 flex flex-col items-center justify-center gap-2"
+                className="relative h-48 bg-brand-light flex flex-col items-center justify-center gap-2"
             >
                 {/* Decorative grid */}
-                <div className="absolute inset-0 opacity-30"
+                <div className="absolute inset-0 opacity-20"
                     style={{
-                        backgroundImage: "linear-gradient(#e2e8f0 1px, transparent 1px), linear-gradient(90deg, #e2e8f0 1px, transparent 1px)",
+                        backgroundImage: "linear-gradient(var(--brand) 1px, transparent 1px), linear-gradient(90deg, var(--brand) 1px, transparent 1px)",
                         backgroundSize: "24px 24px",
                     }}
                 />
                 {/* Map pin */}
-                <div className="relative z-10 bg-blue-600 rounded-full p-3 shadow-lg animate-bounce">
-                    <MapPin className="h-6 w-6 text-white" />
+                <div className="relative z-10 bg-brand rounded-full p-3 shadow-[var(--shadow-lift)] animate-bounce">
+                    <MapPin className="h-6 w-6 text-primary-foreground" />
                 </div>
-                <p className="relative z-10 font-semibold text-slate-700 text-sm">{location}</p>
+                <p className="relative z-10 font-semibold text-ink-primary text-sm">{location}</p>
             </div>
 
             {/* Footer */}
-            <div className="px-4 py-3 bg-white flex items-center justify-between">
-                <p className="text-sm text-slate-600 flex items-center gap-1.5">
-                    <MapPin className="h-3.5 w-3.5 text-blue-600" />
+            <div className="px-4 py-3 bg-card flex items-center justify-between">
+                <p className="text-sm text-ink-secondary flex items-center gap-1.5">
+                    <MapPin className="h-3.5 w-3.5 text-brand" />
                     {location}, Portugal
                 </p>
                 <a
                     href={mapsUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-sm font-medium text-blue-600 hover:text-blue-700 transition-colors flex items-center gap-1"
+                    className="text-sm font-medium text-brand hover:text-brand/80 transition-colors flex items-center gap-1"
                 >
                     Open in Maps
                     <ExternalLink className="h-3.5 w-3.5" />

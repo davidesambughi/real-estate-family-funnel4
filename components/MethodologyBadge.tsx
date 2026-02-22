@@ -16,17 +16,17 @@ export function MethodologyBadge({ type, label }: MethodologyBadgeProps) {
     const configs = {
         verified: {
             text: "Verified Data",
-            color: "bg-green-100 text-green-800 border-green-200",
+            color: "bg-trust-light text-trust border-trust/30",
             tooltip: "Data personally verified by our team through direct school contact."
         },
         independent: {
             text: "100% Independent",
-            color: "bg-blue-100 text-blue-800 border-blue-200",
+            color: "bg-brand-light text-brand border-brand/30",
             tooltip: "We accept no payment or commission from this school."
         },
         visited: {
             text: "Site Visited",
-            color: "bg-purple-100 text-purple-800 border-purple-200",
+            color: "bg-surface-subtle text-ink-secondary border-border",
             tooltip: "Our team has physically visited and inspected this campus."
         }
     };

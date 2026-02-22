@@ -67,13 +67,11 @@ export default function SchoolFinderPage() {
 
             {/* Header */}
             <div className="text-center mb-12">
-                <span className="inline-block bg-blue-100 text-blue-700 text-sm font-semibold px-4 py-1.5 rounded-full mb-4">
-                    🎯 Free · Takes 60 seconds
-                </span>
-                <h1 className="text-4xl font-bold mb-4 text-slate-900">
+                <p className="section-overline mb-4">Free · 60 seconds</p>
+                <h1 className="font-serif font-semibold text-4xl text-ink-primary mb-4">
                     Find Your Perfect School in Portugal
                 </h1>
-                <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+                <p className="text-lg text-ink-secondary max-w-2xl mx-auto">
                     Answer 4 questions about your budget, lifestyle, curriculum preference, and timeline.
                     We match you with the right school <em>and</em> the right neighborhood — together.
                 </p>
@@ -82,28 +80,28 @@ export default function SchoolFinderPage() {
             {/* How it works */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
                 {steps.map((step) => (
-                    <div key={step.label} className="flex items-start gap-4 p-5 bg-slate-50 rounded-xl border border-slate-100">
+                    <div key={step.label} className="flex items-start gap-4 p-5 bg-surface-subtle rounded-xl border border-border">
                         <span className="text-2xl mt-0.5">{step.icon}</span>
                         <div>
-                            <p className="font-semibold text-slate-900 mb-1">{step.label}</p>
-                            <p className="text-sm text-slate-500 leading-relaxed">{step.desc}</p>
+                            <p className="font-semibold text-ink-primary mb-1">{step.label}</p>
+                            <p className="text-sm text-ink-muted leading-relaxed">{step.desc}</p>
                         </div>
                     </div>
                 ))}
             </div>
 
             {/* Trust strip */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12 text-sm text-slate-500">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12 text-sm text-ink-muted">
                 <div className="flex items-center gap-2">
-                    <CheckCircle2 className="h-4 w-4 text-green-500" />
+                    <CheckCircle2 className="h-4 w-4 text-trust" />
                     100% free & independent
                 </div>
                 <div className="flex items-center gap-2">
-                    <Clock className="h-4 w-4 text-blue-500" />
+                    <Clock className="h-4 w-4 text-brand" />
                     60 seconds to complete
                 </div>
                 <div className="flex items-center gap-2">
-                    <Target className="h-4 w-4 text-purple-500" />
+                    <Target className="h-4 w-4 text-warm" />
                     School + neighborhood matched together
                 </div>
             </div>
@@ -115,12 +113,12 @@ export default function SchoolFinderPage() {
                         Start the School Finder →
                     </Link>
                 </Button>
-                <p className="text-xs text-slate-400 mt-3">No sign-up required to see your results</p>
+                <p className="text-xs text-ink-muted mt-3">No sign-up required to see your results</p>
             </div>
 
             {/* FAQ */}
-            <section className="bg-slate-50 rounded-2xl p-8">
-                <h2 className="text-xl font-bold mb-6 text-slate-900">Common Questions</h2>
+            <section className="bg-surface-subtle rounded-2xl p-8">
+                <h2 className="font-serif font-semibold text-xl text-ink-primary mb-6">Common Questions</h2>
                 <div className="space-y-5">
                     {[
                         {
@@ -136,8 +134,8 @@ export default function SchoolFinderPage() {
                             a: "No. TrustFamily accepts no payments, commissions, or referral fees from schools. Our assessments are fully independent. This is non-negotiable for us.",
                         },
                     ].map(({ q, a }) => (
-                        <div key={q} className="border-b border-slate-200 pb-5 last:border-0 last:pb-0">
-                            <h3 className="font-semibold text-slate-900 mb-2">{q}</h3>
+                        <div key={q} className="border-b border-border pb-5 last:border-0 last:pb-0">
+                            <h3 className="font-semibold text-ink-primary mb-2">{q}</h3>
                             <p className="text-sm text-slate-600 leading-relaxed">{a}</p>
                         </div>
                     ))}

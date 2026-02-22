@@ -6,7 +6,7 @@ export type QuizStepId = "budget" | "lifestyle" | "curriculum" | "timeline";
 export interface QuizOption {
   value: string;
   label: string; // i18n key suffix, resolved in component
-  emoji: string;
+  icon: string;  // Lucide icon component name
 }
 
 export interface QuizStep {
@@ -20,36 +20,36 @@ export const quizSteps: QuizStep[] = [
     id: "budget",
     questionKey: "budgetQuestion",
     options: [
-      { value: "low",    label: "budgetLow",    emoji: "💰" },
-      { value: "mid",    label: "budgetMid",    emoji: "💰💰" },
-      { value: "high",   label: "budgetHigh",   emoji: "💰💰💰" },
+      { value: "low",    label: "budgetLow",    icon: "Banknote" },
+      { value: "mid",    label: "budgetMid",    icon: "CreditCard" },
+      { value: "high",   label: "budgetHigh",   icon: "Gem" },
     ],
   },
   {
     id: "lifestyle",
     questionKey: "lifestyleQuestion",
     options: [
-      { value: "coastal", label: "lifestyleCoastal", emoji: "🏖️" },
-      { value: "city",    label: "lifestyleCity",    emoji: "🏙️" },
-      { value: "nature",  label: "lifestyleNature",  emoji: "🌲" },
+      { value: "coastal", label: "lifestyleCoastal", icon: "Waves" },
+      { value: "city",    label: "lifestyleCity",    icon: "Building2" },
+      { value: "nature",  label: "lifestyleNature",  icon: "Trees" },
     ],
   },
   {
     id: "curriculum",
     questionKey: "curriculumQuestion",
     options: [
-      { value: "british",  label: "curriculumBritish",  emoji: "🇬🇧" },
-      { value: "american", label: "curriculumAmerican", emoji: "🇺🇸" },
-      { value: "flexible", label: "curriculumFlexible", emoji: "🌍" },
+      { value: "british",  label: "curriculumBritish",  icon: "BookOpen" },
+      { value: "american", label: "curriculumAmerican", icon: "Globe" },
+      { value: "flexible", label: "curriculumFlexible", icon: "Layers" },
     ],
   },
   {
     id: "timeline",
     questionKey: "timelineQuestion",
     options: [
-      { value: "urgent",    label: "timelineUrgent",    emoji: "⚡" },
-      { value: "planning",  label: "timelinePlanning",  emoji: "📅" },
-      { value: "exploring", label: "timelineExploring", emoji: "🔭" },
+      { value: "urgent",    label: "timelineUrgent",    icon: "Zap" },
+      { value: "planning",  label: "timelinePlanning",  icon: "Calendar" },
+      { value: "exploring", label: "timelineExploring", icon: "Compass" },
     ],
   },
 ];

@@ -95,17 +95,17 @@ export default function RelocationGuidePage() {
 
             {/* Header */}
             <div className="mb-6">
-                <div className="flex items-center gap-3 text-xs text-slate-400 mb-4">
+                <div className="flex items-center gap-3 text-xs text-ink-muted mb-4">
                     <time dateTime="2026-02-01">Updated February 2026</time>
                     <span>·</span>
                     <span>25 min read</span>
                     <span>·</span>
                     <span>TrustFamily Editorial</span>
                 </div>
-                <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-5 leading-tight">
+                <h1 className="font-serif font-semibold text-4xl md:text-5xl text-ink-primary mb-5 leading-tight">
                     Family Relocation Guide<br className="hidden md:block" /> Portugal 2026
                 </h1>
-                <p className="text-lg text-slate-600 leading-relaxed max-w-3xl">
+                <p className="text-lg text-ink-secondary leading-relaxed max-w-3xl">
                     A complete, independent guide to moving your family to Portugal — from choosing
                     the right visa to selecting a school, finding a home, and getting your children
                     settled. Based on verified data from 200+ families who have made the move.
@@ -113,8 +113,8 @@ export default function RelocationGuidePage() {
             </div>
 
             {/* Table of contents */}
-            <nav className="bg-slate-50 border border-slate-100 rounded-xl p-6 mb-12">
-                <h2 className="text-sm font-bold text-slate-700 uppercase tracking-wide mb-4">In this guide</h2>
+            <nav className="bg-surface-subtle border border-border rounded-xl p-6 mb-12">
+                <h2 className="section-overline mb-4">In this guide</h2>
                 <ol className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     {sections.map((s, i) => (
                         <li key={s.id}>
@@ -130,11 +130,11 @@ export default function RelocationGuidePage() {
 
                 {/* 1. Why Portugal */}
                 <section id="why-portugal">
-                    <h2 className="text-3xl font-bold text-slate-900 mb-5">1. Why families choose Portugal</h2>
-                    <p className="text-slate-600 leading-relaxed mb-4">
+                    <h2 className="article-heading mb-5">1. Why families choose Portugal</h2>
+                    <p className="text-ink-secondary leading-relaxed mb-4">
                         Portugal has become the top destination for affluent international families in Europe for a converging set of reasons that are unlikely to reverse: political stability, Atlantic climate, low crime, world-class international schools, and a quality of life that is difficult to replicate at equivalent cost elsewhere in Western Europe.
                     </p>
-                    <p className="text-slate-600 leading-relaxed mb-4">
+                    <p className="text-ink-secondary leading-relaxed mb-4">
                         The Lisbon area in particular offers the highest concentration of international school options in the country — IB, British, and American curricula — within a 45-minute radius. This means families rarely have to choose between education quality and lifestyle.
                     </p>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
@@ -154,8 +154,8 @@ export default function RelocationGuidePage() {
 
                 {/* 2. Visas */}
                 <section id="visas">
-                    <h2 className="text-3xl font-bold text-slate-900 mb-5">2. Visas: which route is right for your family</h2>
-                    <p className="text-slate-600 leading-relaxed mb-6">
+                    <h2 className="article-heading mb-5">2. Visas: which route is right for your family</h2>
+                    <p className="text-ink-secondary leading-relaxed mb-6">
                         Portugal's visa landscape changed significantly in 2024. The Golden Visa program no longer covers most real estate purchases — the most common route used by international families. Here is the current picture, accurate as of January 2026. Always consult a licensed Portuguese immigration lawyer before applying.
                     </p>
 
@@ -190,20 +190,20 @@ export default function RelocationGuidePage() {
                                 <span className={`inline-block text-xs font-semibold px-3 py-1 rounded-full mb-3 ${item.tagColor}`}>
                                     {item.tag}
                                 </span>
-                                <h3 className="text-lg font-bold text-slate-900 mb-2">{item.title}</h3>
-                                <p className="text-sm text-slate-600 leading-relaxed">{item.content}</p>
+                                <h3 className="text-lg font-semibold text-ink-primary mb-2">{item.title}</h3>
+                                <p className="text-sm text-ink-secondary leading-relaxed">{item.content}</p>
                             </div>
                         ))}
                     </div>
-                    <p className="text-xs text-slate-400 mt-4 italic">
+                    <p className="text-xs text-ink-muted mt-4 italic">
                         Disclaimer: visa rules change frequently. This is editorial guidance, not legal advice. Always verify current requirements with a licensed immigration lawyer and the official SEF/AIMA portal.
                     </p>
                 </section>
 
                 {/* 3. Schools */}
                 <section id="schools">
-                    <h2 className="text-3xl font-bold text-slate-900 mb-5">3. Choosing an international school</h2>
-                    <p className="text-slate-600 leading-relaxed mb-4">
+                    <h2 className="article-heading mb-5">3. Choosing an international school</h2>
+                    <p className="text-ink-secondary leading-relaxed mb-4">
                         Portugal's four leading international schools near Lisbon cover the three major curricula: British (IGCSE + IB Diploma), American (US graduation + IB Diploma), and pure IB. Here is a brief orientation — for the full comparison, see our dedicated schools guide.
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
@@ -213,25 +213,25 @@ export default function RelocationGuidePage() {
                             { school: "CAISL", tag: "American / IB", location: "Sintra / Linho", fees: "€14,000–24,000", rate: "35%" },
                             { school: "United Lisbon", tag: "American / IB", location: "Parque das Nações", fees: "€12,000–22,000", rate: "45%" },
                         ].map((s) => (
-                            <div key={s.school} className="bg-slate-50 border border-slate-100 rounded-xl p-5">
-                                <span className="inline-block bg-blue-100 text-blue-700 text-xs font-semibold px-2 py-0.5 rounded mb-2">{s.tag}</span>
+                            <div key={s.school} className="bg-surface-subtle border border-border rounded-xl p-5">
+                                <span className="inline-block bg-brand-light text-brand text-xs font-semibold px-2 py-0.5 rounded mb-2">{s.tag}</span>
                                 <h3 className="font-bold text-slate-900 mb-1">{s.school}</h3>
                                 <p className="text-xs text-slate-500 mb-2">{s.location} · Fees: {s.fees}/yr · Acceptance: {s.rate}</p>
                             </div>
                         ))}
                     </div>
-                    <p className="text-slate-600 leading-relaxed mb-4">
+                    <p className="text-ink-secondary leading-relaxed mb-4">
                         <strong>Key rule:</strong> Apply to 2–3 schools simultaneously. With acceptance rates as low as 8%, single-school strategies are high-risk. Most schools require applications 12–18 months before the intended start date, and many run shadow days (where your child attends for a morning) before confirming a place.
                     </p>
-                    <Link href="/best-private-and-public-international-schools-portugal-2026" className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors">
+                    <Link href="/best-private-and-public-international-schools-portugal-2026" className="inline-flex items-center text-sm font-medium text-brand hover:text-[var(--brand-hover)] transition-colors">
                         Full school comparison with fees and verdicts →
                     </Link>
                 </section>
 
                 {/* 4. Neighborhoods */}
                 <section id="neighborhoods">
-                    <h2 className="text-3xl font-bold text-slate-900 mb-5">4. Where to live — school proximity first</h2>
-                    <p className="text-slate-600 leading-relaxed mb-4">
+                    <h2 className="article-heading mb-5">4. Where to live — school proximity first</h2>
+                    <p className="text-ink-secondary leading-relaxed mb-4">
                         The most common mistake expat families make is choosing a neighborhood before choosing a school. In the Lisbon area, school location should drive residential location — not the other way around. Morning school runs across Lisbon can take 45–60 minutes in traffic.
                     </p>
                     <div className="space-y-4 mb-6">
@@ -241,26 +241,26 @@ export default function RelocationGuidePage() {
                             { neighborhood: "Parque das Nações", school: "United Lisbon International School", commute: "Walking distance", vibe: "Modern, riverfront, urban. 15 min to airport." },
                             { neighborhood: "Campo de Ourique", school: "City schools via metro", commute: "20–30 min", vibe: "Village feel inside Lisbon. Flat, walkable, family-friendly." },
                         ].map((item) => (
-                            <div key={item.neighborhood} className="border-l-4 border-blue-200 pl-5 py-2">
+                            <div key={item.neighborhood} className="border-l-4 border-brand/30 pl-5 py-2">
                                 <h3 className="font-semibold text-slate-900">{item.neighborhood}</h3>
                                 <p className="text-xs text-blue-600 mb-1">→ {item.school} · {item.commute} commute</p>
                                 <p className="text-sm text-slate-500">{item.vibe}</p>
                             </div>
                         ))}
                     </div>
-                    <Link href="/top-neighborhoods" className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors">
+                    <Link href="/top-neighborhoods" className="inline-flex items-center text-sm font-medium text-brand hover:text-[var(--brand-hover)] transition-colors">
                         Full neighborhood guide with commute data and lifestyle profiles →
                     </Link>
                 </section>
 
                 {/* 5. Housing */}
                 <section id="housing">
-                    <h2 className="text-3xl font-bold text-slate-900 mb-5">5. Housing: renting vs buying in 2026</h2>
-                    <p className="text-slate-600 leading-relaxed mb-4">
+                    <h2 className="article-heading mb-5">5. Housing: renting vs buying in 2026</h2>
+                    <p className="text-ink-secondary leading-relaxed mb-4">
                         Portugal's property market has risen significantly since 2020, particularly in expat-heavy coastal areas. Most families arriving on a D7 or D8 visa rent first for 12–24 months before deciding whether to buy. This is sensible: it avoids rushed decisions and allows you to evaluate the school and neighborhood fit before committing.
                     </p>
 
-                    <h3 className="text-lg font-bold text-slate-800 mb-3">Typical rental costs (2026)</h3>
+                    <h3 className="font-serif font-semibold text-lg text-ink-primary mb-3">Typical rental costs (2026)</h3>
                     <div className="overflow-x-auto mb-6">
                         <table className="w-full text-sm border-collapse">
                             <thead>
@@ -287,18 +287,18 @@ export default function RelocationGuidePage() {
                         </table>
                     </div>
 
-                    <p className="text-slate-600 leading-relaxed mb-4">
+                    <p className="text-ink-secondary leading-relaxed mb-4">
                         <strong>Budget tip:</strong> Furnished rentals (with a full kitchen and appliances) command a 10–20% premium but save significant upfront cost for families who haven't yet shipped furniture. Negotiate a longer lease (2–3 years) in exchange for a price reduction — landlords in premium areas value stability.
                     </p>
-                    <p className="text-slate-600 leading-relaxed">
+                    <p className="text-ink-secondary leading-relaxed">
                         <strong>Buying:</strong> Property prices in Cascais average €4,000–7,000/m², comparable to mid-range areas of London or Paris. A suitable family home (4 bedrooms, garden, close to schools) typically costs €1.2–2.5M in premium coastal areas. Transfer tax (IMT) and stamp duty add approximately 6–8% to the purchase price.
                     </p>
                 </section>
 
                 {/* 6. Cost of living */}
                 <section id="cost-of-living">
-                    <h2 className="text-3xl font-bold text-slate-900 mb-5">6. Cost of living — what to budget</h2>
-                    <p className="text-slate-600 leading-relaxed mb-6">
+                    <h2 className="article-heading mb-5">6. Cost of living — what to budget</h2>
+                    <p className="text-ink-secondary leading-relaxed mb-6">
                         Portugal's cost of living is lower than comparable Northern European cities for groceries, dining, childcare, and services — but not for international school fees or premium housing. The table below reflects a realistic all-in monthly budget for a family of 4 in the Cascais/Sintra corridor.
                     </p>
                     <div className="overflow-x-auto mb-6">
@@ -337,8 +337,8 @@ export default function RelocationGuidePage() {
 
                 {/* 7. Healthcare */}
                 <section id="healthcare">
-                    <h2 className="text-3xl font-bold text-slate-900 mb-5">7. Healthcare for expat families</h2>
-                    <p className="text-slate-600 leading-relaxed mb-4">
+                    <h2 className="article-heading mb-5">7. Healthcare for expat families</h2>
+                    <p className="text-ink-secondary leading-relaxed mb-4">
                         Portugal's National Health Service (Serviço Nacional de Saúde — SNS) is available to all registered residents. Quality is solid for primary care and emergencies, but waiting times for specialist appointments can be significant in the public system. Most expat families use a hybrid model: SNS for emergencies and GP visits, private insurance for specialists and planned care.
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
@@ -352,7 +352,7 @@ export default function RelocationGuidePage() {
                                 points: ["€200–500/month for family of 4", "English-speaking doctors available", "Same-day specialist access", "Major providers: CUF, Luz Saúde, HPA"],
                             },
                         ].map((item) => (
-                            <div key={item.title} className="bg-slate-50 border border-slate-100 rounded-xl p-5">
+                            <div key={item.title} className="bg-surface-subtle border border-border rounded-xl p-5">
                                 <h3 className="font-bold text-slate-900 mb-3">{item.title}</h3>
                                 <ul className="space-y-1">
                                     {item.points.map((p) => (
@@ -364,15 +364,15 @@ export default function RelocationGuidePage() {
                             </div>
                         ))}
                     </div>
-                    <p className="text-slate-600 leading-relaxed">
+                    <p className="text-ink-secondary leading-relaxed">
                         Pediatric care is excellent in private clinics. The Hospital da Luz Lisbon and CUF Descobertas are the most commonly used private hospitals by the expat community — both have English-speaking paediatric departments.
                     </p>
                 </section>
 
                 {/* 8. Children & integration */}
                 <section id="children-integration">
-                    <h2 className="text-3xl font-bold text-slate-900 mb-5">8. Getting your children settled</h2>
-                    <p className="text-slate-600 leading-relaxed mb-4">
+                    <h2 className="article-heading mb-5">8. Getting your children settled</h2>
+                    <p className="text-ink-secondary leading-relaxed mb-4">
                         The school decision is step one, but integration is an ongoing process. Portugal's international school communities are generally welcoming to new families, particularly in Cascais and Sintra where the expat population is large and well-organized.
                     </p>
                     <div className="space-y-5">
@@ -394,9 +394,9 @@ export default function RelocationGuidePage() {
                                 body: "Each international school has active parent WhatsApp groups and associations that organise welcome events, second-hand uniform sales, and social activities. Joining immediately is strongly recommended — these networks surface practical local knowledge that no website can replicate.",
                             },
                         ].map((item) => (
-                            <div key={item.title} className="border-l-4 border-teal-200 pl-5 py-1">
+                            <div key={item.title} className="border-l-4 border-trust/40 pl-5 py-1">
                                 <h3 className="font-semibold text-slate-900 mb-1">{item.title}</h3>
-                                <p className="text-sm text-slate-600 leading-relaxed">{item.body}</p>
+                                <p className="text-sm text-ink-secondary leading-relaxed">{item.body}</p>
                             </div>
                         ))}
                     </div>
@@ -404,8 +404,8 @@ export default function RelocationGuidePage() {
 
                 {/* 9. Timeline */}
                 <section id="timeline">
-                    <h2 className="text-3xl font-bold text-slate-900 mb-5">9. Your 12-month relocation timeline</h2>
-                    <p className="text-slate-600 leading-relaxed mb-6">
+                    <h2 className="article-heading mb-5">9. Your 12-month relocation timeline</h2>
+                    <p className="text-ink-secondary leading-relaxed mb-6">
                         The families who relocate most smoothly start planning 12–18 months before their target arrival date. Below is a practical month-by-month framework based on what TrustFamily has observed working consistently across 200+ family relocations.
                     </p>
                     <div className="space-y-4">
@@ -418,12 +418,12 @@ export default function RelocationGuidePage() {
                             { months: "Months 1–3", title: "First quarter — settling in", tasks: ["Attend school welcome events", "Enrol children in 1–2 extra-curricular activities", "Explore neighborhood and build local routines", "Begin Portuguese lessons if not already started"] },
                         ].map((phase, i) => (
                             <div key={phase.months} className="flex gap-5">
-                                <div className="flex-shrink-0 w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold mt-1">
+                                <div className="flex-shrink-0 w-8 h-8 bg-brand text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold mt-1">
                                     {i + 1}
                                 </div>
                                 <div className="flex-1 border border-slate-100 rounded-xl p-5 bg-white">
                                     <div className="flex items-center gap-3 mb-3">
-                                        <span className="text-xs font-semibold text-blue-600 bg-blue-50 px-2 py-0.5 rounded">{phase.months}</span>
+                                        <span className="text-xs font-semibold text-brand bg-brand-50 px-2 py-0.5 rounded">{phase.months}</span>
                                         <h3 className="font-bold text-slate-900">{phase.title}</h3>
                                     </div>
                                     <ul className="space-y-1">
@@ -441,7 +441,7 @@ export default function RelocationGuidePage() {
 
                 {/* FAQ */}
                 <section>
-                    <h2 className="text-3xl font-bold text-slate-900 mb-6">Frequently Asked Questions</h2>
+                    <h2 className="article-heading mb-6">Frequently Asked Questions</h2>
                     <div className="space-y-5">
                         {[
                             { q: "What visa do I need to move to Portugal with my family?", a: "EU/EEA citizens need no visa — just register as residents. Non-EU families most commonly use the D7 Passive Income Visa or the D8 Digital Nomad Visa. The Golden Visa no longer covers real estate purchases as of 2024. Always verify with a licensed immigration lawyer." },
@@ -450,8 +450,8 @@ export default function RelocationGuidePage() {
                             { q: "Is the public healthcare system good enough for expat families?", a: "Solid for emergencies and primary care. Most expat families add private insurance (€200–500/month for a family of 4) for specialist access and English-speaking doctors. Providers: CUF, Luz Saúde, HPA." },
                         ].map(({ q, a }) => (
                             <div key={q} className="border-b border-slate-100 pb-5 last:border-0 last:pb-0">
-                                <h3 className="font-semibold text-slate-900 mb-2">{q}</h3>
-                                <p className="text-sm text-slate-600 leading-relaxed">{a}</p>
+                                <h3 className="font-semibold text-ink-primary mb-2">{q}</h3>
+                                <p className="text-sm text-ink-secondary leading-relaxed">{a}</p>
                             </div>
                         ))}
                     </div>
@@ -460,8 +460,8 @@ export default function RelocationGuidePage() {
             </div>
 
             {/* CTA */}
-            <div className="mt-16 bg-blue-50 border border-blue-100 rounded-2xl p-8 text-center">
-                <h2 className="text-2xl font-bold text-slate-900 mb-3">Ready to find the right school?</h2>
+            <div className="mt-16 bg-brand-50 border border-border rounded-2xl p-8 text-center">
+                <h2 className="font-serif font-semibold text-2xl text-ink-primary mb-3">Ready to find the right school?</h2>
                 <p className="text-slate-600 mb-6 max-w-xl mx-auto">
                     Take our free School Finder quiz to get matched with the right school
                     and neighborhood in 60 seconds.

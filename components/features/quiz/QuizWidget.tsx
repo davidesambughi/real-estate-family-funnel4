@@ -1,10 +1,10 @@
 "use client";
 
-import { useState } from "react";
+import React, { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { quizSteps, matchSchools, matchNeighborhoods, QuizAnswers } from "./quiz-data";
 import { QuizResult } from "./QuizResult";
-import { CheckCircle2, ArrowRight, RotateCcw } from "lucide-react";
+import { Banknote, CreditCard, Gem, Waves, Building2, Trees, BookOpen, Globe, Layers, Zap, Calendar, Compass, CheckCircle2, ArrowRight, RotateCcw } from "lucide-react";
 
 interface QuizWidgetProps {
     translations: {
@@ -27,6 +27,11 @@ interface QuizWidgetProps {
         viewNeighborhoodBtn: string;
     };
 }
+
+const iconMap: Record<string, React.ElementType> = {
+    Banknote, CreditCard, Gem, Waves, Building2, Trees,
+    BookOpen, Globe, Layers, Zap, Calendar, Compass,
+};
 
 export function QuizWidget({ translations: t }: QuizWidgetProps) {
     const [currentStep, setCurrentStep] = useState(0);
@@ -93,13 +98,13 @@ export function QuizWidget({ translations: t }: QuizWidgetProps) {
         <div className="w-full max-w-2xl mx-auto">
             {/* Progress bar */}
             <div className="mb-6">
-                <div className="flex justify-between text-sm text-slate-500 mb-2">
+                <div className="flex justify-between text-sm text-ink-muted mb-2">
                     <span>{t.stepLabel.replace("{current}", String(currentStep + 1)).replace("{total}", String(totalSteps))}</span>
                     <span>{Math.round(progress)}%</span>
                 </div>
-                <div className="w-full bg-slate-100 rounded-full h-2">
+                <div className="w-full bg-border/40 rounded-full h-1.5">
                     <div
-                        className="bg-blue-600 h-2 rounded-full transition-all duration-500"
+                        className="bg-brand h-1.5 rounded-full transition-all duration-500"
                         style={{ width: `${progress}%` }}
                     />
                 </div>
@@ -107,7 +112,7 @@ export function QuizWidget({ translations: t }: QuizWidgetProps) {
 
             {/* Question */}
             <div className="mb-8 text-center">
-                <h3 className="text-2xl font-bold text-slate-900 mb-2">
+                <h3 className="font-serif font-semibold text-2xl text-ink-primary mb-2">
                     {resolveLabel(step.questionKey)}
                 </h3>
             </div>
@@ -124,16 +129,16 @@ export function QuizWidget({ translations: t }: QuizWidgetProps) {
                 flex flex-col items-center justify-center gap-3 p-6 rounded-xl border-2 transition-all duration-200
                 text-left cursor-pointer group
                 ${isSelected
-                                    ? "border-blue-600 bg-blue-50 shadow-md shadow-blue-100"
-                                    : "border-slate-200 bg-white hover:border-blue-300 hover:bg-blue-50/50"
+                                    ? "border-brand bg-brand-light shadow-[var(--shadow-hair)]"
+                                    : "border-border bg-card hover:border-brand/40 hover:bg-brand-light/50"
                                 }
               `}
                         >
-                            <span className="text-4xl">{option.emoji}</span>
-                            <span className={`text-sm font-semibold text-center leading-tight ${isSelected ? "text-blue-800" : "text-slate-700"}`}>
+                            {(() => { const Icon = iconMap[option.icon] ?? Layers; return <Icon className="h-6 w-6 text-ink-secondary group-hover:text-brand transition-colors" />; })()}
+                            <span className={`text-sm font-semibold text-center leading-tight ${isSelected ? "text-brand" : "text-ink-primary"}`}>
                                 {resolveLabel(option.label)}
                             </span>
-                            {isSelected && <CheckCircle2 className="h-5 w-5 text-blue-600" />}
+                            {isSelected && <CheckCircle2 className="h-5 w-5 text-brand" />}
                         </button>
                     );
                 })}
@@ -145,7 +150,6 @@ export function QuizWidget({ translations: t }: QuizWidgetProps) {
                     variant="ghost"
                     onClick={handleBack}
                     disabled={currentStep === 0}
-                    className="text-slate-500"
                 >
                     ← {t.backBtn}
                 </Button>

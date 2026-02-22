@@ -83,17 +83,17 @@ export default function Page() {
 
             {/* Header */}
             <div className="mb-6">
-                <div className="flex items-center gap-3 text-xs text-slate-400 mb-4">
+                <div className="flex items-center gap-3 text-xs text-ink-muted mb-4">
                     <time dateTime="2026-02-01">Updated February 2026</time>
                     <span>·</span>
                     <span>{neighborhoodsData.length} neighborhoods reviewed</span>
                     <span>·</span>
                     <span>TrustFamily Editorial</span>
                 </div>
-                <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-5 leading-tight">
+                <h1 className="font-serif font-semibold text-4xl md:text-5xl text-ink-primary mb-5 leading-tight">
                     Best Family-Friendly Neighborhoods<br className="hidden md:block" /> in Portugal 2026
                 </h1>
-                <p className="text-lg text-slate-600 leading-relaxed max-w-3xl">
+                <p className="text-lg text-ink-secondary leading-relaxed max-w-3xl">
                     Where expat families with children actually choose to live in Portugal — and why.
                     We compare safety, international community, school commute times, and lifestyle fit
                     across the five neighborhoods we've mapped in detail. Based on real family data,
@@ -102,12 +102,12 @@ export default function Page() {
             </div>
 
             {/* Table of contents */}
-            <nav className="bg-slate-50 border border-slate-100 rounded-xl p-6 mb-14">
-                <h2 className="text-sm font-bold text-slate-700 uppercase tracking-wide mb-4">In this guide</h2>
+            <nav className="bg-surface-subtle border border-border rounded-xl p-6 mb-14">
+                <h2 className="section-overline mb-4">In this guide</h2>
                 <ol className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     {sections.map((s, i) => (
                         <li key={s.id}>
-                            <a href={`#${s.id}`} className="text-sm text-blue-600 hover:text-blue-800 transition-colors">
+                            <a href={`#${s.id}`} className="text-sm text-brand hover:text-[var(--brand-hover)] transition-colors">
                                 {i + 1}. {s.label}
                             </a>
                         </li>
@@ -119,24 +119,24 @@ export default function Page() {
 
                 {/* 1. Overview */}
                 <section id="overview">
-                    <h2 className="text-3xl font-bold text-slate-900 mb-5">1. Overview: the Lisbon expat geography</h2>
-                    <p className="text-slate-600 leading-relaxed mb-4">
+                    <h2 className="article-heading mb-5">1. Overview: the Lisbon expat geography</h2>
+                    <p className="text-ink-secondary leading-relaxed mb-4">
                         Greater Lisbon is not a single neighborhood market — it's a collection of distinct
                         micro-environments, each with its own character, commute profile, and expat community
                         density. The Atlantic coast (Cascais, Estoril) is different from the forested hills
                         (Sintra), which is different again from the urban fabric inside Lisbon itself.
                     </p>
-                    <p className="text-slate-600 leading-relaxed mb-4">
+                    <p className="text-ink-secondary leading-relaxed mb-4">
                         Expat families are distributed across these environments primarily based on one factor:
                         school location. The neighborhood-first approach — choosing where to live before choosing
                         a school — is the most common mistake we see. A beautiful villa in Cascais is a poor choice
                         if your children attend United Lisbon International School in Parque das Nações
                         (a 40-minute commute each way in morning traffic).
                     </p>
-                    <p className="text-slate-600 leading-relaxed">
+                    <p className="text-ink-secondary leading-relaxed">
                         This guide presents each zone clearly so you can match your school decision to the right
                         residential area. If you haven't chosen a school yet, start with our{" "}
-                        <Link href="/best-private-and-public-international-schools-portugal-2026" className="text-blue-600 hover:underline">
+                        <Link href="/best-private-and-public-international-schools-portugal-2026" className="text-brand hover:underline">
                             schools guide
                         </Link>{" "}
                         first.
@@ -145,8 +145,8 @@ export default function Page() {
 
                 {/* 2. School-first */}
                 <section id="school-first">
-                    <h2 className="text-3xl font-bold text-slate-900 mb-5">2. The school-first rule</h2>
-                    <p className="text-slate-600 leading-relaxed mb-6">
+                    <h2 className="article-heading mb-5">2. The school-first rule</h2>
+                    <p className="text-ink-secondary leading-relaxed mb-6">
                         Every neighborhood in this guide is mapped against its closest international school.
                         The table below is the fastest way to understand the geography before reading the
                         detailed profiles.
@@ -179,8 +179,8 @@ export default function Page() {
                             </tbody>
                         </table>
                     </div>
-                    <div className="bg-amber-50 border border-amber-100 rounded-xl p-5">
-                        <p className="text-sm text-amber-800 leading-relaxed">
+                    <div className="bg-warm-light border border-border rounded-xl p-5">
+                        <p className="text-sm text-ink-secondary leading-relaxed">
                             <strong>Practical note:</strong> Morning school traffic on the A5 (Lisbon to Cascais)
                             and IC19 (Lisbon to Sintra) can add 20–30 minutes to stated commute times between
                             8:00–9:00am. Always test your commute at school run time before finalising a rental.
@@ -190,8 +190,8 @@ export default function Page() {
 
                 {/* 3. Coastal belt */}
                 <section id="coastal">
-                    <h2 className="text-3xl font-bold text-slate-900 mb-5">3. The coastal belt: Cascais &amp; Estoril</h2>
-                    <p className="text-slate-600 leading-relaxed mb-4">
+                    <h2 className="article-heading mb-5">3. The coastal belt: Cascais &amp; Estoril</h2>
+                    <p className="text-ink-secondary leading-relaxed mb-4">
                         The Estoril Coast — the stretch of Atlantic shoreline running from Estoril to Cascais —
                         is the most popular expat family zone in Portugal by a significant margin.
                         The combination of beaches, international community, St. Julian's School proximity,
@@ -211,7 +211,7 @@ export default function Page() {
                                 cons: ["Smaller expat community than Cascais", "Fewer English-language shops and services", "Less social infrastructure for teenagers"],
                             },
                         ].map((item) => (
-                            <div key={item.name} className="bg-slate-50 border border-slate-100 rounded-xl p-5">
+                            <div key={item.name} className="bg-surface-subtle border border-border rounded-xl p-5">
                                 <h3 className="font-bold text-slate-900 mb-3 text-lg">{item.name}</h3>
                                 <div className="space-y-3">
                                     <div>
@@ -238,7 +238,7 @@ export default function Page() {
                             </div>
                         ))}
                     </div>
-                    <p className="text-sm text-slate-600 leading-relaxed">
+                    <p className="text-sm text-ink-secondary leading-relaxed">
                         <strong>TrustFamily verdict:</strong> Families new to Portugal with children under 12 who want
                         a built-in expat network: Cascais. Families who are more settled, value quiet, and want
                         to integrate into Portuguese life: Estoril. Property prices are essentially equivalent —
@@ -248,27 +248,27 @@ export default function Page() {
 
                 {/* 4. Sintra */}
                 <section id="sintra">
-                    <h2 className="text-3xl font-bold text-slate-900 mb-5">4. Sintra: nature, history, and two world-class schools</h2>
-                    <p className="text-slate-600 leading-relaxed mb-4">
+                    <h2 className="article-heading mb-5">4. Sintra: nature, history, and two world-class schools</h2>
+                    <p className="text-ink-secondary leading-relaxed mb-4">
                         Sintra is unlike anywhere else on this list. A UNESCO World Heritage Site set in forested
                         hills above the Atlantic, it has palaces, a distinctly slower pace, a cooler climate,
                         and — uniquely — two of Portugal's top international schools within 15 minutes of
                         the town centre.
                     </p>
-                    <p className="text-slate-600 leading-relaxed mb-4">
+                    <p className="text-ink-secondary leading-relaxed mb-4">
                         TASIS Portugal is 10 minutes by car. CAISL is 15 minutes. Families choosing Sintra
                         for the schools rarely regret the decision — but they do sometimes underestimate the
                         trade-offs: 45 minutes to Lisbon by train, limited English-language infrastructure,
                         and a climate that is noticeably cooler and wetter than the coast.
                     </p>
-                    <div className="bg-teal-50 border border-teal-100 rounded-xl p-5 mb-4">
+                    <div className="bg-trust-light border border-border rounded-xl p-5 mb-4">
                         <p className="text-sm text-teal-800 leading-relaxed">
                             <strong>Who Sintra suits best:</strong> Families who have already chosen TASIS or CAISL
                             and prioritise nature, space, and a slower pace over urban convenience. Also well-suited
                             to remote-working adults who don't need to commute to Lisbon regularly.
                         </p>
                     </div>
-                    <p className="text-sm text-slate-600 leading-relaxed">
+                    <p className="text-sm text-ink-secondary leading-relaxed">
                         Property prices in Sintra average €2,500–4,500/m² — significantly lower than Cascais.
                         For the same budget, families typically access larger homes with gardens.
                     </p>
@@ -276,8 +276,8 @@ export default function Page() {
 
                 {/* 5. Inside Lisbon */}
                 <section id="lisbon">
-                    <h2 className="text-3xl font-bold text-slate-900 mb-5">5. Inside Lisbon: Campo de Ourique &amp; Parque das Nações</h2>
-                    <p className="text-slate-600 leading-relaxed mb-5">
+                    <h2 className="article-heading mb-5">5. Inside Lisbon: Campo de Ourique &amp; Parque das Nações</h2>
+                    <p className="text-ink-secondary leading-relaxed mb-5">
                         Not all expat families want to leave the city. For those who prefer an urban
                         environment — or whose school is inside Lisbon — two neighborhoods stand out
                         for family quality of life.
@@ -297,8 +297,8 @@ export default function Page() {
                         ].map((item) => (
                             <div key={item.name} className="border border-slate-200 rounded-xl p-6">
                                 <h3 className="font-bold text-slate-900 mb-1 text-lg">{item.name}</h3>
-                                <span className="inline-block text-xs text-blue-600 bg-blue-50 px-2 py-0.5 rounded mb-3">{item.tag}</span>
-                                <p className="text-sm text-slate-600 leading-relaxed">{item.content}</p>
+                                <span className="inline-block text-xs text-brand bg-brand-50 px-2 py-0.5 rounded mb-3">{item.tag}</span>
+                                <p className="text-sm text-ink-secondary leading-relaxed">{item.content}</p>
                             </div>
                         ))}
                     </div>
@@ -306,8 +306,8 @@ export default function Page() {
 
                 {/* 6. How to choose */}
                 <section id="how-to-choose">
-                    <h2 className="text-3xl font-bold text-slate-900 mb-5">6. How to choose: a practical checklist</h2>
-                    <p className="text-slate-600 leading-relaxed mb-6">
+                    <h2 className="article-heading mb-5">6. How to choose: a practical checklist</h2>
+                    <p className="text-ink-secondary leading-relaxed mb-6">
                         Once you have confirmed your school choice, use this checklist to evaluate candidate
                         neighborhoods. Visit each during a school morning (8:30–9:30am) and a weekend afternoon
                         to assess both the commute and the lifestyle reality.
@@ -321,12 +321,12 @@ export default function Page() {
                             { n: "05", title: "Budget transport costs explicitly", desc: "If you are more than 5 km from school, factor in transport: school bus (€2,000–4,000/year) or car costs. Families who choose proximity over size consistently report higher satisfaction." },
                         ].map((item) => (
                             <div key={item.n} className="flex gap-5 items-start">
-                                <div className="flex-shrink-0 w-10 h-10 bg-blue-600 text-white rounded-xl flex items-center justify-center text-sm font-bold">
+                                <div className="flex-shrink-0 w-10 h-10 bg-brand text-primary-foreground rounded-xl flex items-center justify-center text-sm font-bold">
                                     {item.n}
                                 </div>
                                 <div className="flex-1 border border-slate-100 rounded-xl p-4 bg-white">
                                     <h3 className="font-bold text-slate-900 mb-1">{item.title}</h3>
-                                    <p className="text-sm text-slate-600 leading-relaxed">{item.desc}</p>
+                                    <p className="text-sm text-ink-secondary leading-relaxed">{item.desc}</p>
                                 </div>
                             </div>
                         ))}
@@ -335,13 +335,13 @@ export default function Page() {
 
                 {/* 7. Neighborhood cards */}
                 <section id="neighborhoods">
-                    <h2 className="text-3xl font-bold text-slate-900 mb-8">7. Neighborhood profiles</h2>
+                    <h2 className="article-heading mb-8">7. Neighborhood profiles</h2>
                     <NeighborhoodsList />
                 </section>
 
                 {/* 8. FAQ */}
                 <section id="faq" className="bg-slate-50 rounded-2xl p-8">
-                    <h2 className="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
+                    <h2 className="font-serif font-semibold text-2xl text-ink-primary mb-6">Frequently Asked Questions</h2>
                     <div className="space-y-6">
                         {[
                             { q: "Where do expat families live in Lisbon?", a: "Cascais leads for coastal families, followed by Estoril and Sintra. Within the city: Campo de Ourique (walkable, community feel) and Parque das Nações (modern, riverfront) are top picks." },
@@ -350,7 +350,7 @@ export default function Page() {
                             { q: "Which Lisbon neighborhood is best for families without a car?", a: "Parque das Nações (walking distance to United Lisbon International School, excellent metro access) and Campo de Ourique (flat, walkable, well-served by public transport) are the strongest choices." },
                         ].map(({ q, a }) => (
                             <div key={q} className="border-b border-slate-200 pb-5 last:border-0 last:pb-0">
-                                <h3 className="font-semibold text-slate-900 mb-2">{q}</h3>
+                                <h3 className="font-semibold text-ink-primary mb-2">{q}</h3>
                                 <p className="text-slate-600 text-sm leading-relaxed">{a}</p>
                             </div>
                         ))}
@@ -361,8 +361,8 @@ export default function Page() {
 
             {/* Related Schools */}
             <section className="mt-16">
-                <h2 className="text-2xl font-bold mb-3 text-slate-900">Find the right school to match</h2>
-                <p className="text-slate-500 text-sm mb-6">
+                <h2 className="font-serif font-semibold text-2xl text-ink-primary mb-3">Find the right school to match</h2>
+                <p className="text-ink-muted text-sm mb-6">
                     Neighborhood choice follows school choice. Compare all four international schools with fees, acceptance rates, and first-hand verdicts.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

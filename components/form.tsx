@@ -18,9 +18,9 @@ export default function Form() {
 
     if (state.success) {
         return (
-            <div className="bg-green-50 p-6 rounded-lg text-center border border-green-200">
-                <h3 className="text-xl font-bold text-green-800 mb-2">Thank You!</h3>
-                <p className="text-green-700">Your request has been received. We will be in touch shortly with your personalized guide.</p>
+            <div className="bg-trust-light p-6 rounded-xl text-center border border-trust/30">
+                <h3 className="text-xl font-semibold text-ink-primary mb-2">Thank You!</h3>
+                <p className="text-ink-secondary">Your request has been received. We will be in touch shortly with your personalized guide.</p>
                 <div className="mt-4">
                     <Button variant="outline" onClick={() => window.location.reload()}>Send another request</Button>
                 </div>
@@ -29,7 +29,7 @@ export default function Form() {
     }
 
     return (
-        <form action={formAction} className="space-y-4 bg-white/80 p-6 rounded-lg shadow-sm backdrop-blur-sm border">
+        <form action={formAction} className="space-y-4 bg-card p-6 rounded-xl shadow-[var(--shadow-hair)] border border-border">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-2">
                     <Label htmlFor="fullName">Full Name *</Label>

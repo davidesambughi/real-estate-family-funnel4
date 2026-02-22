@@ -82,17 +82,17 @@ export default function Page() {
 
             {/* Header */}
             <div className="mb-6">
-                <div className="flex items-center gap-3 text-xs text-slate-400 mb-4">
+                <div className="flex items-center gap-3 text-xs text-ink-muted mb-4">
                     <time dateTime="2026-02-01">Updated February 2026</time>
                     <span>·</span>
                     <span>{schoolsData.length} schools reviewed</span>
                     <span>·</span>
                     <span>TrustFamily Editorial</span>
                 </div>
-                <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-5 leading-tight">
+                <h1 className="font-serif font-semibold text-4xl md:text-5xl text-ink-primary mb-5 leading-tight">
                     Best Private &amp; Public International<br className="hidden md:block" /> Schools Portugal 2026
                 </h1>
-                <p className="text-lg text-slate-600 leading-relaxed max-w-3xl">
+                <p className="text-lg text-ink-secondary leading-relaxed max-w-3xl">
                     An independent comparison of the top international schools near Lisbon.
                     We review IB, British, and American curricula — with real acceptance rates,
                     all-in fee breakdowns, and editorial verdicts based on first-hand school visits.
@@ -101,12 +101,12 @@ export default function Page() {
             </div>
 
             {/* Table of contents */}
-            <nav className="bg-slate-50 border border-slate-100 rounded-xl p-6 mb-14">
-                <h2 className="text-sm font-bold text-slate-700 uppercase tracking-wide mb-4">In this guide</h2>
+            <nav className="bg-surface-subtle border border-border rounded-xl p-6 mb-14">
+                <h2 className="section-overline mb-4">In this guide</h2>
                 <ol className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     {sections.map((s, i) => (
                         <li key={s.id}>
-                            <a href={`#${s.id}`} className="text-sm text-blue-600 hover:text-blue-800 transition-colors">
+                            <a href={`#${s.id}`} className="text-sm text-brand hover:text-[var(--brand-hover)] transition-colors">
                                 {i + 1}. {s.label}
                             </a>
                         </li>
@@ -118,31 +118,31 @@ export default function Page() {
 
                 {/* 1. Overview */}
                 <section id="overview">
-                    <h2 className="text-3xl font-bold text-slate-900 mb-5">1. Overview: Portugal's international school market</h2>
-                    <p className="text-slate-600 leading-relaxed mb-4">
+                    <h2 className="article-heading mb-5">1. Overview: Portugal's international school market</h2>
+                    <p className="text-ink-secondary leading-relaxed mb-4">
                         Within a 45-minute radius of Lisbon, four internationally accredited schools
                         cover the three major curricula sought by relocating families: British (IGCSE + IB Diploma),
                         American (US graduation pathway + IB Diploma), and pure IB. This concentration is
                         exceptional by European standards — comparable regions in Spain, France, or Germany
                         rarely offer this level of choice within a single commuter zone.
                     </p>
-                    <p className="text-slate-600 leading-relaxed mb-4">
+                    <p className="text-ink-secondary leading-relaxed mb-4">
                         The market is not uniform. Acceptance rates range from 8% (St. Julian's School)
                         to 45% (United Lisbon International School). Annual fees span €12,000 to €32,000.
                         The right school for your family depends on curriculum alignment with your long-term
                         plan, genuine lifestyle fit, and a realistic assessment of your application strength.
                     </p>
-                    <p className="text-slate-600 leading-relaxed">
+                    <p className="text-ink-secondary leading-relaxed">
                         This guide walks through each of those dimensions before presenting the school profiles.
                         If you want a direct match based on your specific situation,
-                        use our <Link href="/school-finder" className="text-blue-600 hover:underline">60-second School Finder quiz</Link>.
+                        use our <Link href="/school-finder" className="text-brand hover:underline">60-second School Finder quiz</Link>.
                     </p>
                 </section>
 
                 {/* 2. Curriculum */}
                 <section id="curriculum">
-                    <h2 className="text-3xl font-bold text-slate-900 mb-5">2. Curriculum guide: which track is right for your children</h2>
-                    <p className="text-slate-600 leading-relaxed mb-6">
+                    <h2 className="article-heading mb-5">2. Curriculum guide: which track is right for your children</h2>
+                    <p className="text-ink-secondary leading-relaxed mb-6">
                         The curriculum decision is the most consequential choice you will make —
                         and the one most families underestimate. It affects university admissions,
                         exam schedules, and how smoothly your children transition if you move again.
@@ -172,13 +172,13 @@ export default function Page() {
                                 <span className={`inline-block text-xs font-semibold px-3 py-1 rounded-full mb-2 ${item.tagColor}`}>
                                     {item.tag}
                                 </span>
-                                <p className="text-xs text-slate-400 mb-3">Offered by: {item.school}</p>
-                                <p className="text-sm text-slate-600 leading-relaxed">{item.content}</p>
+                                <p className="text-xs text-ink-muted mb-3">Offered by: {item.school}</p>
+                                <p className="text-sm text-ink-secondary leading-relaxed">{item.content}</p>
                             </div>
                         ))}
                     </div>
-                    <div className="bg-amber-50 border border-amber-100 rounded-xl p-5">
-                        <p className="text-sm text-amber-800 leading-relaxed">
+                    <div className="bg-warm-light border border-border rounded-xl p-5">
+                        <p className="text-sm text-ink-secondary leading-relaxed">
                             <strong>TrustFamily note:</strong> If you're genuinely undecided between British and American tracks,
                             choose a school with a strong IB Diploma programme — all four schools on this list qualify.
                             The IB eliminates the conversion problem if your family moves again.
@@ -188,8 +188,8 @@ export default function Page() {
 
                 {/* 3. Fees */}
                 <section id="fees">
-                    <h2 className="text-3xl font-bold text-slate-900 mb-5">3. The real cost of international school fees</h2>
-                    <p className="text-slate-600 leading-relaxed mb-4">
+                    <h2 className="article-heading mb-5">3. The real cost of international school fees</h2>
+                    <p className="text-ink-secondary leading-relaxed mb-4">
                         Headline annual tuition is only part of the picture. Based on data from 200+ families,
                         the all-in annual cost of attending an international school in Portugal is typically
                         15–30% higher than the advertised tuition. Here is what the brochures don't highlight.
@@ -221,13 +221,13 @@ export default function Page() {
                             </tbody>
                         </table>
                     </div>
-                    <p className="text-slate-600 leading-relaxed mb-3">
+                    <p className="text-ink-secondary leading-relaxed mb-3">
                         <strong>What the all-in estimate includes:</strong> tuition, registration fee (one-time),
                         school transport (if you live more than 5 km from campus), lunch programme,
                         and a standard set of extra-curricular activities. It excludes uniforms (€300–600)
                         and premium activities.
                     </p>
-                    <p className="text-slate-600 leading-relaxed">
+                    <p className="text-ink-secondary leading-relaxed">
                         <strong>Best value:</strong> United Lisbon International School — families in Parque das Nações
                         pay no transport costs and benefit from the lowest tuition range on this list.
                         <strong> Most expensive:</strong> TASIS Portugal — but also the only school here
@@ -237,8 +237,8 @@ export default function Page() {
 
                 {/* 4. Admissions */}
                 <section id="admissions">
-                    <h2 className="text-3xl font-bold text-slate-900 mb-5">4. The admissions reality</h2>
-                    <p className="text-slate-600 leading-relaxed mb-6">
+                    <h2 className="article-heading mb-5">4. The admissions reality</h2>
+                    <p className="text-ink-secondary leading-relaxed mb-6">
                         The surge in expat families since 2020 has not been matched by a proportional increase
                         in school capacity. Apply early, apply to multiple schools, and understand the timeline.
                         For September entry, most schools open applications October–December of the preceding year.
@@ -250,17 +250,17 @@ export default function Page() {
                             { school: "CAISL", rate: "35%", wait: "3–6 months", verdict: "More accessible but still competitive at popular year levels. Best value for American families." },
                             { school: "United Lisbon", rate: "45%", wait: "1–3 months", verdict: "The most accessible on this list — but growing fast. Apply early for 2026 intake." },
                         ].map((item) => (
-                            <div key={item.school} className="bg-slate-50 border border-slate-100 rounded-xl p-5">
+                            <div key={item.school} className="bg-surface-subtle border border-border rounded-xl p-5">
                                 <h3 className="font-bold text-slate-900 mb-1">{item.school}</h3>
                                 <div className="flex gap-4 text-xs text-slate-500 mb-3">
                                     <span>Acceptance: <strong className="text-slate-700">{item.rate}</strong></span>
                                     <span>Wait: <strong className="text-slate-700">{item.wait}</strong></span>
                                 </div>
-                                <p className="text-xs text-slate-600 leading-relaxed">{item.verdict}</p>
+                                <p className="text-xs text-ink-secondary leading-relaxed">{item.verdict}</p>
                             </div>
                         ))}
                     </div>
-                    <div className="bg-blue-50 border border-blue-100 rounded-xl p-5">
+                    <div className="bg-brand-50 border border-border rounded-xl p-5">
                         <h3 className="font-semibold text-blue-900 mb-2">TrustFamily's admissions rule</h3>
                         <p className="text-sm text-blue-800 leading-relaxed">
                             Apply to a minimum of 2–3 schools simultaneously. Request a shadow day at each
@@ -273,8 +273,8 @@ export default function Page() {
 
                 {/* 5. Methodology */}
                 <section id="methodology">
-                    <h2 className="text-3xl font-bold text-slate-900 mb-5">5. How TrustFamily assessed these schools</h2>
-                    <p className="text-slate-600 leading-relaxed mb-5">
+                    <h2 className="article-heading mb-5">5. How TrustFamily assessed these schools</h2>
+                    <p className="text-ink-secondary leading-relaxed mb-5">
                         Every school on this list has been visited in person by a TrustFamily consultant
                         at least 3 times between 2023 and 2025. Our assessment combines structured school
                         visits, interviews with current families, and verification of published data
@@ -286,14 +286,14 @@ export default function Page() {
                             { emoji: "👨‍👩‍👧", title: "Family interviews", desc: "Structured interviews with current and recent families — not admissions staff." },
                             { emoji: "📊", title: "Data verification", desc: "Fees, acceptance rates, and IB results verified against primary sources." },
                         ].map((item) => (
-                            <div key={item.title} className="bg-slate-50 border border-slate-100 rounded-xl p-5 text-center">
+                            <div key={item.title} className="bg-surface-subtle border border-border rounded-xl p-5 text-center">
                                 <span className="text-3xl mb-3 block">{item.emoji}</span>
-                                <h3 className="font-semibold text-slate-900 mb-2 text-sm">{item.title}</h3>
+                                <h3 className="font-semibold text-ink-primary mb-2 text-sm">{item.title}</h3>
                                 <p className="text-xs text-slate-500 leading-relaxed">{item.desc}</p>
                             </div>
                         ))}
                     </div>
-                    <p className="text-slate-600 leading-relaxed">
+                    <p className="text-ink-secondary leading-relaxed">
                         Schools pay nothing to appear on this list and cannot pay to alter their position,
                         verdict, or any published data. TrustFamily's editorial process is fully independent.
                     </p>
@@ -301,13 +301,13 @@ export default function Page() {
 
                 {/* 6. School cards */}
                 <section id="schools">
-                    <h2 className="text-3xl font-bold text-slate-900 mb-8">6. School profiles</h2>
+                    <h2 className="article-heading mb-8">6. School profiles</h2>
                     <SchoolsList />
                 </section>
 
                 {/* 7. FAQ */}
                 <section id="faq" className="bg-slate-50 rounded-2xl p-8">
-                    <h2 className="text-2xl font-bold mb-6">Frequently Asked Questions</h2>
+                    <h2 className="font-serif font-semibold text-2xl text-ink-primary mb-6">Frequently Asked Questions</h2>
                     <div className="space-y-6">
                         {[
                             { q: "What is the best international school in Portugal?", a: "St. Julian's School in Carcavelos, Cascais — with an 8% acceptance rate and top IB results — is broadly considered the best. For American curriculum families, CAISL offers the best value with US State Department backing." },
@@ -316,7 +316,7 @@ export default function Page() {
                             { q: "Do I need to visit schools in person before applying?", a: "Yes — always. The difference between a school's marketing and its actual atmosphere can be significant. Request a shadow day for your child at each shortlisted school before committing to an enrolment contract." },
                         ].map(({ q, a }) => (
                             <div key={q} className="border-b border-slate-200 pb-5 last:border-0 last:pb-0">
-                                <h3 className="font-semibold text-slate-900 mb-2">{q}</h3>
+                                <h3 className="font-semibold text-ink-primary mb-2">{q}</h3>
                                 <p className="text-slate-600 text-sm leading-relaxed">{a}</p>
                             </div>
                         ))}
@@ -327,8 +327,8 @@ export default function Page() {
 
             {/* Related Neighborhoods */}
             <section className="mt-16">
-                <h2 className="text-2xl font-bold mb-3 text-slate-900">Find the right neighborhood to match</h2>
-                <p className="text-slate-500 text-sm mb-6">School choice drives neighborhood choice. Here are the natural pairings.</p>
+                <h2 className="font-serif font-semibold text-2xl text-ink-primary mb-3">Find the right neighborhood to match</h2>
+                <p className="text-ink-muted text-sm mb-6">School choice drives neighborhood choice. Here are the natural pairings.</p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {[
                         { title: "Cascais & Estoril", desc: "Coastal living 15–20 min from St. Julian's School. Atlantic beaches, large expat community." },
