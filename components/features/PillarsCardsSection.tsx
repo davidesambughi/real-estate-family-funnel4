@@ -34,16 +34,16 @@ export function PillarsCardsSection() {
                         <Card className="h-full cursor-pointer overflow-hidden">
                             {/* Thin editorial accent bar */}
                             <div className={`h-[3px] w-full ${accentClass}`} />
-                            <CardContent className="p-7 flex flex-col h-full">
+                            <CardContent className="p-6 flex flex-col h-full">
                                 <div className="flex items-start justify-between mb-4">
-                                    <h3 className="font-serif font-semibold text-2xl text-ink-primary leading-tight">
+                                    <h3 className="font-serif font-semibold text-h3 text-ink-primary leading-tight">
                                         {t(titleKey)}
                                     </h3>
-                                    <span className="text-ink-muted ml-3 mt-1 translate-x-0 group-hover:translate-x-1.5 transition-transform duration-300 text-lg">
+                                    <span className="text-ink-muted ml-3 mt-1 translate-x-0 group-hover:translate-x-1.5 transition-transform duration-300 text-body">
                                         →
                                     </span>
                                 </div>
-                                <p className="text-ink-secondary leading-relaxed text-[0.9375rem]">
+                                <p className="text-ink-secondary leading-relaxed text-body-sm">
                                     {t(descKey)}
                                 </p>
                             </CardContent>

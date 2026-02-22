@@ -52,7 +52,7 @@ export function Testimonials() {
             <div className="max-w-7xl mx-auto">
                 <p className="section-overline text-center mb-3">What families say</p>
                 <h2 className="section-heading text-center mb-3">Real stories from real families</h2>
-                <p className="text-center text-ink-secondary mb-12 max-w-2xl mx-auto">
+                <p className="text-center section-body mb-12 max-w-2xl mx-auto">
                     Families who used TrustFamily to choose a school and neighborhood before relocating to Portugal.
                 </p>
 
@@ -64,15 +64,15 @@ export function Testimonials() {
                                     {[...Array(5)].map((_, i) => (
                                         <Star
                                             key={i}
-                                            className={`h-4 w-4 ${i < testimonial.rating ? "text-yellow-500 fill-yellow-500" : "text-border"}`}
+                                            className={`h-4 w-4 ${i < testimonial.rating ? "text-warm fill-warm" : "text-border"}`}
                                         />
                                     ))}
                                 </div>
-                                <CardTitle className="text-base text-ink-primary">{testimonial.name}</CardTitle>
-                                <p className="text-xs text-ink-muted">{testimonial.role}</p>
+                                <CardTitle className="text-body font-semibold text-ink-primary">{testimonial.name}</CardTitle>
+                                <p className="text-caption text-ink-muted">{testimonial.role}</p>
                             </CardHeader>
                             <CardContent className="flex-1">
-                                <p className="text-ink-secondary italic text-sm leading-relaxed">"{testimonial.content}"</p>
+                                <p className="text-ink-secondary italic text-body-sm leading-relaxed">"{testimonial.content}"</p>
                             </CardContent>
                         </Card>
                     ))}

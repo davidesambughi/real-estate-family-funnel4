@@ -25,7 +25,7 @@ export function Header() {
             <div className="flex h-16 items-center justify-between px-6 max-w-7xl mx-auto">
                 <div className="flex items-center gap-2">
                     <Link href="/" className="flex items-center gap-2">
-                        <span className="font-serif text-2xl font-semibold tracking-tight text-ink-primary">TrustFamily</span>
+                        <span className="font-serif text-h3 font-semibold tracking-tight text-ink-primary">TrustFamily</span>
                     </Link>
                 </div>
 
@@ -35,7 +35,7 @@ export function Header() {
                         <Link
                             key={item.href}
                             href={item.href}
-                            className="text-sm font-medium text-ink-secondary hover:text-ink-primary transition-colors"
+                            className="text-body-sm font-medium text-ink-secondary hover:text-ink-primary transition-colors"
                         >
                             {item.label}
                         </Link>
@@ -64,7 +64,7 @@ export function Header() {
                                     <Link
                                         key={item.href}
                                         href={item.href}
-                                        className="text-lg font-medium hover:text-primary transition-colors"
+                                        className="text-body font-medium hover:text-primary transition-colors"
                                     >
                                         {item.label}
                                     </Link>
