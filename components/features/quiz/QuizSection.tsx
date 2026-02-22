@@ -14,7 +14,7 @@ export async function QuizSection({ locale }: { locale: string }) {
     const translations = {
         title: t("title"),
         subtitle: t("subtitle"),
-        stepLabel: t("stepLabel"),
+        stepLabel: t.raw("stepLabel") as string,
         nextBtn: t("nextBtn"),
         backBtn: t("backBtn"),
         restartBtn: t("restartBtn"),
