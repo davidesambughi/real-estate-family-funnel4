@@ -102,7 +102,7 @@ export default function Page() {
             </div>
 
             {/* Featured image */}
-            <div className="relative w-full aspect-[4/3] sm:aspect-video overflow-hidden rounded-xl mb-10">
+            <div className="relative w-full aspect-4/3 sm:aspect-video overflow-hidden rounded-xl mb-10">
                 <Image
                     src="/schools-img.jpg"
                     alt="International school campus in Portugal — TrustFamily schools guide"
@@ -119,7 +119,7 @@ export default function Page() {
                 <ol className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     {sections.map((s, i) => (
                         <li key={s.id}>
-                            <a href={`#${s.id}`} className="text-sm text-brand hover:text-[var(--brand-hover)] transition-colors">
+                            <a href={`#${s.id}`} className="text-sm text-brand hover:text-(--brand-hover) transition-colors">
                                 {i + 1}. {s.label}
                             </a>
                         </li>
@@ -283,6 +283,18 @@ export default function Page() {
                         </p>
                     </div>
                 </section>
+
+                {/* Respiro — Admissions → Methodology */}
+                <div className="relative w-full aspect-[21/9] overflow-hidden rounded-2xl">
+                    <Image
+                        src="/school-respiro-img.png"
+                        alt="International school campus in Portugal — TrustFamily editorial visit"
+                        fill
+                        loading="lazy"
+                        sizes="(max-width: 768px) 100vw, 896px"
+                        className="object-cover"
+                    />
+                </div>
 
                 {/* 5. Methodology */}
                 <section id="methodology">

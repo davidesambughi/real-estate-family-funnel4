@@ -114,7 +114,7 @@ export default function RelocationGuidePage() {
             </div>
 
             {/* Featured image */}
-            <div className="relative w-full aspect-[4/3] sm:aspect-video overflow-hidden rounded-xl mb-10">
+            <div className="relative w-full aspect-4/3 sm:aspect-video overflow-hidden rounded-xl mb-10">
                 <Image
                     src="/softLanding-img.png"
                     alt="Family arriving in Portugal — TrustFamily soft landing guide"
@@ -213,6 +213,18 @@ export default function RelocationGuidePage() {
                     </p>
                 </section>
 
+                {/* Respiro — Visas → Schools */}
+                <div className="relative w-full aspect-[21/9] overflow-hidden rounded-2xl">
+                    <Image
+                        src="/guide-respiro-img1.png"
+                        alt="Family beginning a new life in Portugal — TrustFamily relocation guide"
+                        fill
+                        loading="lazy"
+                        sizes="(max-width: 768px) 100vw, 896px"
+                        className="object-cover"
+                    />
+                </div>
+
                 {/* 3. Schools */}
                 <section id="schools">
                     <h2 className="article-heading mb-5">3. Choosing an international school</h2>
@@ -236,7 +248,7 @@ export default function RelocationGuidePage() {
                     <p className="text-ink-secondary leading-relaxed mb-4">
                         <strong>Key rule:</strong> Apply to 2–3 schools simultaneously. With acceptance rates as low as 8%, single-school strategies are high-risk. Most schools require applications 12–18 months before the intended start date, and many run shadow days (where your child attends for a morning) before confirming a place.
                     </p>
-                    <Link href="/best-private-and-public-international-schools-portugal-2026" className="inline-flex items-center text-sm font-medium text-brand hover:text-[var(--brand-hover)] transition-colors">
+                    <Link href="/best-private-and-public-international-schools-portugal-2026" className="inline-flex items-center text-sm font-medium text-brand hover:text-(--brand-hover) transition-colors">
                         Full school comparison with fees and verdicts →
                     </Link>
                 </section>
@@ -261,7 +273,7 @@ export default function RelocationGuidePage() {
                             </div>
                         ))}
                     </div>
-                    <Link href="/top-neighborhoods" className="inline-flex items-center text-sm font-medium text-brand hover:text-[var(--brand-hover)] transition-colors">
+                    <Link href="/top-neighborhoods" className="inline-flex items-center text-sm font-medium text-brand hover:text-(--brand-hover) transition-colors">
                         Full neighborhood guide with commute data and lifestyle profiles →
                     </Link>
                 </section>
@@ -382,6 +394,18 @@ export default function RelocationGuidePage() {
                     </p>
                 </section>
 
+                {/* Respiro — Healthcare → Children & Integration */}
+                <div className="relative w-full aspect-[21/9] overflow-hidden rounded-2xl">
+                    <Image
+                        src="/guide-respiro-img2.png"
+                        alt="Children settling into life in Portugal — TrustFamily family integration guide"
+                        fill
+                        loading="lazy"
+                        sizes="(max-width: 768px) 100vw, 896px"
+                        className="object-cover"
+                    />
+                </div>
+
                 {/* 8. Children & integration */}
                 <section id="children-integration">
                     <h2 className="article-heading mb-5">8. Getting your children settled</h2>
@@ -431,7 +455,7 @@ export default function RelocationGuidePage() {
                             { months: "Months 1–3", title: "First quarter — settling in", tasks: ["Attend school welcome events", "Enrol children in 1–2 extra-curricular activities", "Explore neighborhood and build local routines", "Begin Portuguese lessons if not already started"] },
                         ].map((phase, i) => (
                             <div key={phase.months} className="flex gap-5">
-                                <div className="flex-shrink-0 w-8 h-8 bg-brand text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold mt-1">
+                                <div className="shrink-0 w-8 h-8 bg-brand text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold mt-1">
                                     {i + 1}
                                 </div>
                                 <div className="flex-1 border border-slate-100 rounded-xl p-5 bg-white">

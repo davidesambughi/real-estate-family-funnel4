@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Hero from "@/components/features/Hero";
 import { PillarsCardsSection } from "@/components/features/PillarsCardsSection";
 import { LeadMagnetSection } from "@/components/features/LeadMagnetSection";
@@ -39,6 +40,17 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <Hero />
       <PillarsCardsSection />
       <QuizSection locale={locale} />
+      {/* Respiro — Quiz → Lead Magnet */}
+      <div className="relative w-full aspect-[21/9] overflow-hidden">
+        <Image
+          src="/homepage-respiro-img.png"
+          alt="Family life in Portugal — TrustFamily relocation"
+          fill
+          loading="lazy"
+          sizes="100vw"
+          className="object-cover"
+        />
+      </div>
       <LeadMagnetSection locale={locale} />
       <Testimonials />
     </main>

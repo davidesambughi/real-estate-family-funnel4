@@ -103,7 +103,7 @@ export default function Page() {
             </div>
 
             {/* Featured image */}
-            <div className="relative w-full aspect-[4/3] sm:aspect-video overflow-hidden rounded-xl mb-10">
+            <div className="relative w-full aspect-4/3 sm:aspect-video overflow-hidden rounded-xl mb-10">
                 <Image
                     src="/neighborhoods-img.jpg"
                     alt="Family-friendly neighborhood in Portugal — TrustFamily neighborhoods guide"
@@ -120,7 +120,7 @@ export default function Page() {
                 <ol className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     {sections.map((s, i) => (
                         <li key={s.id}>
-                            <a href={`#${s.id}`} className="text-sm text-brand hover:text-[var(--brand-hover)] transition-colors">
+                            <a href={`#${s.id}`} className="text-sm text-brand hover:text-(--brand-hover) transition-colors">
                                 {i + 1}. {s.label}
                             </a>
                         </li>
@@ -259,6 +259,18 @@ export default function Page() {
                     </p>
                 </section>
 
+                {/* Respiro — Coastal Belt → Sintra */}
+                <div className="relative w-full aspect-[21/9] overflow-hidden rounded-2xl">
+                    <Image
+                        src="/neighborhoods-respiro-img.png"
+                        alt="Portugal landscape — from Atlantic coast to Sintra hills, TrustFamily neighborhoods guide"
+                        fill
+                        loading="lazy"
+                        sizes="(max-width: 768px) 100vw, 896px"
+                        className="object-cover"
+                    />
+                </div>
+
                 {/* 4. Sintra */}
                 <section id="sintra">
                     <h2 className="article-heading mb-5">4. Sintra: nature, history, and two world-class schools</h2>
@@ -334,7 +346,7 @@ export default function Page() {
                             { n: "05", title: "Budget transport costs explicitly", desc: "If you are more than 5 km from school, factor in transport: school bus (€2,000–4,000/year) or car costs. Families who choose proximity over size consistently report higher satisfaction." },
                         ].map((item) => (
                             <div key={item.n} className="flex gap-5 items-start">
-                                <div className="flex-shrink-0 w-10 h-10 bg-brand text-primary-foreground rounded-xl flex items-center justify-center text-sm font-bold">
+                                <div className="shrink-0 w-10 h-10 bg-brand text-primary-foreground rounded-xl flex items-center justify-center text-sm font-bold">
                                     {item.n}
                                 </div>
                                 <div className="flex-1 border border-slate-100 rounded-xl p-4 bg-white">
