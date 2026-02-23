@@ -36,6 +36,9 @@
     "updated": "Atualizado para Admissões 2026"
   },
   "Pillars": {
+    "introOverline": "O seu roteiro de relocalização para Portugal",
+    "introHeading": "Três decisões que definem a mudança da sua família para Portugal",
+    "introBody": "Qual escola internacional perto de Lisboa — IB, britânica ou americana. Qual bairro em Cascais, Sintra ou Parque das Nações. E como gerir vistos, habitação e prazos sem erros dispendiosos. Cada guia é independente, baseado em dados de mais de 200 famílias.",
     "educationTitle": "Educação Primeiro",
     "educationDesc": "Compare currículos IB, Britânico e Americano com dados de desempenho imparciais.",
     "livingTitle": "Estratégia de Vida",
@@ -59,9 +62,9 @@
     "formSubtitle": "Preencha o formulário para começar a sua jornada"
   },
   "Quiz": {
-    "badge": "Localizador de Escolas Grátis",
-    "title": "Encontre a Escola Ideal em 60 Segundos",
-    "subtitle": "Responda a 4 perguntas rápidas e vamos encontrar as escolas e bairros certos para si.",
+    "badge": "Localizador Gratuito de Escola e Bairro",
+    "title": "Não sabe qual escola ou zona se adapta à sua família?",
+    "subtitle": "Responda a 4 perguntas — orçamento, estilo de vida, currículo e prazo — e encontre a escola internacional certa perto de Lisboa e o bairro ideal. 60 segundos.",
     "stepLabel": "Pergunta {current} de {total}",
     "nextBtn": "Próximo",
     "backBtn": "Voltar",

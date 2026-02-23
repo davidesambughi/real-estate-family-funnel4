@@ -285,7 +285,7 @@ export default function Page() {
                 </section>
 
                 {/* Respiro — Admissions → Methodology */}
-                <div className="relative w-full aspect-[21/9] overflow-hidden rounded-2xl">
+                <div className="relative w-full aspect-21/9 overflow-hidden rounded-2xl">
                     <Image
                         src="/school-respiro-img.png"
                         alt="International school campus in Portugal — TrustFamily editorial visit"

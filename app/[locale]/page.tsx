@@ -41,7 +41,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <PillarsCardsSection />
       <QuizSection locale={locale} />
       {/* Respiro — Quiz → Lead Magnet */}
-      <div className="relative w-full aspect-[21/9] overflow-hidden">
+      <div className="relative w-full aspect-21/9 overflow-hidden">
         <Image
           src="/homepage-respiro-img.png"
           alt="Family life in Portugal — TrustFamily relocation"

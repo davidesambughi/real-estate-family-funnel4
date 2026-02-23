@@ -35,7 +35,16 @@ export function PillarsCardsSection() {
 
     return (
         <section id="pillars-teaser" className="py-20 px-6 bg-surface-subtle">
-            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="max-w-7xl mx-auto">
+
+            {/* Editorial intro — left-aligned, SEO anchor */}
+            <div className="max-w-2xl mb-14">
+                <p className="section-overline mb-3">{t("introOverline")}</p>
+                <h2 className="section-heading mb-5">{t("introHeading")}</h2>
+                <p className="section-body">{t("introBody")}</p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {pillars.map(({ href, titleKey, descKey, accentClass, img, imgAlt }) => (
                     <I18nLink key={href} href={href} className="group block h-full">
                         <Card className="h-full cursor-pointer overflow-hidden">
@@ -68,6 +77,7 @@ export function PillarsCardsSection() {
                         </Card>
                     </I18nLink>
                 ))}
+            </div>
             </div>
         </section>
     );

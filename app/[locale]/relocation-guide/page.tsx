@@ -214,7 +214,7 @@ export default function RelocationGuidePage() {
                 </section>
 
                 {/* Respiro — Visas → Schools */}
-                <div className="relative w-full aspect-[21/9] overflow-hidden rounded-2xl">
+                <div className="relative w-full aspect-21/9 overflow-hidden rounded-2xl">
                     <Image
                         src="/guide-respiro-img1.png"
                         alt="Family beginning a new life in Portugal — TrustFamily relocation guide"
@@ -395,7 +395,7 @@ export default function RelocationGuidePage() {
                 </section>
 
                 {/* Respiro — Healthcare → Children & Integration */}
-                <div className="relative w-full aspect-[21/9] overflow-hidden rounded-2xl">
+                <div className="relative w-full aspect-21/9 overflow-hidden rounded-2xl">
                     <Image
                         src="/guide-respiro-img2.png"
                         alt="Children settling into life in Portugal — TrustFamily family integration guide"

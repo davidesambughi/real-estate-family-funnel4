@@ -260,7 +260,7 @@ export default function Page() {
                 </section>
 
                 {/* Respiro — Coastal Belt → Sintra */}
-                <div className="relative w-full aspect-[21/9] overflow-hidden rounded-2xl">
+                <div className="relative w-full aspect-21/9 overflow-hidden rounded-2xl">
                     <Image
                         src="/neighborhoods-respiro-img.png"
                         alt="Portugal landscape — from Atlantic coast to Sintra hills, TrustFamily neighborhoods guide"

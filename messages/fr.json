@@ -36,6 +36,9 @@
     "updated": "Mis à jour pour les admissions 2026"
   },
   "Pillars": {
+    "introOverline": "Votre feuille de route pour vous installer au Portugal",
+    "introHeading": "Trois décisions qui définissent le déménagement de votre famille au Portugal",
+    "introBody": "Quelle école internationale près de Lisbonne — IB, britannique ou américaine. Quel quartier à Cascais, Sintra ou Parque das Nações. Et comment naviguer entre visas, logement et délais sans erreurs coûteuses. Chaque guide est indépendant, basé sur les données de plus de 200 familles.",
     "educationTitle": "L'éducation d'abord",
     "educationDesc": "Comparez les programmes IB, britanniques et américains avec des données de performance impartiales.",
     "livingTitle": "Stratégie de vie",
@@ -59,9 +62,9 @@
     "formSubtitle": "Remplissez le formulaire pour commencer votre parcours"
   },
   "Quiz": {
-    "badge": "Recherche d'école gratuite",
-    "title": "Trouvez votre école idéale en 60 secondes",
-    "subtitle": "Répondez à 4 questions rapides et nous vous trouverons les meilleures écoles et quartiers.",
+    "badge": "Trouvez votre école et quartier gratuitement",
+    "title": "Vous ne savez pas quelle école ou zone convient à votre famille ?",
+    "subtitle": "Répondez à 4 questions — budget, style de vie, programme et calendrier — et trouvez la bonne école internationale près de Lisbonne et le quartier idéal. 60 secondes.",
     "stepLabel": "Question {current} sur {total}",
     "nextBtn": "Suivant",
     "backBtn": "Retour",

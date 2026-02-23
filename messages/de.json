@@ -36,6 +36,9 @@
     "updated": "Aktualisiert für Aufnahmen 2026"
   },
   "Pillars": {
+    "introOverline": "Ihr Umzugs-Leitfaden für Portugal",
+    "introHeading": "Drei Entscheidungen, die den Umzug Ihrer Familie nach Portugal bestimmen",
+    "introBody": "Welche internationale Schule in der Nähe von Lissabon — IB, britisch oder amerikanisch. Welches Viertel in Cascais, Sintra oder Parque das Nações. Und wie man Visa, Wohnen und Zeitpläne ohne kostspielige Fehler navigiert. Jeder Leitfaden ist unabhängig, basierend auf Daten von 200+ Familien.",
     "educationTitle": "Bildung zuerst",
     "educationDesc": "Vergleichen Sie IB-, britische und amerikanische Lehrpläne mit unvoreingenommenen Leistungsdaten.",
     "livingTitle": "Wohnstrategie",
@@ -59,9 +62,9 @@
     "formSubtitle": "Füllen Sie das Formular aus, um Ihre Reise zu beginnen"
   },
   "Quiz": {
-    "badge": "Kostenloser Schulfinder",
-    "title": "Finden Sie Ihre perfekte Schule in 60 Sekunden",
-    "subtitle": "Beantworten Sie 4 kurze Fragen und wir empfehlen Ihnen die passenden Schulen und Stadtteile.",
+    "badge": "Kostenloser Schul- und Stadtteilfinder",
+    "title": "Unsicher, welche Schule oder Gegend zu Ihrer Familie passt?",
+    "subtitle": "Beantworten Sie 4 Fragen — Budget, Lebensstil, Lehrplan und Zeitrahmen — und finden Sie die passende internationale Schule in der Nähe von Lissabon und das richtige Viertel. 60 Sekunden.",
     "stepLabel": "Frage {current} von {total}",
     "nextBtn": "Weiter",
     "backBtn": "Zurück",

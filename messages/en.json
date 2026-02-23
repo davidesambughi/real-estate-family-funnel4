@@ -34,6 +34,9 @@
     "updated": "Updated for 2026 Admissions"
   },
   "Pillars": {
+    "introOverline": "Your Portugal relocation roadmap",
+    "introHeading": "Three decisions that define your family's move to Portugal",
+    "introBody": "Which international school near Lisbon — IB, British, or American. Which neighborhood in Cascais, Sintra, or Parque das Nações. And how to navigate visas, housing, and timelines without costly mistakes. Each guide below is independent, built on data from 200+ families who made this move.",
     "educationTitle": "Education First",
     "educationDesc": "Compare IB, British, and American curriculums with unbiased performance data.",
     "livingTitle": "Living Strategy",
@@ -57,9 +60,9 @@
     "formSubtitle": "Fill out the form below to start your journey"
   },
   "Quiz": {
-    "badge": "Free School Finder",
-    "title": "Find Your Perfect Fit in 60 Seconds",
-    "subtitle": "Answer 4 quick questions and we'll match you with the right schools and neighborhoods.",
+    "badge": "Free School & Neighborhood Matcher",
+    "title": "Not sure which school or area fits your family?",
+    "subtitle": "Answer 4 questions — budget, lifestyle, curriculum, and timeline — and get matched with the right international school near Lisbon and the neighborhood that makes your life easier. 60 seconds.",
     "stepLabel": "Question {current} of {total}",
     "nextBtn": "Next",
     "backBtn": "Back",

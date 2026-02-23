@@ -36,6 +36,9 @@
     "updated": "Bijgewerkt voor toelating 2026"
   },
   "Pillars": {
+    "introOverline": "Uw verhuisgids voor Portugal",
+    "introHeading": "Drie beslissingen die de verhuizing van uw gezin naar Portugal bepalen",
+    "introBody": "Welke internationale school bij Lissabon — IB, Brits of Amerikaans. Welke wijk in Cascais, Sintra of Parque das Nações. En hoe u visa, huisvesting en tijdlijnen zonder kostbare fouten navigeert. Elke gids is onafhankelijk, gebaseerd op gegevens van 200+ gezinnen.",
     "educationTitle": "Onderwijs eerst",
     "educationDesc": "Vergelijk IB-, Britse en Amerikaanse curricula met onbevooroordeelde prestatiegegevens.",
     "livingTitle": "Woonstrategie",
@@ -59,9 +62,9 @@
     "formSubtitle": "Vul het formulier in om uw reis te beginnen"
   },
   "Quiz": {
-    "badge": "Gratis Schoolzoeker",
-    "title": "Vind Uw Perfecte School in 60 Seconden",
-    "subtitle": "Beantwoord 4 vragen en wij koppelen u aan de juiste scholen en buurten.",
+    "badge": "Gratis School- en Buurtzoeker",
+    "title": "Weet u niet welke school of buurt bij uw gezin past?",
+    "subtitle": "Beantwoord 4 vragen — budget, levensstijl, curriculum en tijdlijn — en vind de juiste internationale school bij Lissabon en de ideale wijk. 60 seconden.",
     "stepLabel": "Vraag {current} van {total}",
     "nextBtn": "Volgende",
     "backBtn": "Terug",

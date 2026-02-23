@@ -36,6 +36,9 @@
     "updated": "Actualizado para admisiones 2026"
   },
   "Pillars": {
+    "introOverline": "Su hoja de ruta para reubicarse en Portugal",
+    "introHeading": "Tres decisiones que definen la mudanza de su familia a Portugal",
+    "introBody": "Qué colegio internacional cerca de Lisboa — IB, británico o americano. Qué barrio en Cascais, Sintra o Parque das Nações. Y cómo gestionar visados, vivienda y plazos sin errores costosos. Cada guía es independiente, basada en datos de más de 200 familias.",
     "educationTitle": "La educación primero",
     "educationDesc": "Compare currículos IB, británicos y americanos con datos de rendimiento imparciales.",
     "livingTitle": "Estrategia de vida",
@@ -59,9 +62,9 @@
     "formSubtitle": "Complete el formulario para comenzar su viaje"
   },
   "Quiz": {
-    "badge": "Buscador de Colegios Gratis",
-    "title": "Encuentre Su Colegio Ideal en 60 Segundos",
-    "subtitle": "Responda 4 preguntas rápidas y le recomendaremos los mejores colegios y barrios.",
+    "badge": "Buscador Gratuito de Colegios y Barrios",
+    "title": "¿No sabe qué colegio o zona se adapta a su familia?",
+    "subtitle": "Responda 4 preguntas — presupuesto, estilo de vida, plan de estudios y fecha — y encuentre el colegio internacional adecuado cerca de Lisboa y el barrio ideal. 60 segundos.",
     "stepLabel": "Pregunta {current} de {total}",
     "nextBtn": "Siguiente",
     "backBtn": "Atrás",
