@@ -5,10 +5,36 @@ import { JsonLd } from "@/components/JsonLd";
 import { CheckCircle2, Clock, Target } from "lucide-react";
 import type { Metadata } from "next";
 
+const BASE = process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com';
+
 export const metadata: Metadata = {
     title: "School Finder — Find Your Perfect International School in Portugal | TrustFamily",
     description:
         "Answer 4 questions and get matched with the right international school and neighborhood in Portugal. Free, unbiased, based on your budget, curriculum preference, and lifestyle.",
+    alternates: {
+        canonical: `${BASE}/en/school-finder`,
+        languages: {
+            'en': `${BASE}/en/school-finder`,
+            'pt': `${BASE}/pt/encontrar-escola`,
+            'de': `${BASE}/de/schulfinder`,
+            'fr': `${BASE}/fr/trouver-ecole`,
+            'nl': `${BASE}/nl/school-zoeker`,
+            'es': `${BASE}/es/buscador-escuelas`,
+            'x-default': `${BASE}/en/school-finder`,
+        },
+    },
+    openGraph: {
+        title: "School Finder — Find Your Perfect International School in Portugal | TrustFamily",
+        description: "Answer 4 questions and get matched with the right international school and neighborhood in Portugal. Free, unbiased.",
+        url: `${BASE}/en/school-finder`,
+        siteName: "TrustFamily",
+        type: "website",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "School Finder — Find Your Perfect International School in Portugal",
+        description: "Answer 4 questions and get matched with the right international school and neighborhood in Portugal. Free, unbiased.",
+    },
 };
 
 const steps = [

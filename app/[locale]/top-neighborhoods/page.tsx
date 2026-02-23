@@ -15,22 +15,41 @@ export async function generateMetadata({ params }: PageProps) {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: "Metadata" });
     void t;
+    const base = process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com';
+    const title = "Best Family-Friendly Neighborhoods Portugal 2026 — Lisbon, Cascais, Sintra | TrustFamily";
+    const description = "Find the best family-friendly neighborhoods in Portugal for expats. Compare Cascais, Sintra, Parque das Nações, Campo de Ourique and more — safety, schools, vibe, and commutes.";
     return {
-        title: "Best Family-Friendly Neighborhoods Portugal 2026 — Lisbon, Cascais, Sintra | TrustFamily",
-        description:
-            "Find the best family-friendly neighborhoods in Portugal for expats. Compare Cascais, Sintra, Parque das Nações, Campo de Ourique and more — safety, schools, vibe, and commutes.",
+        title,
+        description,
         alternates: {
+            canonical: `${base}/en/family-friendly-neighborhoods-portugal`,
             languages: {
-                en: `/en/family-friendly-neighborhoods-portugal`,
-                pt: `/pt/bairros-familiares-portugal`,
-                de: `/de/familienfreundliche-nachbarschaften-portugal`,
-                fr: `/fr/quartiers-familiaux-portugal`,
-                nl: `/nl/gezinsvriendelijke-buurten-portugal`,
-                es: `/es/barrios-familiares-portugal`,
+                'en': `${base}/en/family-friendly-neighborhoods-portugal`,
+                'pt': `${base}/pt/bairros-familiares-portugal`,
+                'de': `${base}/de/familienfreundliche-nachbarschaften-portugal`,
+                'fr': `${base}/fr/quartiers-familiaux-portugal`,
+                'nl': `${base}/nl/gezinsvriendelijke-buurten-portugal`,
+                'es': `${base}/es/barrios-familiares-portugal`,
+                'x-default': `${base}/en/family-friendly-neighborhoods-portugal`,
             },
+        },
+        openGraph: {
+            title,
+            description,
+            url: `${base}/en/family-friendly-neighborhoods-portugal`,
+            siteName: "TrustFamily",
+            type: "article",
+        },
+        twitter: {
+            card: "summary_large_image",
+            title,
+            description,
         },
     };
 }
+
+// ISR: pillar page regenerates every 12 h
+export const revalidate = 43200;
 
 const sections = [
     { id: "overview", label: "Overview" },
@@ -44,6 +63,16 @@ const sections = [
 ];
 
 export default function Page() {
+    const speakableSchema = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": ["#key-takeaways", "#faq"],
+        },
+        "url": `${process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com'}/en/family-friendly-neighborhoods-portugal`,
+    };
+
     const itemListSchema = {
         "@context": "https://schema.org",
         "@type": "ItemList",
@@ -80,6 +109,7 @@ export default function Page() {
         <main className="container mx-auto py-12 px-6 max-w-4xl">
             <JsonLd data={itemListSchema} />
             <JsonLd data={faqSchema} />
+            <JsonLd data={speakableSchema} />
             <Breadcrumbs />
 
             {/* Header */}
@@ -100,6 +130,27 @@ export default function Page() {
                     across the five neighborhoods we've mapped in detail. Based on real family data,
                     not property marketing.
                 </p>
+            </div>
+
+            {/* ── KEY TAKEAWAYS — GEO/AI OVERVIEW OPTIMISATION ── */}
+            <div id="key-takeaways" className="bg-brand-50 border border-brand/20 rounded-2xl p-6 mb-8">
+                <h2 className="section-overline mb-4">Key takeaways</h2>
+                <ul className="space-y-2">
+                    {[
+                        "Choose your school first, then choose your neighborhood — morning traffic on the A5 (Cascais line) and IC19 (Sintra) can add 20–30 minutes to stated commutes.",
+                        "Cascais: most popular expat family destination in Portugal. 15 min from St. Julian's School. Largest international community, Atlantic beaches.",
+                        "Estoril: quieter and more residential than Cascais. Same train line, 20 min from St. Julian's. Slightly lower property prices.",
+                        "Sintra: UNESCO World Heritage. 10 min from TASIS Portugal, 15 min from CAISL. Property prices €2,500–4,500/m² vs Cascais €4,000–7,000/m².",
+                        "Parque das Nações: walking distance to United Lisbon International School. Modern, riverfront, 15 min to airport.",
+                        "Campo de Ourique: flat, walkable village-in-the-city feel. Best for families without a car attending Lisbon city schools.",
+                        `TrustFamily has mapped ${neighborhoodsData.length} neighborhoods in detail with real commute times, expat community data, and school proximity scores.`,
+                    ].map((point) => (
+                        <li key={point} className="flex items-start gap-3 text-sm text-ink-secondary leading-snug">
+                            <span className="shrink-0 text-brand font-bold mt-0.5">✓</span>
+                            <span>{point}</span>
+                        </li>
+                    ))}
+                </ul>
             </div>
 
             {/* Featured image */}

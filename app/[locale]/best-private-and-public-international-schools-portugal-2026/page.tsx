@@ -15,22 +15,41 @@ export async function generateMetadata({ params }: PageProps) {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: "Metadata" });
     void t;
+    const base = process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com';
+    const title = "Best International Schools Portugal 2026 — Top Private & Public | TrustFamily";
+    const description = "Independent guide to the best private and public international schools in Portugal 2026. Compare IB, British, and American curricula, fees, locations, and acceptance rates.";
     return {
-        title: "Best International Schools Portugal 2026 — Top Private & Public | TrustFamily",
-        description:
-            "Independent guide to the best private and public international schools in Portugal 2026. Compare IB, British, and American curricula, fees, locations, and acceptance rates.",
+        title,
+        description,
         alternates: {
+            canonical: `${base}/en/best-private-and-public-international-schools-portugal-2026`,
             languages: {
-                en: `/en/best-private-and-public-international-schools-portugal-2026`,
-                pt: `/pt/melhores-escolas-internacionais-privadas-e-publicas-portugal-2026`,
-                de: `/de/beste-private-und-offentliche-internationale-schulen-portugal-2026`,
-                fr: `/fr/meilleures-ecoles-internationales-privees-et-publiques-portugal-2026`,
-                nl: `/nl/beste-prive-en-openbare-internationale-scholen-portugal-2026`,
-                es: `/es/mejores-escuelas-internacionales-privadas-y-publicas-portugal-2026`,
+                'en': `${process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com'}/en/best-private-and-public-international-schools-portugal-2026`,
+                'pt': `${process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com'}/pt/melhores-escolas-internacionais-privadas-e-publicas-portugal-2026`,
+                'de': `${process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com'}/de/beste-private-und-offentliche-internationale-schulen-portugal-2026`,
+                'fr': `${process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com'}/fr/meilleures-ecoles-internationales-privees-et-publiques-portugal-2026`,
+                'nl': `${process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com'}/nl/beste-prive-en-openbare-internationale-scholen-portugal-2026`,
+                'es': `${process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com'}/es/mejores-escuelas-internacionales-privadas-y-publicas-portugal-2026`,
+                'x-default': `${base}/en/best-private-and-public-international-schools-portugal-2026`,
             },
+        },
+        openGraph: {
+            title,
+            description,
+            url: `${base}/en/best-private-and-public-international-schools-portugal-2026`,
+            siteName: "TrustFamily",
+            type: "article",
+        },
+        twitter: {
+            card: "summary_large_image",
+            title,
+            description,
         },
     };
 }
+
+// ISR: pillar page regenerates every 12 h — school fee/acceptance data changes frequently
+export const revalidate = 43200;
 
 const sections = [
     { id: "overview", label: "Overview" },
@@ -43,6 +62,16 @@ const sections = [
 ];
 
 export default function Page() {
+    const speakableSchema = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": ["#key-takeaways", "#faq"],
+        },
+        "url": `${process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com'}/en/best-private-and-public-international-schools-portugal-2026`,
+    };
+
     const itemListSchema = {
         "@context": "https://schema.org",
         "@type": "ItemList",
@@ -79,6 +108,7 @@ export default function Page() {
         <main className="container mx-auto py-12 px-6 max-w-4xl">
             <JsonLd data={itemListSchema} />
             <JsonLd data={faqSchema} />
+            <JsonLd data={speakableSchema} />
             <Breadcrumbs />
 
             {/* Header */}
@@ -99,6 +129,27 @@ export default function Page() {
                     all-in fee breakdowns, and editorial verdicts based on first-hand school visits.
                     No paid placements. No sponsored rankings.
                 </p>
+            </div>
+
+            {/* ── KEY TAKEAWAYS — GEO/AI OVERVIEW OPTIMISATION ── */}
+            <div id="key-takeaways" className="bg-brand-50 border border-brand/20 rounded-2xl p-6 mb-8">
+                <h2 className="section-overline mb-4">Key takeaways</h2>
+                <ul className="space-y-2">
+                    {[
+                        `There are ${schoolsData.length} top internationally accredited schools within 45 minutes of Lisbon — covering IB, British (IGCSE), and American curricula.`,
+                        "Annual fees range from €12,000 (United Lisbon) to €32,000 (TASIS Portugal). All-in costs including transport and extras are 15–30% higher than headline tuition.",
+                        "Acceptance rates vary widely: 8% (St. Julian's School) to 45% (United Lisbon International School). Apply to 2–3 schools simultaneously.",
+                        "All four schools offer the IB Diploma Programme — the most portable qualification for internationally mobile families.",
+                        "St. Julian's School (Carcavelos): best overall, British/IB curriculum, top IB results, 8% acceptance rate — apply 12–18 months ahead.",
+                        "United Lisbon International School: best value, American/IB, most accessible, walking distance from Parque das Nações.",
+                        "For September entry, schools open applications October–December the preceding year. Shadow days (where your child attends classes) are recommended before committing.",
+                    ].map((point) => (
+                        <li key={point} className="flex items-start gap-3 text-sm text-ink-secondary leading-snug">
+                            <span className="shrink-0 text-brand font-bold mt-0.5">✓</span>
+                            <span>{point}</span>
+                        </li>
+                    ))}
+                </ul>
             </div>
 
             {/* Featured image */}
@@ -197,6 +248,17 @@ export default function Page() {
                             The IB eliminates the conversion problem if your family moves again.
                         </p>
                     </div>
+                    <p className="text-xs text-ink-muted mt-3">
+                        IB data source:{" "}
+                        <a
+                            href="https://www.ibo.org/programmes/diploma-programme/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="underline hover:text-ink-secondary transition-colors"
+                        >
+                            International Baccalaureate — Diploma Programme (IBO.org)
+                        </a>
+                    </p>
                 </section>
 
                 {/* 3. Fees */}

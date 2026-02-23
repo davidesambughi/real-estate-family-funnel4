@@ -77,6 +77,22 @@ export const routing = defineRouting({
       nl: '/voorwaarden',
       es: '/terminos'
     },
+    '/blog': {
+      en: '/blog',
+      pt: '/blog',
+      de: '/blog',
+      fr: '/blog',
+      nl: '/blog',
+      es: '/blog'
+    },
+    '/blog/[slug]': {
+      en: '/blog/[slug]',
+      pt: '/blog/[slug]',
+      de: '/blog/[slug]',
+      fr: '/blog/[slug]',
+      nl: '/blog/[slug]',
+      es: '/blog/[slug]'
+    },
     // Dynamic routes
     '/schools': {
       en: '/schools',

@@ -25,21 +25,41 @@ export async function generateMetadata({ params }: PageProps) {
 
     if (!neighborhood) return { title: t("title") };
 
+    const base = process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com';
+    const title = `${neighborhood.name} — Family Friendly Neighborhood Portugal | TrustFamily`;
+    const description = `${neighborhood.description} Vibe: ${neighborhood.vibe}. ${neighborhood.highlights.join(", ")}.`;
     return {
-        title: `${neighborhood.name} — Family Friendly Neighborhood Portugal | TrustFamily`,
-        description: `${neighborhood.description} Vibe: ${neighborhood.vibe}. ${neighborhood.highlights.join(", ")}.`,
+        title,
+        description,
         alternates: {
+            canonical: `${base}/en/neighborhood/${neighborhood.slug}`,
             languages: {
-                en: `/en/neighborhood/${neighborhood.slug}`,
-                pt: `/pt/bairro/${neighborhood.slug}`,
-                de: `/de/nachbarschaft/${neighborhood.slug}`,
-                fr: `/fr/quartier/${neighborhood.slug}`,
-                nl: `/nl/buurt/${neighborhood.slug}`,
-                es: `/es/barrio/${neighborhood.slug}`,
+                'en': `${base}/en/neighborhood/${neighborhood.slug}`,
+                'pt': `${base}/pt/bairro/${neighborhood.slug}`,
+                'de': `${base}/de/nachbarschaft/${neighborhood.slug}`,
+                'fr': `${base}/fr/quartier/${neighborhood.slug}`,
+                'nl': `${base}/nl/buurt/${neighborhood.slug}`,
+                'es': `${base}/es/barrio/${neighborhood.slug}`,
+                'x-default': `${base}/en/neighborhood/${neighborhood.slug}`,
             },
+        },
+        openGraph: {
+            title,
+            description,
+            url: `${base}/en/neighborhood/${neighborhood.slug}`,
+            siteName: "TrustFamily",
+            type: "website",
+        },
+        twitter: {
+            card: "summary_large_image",
+            title,
+            description,
         },
     };
 }
+
+// ISR: regenerate every 24 h so neighborhood data stays fresh
+export const revalidate = 86400;
 
 // Generate static params for all neighborhoods
 export function generateStaticParams() {
@@ -85,9 +105,20 @@ export default async function NeighborhoodDetailPage(props: PageProps) {
     // Find schools in this neighborhood
     const schoolsInArea = schoolsData.filter((s) => s.neighborhoodSlug === neighborhood.slug);
 
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": `${process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com'}/en` },
+            { "@type": "ListItem", "position": 2, "name": "Family-Friendly Neighborhoods", "item": `${process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com'}/en/family-friendly-neighborhoods-portugal` },
+            { "@type": "ListItem", "position": 3, "name": neighborhood.name, "item": `${process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com'}/en/neighborhood/${neighborhood.slug}` },
+        ],
+    };
+
     return (
         <div className="container mx-auto py-12 px-6">
             <JsonLd data={placeSchema} />
+            <JsonLd data={breadcrumbSchema} />
             <Breadcrumbs />
 
             <div className="relative w-full aspect-video overflow-hidden rounded-xl mb-8">

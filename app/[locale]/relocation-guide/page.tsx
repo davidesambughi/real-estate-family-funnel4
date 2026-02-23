@@ -5,21 +5,43 @@ import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-    title: "Family Relocation Guide Portugal 2026 — Visas, Schools, Housing & Costs | TrustFamily",
-    description:
-        "Complete guide to relocating your family to Portugal in 2026. Covers visas (D7, Digital Nomad, EU), housing costs, international schools, healthcare, and a 12-month timeline. Independent, verified.",
-    alternates: {
-        languages: {
-            en: `/en/family-relocation-guide-2026`,
-            pt: `/pt/guia-relocacao-familia-2026`,
-            de: `/de/familien-umzugs-guide-2026`,
-            fr: `/fr/guide-relocalisation-famille-2026`,
-            nl: `/nl/familie-verhuisgids-2026`,
-            es: `/es/guia-relocacion-familia-2026`,
+const BASE = process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com';
+
+export async function generateMetadata(): Promise<Metadata> {
+    return {
+        title: "Family Relocation Guide Portugal 2026 — Visas, Schools, Housing & Costs | TrustFamily",
+        description:
+            "Complete guide to relocating your family to Portugal in 2026. Covers visas (D7, Digital Nomad, EU), housing costs, international schools, healthcare, and a 12-month timeline. Independent, verified.",
+        alternates: {
+            canonical: `${BASE}/en/family-relocation-guide-2026`,
+            languages: {
+                'en': `${BASE}/en/family-relocation-guide-2026`,
+                'pt': `${BASE}/pt/guia-relocacao-familia-2026`,
+                'de': `${BASE}/de/familien-umzugs-guide-2026`,
+                'fr': `${BASE}/fr/guide-relocalisation-famille-2026`,
+                'nl': `${BASE}/nl/familie-verhuisgids-2026`,
+                'es': `${BASE}/es/guia-relocacion-familia-2026`,
+                'x-default': `${BASE}/en/family-relocation-guide-2026`,
+            },
         },
-    },
-};
+        openGraph: {
+            title: "Family Relocation Guide Portugal 2026 | TrustFamily",
+            description: "Complete guide to relocating your family to Portugal in 2026. Visas, schools, housing, healthcare, and a 12-month timeline.",
+            url: `${BASE}/en/family-relocation-guide-2026`,
+            siteName: "TrustFamily",
+            locale: "en",
+            type: "article",
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: "Family Relocation Guide Portugal 2026 | TrustFamily",
+            description: "Complete guide to relocating your family to Portugal in 2026. Visas, schools, housing, healthcare, and a 12-month timeline.",
+        },
+    };
+}
+
+// ISR: visa rules and cost data change — regenerate every 12 h
+export const revalidate = 43200;
 
 const sections = [
     { id: "why-portugal", label: "Why Portugal" },
@@ -34,6 +56,68 @@ const sections = [
 ];
 
 export default function RelocationGuidePage() {
+    const howToSchema = {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "How to relocate your family to Portugal — 12-month step-by-step guide",
+        "description": "A practical month-by-month relocation framework for families moving to Portugal, based on 200+ family relocations handled by TrustFamily consultants.",
+        "totalTime": "P12M",
+        "step": [
+            {
+                "@type": "HowToStep",
+                "position": 1,
+                "name": "Research & school applications (Months 12–10)",
+                "text": "Identify top 3 schools and their admission requirements. Request information packs and schedule school visits. Submit applications — do not wait, wait lists form early. Begin visa research with a licensed immigration lawyer.",
+                "url": `${BASE}/en/family-relocation-guide-2026#timeline`,
+            },
+            {
+                "@type": "HowToStep",
+                "position": 2,
+                "name": "Shortlisting & visas (Months 9–7)",
+                "text": "Attend shadow days at 2–3 shortlisted schools. Receive and compare school offers. Compile documents for D7 or D8 visa application. Begin remote Portuguese language lessons for children.",
+                "url": `${BASE}/en/family-relocation-guide-2026#timeline`,
+            },
+            {
+                "@type": "HowToStep",
+                "position": 3,
+                "name": "Decision & logistics (Months 6–4)",
+                "text": "Confirm school enrolment and pay deposit. Book scouting trip to shortlist neighborhoods. Sign a furnished rental contract remotely where possible. Submit visa application at Portuguese consulate in home country.",
+                "url": `${BASE}/en/family-relocation-guide-2026#timeline`,
+            },
+            {
+                "@type": "HowToStep",
+                "position": 4,
+                "name": "Pre-arrival (Months 3–1)",
+                "text": "Receive visa and organize travel. Ship or store furniture and belongings. Register with GP and private health insurer. Organize Portuguese bank account (required for SNS registration).",
+                "url": `${BASE}/en/family-relocation-guide-2026#timeline`,
+            },
+            {
+                "@type": "HowToStep",
+                "position": 5,
+                "name": "Arrival & first week (Month 0)",
+                "text": "Register at Junta de Freguesia within 30 days (EU) or confirm residence permit (non-EU). Register children with school for orientation. Obtain NIF (Portuguese tax number). Join school parent WhatsApp group immediately.",
+                "url": `${BASE}/en/family-relocation-guide-2026#timeline`,
+            },
+            {
+                "@type": "HowToStep",
+                "position": 6,
+                "name": "First quarter — settling in (Months 1–3)",
+                "text": "Attend school welcome events. Enrol children in 1–2 extra-curricular activities. Explore neighborhood and build local routines. Begin Portuguese lessons if not already started.",
+                "url": `${BASE}/en/family-relocation-guide-2026#timeline`,
+            },
+        ],
+    };
+
+    const speakableSchema = {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": ["#key-takeaways", "#faq"],
+        },
+        "url": `${BASE}/en/family-relocation-guide-2026`,
+    };
+
     const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -92,6 +176,8 @@ export default function RelocationGuidePage() {
         <main className="container mx-auto py-12 px-6 max-w-4xl">
             <JsonLd data={faqSchema} />
             <JsonLd data={articleSchema} />
+            <JsonLd data={howToSchema} />
+            <JsonLd data={speakableSchema} />
             <Breadcrumbs />
 
             {/* Header */}
@@ -111,6 +197,28 @@ export default function RelocationGuidePage() {
                     the right visa to selecting a school, finding a home, and getting your children
                     settled. Based on verified data from 200+ families who have made the move.
                 </p>
+            </div>
+
+            {/* ── KEY TAKEAWAYS — GEO/AI OVERVIEW OPTIMISATION ── */}
+            {/* Structured summary extracted verbatim by AI search engines */}
+            <div id="key-takeaways" className="bg-brand-50 border border-brand/20 rounded-2xl p-6 mb-8">
+                <h2 className="section-overline mb-4">Key takeaways</h2>
+                <ul className="space-y-2">
+                    {[
+                        "EU/EEA citizens need no visa — just register as residents within 30 days of arrival.",
+                        "Non-EU families most commonly use the D7 Passive Income Visa (~€760/month income requirement) or D8 Digital Nomad Visa (€3,040/month minimum).",
+                        "Monthly cost of living for a family of 4 in Lisbon area: €4,650–8,750/month excluding school fees.",
+                        "International school fees: €12,000–32,000 per child per year. Apply to 2–3 schools 12–18 months in advance — St. Julian's has an 8% acceptance rate.",
+                        "Top family neighborhoods: Cascais (coastal, expat hub, 15 min from St. Julian's), Sintra (nature, 2 schools nearby), Parque das Nações (city, walking distance to United Lisbon).",
+                        "Private health insurance recommended for expat families: €200–500/month for a family of 4 (providers: CUF, Luz Saúde, HPA).",
+                        "Portugal ranks in the top 7 safest countries globally (Global Peace Index 2025) with 300+ sunny days per year in Lisbon.",
+                    ].map((point) => (
+                        <li key={point} className="flex items-start gap-3 text-sm text-ink-secondary leading-snug">
+                            <span className="shrink-0 text-brand font-bold mt-0.5">✓</span>
+                            <span>{point}</span>
+                        </li>
+                    ))}
+                </ul>
             </div>
 
             {/* Featured image */}
@@ -163,6 +271,17 @@ export default function RelocationGuidePage() {
                             </div>
                         ))}
                     </div>
+                    <p className="text-xs text-ink-muted mt-3">
+                        Source:{" "}
+                        <a
+                            href="https://www.visionofhumanity.org/maps/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="underline hover:text-ink-secondary transition-colors"
+                        >
+                            Global Peace Index 2025 — Institute for Economics & Peace
+                        </a>
+                    </p>
                 </section>
 
                 {/* 2. Visas */}
@@ -209,7 +328,15 @@ export default function RelocationGuidePage() {
                         ))}
                     </div>
                     <p className="text-xs text-ink-muted mt-4 italic">
-                        Disclaimer: visa rules change frequently. This is editorial guidance, not legal advice. Always verify current requirements with a licensed immigration lawyer and the official SEF/AIMA portal.
+                        Disclaimer: visa rules change frequently. This is editorial guidance, not legal advice. Always verify current requirements with a licensed immigration lawyer and the official{" "}
+                        <a
+                            href="https://www.imigracao.gov.pt/en/services/entry-stay-or-live-in-pt"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="underline hover:text-ink-secondary transition-colors"
+                        >
+                            AIMA immigration portal
+                        </a>.
                     </p>
                 </section>
 
@@ -477,7 +604,7 @@ export default function RelocationGuidePage() {
                 </section>
 
                 {/* FAQ */}
-                <section>
+                <section id="faq">
                     <h2 className="article-heading mb-6">Frequently Asked Questions</h2>
                     <div className="space-y-5">
                         {[

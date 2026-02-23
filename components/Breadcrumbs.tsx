@@ -15,27 +15,9 @@ export function Breadcrumbs() {
 
     const pathSegments = pathname.split("/").filter((segment) => segment);
 
-    // Schema.org BreadcrumbList
-    const jsonLd = {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": pathSegments.map((segment, index) => {
-            const href = `/${pathSegments.slice(0, index + 1).join("/")}`;
-            return {
-                "@type": "ListItem",
-                "position": index + 1,
-                "name": segment.replace(/-/g, " ").replace(/\b\w/g, (char) => char.toUpperCase()),
-                "item": `${process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'}/${locale}${href}`
-            };
-        })
-    };
-
     return (
         <nav className="flex items-center text-sm text-muted-foreground mb-6" aria-label="Breadcrumb">
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-            />
+            {/* BreadcrumbList JSON-LD is rendered server-side by each page via <JsonLd> */}
             <ol className="flex items-center space-x-2">
                 <li>
                     <Link href="/" className="hover:text-foreground transition-colors">

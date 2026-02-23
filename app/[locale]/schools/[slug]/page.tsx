@@ -24,21 +24,41 @@ export async function generateMetadata({ params }: PageProps) {
 
     if (!school) return { title: t("title") };
 
+    const base = process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com';
+    const title = `${school.name} — International School Portugal | TrustFamily`;
+    const description = `${school.description} Curriculum: ${school.curriculum}. Annual fees: ${school.fees}. Location: ${school.location}.`;
     return {
-        title: `${school.name} — International School Portugal | TrustFamily`,
-        description: `${school.description} Curriculum: ${school.curriculum}. Annual fees: ${school.fees}. Location: ${school.location}.`,
+        title,
+        description,
         alternates: {
+            canonical: `${base}/en/school/${school.slug}`,
             languages: {
-                en: `/en/school/${school.slug}`,
-                pt: `/pt/escola/${school.slug}`,
-                de: `/de/schule/${school.slug}`,
-                fr: `/fr/ecole/${school.slug}`,
-                nl: `/nl/school/${school.slug}`,
-                es: `/es/escuela/${school.slug}`,
+                'en': `${base}/en/school/${school.slug}`,
+                'pt': `${base}/pt/escola/${school.slug}`,
+                'de': `${base}/de/schule/${school.slug}`,
+                'fr': `${base}/fr/ecole/${school.slug}`,
+                'nl': `${base}/nl/school/${school.slug}`,
+                'es': `${base}/es/escuela/${school.slug}`,
+                'x-default': `${base}/en/school/${school.slug}`,
             },
+        },
+        openGraph: {
+            title,
+            description,
+            url: `${base}/en/school/${school.slug}`,
+            siteName: "TrustFamily",
+            type: "website",
+        },
+        twitter: {
+            card: "summary_large_image",
+            title,
+            description,
         },
     };
 }
+
+// ISR: regenerate every 24 h so school data stays fresh without full rebuilds
+export const revalidate = 86400;
 
 // Generate static params for all schools
 export function generateStaticParams() {
@@ -71,13 +91,28 @@ export default async function SchoolDetailPage(props: PageProps) {
             "latitude": school.coordinates.lat,
             "longitude": school.coordinates.lng,
         },
-        ...(school.acceptanceRate && { "numberOfCredits": school.acceptanceRate }),
-        ...(school.inspectionDate && { "foundingDate": school.inspectionDate }),
+        ...(school.acceptanceRate && { "additionalProperty": {
+            "@type": "PropertyValue",
+            "name": "acceptanceRate",
+            "value": school.acceptanceRate,
+        }}),
+        ...(school.inspectionDate && { "dateModified": school.inspectionDate }),
+    };
+
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": `${process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com'}/en` },
+            { "@type": "ListItem", "position": 2, "name": "International Schools", "item": `${process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com'}/en/schools` },
+            { "@type": "ListItem", "position": 3, "name": school.name, "item": `${process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com'}/en/school/${school.slug}` },
+        ],
     };
 
     return (
         <div className="container mx-auto py-12 px-6">
             <JsonLd data={schoolSchema} />
+            <JsonLd data={breadcrumbSchema} />
             <Breadcrumbs />
 
             <div className="relative w-full aspect-video overflow-hidden rounded-xl mb-8">

@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next';
 import { routing } from '@/i18n/routing';
 import { schoolsData } from '@/lib/schools-data';
 import { neighborhoodsData } from '@/lib/neighborhoods-data';
+import { blogArticles } from '@/lib/blog-data';
 
 const host = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
 
@@ -23,7 +24,8 @@ function resolveLocalePath(
 function buildEntry(
   logicalKey: keyof typeof routing.pathnames,
   priority: number,
-  changeFrequency: MetadataRoute.Sitemap[number]['changeFrequency'] = 'monthly'
+  changeFrequency: MetadataRoute.Sitemap[number]['changeFrequency'] = 'monthly',
+  lastModified: Date = new Date('2026-02-01')
 ): MetadataRoute.Sitemap[number] {
   const enPath = resolveLocalePath(logicalKey, 'en');
   const canonical = `${host}/en${enPath === '/' ? '' : enPath}`;
@@ -37,7 +39,7 @@ function buildEntry(
 
   return {
     url: canonical,
-    lastModified: new Date(),
+    lastModified,
     changeFrequency,
     priority,
     alternates: { languages },
@@ -46,18 +48,17 @@ function buildEntry(
 
 export default function sitemap(): MetadataRoute.Sitemap {
   // ── 1. Static pages ─────────────────────────────────────────────────────────
+  // NOTE: only include pages that actually exist as app/[locale]/*/page.tsx.
+  // /contact, /privacy, /terms are NOT yet implemented — add them when pages exist.
   const staticEntries = [
-    buildEntry('/', 1.0, 'weekly'),
-    buildEntry('/best-private-and-public-international-schools-portugal-2026', 0.9, 'weekly'),
-    buildEntry('/top-neighborhoods', 0.9, 'weekly'),
-    buildEntry('/relocation-guide', 0.8, 'monthly'),
-    buildEntry('/school-finder', 0.8, 'monthly'),
-    buildEntry('/about', 0.6, 'yearly'),
-    buildEntry('/schools', 0.7, 'weekly'),
-    buildEntry('/neighborhoods', 0.7, 'weekly'),
-    buildEntry('/contact', 0.5, 'yearly'),
-    buildEntry('/privacy', 0.3, 'yearly'),
-    buildEntry('/terms', 0.3, 'yearly'),
+    buildEntry('/', 1.0, 'weekly', new Date('2026-02-01')),
+    buildEntry('/best-private-and-public-international-schools-portugal-2026', 0.9, 'weekly', new Date('2026-02-10')),
+    buildEntry('/top-neighborhoods', 0.9, 'weekly', new Date('2026-02-01')),
+    buildEntry('/relocation-guide', 0.8, 'monthly', new Date('2026-02-01')),
+    buildEntry('/school-finder', 0.8, 'monthly', new Date('2026-01-15')),
+    buildEntry('/about', 0.6, 'yearly', new Date('2026-01-01')),
+    buildEntry('/schools', 0.7, 'weekly', new Date('2026-02-10')),
+    buildEntry('/neighborhoods', 0.7, 'weekly', new Date('2026-02-01')),
   ];
 
   // ── 2. Dynamic school pages ──────────────────────────────────────────────────
@@ -88,7 +89,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
       return {
         url,
-        lastModified: new Date(),
+        lastModified: new Date('2026-02-10'),
         changeFrequency: 'monthly' as const,
         priority: 0.8,
         alternates: { languages },
@@ -122,7 +123,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
         return {
           url,
-          lastModified: new Date(),
+          lastModified: new Date('2026-02-01'),
           changeFrequency: 'monthly' as const,
           priority: 0.7,
           alternates: { languages },
@@ -130,5 +131,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
       })
   );
 
-  return [...staticEntries, ...schoolEntries, ...neighborhoodEntries];
+  // ── 4. Blog post pages ───────────────────────────────────────────────────────
+  // Blog is English-only for now — canonical URL is /en/blog/[slug]
+  const blogEntries: MetadataRoute.Sitemap = blogArticles.map((article) => ({
+    url: `${host}/en/blog/${article.slug}`,
+    lastModified: new Date(article.dateModified),
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
+    alternates: {
+      languages: {
+        en: `${host}/en/blog/${article.slug}`,
+      },
+    },
+  }));
+
+  // Blog listing page
+  const blogListEntry: MetadataRoute.Sitemap = [
+    {
+      url: `${host}/en/blog`,
+      lastModified: new Date(blogArticles[blogArticles.length - 1].dateModified),
+      changeFrequency: 'weekly' as const,
+      priority: 0.7,
+      alternates: {
+        languages: {
+          en: `${host}/en/blog`,
+        },
+      },
+    },
+  ];
+
+  return [...staticEntries, ...schoolEntries, ...neighborhoodEntries, ...blogListEntry, ...blogEntries];
 }

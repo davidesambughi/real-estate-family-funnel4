@@ -1,0 +1,41 @@
+# TrustFamily — robots.txt
+# Last updated: February 2026
+
+# ── Standard crawlers ───────────────────────────────────────────────────────────
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+
+# ── AI INFERENCE / SEARCH BOTS — allow (citations + AI Overviews) ────────────
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# ChatGPT search (OpenAI)
+User-agent: ChatGPT-User
+Allow: /
+
+# Google AI Overview / Gemini (via standard Googlebot — already allowed above)
+User-agent: Google-Extended
+Allow: /
+
+# You.com
+User-agent: YouBot
+Allow: /
+
+# ── AI TRAINING BOTS — disallowed (content is proprietary) ───────────────────
+# OpenAI training crawler
+User-agent: GPTBot
+Disallow: /
+
+# Common Crawl (used for many LLM training datasets)
+User-agent: CCBot
+Disallow: /
+
+# Anthropic training crawler
+User-agent: anthropic-ai
+Disallow: /
+
+# ── Sitemap ──────────────────────────────────────────────────────────────────
+Sitemap: https://trustfamily.com/sitemap.xml

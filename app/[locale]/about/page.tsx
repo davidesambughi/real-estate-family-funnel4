@@ -4,11 +4,39 @@ import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-    title: "About TrustFamily — Independent School & Relocation Intelligence for Portugal",
-    description:
-        "TrustFamily is an independent platform helping affluent international families relocate to Portugal with confidence. We verify schools, neighborhoods, and relocation data — with no paid placements and no conflicts of interest.",
-};
+const BASE = process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com';
+
+export async function generateMetadata(): Promise<Metadata> {
+    return {
+        title: "About TrustFamily — Independent School & Relocation Intelligence for Portugal",
+        description:
+            "TrustFamily is an independent platform helping affluent international families relocate to Portugal with confidence. We verify schools, neighborhoods, and relocation data — with no paid placements and no conflicts of interest.",
+        alternates: {
+            canonical: `${BASE}/en/about`,
+            languages: {
+                'en': `${BASE}/en/about`,
+                'pt': `${BASE}/pt/sobre`,
+                'de': `${BASE}/de/uber`,
+                'fr': `${BASE}/fr/a-propos`,
+                'nl': `${BASE}/nl/over`,
+                'es': `${BASE}/es/sobre`,
+                'x-default': `${BASE}/en/about`,
+            },
+        },
+        openGraph: {
+            title: "About TrustFamily — Independent School & Relocation Intelligence for Portugal",
+            description: "TrustFamily is an independent platform helping affluent international families relocate to Portugal with confidence.",
+            url: `${BASE}/en/about`,
+            siteName: "TrustFamily",
+            type: "website",
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: "About TrustFamily — Independent School & Relocation Intelligence",
+            description: "TrustFamily is an independent platform helping affluent international families relocate to Portugal with confidence.",
+        },
+    };
+}
 
 const stats = [
     { value: "200+", label: "families guided" },
@@ -37,13 +65,15 @@ const principles = [
 ];
 
 export default function AboutPage() {
+    const base = process.env.NEXT_PUBLIC_BASE_URL || "https://trustfamily.com";
+
     const orgSchema = {
         "@context": "https://schema.org",
         "@type": "Organization",
         "name": "TrustFamily",
         "description":
             "Independent intelligence platform for international families relocating to Portugal. Provides verified school comparisons, neighborhood guides, and relocation resources.",
-        "url": process.env.NEXT_PUBLIC_BASE_URL || "https://trustfamily.com",
+        "url": base,
         "foundingDate": "2024",
         "areaServed": "PT",
         "knowsAbout": [
@@ -52,11 +82,40 @@ export default function AboutPage() {
             "Expat neighborhoods Lisbon",
             "IB British American curriculum comparison",
         ],
+        // sameAs: add social/directory profiles when available
+        // "sameAs": ["https://www.linkedin.com/company/trustfamily"],
+    };
+
+    // Person schema — E-E-A-T signal: editorial team with domain expertise
+    const editorialPersonSchema = {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "TrustFamily Editorial Team",
+        "jobTitle": "Education & Relocation Intelligence",
+        "description": "A team of consultants who have guided 200+ international families through school selection and relocation to Portugal. Conducted 50+ in-person school visits across St. Julian's School, TASIS Portugal, CAISL, and United Lisbon International School.",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "TrustFamily",
+            "url": base,
+        },
+        "knowsAbout": [
+            "International schools in Portugal",
+            "IB Diploma Programme",
+            "British curriculum schools",
+            "American curriculum schools",
+            "Family relocation to Portugal",
+            "Portugal D7 visa",
+            "Portugal Digital Nomad visa",
+            "Cascais expat community",
+            "Sintra schools",
+        ],
+        "url": `${base}/en/about`,
     };
 
     return (
         <main className="container mx-auto py-12 px-6 max-w-4xl">
             <JsonLd data={orgSchema} />
+            <JsonLd data={editorialPersonSchema} />
             <Breadcrumbs />
 
             {/* Hero */}
