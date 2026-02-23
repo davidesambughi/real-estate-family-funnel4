@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
@@ -98,6 +99,18 @@ export default function Page() {
                     all-in fee breakdowns, and editorial verdicts based on first-hand school visits.
                     No paid placements. No sponsored rankings.
                 </p>
+            </div>
+
+            {/* Featured image */}
+            <div className="relative w-full aspect-[4/3] sm:aspect-video overflow-hidden rounded-xl mb-10">
+                <Image
+                    src="/schools-img.jpg"
+                    alt="International school campus in Portugal — TrustFamily schools guide"
+                    fill
+                    priority
+                    sizes="(max-width: 768px) 100vw, 896px"
+                    className="object-cover"
+                />
             </div>
 
             {/* Table of contents */}

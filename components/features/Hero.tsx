@@ -28,7 +28,7 @@ export default function Hero() {
           {/* Hero image — LCP, right on desktop */}
           <div className="order-1 md:order-2 relative aspect-video md:aspect-4/3 w-full overflow-hidden rounded-xl bg-surface-subtle">
             <Image
-              src="https://placehold.co/1440x810/94a3b8/cbd5e1?text=Hero"
+              src="/hero-img.jpg"
               alt="Expat family in Lisbon, Portugal - TrustFamily relocation guide"
               fill
               priority
@@ -36,6 +36,7 @@ export default function Hero() {
               placeholder="blur"
               blurDataURL={HERO_BLUR}
               className="object-cover"
+              unoptimized={true}
             />
           </div>
         </div>

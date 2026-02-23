@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Link } from "@/i18n/navigation";
 import { getTranslations } from "next-intl/server";
@@ -88,6 +89,17 @@ export default async function NeighborhoodDetailPage(props: PageProps) {
         <div className="container mx-auto py-12 px-6">
             <JsonLd data={placeSchema} />
             <Breadcrumbs />
+
+            <div className="relative w-full aspect-video overflow-hidden rounded-xl mb-8">
+                <Image
+                    src="/neighborhoods-img.jpg"
+                    alt="Family-friendly neighborhood in Portugal"
+                    fill
+                    priority
+                    sizes="100vw"
+                    className="object-cover"
+                />
+            </div>
 
             <div className="flex flex-col md:flex-row gap-8 justify-between items-start mb-8">
                 <div>

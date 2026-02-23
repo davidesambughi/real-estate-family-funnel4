@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
@@ -99,6 +100,18 @@ export default function Page() {
                     across the five neighborhoods we've mapped in detail. Based on real family data,
                     not property marketing.
                 </p>
+            </div>
+
+            {/* Featured image */}
+            <div className="relative w-full aspect-[4/3] sm:aspect-video overflow-hidden rounded-xl mb-10">
+                <Image
+                    src="/neighborhoods-img.jpg"
+                    alt="Family-friendly neighborhood in Portugal — TrustFamily neighborhoods guide"
+                    fill
+                    priority
+                    sizes="(max-width: 768px) 100vw, 896px"
+                    className="object-cover"
+                />
             </div>
 
             {/* Table of contents */}

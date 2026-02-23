@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { Link } from "@/i18n/navigation";
@@ -110,6 +111,18 @@ export default function RelocationGuidePage() {
                     the right visa to selecting a school, finding a home, and getting your children
                     settled. Based on verified data from 200+ families who have made the move.
                 </p>
+            </div>
+
+            {/* Featured image */}
+            <div className="relative w-full aspect-[4/3] sm:aspect-video overflow-hidden rounded-xl mb-10">
+                <Image
+                    src="/softLanding-img.png"
+                    alt="Family arriving in Portugal — TrustFamily soft landing guide"
+                    fill
+                    priority
+                    sizes="(max-width: 768px) 100vw, 896px"
+                    className="object-cover"
+                />
             </div>
 
             {/* Table of contents */}
