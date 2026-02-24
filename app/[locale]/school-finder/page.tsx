@@ -135,7 +135,7 @@ export default function SchoolFinderPage() {
             {/* CTA */}
             <div className="text-center mb-16">
                 <Button size="lg" className="text-lg px-10 py-6 h-auto shadow-xl shadow-blue-900/10" asChild>
-                    <Link href="/#quiz">
+                    <Link href={{ pathname: "/", hash: "quiz" }}>
                         Start the School Finder →
                     </Link>
                 </Button>
