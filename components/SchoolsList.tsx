@@ -44,7 +44,7 @@ export function SchoolsList() {
                         </div>
 
                         {/* School name */}
-                        <CardTitle className="text-xl leading-tight group-hover:text-brand transition-colors">
+                        <CardTitle className="text-h3 leading-tight group-hover:text-brand transition-colors">
                             {school.name}
                         </CardTitle>
                         <CardDescription className="flex items-center gap-1.5 mt-1.5">

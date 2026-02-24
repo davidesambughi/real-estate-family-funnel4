@@ -25,8 +25,9 @@
     "description": "Expertgids voor gezinsverhuizingen naar Portugal. Vind de beste internationale scholen en gezinsvriendelijke buurten."
   },
   "Hero": {
+    "overline": "De onafhankelijke gids · Portugal 2026",
     "title": "Zeker de Toekomst van Uw Kinderen in Portugal",
-    "subtitle": "Wij verifiëren scholen en buurten zodat u dat niet hoeft te doen. Data van 200+ ouderbeoordeling en 50+ inspecties.",
+    "subtitle": "TrustFamily is de onafhankelijke gids voor internationale gezinnen die naar Portugal verhuizen. We vergelijken alle toonaangevende internationale scholen in de buurt van Lissabon — IB-, Brits en Amerikaans curriculum bij St. Julian's, TASIS Portugal, CAISL en United Lisbon — brengen gezinsvriendelijke wijken in Cascais, Sintra en Parque das Nações in kaart, en begeleiden u stap voor stap door de D7-, D8- en Golden Visa-opties. Twee jaar schoolbezoeken ter plaatse, 200+ gezinnen, geen commerciële relaties: het eerlijke, gestructureerde onderzoek dat u nodig heeft voordat u beslist.",
     "cta": "Vind uw school",
     "ctaSecondary": "Schoolbeoordeling starten"
   },
@@ -44,7 +45,9 @@
     "livingTitle": "Woonstrategie",
     "livingDesc": "Vind gezinsveilige buurten met geoptimaliseerde reistijden naar de gekozen school.",
     "softLandingTitle": "Zachte landing",
-    "softLandingDesc": "Een volledig integratiesysteem om uw kinderen vanaf dag 1 te laten floreren."
+    "softLandingDesc": "Een volledig integratiesysteem om uw kinderen vanaf dag 1 te laten floreren.",
+    "softLandingTeaser": "Van het juiste visum tot de juiste school en de juiste buurt — een complete, geverifieerde gids voor het verhuizen van uw gezin naar Portugal. Gebaseerd op twee jaar onderzoek en de echte ervaringen van meer dan 200 gezinnen.",
+    "readGuide": "Lees de volledige gids"
   },
   "LeadMagnet": {
     "heading": "Verhuist u naar Portugal?",

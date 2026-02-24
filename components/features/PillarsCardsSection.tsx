@@ -1,84 +1,105 @@
 import Image from "next/image";
 import { Link as I18nLink } from "@/i18n/navigation";
-import { Card, CardContent } from "@/components/ui/card";
 import { useTranslations } from "next-intl";
 
-const pillars = [
-    {
-        href: "/best-private-and-public-international-schools-portugal-2026" as const,
-        titleKey: "educationTitle" as const,
-        descKey: "educationDesc" as const,
-        accentClass: "bg-brand",
-        img: "/school-card-img.png",
-        imgAlt: "International school campus in Portugal — TrustFamily schools guide",
-    },
-    {
-        href: "/top-neighborhoods" as const,
-        titleKey: "livingTitle" as const,
-        descKey: "livingDesc" as const,
-        accentClass: "bg-trust",
-        img: "/neighborhood-card-img.png",
-        imgAlt: "Family-friendly neighborhood in Cascais, Portugal — TrustFamily neighborhoods guide",
-    },
-    {
-        href: "/relocation-guide" as const,
-        titleKey: "softLandingTitle" as const,
-        descKey: "softLandingDesc" as const,
-        accentClass: "bg-warm",
-        img: "/guides-card-img.png",
-        imgAlt: "Family relocating to Portugal — TrustFamily relocation guide 2026",
-    },
-];
-
+/**
+ * PillarsCardsSection — editorial feature spread, no section/container wrappers.
+ * The parent article in page.tsx provides all layout context and padding.
+ */
 export function PillarsCardsSection() {
     const t = useTranslations('Pillars');
 
     return (
-        <section id="pillars-teaser" className="py-20 px-6 bg-surface-subtle">
-            <div className="max-w-7xl mx-auto">
-
-            {/* Editorial intro — left-aligned, SEO anchor */}
+        <div>
+            {/* Editorial section intro — i18n'd, left-aligned */}
             <div className="max-w-2xl mb-14">
                 <p className="section-overline mb-3">{t("introOverline")}</p>
                 <h2 className="section-heading mb-5">{t("introHeading")}</h2>
-                <p className="section-body">{t("introBody")}</p>
+                <p className="section-body text-ink-secondary">{t("introBody")}</p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {pillars.map(({ href, titleKey, descKey, accentClass, img, imgAlt }) => (
-                    <I18nLink key={href} href={href} className="group block h-full">
-                        <Card className="h-full cursor-pointer overflow-hidden">
-                            {/* Card image */}
-                            <div className="relative w-full aspect-video overflow-hidden">
-                                <Image
-                                    src={img}
-                                    alt={imgAlt}
-                                    fill
-                                    loading="lazy"
-                                    sizes="(max-width: 768px) calc(100vw - 48px), 400px"
-                                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                                />
-                            </div>
-                            {/* Thin editorial accent bar */}
-                            <div className={`h-[3px] w-full ${accentClass}`} />
-                            <CardContent className="p-6 flex flex-col h-full">
-                                <div className="flex items-start justify-between mb-4">
-                                    <h3 className="font-serif font-semibold text-h3 text-ink-primary leading-tight">
-                                        {t(titleKey)}
-                                    </h3>
-                                    <span className="text-ink-muted ml-3 mt-1 translate-x-0 group-hover:translate-x-1.5 transition-transform duration-300 text-body">
-                                        →
-                                    </span>
-                                </div>
-                                <p className="text-ink-secondary leading-relaxed text-body-sm">
-                                    {t(descKey)}
-                                </p>
-                            </CardContent>
-                        </Card>
+            {/* Asymmetric editorial spread — cover story left, sidebar right */}
+            <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr] gap-12 lg:gap-16 items-start">
+
+                {/* Cover story — Relocation Guide (dominant feature) */}
+                <I18nLink href="/relocation-guide" className="group block">
+                    <div className="relative w-full aspect-[4/3] overflow-hidden bg-surface-subtle mb-7">
+                        <Image
+                            src="/guides-card-img.png"
+                            alt="Family relocating to Portugal — TrustFamily relocation guide 2026"
+                            fill
+                            loading="lazy"
+                            sizes="(max-width: 1024px) 100vw, 60vw"
+                            className="object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+                        />
+                    </div>
+                    <p className="section-overline mb-3">{t("softLandingTitle")}</p>
+                    <h3 className="font-serif font-semibold text-h2 text-ink-primary leading-tight mb-4 group-hover:text-brand transition-colors duration-200">
+                        {t("introHeading")}
+                    </h3>
+                    <p className="text-body text-ink-secondary leading-relaxed mb-5 max-w-xl">
+                        {t("softLandingTeaser")}
+                    </p>
+                    <span className="inline-flex items-center text-sm font-medium text-brand gap-1 group-hover:gap-2 transition-all duration-200">
+                        {t("readGuide")}
+                        <span aria-hidden="true">→</span>
+                    </span>
+                </I18nLink>
+
+                {/* Sidebar — Schools + Neighborhoods (secondary features) */}
+                <div className="flex flex-col gap-10 lg:border-l lg:border-border lg:pl-10">
+
+                    {/* Schools */}
+                    <I18nLink
+                        href="/best-private-and-public-international-schools-portugal-2026"
+                        className="group block"
+                    >
+                        <div className="relative w-full aspect-video overflow-hidden bg-surface-subtle mb-4">
+                            <Image
+                                src="/school-card-img.png"
+                                alt="International school campus in Portugal — TrustFamily schools guide"
+                                fill
+                                loading="lazy"
+                                sizes="(max-width: 1024px) 100vw, 35vw"
+                                className="object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+                            />
+                        </div>
+                        <p className="section-overline mb-2">{t("educationTitle")}</p>
+                        <h3 className="font-serif font-semibold text-h3 text-ink-primary leading-tight mb-3 group-hover:text-brand transition-colors duration-200">
+                            {t("educationDesc")}
+                        </h3>
+                        <span className="inline-flex items-center text-sm font-medium text-brand gap-1 group-hover:gap-2 transition-all duration-200">
+                            {t("readGuide")}
+                            <span aria-hidden="true">→</span>
+                        </span>
                     </I18nLink>
-                ))}
+
+                    <hr className="border-border" />
+
+                    {/* Neighborhoods */}
+                    <I18nLink href="/top-neighborhoods" className="group block">
+                        <div className="relative w-full aspect-video overflow-hidden bg-surface-subtle mb-4">
+                            <Image
+                                src="/neighborhood-card-img.png"
+                                alt="Family-friendly neighborhood in Cascais, Portugal — TrustFamily neighborhoods guide"
+                                fill
+                                loading="lazy"
+                                sizes="(max-width: 1024px) 100vw, 35vw"
+                                className="object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+                            />
+                        </div>
+                        <p className="section-overline mb-2">{t("livingTitle")}</p>
+                        <h3 className="font-serif font-semibold text-h3 text-ink-primary leading-tight mb-3 group-hover:text-brand transition-colors duration-200">
+                            {t("livingDesc")}
+                        </h3>
+                        <span className="inline-flex items-center text-sm font-medium text-brand gap-1 group-hover:gap-2 transition-all duration-200">
+                            {t("readGuide")}
+                            <span aria-hidden="true">→</span>
+                        </span>
+                    </I18nLink>
+
+                </div>
             </div>
-            </div>
-        </section>
+        </div>
     );
 }

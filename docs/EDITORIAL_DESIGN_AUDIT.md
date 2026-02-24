@@ -365,3 +365,60 @@ SEZIONE: Testimonials
 ---
 
 *Documento generato dall’audit congiunto Editorial Design, Design System e SEO/Performance. Per implementazione incrementale, partire da Critici poi Importanti.*
+
+---
+
+# Aggiornamento audit — 2026-02-23
+
+> Audit codice su branch `testing-languages-and-routing`. Documento originale confermato valido; nuovi problemi e progressi documentati qui.
+
+## Progressi confermati
+
+| Componente | Stato |
+|------------|-------|
+| Hero: immagine LCP, priority, blur, split layout | ✅ Implementato (`Hero.tsx`) |
+| Hero: token tipografici (text-hero, section-body) | ✅ Implementato |
+| Pillars: thumbnail next/image per card | ✅ Implementato (`PillarsCardsSection.tsx`) |
+| Sezione "respiro": immagine full-width aspect-21/9 | ✅ Implementato (homepage + pagine pillar) |
+| Stelle testimonials: `text-warm fill-warm` | ✅ Implementato |
+| Token tipografici in globals.css (--ds-text-*) | ✅ Definiti e mappati in @theme |
+| Ombre: nomenclatura `--shadow-hair`, `--shadow-float`, `--shadow-lift` | ✅ In globals.css; usati in LeadMagnet |
+| design_system.md eliminato; globals.css = fonte unica | ✅ |
+
+## Nuovi problemi scoperti (non nell’audit originale)
+
+### P1 — `unoptimized={true}` in Hero.tsx
+`Hero.tsx:39` ha `unoptimized={true}` che bypassa completamente le ottimizzazioni di next/image (WebP conversion, srcset, CDN caching). Da rimuovere prima del deploy in produzione.
+
+### P2 — H1 pagine pillar: classi raw anziché token
+`best-private/page.tsx:123` e `top-neighborhoods/page.tsx:124` usano `text-4xl md:text-5xl` invece del token `text-h1` (36px). Incoerenza visiva con le pagine componente che usano correttamente i token.
+
+### P3 — FAQ heading hardcoded
+Entrambe le pagine pillar usano `text-2xl` hardcoded per il heading FAQ invece di `article-heading` (utility definita in globals.css che applica `text-3xl font-serif`).
+
+### P4 — Colori non-token in pagine pillar (ampiezza maggiore del previsto)
+Il problema era identificato nell’audit originale (Fase 1.2) ma la sua estensione è maggiore del previsto. Le pagine pillar contengono slate-*, blue-*, red-*, green-*, teal-* in decine di punti. Vedere tabella dettaglio nella checklist.
+
+**Pattern ricorrenti da correggere:**
+- `bg-slate-100 text-slate-700` (thead tabelle) → `bg-surface-subtle text-ink-primary`
+- `bg-white hover:bg-slate-50` (tbody rows) → `bg-card hover:bg-surface-subtle`
+- `text-slate-800/600/700` (celle) → `text-ink-primary` / `text-ink-secondary`
+- `border-slate-200` → `border-border`
+- `bg-slate-50` (FAQ section bg) → `bg-surface-subtle`
+- `text-slate-600` (FAQ answers) → `text-ink-secondary`
+- Tag curriculum: `bg-blue-100 text-blue-700` → `bg-brand-light text-brand`; `bg-red-100 text-red-700` → `bg-warm-light text-warm`; `bg-green-100 text-green-700` → `bg-trust-light text-trust`
+
+### P5 — CardTitle con classi raw in componenti condivisi
+`SchoolsList.tsx:47`: `text-xl` hardcoded → `text-h3`
+`NeighborhoodsList.tsx:31`: `text-lg` hardcoded → `text-h4`
+
+### P6 — Pagine slug non ancora auditate
+`schools/[slug]/page.tsx`, `neighborhoods/[slug]/page.tsx`, `blog/page.tsx`, `blog/[slug]/page.tsx`, `relocation-guide/page.tsx` non sono state incluse nell’audit originale. Probabilmente replicano gli stessi pattern di colore non-token presenti nelle pagine pillar. Da auditare come Fase 5.
+
+## Riepilogo priorità aggiornato
+
+| Priorità | Azioni (aggiornate) |
+|----------|---------------------|
+| 🔴 Critico | Rimuovere `unoptimized={true}` (Hero); H1 pagine pillar → token `text-h1`; colori non-token in best-private e top-neighborhoods (tabella dettaglio in checklist); FAQ heading → `article-heading`. |
+| 🟡 Importante | `mb-14` → `mb-12/mb-16` (Pillars); CardTitle token (SchoolsList, NeighborhoodsList); immagine LeadMagnet colonna sinistra; avatar Testimonials; thumbnail SchoolsList/NeighborhoodsList; alternanza sfondo Quiz. |
+| 🟢 Nice-to-have | Audit pagine slug; schema Review per testimonials; radius card da token. |

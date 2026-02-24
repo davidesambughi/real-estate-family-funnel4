@@ -25,8 +25,9 @@
     "description": "Expertenratgeber für Familienumzüge nach Portugal. Finden Sie die besten internationalen Schulen und familienfreundlichen Stadtteile."
   },
   "Hero": {
+    "overline": "Der unabhängige Leitfaden · Portugal 2026",
     "title": "Sichern Sie die Zukunft Ihrer Kinder in Portugal",
-    "subtitle": "Wir überprüfen Schulen und Stadtteile für Sie. Daten aus 200+ Elternbewertungen und 50+ Inspektionen.",
+    "subtitle": "TrustFamily ist der unabhängige Leitfaden für internationale Familien, die nach Portugal ziehen. Wir vergleichen alle führenden internationalen Schulen in der Nähe von Lissabon — IB-, britische und amerikanische Lehrpläne an St. Julian's, TASIS Portugal, CAISL und United Lisbon — kartieren familienfreundliche Stadtteile in Cascais, Sintra und Parque das Nações, und führen Sie Schritt für Schritt durch D7-, D8- und Golden-Visa-Optionen. Zwei Jahre Schulbesuche vor Ort, 200+ Familien, keine kommerziellen Interessen: die strukturierte Recherche, die Sie vor Ihrer Entscheidung brauchen.",
     "cta": "Ihre Schule finden",
     "ctaSecondary": "Schulbewertung starten"
   },
@@ -44,7 +45,9 @@
     "livingTitle": "Wohnstrategie",
     "livingDesc": "Finden Sie familienfreundliche Stadtteile mit optimalen Schulwegen.",
     "softLandingTitle": "Sanfte Integration",
-    "softLandingDesc": "Ein vollständiges Integrationssystem, damit Ihre Kinder vom ersten Tag an aufblühen."
+    "softLandingDesc": "Ein vollständiges Integrationssystem, damit Ihre Kinder vom ersten Tag an aufblühen.",
+    "softLandingTeaser": "Vom richtigen Visum über die richtige Schule bis zur richtigen Nachbarschaft — ein vollständiger, geprüfter Leitfaden für den Familienumzug nach Portugal. Basierend auf zwei Jahren Recherche und den Erfahrungen von mehr als 200 Familien.",
+    "readGuide": "Vollständigen Leitfaden lesen"
   },
   "LeadMagnet": {
     "heading": "Umzug nach Portugal?",

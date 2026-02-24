@@ -120,7 +120,7 @@ export default function Page() {
                     <span>·</span>
                     <span>TrustFamily Editorial</span>
                 </div>
-                <h1 className="font-serif font-semibold text-4xl md:text-5xl text-ink-primary mb-5 leading-tight">
+                <h1 className="font-serif font-semibold text-h1 text-ink-primary mb-5 leading-tight">
                     Best Private &amp; Public International<br className="hidden md:block" /> Schools Portugal 2026
                 </h1>
                 <p className="text-lg text-ink-secondary leading-relaxed max-w-3xl">
@@ -215,24 +215,24 @@ export default function Page() {
                         {[
                             {
                                 tag: "British — IGCSE + A-Levels or IB Diploma",
-                                tagColor: "bg-blue-100 text-blue-700",
+                                tagColor: "bg-brand-light text-brand",
                                 school: "St. Julian's School",
                                 content: "The British track (IGCSEs at 14–16, then A-Levels or IB at 16–18) is the smoothest path for families who may return to the UK or apply to British universities. IGCSE results are internationally recognised, but A-Levels remain the gold standard for UK admissions. St. Julian's offers both pathways. If UK university admission is the primary goal, the A-Level route outperforms IB at the most selective institutions.",
                             },
                             {
                                 tag: "American — US diploma + IB Diploma",
-                                tagColor: "bg-red-100 text-red-700",
+                                tagColor: "bg-warm-light text-warm",
                                 school: "TASIS Portugal · CAISL · United Lisbon",
                                 content: "The American track leads to a High School Diploma recognised by US colleges, supplemented by the IB Diploma or AP courses for competitive university applications. CAISL holds US State Department affiliation — a meaningful credential for American families. For families targeting US, Canadian, or Dutch universities, this path is the clearest.",
                             },
                             {
                                 tag: "IB Diploma — universally recognised",
-                                tagColor: "bg-green-100 text-green-700",
+                                tagColor: "bg-trust-light text-trust",
                                 school: "All four schools",
                                 content: "All four schools on this list offer the IB Diploma Programme at 16–18. The IB is the most portable qualification available — accepted by universities across the UK, USA, Europe, Australia, and Asia without conversion. For families uncertain about their next destination, the IB provides the best hedge. Average global pass rates are around 78%, with top scores requiring genuine academic commitment.",
                             },
                         ].map((item) => (
-                            <div key={item.tag} className="border border-slate-200 rounded-xl p-6">
+                            <div key={item.tag} className="border border-border rounded-xl p-6">
                                 <span className={`inline-block text-xs font-semibold px-3 py-1 rounded-full mb-2 ${item.tagColor}`}>
                                     {item.tag}
                                 </span>
@@ -272,25 +272,25 @@ export default function Page() {
                     <div className="overflow-x-auto mb-6">
                         <table className="w-full text-sm border-collapse">
                             <thead>
-                                <tr className="bg-slate-100 text-slate-700">
+                                <tr className="bg-surface-subtle text-ink-primary">
                                     <th className="text-left p-3 rounded-tl-lg">School</th>
                                     <th className="text-left p-3">Tuition (annual)</th>
                                     <th className="text-left p-3">Registration fee</th>
                                     <th className="text-left p-3 rounded-tr-lg">All-in estimate</th>
                                 </tr>
                             </thead>
-                            <tbody className="divide-y divide-slate-100">
+                            <tbody className="divide-y divide-border">
                                 {[
                                     { school: "St. Julian's School", tuition: "€16,000–26,000", reg: "€2,000–2,500", allin: "~€20,000–23,000" },
                                     { school: "TASIS Portugal", tuition: "€18,000–32,000", reg: "€2,500–3,000", allin: "~€23,000–30,000" },
                                     { school: "CAISL", tuition: "€14,000–24,000", reg: "€500–1,000", allin: "~€17,000–22,000" },
                                     { school: "United Lisbon", tuition: "€12,000–22,000", reg: "€1,000–1,500", allin: "~€14,000–19,000" },
                                 ].map((row) => (
-                                    <tr key={row.school} className="bg-white hover:bg-slate-50">
-                                        <td className="p-3 font-medium text-slate-800">{row.school}</td>
-                                        <td className="p-3 text-slate-600">{row.tuition}</td>
-                                        <td className="p-3 text-slate-600">{row.reg}</td>
-                                        <td className="p-3 text-slate-700 font-medium">{row.allin}</td>
+                                    <tr key={row.school} className="bg-card hover:bg-surface-subtle">
+                                        <td className="p-3 font-medium text-ink-primary">{row.school}</td>
+                                        <td className="p-3 text-ink-secondary">{row.tuition}</td>
+                                        <td className="p-3 text-ink-secondary">{row.reg}</td>
+                                        <td className="p-3 text-ink-primary font-medium">{row.allin}</td>
                                     </tr>
                                 ))}
                             </tbody>
@@ -326,18 +326,18 @@ export default function Page() {
                             { school: "United Lisbon", rate: "45%", wait: "1–3 months", verdict: "The most accessible on this list — but growing fast. Apply early for 2026 intake." },
                         ].map((item) => (
                             <div key={item.school} className="bg-surface-subtle border border-border rounded-xl p-5">
-                                <h3 className="font-bold text-slate-900 mb-1">{item.school}</h3>
-                                <div className="flex gap-4 text-xs text-slate-500 mb-3">
-                                    <span>Acceptance: <strong className="text-slate-700">{item.rate}</strong></span>
-                                    <span>Wait: <strong className="text-slate-700">{item.wait}</strong></span>
+                                <h3 className="font-bold text-ink-primary mb-1">{item.school}</h3>
+                                <div className="flex gap-4 text-xs text-ink-muted mb-3">
+                                    <span>Acceptance: <strong className="text-ink-secondary">{item.rate}</strong></span>
+                                    <span>Wait: <strong className="text-ink-secondary">{item.wait}</strong></span>
                                 </div>
                                 <p className="text-xs text-ink-secondary leading-relaxed">{item.verdict}</p>
                             </div>
                         ))}
                     </div>
                     <div className="bg-brand-50 border border-border rounded-xl p-5">
-                        <h3 className="font-semibold text-blue-900 mb-2">TrustFamily's admissions rule</h3>
-                        <p className="text-sm text-blue-800 leading-relaxed">
+                        <h3 className="font-semibold text-ink-primary mb-2">TrustFamily's admissions rule</h3>
+                        <p className="text-sm text-ink-secondary leading-relaxed">
                             Apply to a minimum of 2–3 schools simultaneously. Request a shadow day at each
                             shortlisted school — where your child attends classes for a full morning —
                             before signing any enrolment contract. Most schools offer this if asked directly
@@ -376,7 +376,7 @@ export default function Page() {
                             <div key={item.title} className="bg-surface-subtle border border-border rounded-xl p-5 text-center">
                                 <span className="text-3xl mb-3 block">{item.emoji}</span>
                                 <h3 className="font-semibold text-ink-primary mb-2 text-sm">{item.title}</h3>
-                                <p className="text-xs text-slate-500 leading-relaxed">{item.desc}</p>
+                                <p className="text-xs text-ink-secondary leading-relaxed">{item.desc}</p>
                             </div>
                         ))}
                     </div>
@@ -393,8 +393,8 @@ export default function Page() {
                 </section>
 
                 {/* 7. FAQ */}
-                <section id="faq" className="bg-slate-50 rounded-2xl p-8">
-                    <h2 className="font-serif font-semibold text-2xl text-ink-primary mb-6">Frequently Asked Questions</h2>
+                <section id="faq" className="bg-surface-subtle rounded-2xl p-8">
+                    <h2 className="article-heading mb-6">Frequently Asked Questions</h2>
                     <div className="space-y-6">
                         {[
                             { q: "What is the best international school in Portugal?", a: "St. Julian's School in Carcavelos, Cascais — with an 8% acceptance rate and top IB results — is broadly considered the best. For American curriculum families, CAISL offers the best value with US State Department backing." },
@@ -402,9 +402,9 @@ export default function Page() {
                             { q: "Which area is best for families near international schools?", a: "Cascais and Estoril for St. Julian's School (coast lifestyle). Sintra for TASIS and CAISL (nature, hills). Parque das Nações for United Lisbon International School (city living)." },
                             { q: "Do I need to visit schools in person before applying?", a: "Yes — always. The difference between a school's marketing and its actual atmosphere can be significant. Request a shadow day for your child at each shortlisted school before committing to an enrolment contract." },
                         ].map(({ q, a }) => (
-                            <div key={q} className="border-b border-slate-200 pb-5 last:border-0 last:pb-0">
+                            <div key={q} className="border-b border-border pb-5 last:border-0 last:pb-0">
                                 <h3 className="font-semibold text-ink-primary mb-2">{q}</h3>
-                                <p className="text-slate-600 text-sm leading-relaxed">{a}</p>
+                                <p className="text-ink-secondary text-sm leading-relaxed">{a}</p>
                             </div>
                         ))}
                     </div>
@@ -425,7 +425,7 @@ export default function Page() {
                         <Link href="/top-neighborhoods" key={title}>
                             <Card className="hover:shadow-md transition-shadow cursor-pointer h-full">
                                 <CardHeader><CardTitle className="text-base">{title}</CardTitle></CardHeader>
-                                <CardContent><p className="text-sm text-muted-foreground">{desc}</p></CardContent>
+                                <CardContent><p className="text-sm text-ink-secondary">{desc}</p></CardContent>
                             </Card>
                         </Link>
                     ))}

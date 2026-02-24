@@ -28,7 +28,7 @@ export function NeighborhoodsList() {
                     className="flex flex-col h-full group"
                 >
                     <CardHeader className="pb-3">
-                        <CardTitle className="text-lg leading-tight group-hover:text-trust transition-colors">
+                        <CardTitle className="text-h4 leading-tight group-hover:text-trust transition-colors">
                             {neighborhood.name}
                         </CardTitle>
                         <CardDescription className="flex items-center gap-1.5 mt-1">

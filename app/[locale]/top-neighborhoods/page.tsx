@@ -121,7 +121,7 @@ export default function Page() {
                     <span>·</span>
                     <span>TrustFamily Editorial</span>
                 </div>
-                <h1 className="font-serif font-semibold text-4xl md:text-5xl text-ink-primary mb-5 leading-tight">
+                <h1 className="font-serif font-semibold text-h1 text-ink-primary mb-5 leading-tight">
                     Best Family-Friendly Neighborhoods<br className="hidden md:block" /> in Portugal 2026
                 </h1>
                 <p className="text-lg text-ink-secondary leading-relaxed max-w-3xl">
@@ -218,14 +218,14 @@ export default function Page() {
                     <div className="overflow-x-auto mb-6">
                         <table className="w-full text-sm border-collapse">
                             <thead>
-                                <tr className="bg-slate-100 text-slate-700">
+                                <tr className="bg-surface-subtle text-ink-primary">
                                     <th className="text-left p-3 rounded-tl-lg">Neighborhood</th>
                                     <th className="text-left p-3">Closest school</th>
                                     <th className="text-left p-3">Commute</th>
                                     <th className="text-left p-3 rounded-tr-lg">Vibe</th>
                                 </tr>
                             </thead>
-                            <tbody className="divide-y divide-slate-100">
+                            <tbody className="divide-y divide-border">
                                 {[
                                     { n: "Cascais", s: "St. Julian's (Carcavelos)", c: "15 min by car", v: "Coastal, expat hub" },
                                     { n: "Estoril", s: "St. Julian's (Carcavelos)", c: "20 min by car", v: "Quiet, elegant" },
@@ -233,11 +233,11 @@ export default function Page() {
                                     { n: "Parque das Nações", s: "United Lisbon", c: "Walking distance", v: "Modern, riverfront" },
                                     { n: "Campo de Ourique", s: "City schools via metro", c: "20–30 min", v: "Village in the city" },
                                 ].map((row) => (
-                                    <tr key={row.n} className="bg-white hover:bg-slate-50">
-                                        <td className="p-3 font-medium text-slate-800">{row.n}</td>
-                                        <td className="p-3 text-slate-600">{row.s}</td>
-                                        <td className="p-3 text-slate-600">{row.c}</td>
-                                        <td className="p-3 text-slate-500 italic text-xs">{row.v}</td>
+                                    <tr key={row.n} className="bg-card hover:bg-surface-subtle">
+                                        <td className="p-3 font-medium text-ink-primary">{row.n}</td>
+                                        <td className="p-3 text-ink-secondary">{row.s}</td>
+                                        <td className="p-3 text-ink-secondary">{row.c}</td>
+                                        <td className="p-3 text-ink-muted italic text-xs">{row.v}</td>
                                     </tr>
                                 ))}
                             </tbody>
@@ -276,24 +276,24 @@ export default function Page() {
                             },
                         ].map((item) => (
                             <div key={item.name} className="bg-surface-subtle border border-border rounded-xl p-5">
-                                <h3 className="font-bold text-slate-900 mb-3 text-lg">{item.name}</h3>
+                                <h3 className="font-bold text-ink-primary mb-3 text-lg">{item.name}</h3>
                                 <div className="space-y-3">
                                     <div>
-                                        <p className="text-xs font-semibold text-green-600 uppercase tracking-wide mb-1">Strengths</p>
+                                        <p className="text-xs font-semibold text-trust uppercase tracking-wide mb-1">Strengths</p>
                                         <ul className="space-y-1">
                                             {item.pros.map((p) => (
-                                                <li key={p} className="text-xs text-slate-600 flex items-start gap-2">
-                                                    <span className="text-green-500 mt-0.5">✓</span>{p}
+                                                <li key={p} className="text-xs text-ink-secondary flex items-start gap-2">
+                                                    <span className="text-trust mt-0.5">✓</span>{p}
                                                 </li>
                                             ))}
                                         </ul>
                                     </div>
                                     <div>
-                                        <p className="text-xs font-semibold text-slate-400 uppercase tracking-wide mb-1">Trade-offs</p>
+                                        <p className="text-xs font-semibold text-ink-muted uppercase tracking-wide mb-1">Trade-offs</p>
                                         <ul className="space-y-1">
                                             {item.cons.map((c) => (
-                                                <li key={c} className="text-xs text-slate-500 flex items-start gap-2">
-                                                    <span className="text-slate-300 mt-0.5">–</span>{c}
+                                                <li key={c} className="text-xs text-ink-secondary flex items-start gap-2">
+                                                    <span className="text-ink-muted mt-0.5">–</span>{c}
                                                 </li>
                                             ))}
                                         </ul>
@@ -338,7 +338,7 @@ export default function Page() {
                         and a climate that is noticeably cooler and wetter than the coast.
                     </p>
                     <div className="bg-trust-light border border-border rounded-xl p-5 mb-4">
-                        <p className="text-sm text-teal-800 leading-relaxed">
+                        <p className="text-sm text-ink-secondary leading-relaxed">
                             <strong>Who Sintra suits best:</strong> Families who have already chosen TASIS or CAISL
                             and prioritise nature, space, and a slower pace over urban convenience. Also well-suited
                             to remote-working adults who don't need to commute to Lisbon regularly.
@@ -371,8 +371,8 @@ export default function Page() {
                                 content: "Campo de Ourique is Lisbon's most liveable neighborhood and a consistent favourite among expat families who want urban life without the chaos. It sits on a flat grid — rare in hilly Lisbon — making it genuinely walkable with a pushchair. The Mercado de Campo de Ourique is a weekly institution. The neighbourhood has a self-contained community feel and suits families whose children attend Lisbon-area schools via metro, and who want to integrate more deeply into Portuguese city life.",
                             },
                         ].map((item) => (
-                            <div key={item.name} className="border border-slate-200 rounded-xl p-6">
-                                <h3 className="font-bold text-slate-900 mb-1 text-lg">{item.name}</h3>
+                            <div key={item.name} className="border border-border rounded-xl p-6">
+                                <h3 className="font-bold text-ink-primary mb-1 text-lg">{item.name}</h3>
                                 <span className="inline-block text-xs text-brand bg-brand-50 px-2 py-0.5 rounded mb-3">{item.tag}</span>
                                 <p className="text-sm text-ink-secondary leading-relaxed">{item.content}</p>
                             </div>
@@ -400,8 +400,8 @@ export default function Page() {
                                 <div className="shrink-0 w-10 h-10 bg-brand text-primary-foreground rounded-xl flex items-center justify-center text-sm font-bold">
                                     {item.n}
                                 </div>
-                                <div className="flex-1 border border-slate-100 rounded-xl p-4 bg-white">
-                                    <h3 className="font-bold text-slate-900 mb-1">{item.title}</h3>
+                                <div className="flex-1 border border-border rounded-xl p-4 bg-card">
+                                    <h3 className="font-bold text-ink-primary mb-1">{item.title}</h3>
                                     <p className="text-sm text-ink-secondary leading-relaxed">{item.desc}</p>
                                 </div>
                             </div>
@@ -416,8 +416,8 @@ export default function Page() {
                 </section>
 
                 {/* 8. FAQ */}
-                <section id="faq" className="bg-slate-50 rounded-2xl p-8">
-                    <h2 className="font-serif font-semibold text-2xl text-ink-primary mb-6">Frequently Asked Questions</h2>
+                <section id="faq" className="bg-surface-subtle rounded-2xl p-8">
+                    <h2 className="article-heading mb-6">Frequently Asked Questions</h2>
                     <div className="space-y-6">
                         {[
                             { q: "Where do expat families live in Lisbon?", a: "Cascais leads for coastal families, followed by Estoril and Sintra. Within the city: Campo de Ourique (walkable, community feel) and Parque das Nações (modern, riverfront) are top picks." },
@@ -425,9 +425,9 @@ export default function Page() {
                             { q: "Is Sintra good for families with international school-age children?", a: "Yes — TASIS Portugal and CAISL are both within 15 minutes by car. The trade-offs are distance to Lisbon (45 min by train) and a cooler, hillier climate." },
                             { q: "Which Lisbon neighborhood is best for families without a car?", a: "Parque das Nações (walking distance to United Lisbon International School, excellent metro access) and Campo de Ourique (flat, walkable, well-served by public transport) are the strongest choices." },
                         ].map(({ q, a }) => (
-                            <div key={q} className="border-b border-slate-200 pb-5 last:border-0 last:pb-0">
+                            <div key={q} className="border-b border-border pb-5 last:border-0 last:pb-0">
                                 <h3 className="font-semibold text-ink-primary mb-2">{q}</h3>
-                                <p className="text-slate-600 text-sm leading-relaxed">{a}</p>
+                                <p className="text-ink-secondary text-sm leading-relaxed">{a}</p>
                             </div>
                         ))}
                     </div>
@@ -449,7 +449,7 @@ export default function Page() {
                         <Link href={href} key={title}>
                             <Card className="hover:shadow-md transition-shadow cursor-pointer h-full">
                                 <CardHeader><CardTitle className="text-base">{title}</CardTitle></CardHeader>
-                                <CardContent><p className="text-sm text-muted-foreground">{desc}</p></CardContent>
+                                <CardContent><p className="text-sm text-ink-secondary">{desc}</p></CardContent>
                             </Card>
                         </Link>
                     ))}

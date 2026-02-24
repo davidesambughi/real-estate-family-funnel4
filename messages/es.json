@@ -25,8 +25,9 @@
     "description": "Guía experta para la relocalización familiar a Portugal. Encuentre los mejores colegios internacionales y barrios aptos para familias."
   },
   "Hero": {
+    "overline": "La guía independiente · Portugal 2026",
     "title": "Asegure el Futuro de Sus Hijos en Portugal",
-    "subtitle": "Verificamos colegios y barrios para que usted no tenga que hacerlo. Datos de 200+ opiniones de padres y 50+ inspecciones.",
+    "subtitle": "TrustFamily es la guía independiente para familias internacionales que se trasladan a Portugal. Comparamos los principales colegios internacionales cerca de Lisboa — programas IB, británico y americano en St. Julian's, TASIS Portugal, CAISL y United Lisbon — mapeamos barrios como Cascais, Sintra y Parque das Nações, y le guiamos paso a paso por las opciones de visa D7, D8 y Golden Visa. Dos años de visitas presenciales, 200+ familias, sin relaciones comerciales: la investigación estructurada y honesta que necesita antes de comprometerse.",
     "cta": "Encuentre su colegio",
     "ctaSecondary": "Iniciar evaluación"
   },
@@ -44,7 +45,9 @@
     "livingTitle": "Estrategia de vida",
     "livingDesc": "Encuentre barrios seguros para familias con trayectos optimizados al colegio elegido.",
     "softLandingTitle": "Aterrizaje suave",
-    "softLandingDesc": "Un sistema de integración completo para ayudar a sus hijos a prosperar desde el primer día."
+    "softLandingDesc": "Un sistema de integración completo para ayudar a sus hijos a prosperar desde el primer día.",
+    "softLandingTeaser": "Del visado correcto al colegio correcto y al barrio correcto — una guía completa y verificada para mudarse con su familia a Portugal. Basada en dos años de investigación y la experiencia real de más de 200 famílias.",
+    "readGuide": "Leer la guía completa"
   },
   "LeadMagnet": {
     "heading": "¿Se muda a Portugal?",

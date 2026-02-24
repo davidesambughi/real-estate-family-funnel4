@@ -36,7 +36,7 @@ export default function Form() {
                     <Input id="fullName" name="fullName" placeholder="John Doe" aria-describedby="fullName-error" />
                     <div id="fullName-error" aria-live="polite" aria-atomic="true">
                         {state.errors?.fullName && state.errors.fullName.map((error: string) => (
-                            <p className="mt-2 text-sm text-red-500" key={error}>{error}</p>
+                            <p className="mt-2 text-sm text-destructive" key={error}>{error}</p>
                         ))}
                     </div>
                 </div>
@@ -45,7 +45,7 @@ export default function Form() {
                     <Input id="nationality" name="nationality" placeholder="e.g. American" aria-describedby="nationality-error" />
                     <div id="nationality-error" aria-live="polite" aria-atomic="true">
                         {state.errors?.nationality && state.errors.nationality.map((error: string) => (
-                            <p className="mt-2 text-sm text-red-500" key={error}>{error}</p>
+                            <p className="mt-2 text-sm text-destructive" key={error}>{error}</p>
                         ))}
                     </div>
                 </div>
@@ -57,7 +57,7 @@ export default function Form() {
                     <Input id="email" name="email" type="email" placeholder="john@example.com" aria-describedby="email-error" />
                     <div id="email-error" aria-live="polite" aria-atomic="true">
                         {state.errors?.email && state.errors.email.map((error: string) => (
-                            <p className="mt-2 text-sm text-red-500" key={error}>{error}</p>
+                            <p className="mt-2 text-sm text-destructive" key={error}>{error}</p>
                         ))}
                     </div>
                 </div>
