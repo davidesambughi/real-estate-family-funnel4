@@ -299,7 +299,7 @@
 @layer utilities {
   /* Pattern overline — replaces pill badges in section headers */
   .section-overline {
-    @apply text-xs font-semibold uppercase tracking-[0.12em] text-brand;
+    @apply font-sans text-xs font-semibold uppercase tracking-[0.12em] text-brand;
   }
 
   /* Heading principale di sezione — h2 standard */

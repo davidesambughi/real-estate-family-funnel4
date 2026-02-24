@@ -230,31 +230,22 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                   Every family we work with arrives believing the school choice and the neighborhood choice are two parallel decisions. They are not. In the Lisbon area, the school drives the neighborhood — because the morning school run, if misjudged, can absorb 90 minutes of daily family life in traffic. This is the single most consequential structural mistake that relocating families make, and it is almost entirely preventable with the right sequencing of decisions.
                 </p>
 
-                <p className="text-body text-ink-secondary leading-relaxed mb-8">
+                <p className="text-body text-ink-secondary leading-relaxed mb-5">
                   St.&nbsp;Julian&apos;s School, in Carcavelos, draws its community primarily from Cascais and Estoril — a 15-to-20 minute coastal drive. TASIS Portugal and CAISL, both in Sintra, are most naturally paired with a residence in Sintra itself or the surrounding hills. United Lisbon International School, in Parque das Nações, is walkable from the riverfront apartments surrounding it. Choose a neighborhood first, and you risk a daily commute that erodes the quality of life the move was supposed to provide.
                 </p>
-
-                {/* Pull-stat — inline, breaks the prose like a magazine accent */}
-                <div className="my-8 py-6 border-t border-b border-border">
-                  <p className="font-serif text-[68px] font-bold leading-none text-brand/20 select-none" aria-hidden="true">8%</p>
-                  <hr className="border-brand/20 my-3 max-w-[80px]" />
-                  <p className="text-body-sm text-ink-secondary leading-snug max-w-sm">
-                    Acceptance rate at St.&nbsp;Julian&apos;s School — the most selective international school in Portugal. Apply to two or three schools simultaneously, and apply early.
-                  </p>
-                </div>
 
                 <p className="text-body text-ink-secondary leading-relaxed">
                   Most international schools near Lisbon open applications for September entry in October or November of the preceding year. St.&nbsp;Julian&apos;s often closes its waitlist well before January. The families who arrive well-placed are those who applied 12 to 18 months in advance, to two or three schools simultaneously. The application is not a formality — it is the first real commitment of the relocation.
                 </p>
               </div>
 
-              {/* Pull-stat sidebar */}
-              <aside className="hidden lg:flex flex-col gap-10 sticky top-24 self-start" aria-label="Research stats">
+              {/* Stat sidebar — 8% acceptance rate + editorial principle */}
+              <aside className="hidden lg:flex flex-col gap-10 sticky top-24 self-start" aria-label="Key statistics">
                 <div>
-                  <p className="font-serif text-[68px] font-bold leading-none text-brand/20 select-none" aria-hidden="true">200+</p>
+                  <p className="font-serif text-[68px] font-bold leading-none text-brand/20 select-none" aria-hidden="true">8%</p>
                   <hr className="border-brand/20 my-3" />
                   <p className="text-body-sm text-ink-secondary leading-snug">
-                    Families whose relocation TrustFamily has informed — through school visits, neighborhood research, and verified data updated for 2026.
+                    Acceptance rate at St.&nbsp;Julian&apos;s School — the most selective international school in Portugal. Apply to two or three schools simultaneously, and apply early.
                   </p>
                 </div>
                 <blockquote className="border-l-2 border-brand/30 pl-4">
@@ -295,7 +286,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         ──────────────────────────────────────────────────────────── */}
         <div className="relative w-full aspect-[21/9] overflow-hidden">
           <Image
-            src="/homepage-respiro-img.png"
+            src="/homepage-respiro1-img.png"
             alt="Family life in Portugal — TrustFamily relocation"
             fill
             loading="lazy"
@@ -306,50 +297,55 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
           />
         </div>
 
-        {/* ── PROSE BLOCK 3: INDEPENDENT INTELLIGENCE ────────────────
-            E-E-A-T content. Establishes methodology and editorial standards.
-            Key for GEO: LLMs cite sources that declare their methodology.
-        ──────────────────────────────────────────────────────────── */}
-        <div className="px-6 py-16 border-t border-border">
+        {/* ── PROSE BLOCK 3 + LEAD MAGNET — side-by-side editorial layout ──
+            Left: E-E-A-T narrative (methodology + independence pledge).
+            Right: signup form card — the CTA that follows naturally from the prose.
+            Shared bg-surface-subtle creates a clear section break.
+        ──────────────────────────────────────────────────────────────────── */}
+        <div className="px-6 py-16 border-t border-border bg-surface-subtle">
           <div className="max-w-7xl mx-auto">
-            <div className="max-w-2xl">
-              <h2 id="independent-intelligence" className="article-heading mb-6">
-                What independent intelligence looks like in practice
-              </h2>
+            <div className="grid grid-cols-1 lg:grid-cols-[1fr_400px] gap-16 lg:gap-24 items-start">
 
-              <p className="text-body text-ink-secondary leading-relaxed mb-5">
-                TrustFamily was built from a specific frustration: the near-total absence of honest, structured, non-commercial information for families seriously considering a move to Portugal. The market offered two things — relocation agencies with financial relationships with specific schools and landlords, and expat forums where individual experience often ran ahead of verified fact. Neither served families making a decision worth hundreds of thousands of euros in school fees, housing deposits, and life reorganisation.
-              </p>
+              {/* Left: E-E-A-T prose */}
+              <div className="max-w-2xl">
+                <h2 id="independent-intelligence" className="article-heading mb-6">
+                  What independent intelligence looks like in practice
+                </h2>
 
-              <p className="text-body text-ink-secondary leading-relaxed mb-5">
-                Every school profile in our guides reflects in-person visits, direct conversations with admissions teams and parent communities, and careful verification of the data points that actually matter: real acceptance rates (not the selective figures schools publish), the full fee structure including registration and capital levy charges, curriculum transition considerations for children arriving mid-programme, and the texture of each school&apos;s culture that does not appear in any prospectus.
-              </p>
+                <p className="text-body text-ink-secondary leading-relaxed mb-5">
+                  TrustFamily was built from a specific frustration: the near-total absence of honest, structured, non-commercial information for families seriously considering a move to Portugal. The market offered two things — relocation agencies with financial relationships with specific schools and landlords, and expat forums where individual experience often ran ahead of verified fact. Neither served families making a decision worth hundreds of thousands of euros in school fees, housing deposits, and life reorganisation.
+                </p>
 
-              <p className="text-body text-ink-secondary leading-relaxed mb-8">
-                No school pays for placement here. No property company refers traffic to these guides. There are no affiliate links. The neighborhood commute data is observed at actual school-run times, not mapping software estimates in off-peak conditions. The visa information — covering the D7 Passive Income Visa, the D8 Digital Nomad Visa, and the restructured Golden Visa program — is reviewed against{" "}
-                <a
-                  href="https://www.aima.gov.pt"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-brand underline underline-offset-2 hover:text-brand/80"
-                >
-                  official AIMA guidance
-                </a>{" "}
-                and updated when the rules change, as they did significantly between 2023 and 2025.
-              </p>
+                <p className="text-body text-ink-secondary leading-relaxed mb-5">
+                  Every school profile in our guides reflects in-person visits, direct conversations with admissions teams and parent communities, and careful verification of the data points that actually matter: real acceptance rates (not the selective figures schools publish), the full fee structure including registration and capital levy charges, curriculum transition considerations for children arriving mid-programme, and the texture of each school&apos;s culture that does not appear in any prospectus.
+                </p>
 
-              {/* Editorial invitation — transitions into the lead magnet */}
-              <p className="text-body text-ink-secondary leading-relaxed pl-4 border-l-2 border-brand/30 italic">
-                The information that matters most — visa changes, admission openings, school fee updates — moves faster than most guides can keep pace with. Join the families already following TrustFamily&apos;s research updates for 2026.
-              </p>
+                <p className="text-body text-ink-secondary leading-relaxed mb-8">
+                  No school pays for placement here. No property company refers traffic to these guides. There are no affiliate links. The neighborhood commute data is observed at actual school-run times, not mapping software estimates in off-peak conditions. The visa information — covering the D7 Passive Income Visa, the D8 Digital Nomad Visa, and the restructured Golden Visa program — is reviewed against{" "}
+                  <a
+                    href="https://www.aima.gov.pt"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-brand underline underline-offset-2 hover:text-brand/80"
+                  >
+                    official AIMA guidance
+                  </a>{" "}
+                  and updated when the rules change, as they did significantly between 2023 and 2025.
+                </p>
+
+                <p className="text-body text-ink-secondary leading-relaxed pl-4 border-l-2 border-brand/30 italic">
+                  The information that matters most — visa changes, admission openings, school fee updates — moves faster than most guides can keep pace with. Join the families already following TrustFamily&apos;s research updates for 2026.
+                </p>
+              </div>
+
+              {/* Right: lead magnet form card (compact — no duplicate copy) */}
+              <div className="lg:sticky top-24">
+                <LeadMagnetSection compact locale={locale} />
+              </div>
+
             </div>
           </div>
         </div>
-
-        {/* ── LEAD MAGNET — editorial invitation ─────────────────────
-            Flows naturally from the prose above (italic transition paragraph).
-        ──────────────────────────────────────────────────────────── */}
-        <LeadMagnetSection locale={locale} />
 
         {/* ── TESTIMONIALS — pull quotes closing the article ──────────
             The article closes with the voices of the families it serves.
