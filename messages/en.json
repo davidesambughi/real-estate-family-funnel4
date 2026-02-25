@@ -172,5 +172,8 @@
     "vibeCheckTitle": "Vibe Check",
     "vibeCheckBody": "Perfect for families looking for a specific lifestyle.",
     "exploreAreaHeading": "Explore the Area"
+  },
+  "Common": {
+    "scrollToTop": "Scroll to top"
   }
 }

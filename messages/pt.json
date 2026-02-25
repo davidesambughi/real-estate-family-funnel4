@@ -174,5 +174,8 @@
     "vibeCheckTitle": "Verificação de Ambiente",
     "vibeCheckBody": "Perfeito para famílias que procuram um estilo de vida específico.",
     "exploreAreaHeading": "Explorar a Área"
+  },
+  "Common": {
+    "scrollToTop": "Voltar ao topo"
   }
 }
