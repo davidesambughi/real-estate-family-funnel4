@@ -2,7 +2,9 @@
   "HomePage": {
     "title": "Accueil",
     "metaTitle": "TrustFamily Relocation - Meilleures écoles internationales & quartiers au Portugal",
-    "metaDescription": "Guide indépendant pour s'installer au Portugal. Comparez les meilleures écoles internationales, trouvez des quartiers familiaux et bénéficiez de conseils d'experts en relocation."
+    "metaDescription": "Guide indépendant pour s'installer au Portugal. Comparez les meilleures écoles internationales, trouvez des quartiers familiaux et bénéficiez de conseils d'experts en relocation.",
+    "testimonialsOverline": "Ce que disent les familles",
+    "testimonialsH2": "Témoignages de familles qui ont fait le grand saut"
   },
   "Locale": {
     "en": "Anglais",
@@ -27,9 +29,7 @@
   "Hero": {
     "overline": "Le guide indépendant · Portugal 2026",
     "title": "Assurez l'Avenir de Vos Enfants au Portugal",
-    "subtitle": "TrustFamily est le guide indépendant pour les familles internationales qui s'installent au Portugal. Nous comparons toutes les grandes écoles internationales proches de Lisbonne — programmes IB, britannique et américain à St. Julian's, TASIS Portugal, CAISL et United Lisbon — cartographions les quartiers familiaux de Cascais, Sintra et Parque das Nações, et vous guidons pas à pas dans les visas D7, D8 et Golden Visa. Deux ans de visites scolaires sur place, 200+ familles, aucune relation commerciale : la recherche structurée et honnête dont vous avez besoin avant de vous engager.",
-    "cta": "Trouver votre école",
-    "ctaSecondary": "Commencer l'évaluation"
+    "subtitle": "TrustFamily est le guide indépendant pour les familles internationales qui s'installent au Portugal. Nous comparons toutes les grandes écoles internationales proches de Lisbonne — programmes IB, britannique et américain à St. Julian's, TASIS Portugal, CAISL et United Lisbon — cartographions les quartiers familiaux de Cascais, Sintra et Parque das Nações, et vous guidons pas à pas dans les visas D7, D8 et Golden Visa. Deux ans de visites scolaires sur place, 200+ familles, aucune relation commerciale : la recherche structurée et honnête dont vous avez besoin avant de vous engager."
   },
   "TrustBar": {
     "independent": "Données 100% indépendantes",
@@ -139,15 +139,84 @@
   },
   "AboutPage": {
     "metaTitle": "À propos de TrustFamily — Intelligence indépendante sur les écoles et la relocalisation au Portugal",
-    "metaDescription": "TrustFamily est une plateforme indépendante aidant les familles internationales à s'installer au Portugal en toute confiance. Nous vérifions les écoles, les quartiers et les données de relocalisation — sans placements payants ni conflits d'intérêts."
+    "metaDescription": "TrustFamily est une plateforme indépendante aidant les familles internationales à s'installer au Portugal en toute confiance. Nous vérifions les écoles, les quartiers et les données de relocalisation — sans placements payants ni conflits d'intérêts.",
+    "h1": "Le guide de confiance pour les familles qui s'installent au Portugal",
+    "opening": "TrustFamily a été créé sur une seule prémisse : les familles qui se relocalisent méritent des informations vérifiées et impartiales — pas du contenu sponsorisé déguisé en conseils. Nous fournissons des informations indépendantes sur les écoles et les quartiers pour que vous puissiez prendre l'une des décisions les plus importantes pour vos enfants en toute confiance.",
+    "stat1Value": "200+",
+    "stat1Label": "familles accompagnées",
+    "stat2Value": "50+",
+    "stat2Label": "visites scolaires effectuées",
+    "stat3Value": "4",
+    "stat3Label": "grandes écoles évaluées indépendamment",
+    "stat4Value": "5",
+    "stat4Label": "quartiers cartographiés en détail",
+    "whatWeDoH2": "Ce que fait TrustFamily",
+    "whatWeDo1": "Nous recherchons, visitons et vérifions les meilleures écoles internationales et les quartiers adaptés aux expatriés au Portugal — puis nous publions ces informations gratuitement. Notre couverture se concentre actuellement sur la région de Lisbonne, où la concentration d'écoles internationales et d'infrastructures pour expatriés est la plus élevée du pays.",
+    "whatWeDo2": "Pour chaque école, nous publions de véritables taux d'admission, des analyses complètes des frais (pas seulement les frais de base), des comparaisons de programmes et des verdicts éditoriaux basés sur des visites sur place. Pour chaque quartier, nous cartographions les temps de trajet vers les écoles pertinentes, décrivons la communauté expatriée et évaluons l'adéquation au style de vie familial.",
+    "whatWeDo3": "Nous proposons également un quiz gratuit School Finder qui associe les familles à la bonne école et au bon quartier en moins de 60 secondes — basé sur le budget, la préférence de style de vie, le programme et le calendrier de déménagement.",
+    "howWeOperateH2": "Comment nous fonctionnons",
+    "principle1Title": "L'indépendance est non négociable",
+    "principle1Body": "TrustFamily n'accepte aucun paiement, commission ou frais de référence de la part des écoles, agences immobilières ou sociétés de relocalisation. Chaque évaluation est entièrement autofinancée. C'est la seule façon pour nos données d'être fiables.",
+    "principle2Title": "Les données avant les opinions",
+    "principle2Body": "Nous visitons les écoles en personne, interviewons les familles actuelles et vérifions les frais et taux d'admission publiés avant de rien publier. Si nous ne pouvons pas le vérifier, nous ne le publions pas.",
+    "principle3Title": "L'autorité se mérite, elle ne se réclame pas",
+    "principle3Body": "Nous ne nous appelons pas experts parce que nous avons un site web. Nous gagnons notre crédibilité par la spécificité — données sur les taux d'admission, temps de trajet réels, analyses complètes des frais et les choses que les écoles ne font pas la publicité.",
+    "principle4Title": "Vos données vous appartiennent",
+    "principle4Body": "Nous collectons des données d'intention structurées pour améliorer nos recommandations. Nous ne vendons pas de données brutes d'utilisateurs à des tiers. Si nous introduisons jamais des partenariats payants, ils seront divulgués explicitement et séparément de notre contenu éditorial.",
+    "whoWeServeH2": "Qui utilise TrustFamily",
+    "whoWeServe1": "Notre public principal est constitué de familles internationales aisées — généralement du Royaume-Uni, des États-Unis, d'Allemagne, de France, des Pays-Bas et des Émirats arabes unis — qui envisagent de s'installer au Portugal et souhaitent prendre des décisions sur les écoles et les quartiers sur la base de données vérifiées, pas du marketing.",
+    "whoWeServe2": "Ce sont des familles pour qui la qualité de l'école est le principal critère de choix du lieu de résidence, et qui sont prêtes à investir significativement dans l'éducation de leurs enfants. Elles sont suffisamment expérimentées pour être sceptiques face aux conseils de relocalisation génériques — et suffisamment exigeantes pour attendre spécificité, honnêteté et indépendance.",
+    "whatWeDoNotH2": "Ce que TrustFamily ne fait pas",
+    "doNot1": "Nous n'acceptons pas de paiement des écoles, agences ou tiers en échange d'une couverture éditoriale.",
+    "doNot2": "Nous ne classons pas les écoles en fonction des dépenses publicitaires ou des accords de partenariat.",
+    "doNot3": "Nous ne vendons pas de données brutes d'utilisateurs aux écoles, agences immobilières ou plateformes marketing.",
+    "doNot4": "Nous ne garantissons pas l'admission scolaire — tous les taux d'admission sont des moyennes historiques.",
+    "doNot5": "Nous ne fournissons pas de conseils juridiques ou en matière de visa — consultez toujours un avocat en immigration agréé.",
+    "ctaH2": "Prêt à trouver votre correspondance ?",
+    "ctaText": "Commencez par notre quiz School Finder ou parcourez la comparaison complète des écoles.",
+    "ctaBtn1": "Faire le Quiz School Finder",
+    "ctaBtn2": "Voir Toutes les Écoles"
   },
   "SchoolFinderPage": {
     "metaTitle": "Trouver une école — Trouvez votre école internationale idéale au Portugal | TrustFamily",
-    "metaDescription": "Répondez à 4 questions et trouvez la bonne école internationale et le bon quartier au Portugal. Gratuit, impartial, basé sur votre budget et vos préférences."
+    "metaDescription": "Répondez à 4 questions et trouvez la bonne école internationale et le bon quartier au Portugal. Gratuit, impartial, basé sur votre budget et vos préférences.",
+    "overline": "Gratuit · 60 secondes",
+    "h1": "Trouvez l'école parfaite au Portugal",
+    "subtitle": "Répondez à 4 questions sur votre budget, style de vie, préférence de programme et calendrier. Nous trouvons la bonne école et le bon quartier — ensemble.",
+    "step1Label": "Votre budget",
+    "step1Desc": "Frais annuels de 12 000 € à 32 000 €+ — nous vous associons à des options réalistes.",
+    "step2Label": "Votre style de vie",
+    "step2Desc": "Côte, ville ou nature — le Portugal a le bon quartier pour chaque famille.",
+    "step3Label": "Préférence de programme",
+    "step3Desc": "IGCSE britannique, AP américain ou Diplôme IB — nous expliquons clairement la différence.",
+    "step4Label": "Votre calendrier",
+    "step4Desc": "Déménagement dans 3 mois ou juste en exploration — nous calibrons l'urgence de vos résultats.",
+    "badge1": "100% gratuit et indépendant",
+    "badge2": "60 secondes pour compléter",
+    "badge3": "École + quartier trouvés ensemble",
+    "ctaBtn": "Démarrer le Trouveur d'Écoles →",
+    "ctaSubtext": "Aucune inscription requise pour voir vos résultats",
+    "faqHeading": "Questions Fréquentes",
+    "faq1q": "Quelle est la précision des correspondances d'écoles ?",
+    "faq1a": "Notre logique de correspondance est basée sur 4 critères pondérés : budget, style de vie, programme et calendrier de déménagement. Les résultats présentent les 2 écoles les plus compatibles de notre liste vérifiée de 4 grandes écoles internationales près de Lisbonne. Vous devriez toujours visiter en personne avant de vous engager.",
+    "faq2q": "Que faire si aucune école ne convient ?",
+    "faq2a": "Le quiz montre la meilleure correspondance de notre liste actuelle. Pour une évaluation plus approfondie et personnalisée — y compris des écoles hors de notre base de données actuelle — contactez-nous directement. Nous ajoutons d'autres écoles en 2026.",
+    "faq3q": "TrustFamily est-il payé par les écoles ?",
+    "faq3a": "Non. TrustFamily n'accepte aucun paiement, commission ou frais de référence de la part des écoles. Nos évaluations sont entièrement indépendantes. C'est non négociable pour nous."
   },
   "BlogPage": {
     "metaTitle": "Blog — Guides d'écoles et de relocalisation au Portugal | TrustFamily",
-    "metaDescription": "Articles d'experts sur le choix des écoles internationales au Portugal, la comparaison des quartiers de Lisbonne pour les familles expatriées et des analyses réelles des coûts de relocalisation."
+    "metaDescription": "Articles d'experts sur le choix des écoles internationales au Portugal, la comparaison des quartiers de Lisbonne pour les familles expatriées et des analyses réelles des coûts de relocalisation.",
+    "h1": "Guides Écoles & Relocalisation",
+    "subtitle": "Des guides de première main par une équipe qui a aidé plus de 200 familles à s'installer au Portugal.",
+    "readMore": "Lire le guide complet →"
+  },
+  "BlogDetail": {
+    "byline": "Rédaction TrustFamily",
+    "ctaHeading": "Prêt à aller plus loin ?",
+    "ctaDescription": "Utilisez nos guides indépendants pour comparer les écoles et les quartiers — ou passez le quiz School Finder en 60 secondes.",
+    "ctaSchoolFinder": "Quiz School Finder",
+    "backToAll": "← Tous les articles"
   },
   "SchoolDetail": {
     "contactBtn": "Contacter un conseiller scolaire",

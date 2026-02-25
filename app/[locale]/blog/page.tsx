@@ -50,7 +50,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-export default function BlogPage() {
+export default async function BlogPage({ params }: PageProps) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "BlogPage" });
+
   const blogListSchema = {
     "@context": "https://schema.org",
     "@type": "Blog",
@@ -90,10 +93,10 @@ export default function BlogPage() {
       <Breadcrumbs />
 
       <h1 className="font-serif font-semibold text-4xl text-ink-primary mb-3">
-        School &amp; Relocation Guides
+        {t("h1")}
       </h1>
       <p className="text-lg text-ink-muted mb-12">
-        First-hand guides from a team that has helped 200+ families relocate to Portugal.
+        {t("subtitle")}
       </p>
 
       <div className="space-y-10">
@@ -124,7 +127,7 @@ export default function BlogPage() {
               href={{ pathname: '/blog/[slug]', params: { slug: article.slug } }}
               className="inline-flex items-center text-sm font-medium text-brand hover:text-[var(--brand-hover)] transition-colors"
             >
-              Read full guide →
+              {t("readMore")}
             </Link>
           </article>
         ))}

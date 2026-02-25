@@ -67,6 +67,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "HomePage" });
   const base = process.env.NEXT_PUBLIC_BASE_URL || "https://trustfamily.com";
 
   const organizationSchema = {
@@ -367,9 +368,9 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         ──────────────────────────────────────────────────────────── */}
         <div className="px-6 border-t border-border">
           <div className="max-w-7xl mx-auto pt-16 pb-4">
-            <p className="section-overline mb-3">What families say</p>
+            <p className="section-overline mb-3">{t("testimonialsOverline")}</p>
             <h2 className="section-heading max-w-lg">
-              Real stories from families who made the move
+              {t("testimonialsH2")}
             </h2>
           </div>
         </div>

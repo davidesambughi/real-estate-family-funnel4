@@ -4,7 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { getTranslations } from "next-intl/server";
 import { JsonLd } from "@/components/JsonLd";
-import { schoolsData } from "@/lib/schools-data";
+import { schoolsData, getSchoolT } from "@/lib/schools-data";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -26,9 +26,10 @@ export async function generateMetadata({ params }: PageProps) {
 
     if (!school) return { title: t("title") };
 
+    const schoolT = getSchoolT(school, locale);
     const base = process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com';
     const title = `${school.name} — International School Portugal | TrustFamily`;
-    const description = `${school.description} Curriculum: ${school.curriculum}. Annual fees: ${school.fees}. Location: ${school.location}.`;
+    const description = `${schoolT.description} Curriculum: ${school.curriculum}. Annual fees: ${school.fees}. Location: ${school.location}.`;
     const schoolPaths = routing.pathnames['/schools/[slug]'] as Record<string, string>;
     const canonical = `${base}/en${schoolPaths.en.replace('[slug]', school.slug)}`;
     const languages = Object.fromEntries(
@@ -77,12 +78,16 @@ export default async function SchoolDetailPage(props: PageProps) {
     }
 
     const t = await getTranslations({ locale, namespace: "SchoolDetail" });
+    const schoolT = getSchoolT(school, locale);
+
+    // JSON-LD always uses English canonical content
+    const enT = school.translations.en;
 
     const schoolSchema = {
         "@context": "https://schema.org",
         "@type": "EducationalOrganization",
         "name": school.name,
-        "description": school.description,
+        "description": enT.description,
         "url": `${process.env.NEXT_PUBLIC_BASE_URL || "https://trustfamily.com"}/school/${school.slug}`,
         "address": {
             "@type": "PostalAddress",
@@ -149,7 +154,7 @@ export default async function SchoolDetailPage(props: PageProps) {
                 <div className="lg:col-span-2 space-y-8">
                     <section className="prose max-w-none">
                         <h2 className="font-serif font-semibold text-2xl text-ink-primary mb-4">{t("aboutHeading")}</h2>
-                        <p className="text-lg leading-relaxed text-muted-foreground">{school.description}</p>
+                        <p className="text-lg leading-relaxed text-muted-foreground">{schoolT.description}</p>
                     </section>
 
                     {/* THE VERDICT */}
@@ -160,7 +165,7 @@ export default async function SchoolDetailPage(props: PageProps) {
                             </div>
                             <p className="text-xs font-bold text-warm uppercase tracking-wider">{t("verdictLabel")}</p>
                         </div>
-                        <p className="text-ink-primary font-medium leading-relaxed">{school.verdict}</p>
+                        <p className="text-ink-primary font-medium leading-relaxed">{schoolT.verdict}</p>
                     </section>
 
                     {/* PARENT WHISPER */}
@@ -171,13 +176,13 @@ export default async function SchoolDetailPage(props: PageProps) {
                             </div>
                             <h2 className="text-xs font-bold text-ink-muted uppercase tracking-wider">{t("parentWhisperLabel")}</h2>
                         </div>
-                        <p className="text-ink-secondary italic leading-relaxed">{school.parentWhisper}</p>
+                        <p className="text-ink-secondary italic leading-relaxed">{schoolT.parentWhisper}</p>
                     </section>
 
                     <section>
                         <h2 className="font-serif font-semibold text-2xl text-ink-primary mb-4">{t("keyHighlightsHeading")}</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            {school.highlights.map((highlight: string, index: number) => (
+                            {schoolT.highlights.map((highlight: string, index: number) => (
                                 <div key={index} className="flex items-center gap-3 p-4 bg-slate-50 rounded-lg">
                                     <Check className="h-5 w-5 text-green-600" />
                                     <span className="font-medium">{highlight}</span>

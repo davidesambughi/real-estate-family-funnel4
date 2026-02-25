@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 import { Sun, ShieldCheck, GraduationCap, ChevronRight } from "lucide-react";
+import { StickyTOC } from "@/components/StickyTOC";
 
 
 interface PageProps {
@@ -188,6 +189,7 @@ export default function RelocationGuidePage() {
             <JsonLd data={howToSchema} />
             <JsonLd data={speakableSchema} />
             <Breadcrumbs />
+            <StickyTOC sections={sections} />
 
             {/* Header */}
             <div className="mb-6">

@@ -4,7 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { getTranslations } from "next-intl/server";
 import { JsonLd } from "@/components/JsonLd";
-import { neighborhoodsData } from "@/lib/neighborhoods-data";
+import { neighborhoodsData, getNeighborhoodT } from "@/lib/neighborhoods-data";
 import { schoolsData } from "@/lib/schools-data";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Card, CardHeader, CardTitle, CardContent, CardDescription, CardFooter } from "@/components/ui/card";
@@ -27,9 +27,10 @@ export async function generateMetadata({ params }: PageProps) {
 
     if (!neighborhood) return { title: t("title") };
 
+    const nbhT = getNeighborhoodT(neighborhood, locale);
     const base = process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com';
     const title = `${neighborhood.name} — Family Friendly Neighborhood Portugal | TrustFamily`;
-    const description = `${neighborhood.description} Vibe: ${neighborhood.vibe}. ${neighborhood.highlights.join(", ")}.`;
+    const description = `${nbhT.description} Vibe: ${nbhT.vibe}. ${nbhT.highlights.join(", ")}.`;
     const neighborhoodPaths = routing.pathnames['/neighborhoods/[slug]'] as Record<string, string>;
     const canonical = `${base}/en${neighborhoodPaths.en.replace('[slug]', neighborhood.slug)}`;
     const languages = Object.fromEntries(
@@ -78,12 +79,16 @@ export default async function NeighborhoodDetailPage(props: PageProps) {
     }
 
     const t = await getTranslations({ locale, namespace: "NeighborhoodDetail" });
+    const nbhT = getNeighborhoodT(neighborhood, locale);
+
+    // JSON-LD always uses English canonical content
+    const enT = neighborhood.translations.en;
 
     const placeSchema = {
         "@context": "https://schema.org",
         "@type": "Place",
         "name": neighborhood.name,
-        "description": neighborhood.description,
+        "description": enT.description,
         "url": `${process.env.NEXT_PUBLIC_BASE_URL || "https://trustfamily.com"}/neighborhood/${neighborhood.slug}`,
         "address": {
             "@type": "PostalAddress",
@@ -96,8 +101,8 @@ export default async function NeighborhoodDetailPage(props: PageProps) {
             "latitude": neighborhood.coordinates.lat,
             "longitude": neighborhood.coordinates.lng,
         },
-        ...(neighborhood.amenities?.length && {
-            "amenityFeature": neighborhood.amenities.map((a: string) => ({
+        ...(enT.amenities?.length && {
+            "amenityFeature": enT.amenities.map((a: string) => ({
                 "@type": "LocationFeatureSpecification",
                 "name": a,
                 "value": true,
@@ -153,13 +158,13 @@ export default async function NeighborhoodDetailPage(props: PageProps) {
                 <div className="lg:col-span-2 space-y-8">
                     <section className="prose max-w-none">
                         <h2 className="text-2xl font-bold mb-4">{t("aboutHeading", { name: neighborhood.name })}</h2>
-                        <p className="text-lg leading-relaxed text-muted-foreground">{neighborhood.description}</p>
+                        <p className="text-lg leading-relaxed text-muted-foreground">{nbhT.description}</p>
                     </section>
 
                     <section>
                         <h2 className="text-2xl font-bold mb-4">{t("whyFamiliesHeading")}</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            {neighborhood.highlights.map((highlight: string, index: number) => (
+                            {nbhT.highlights.map((highlight: string, index: number) => (
                                 <div key={index} className="flex items-center gap-3 p-4 bg-slate-50 rounded-lg">
                                     <Check className="h-5 w-5 text-green-600" />
                                     <span className="font-medium">{highlight}</span>
@@ -169,7 +174,7 @@ export default async function NeighborhoodDetailPage(props: PageProps) {
                     </section>
 
                     {/* COMMUTE CONTEXT */}
-                    {neighborhood.commuteContext && (
+                    {nbhT.commuteContext && (
                         <section className="rounded-xl bg-warm-light/30 border border-warm/20 px-6 py-5 shadow-(--shadow-hair)">
                             <div className="flex items-center gap-2 mb-3">
                                 <div className="bg-warm-light/50 p-1.5 rounded-lg text-warm shadow-(--shadow-hair)">
@@ -177,24 +182,24 @@ export default async function NeighborhoodDetailPage(props: PageProps) {
                                 </div>
                                 <h2 className="text-xs font-bold text-warm uppercase tracking-wider">{t("commuteContextLabel")}</h2>
                             </div>
-                            <p className="text-ink-secondary text-sm leading-relaxed font-medium">{neighborhood.commuteContext}</p>
+                            <p className="text-ink-secondary text-sm leading-relaxed font-medium">{nbhT.commuteContext}</p>
                         </section>
                     )}
 
                     {/* VIBE ADJECTIVES + AMENITIES */}
-                    {(neighborhood.vibeAdjectives?.length || neighborhood.amenities?.length) && (
+                    {(nbhT.vibeAdjectives?.length || nbhT.amenities?.length) && (
                         <section>
                             <h2 className="text-2xl font-bold mb-4">{t("lifestyleAmenitiesHeading")}</h2>
-                            {neighborhood.vibeAdjectives?.length && (
+                            {nbhT.vibeAdjectives?.length && (
                                 <div className="flex flex-wrap gap-2 mb-4">
-                                    {neighborhood.vibeAdjectives.map((adj: string) => (
+                                    {nbhT.vibeAdjectives.map((adj: string) => (
                                         <span key={adj} className="inline-block bg-slate-100 text-slate-600 text-sm px-3 py-1 rounded-full">{adj}</span>
                                     ))}
                                 </div>
                             )}
-                            {neighborhood.amenities?.length && (
+                            {nbhT.amenities?.length && (
                                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                                    {neighborhood.amenities.map((amenity: string) => (
+                                    {nbhT.amenities.map((amenity: string) => (
                                         <li key={amenity} className="flex items-center gap-2 text-sm text-slate-700 bg-white border border-slate-100 rounded-lg px-3 py-2">
                                             {amenity}
                                         </li>
@@ -252,7 +257,7 @@ export default async function NeighborhoodDetailPage(props: PageProps) {
                         </CardHeader>
                         <CardContent>
                             <p className="text-lg font-medium text-blue-800 mb-2">
-                                {neighborhood.vibe}
+                                {nbhT.vibe}
                             </p>
                             <p className="text-sm text-blue-700">
                                 {t("vibeCheckBody")}

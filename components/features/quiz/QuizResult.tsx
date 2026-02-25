@@ -4,9 +4,10 @@ import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { schoolsData } from "@/lib/schools-data";
-import { neighborhoodsData } from "@/lib/neighborhoods-data";
+import { schoolsData, getSchoolT } from "@/lib/schools-data";
+import { neighborhoodsData, getNeighborhoodT } from "@/lib/neighborhoods-data";
 import { MapPin, GraduationCap, Star, RotateCcw } from "lucide-react";
+import { useLocale } from "next-intl";
 
 interface QuizResultProps {
     schoolSlugs: string[];
@@ -23,6 +24,7 @@ interface QuizResultProps {
 }
 
 export function QuizResult({ schoolSlugs, neighborhoodSlugs, translations: t, onRestart }: QuizResultProps) {
+    const locale = useLocale();
     const matchedSchools = schoolSlugs
         .map((slug) => schoolsData.find((s) => s.slug === slug))
         .filter(Boolean) as typeof schoolsData;
@@ -64,7 +66,7 @@ export function QuizResult({ schoolSlugs, neighborhoodSlugs, translations: t, on
                                 </div>
                             </CardHeader>
                             <CardContent>
-                                <p className="text-sm text-ink-secondary mb-4 line-clamp-2">{school.description}</p>
+                                <p className="text-sm text-ink-secondary mb-4 line-clamp-2">{getSchoolT(school, locale).description}</p>
                                 <Button asChild size="sm" className="w-full">
                                     <Link href={{ pathname: "/schools/[slug]", params: { slug: school.slug } }}>
                                         {t.viewSchoolBtn}
@@ -87,7 +89,7 @@ export function QuizResult({ schoolSlugs, neighborhoodSlugs, translations: t, on
                         <Card key={neighborhood.id}>
                             <CardHeader className="pb-2">
                                 <CardTitle className="text-base">{neighborhood.name}</CardTitle>
-                                <CardDescription>{neighborhood.vibe}</CardDescription>
+                                <CardDescription>{getNeighborhoodT(neighborhood, locale).vibe}</CardDescription>
                             </CardHeader>
                             <CardContent>
                                 <Button asChild variant="outline" size="sm" className="w-full">

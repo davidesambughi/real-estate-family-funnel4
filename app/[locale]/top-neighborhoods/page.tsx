@@ -6,6 +6,7 @@ import { NeighborhoodsList } from "@/components/NeighborhoodsList";
 import { JsonLd } from "@/components/JsonLd";
 import { neighborhoodsData } from "@/lib/neighborhoods-data";
 import { getTranslations } from "next-intl/server";
+import { StickyTOC } from "@/components/StickyTOC";
 
 interface PageProps {
     params: Promise<{ locale: string }>;
@@ -86,7 +87,7 @@ export default function Page() {
             "item": {
                 "@type": "Place",
                 "name": n.name,
-                "description": n.description,
+                "description": n.translations.en.description,
                 "url": `https://trustfamily.com/en/neighborhoods/${n.slug}`,
                 "address": { "@type": "PostalAddress", "addressLocality": n.name, "addressRegion": n.location, "addressCountry": "PT" },
                 "geo": { "@type": "GeoCoordinates", "latitude": n.coordinates.lat, "longitude": n.coordinates.lng },
@@ -111,6 +112,7 @@ export default function Page() {
             <JsonLd data={faqSchema} />
             <JsonLd data={speakableSchema} />
             <Breadcrumbs />
+            <StickyTOC sections={sections} />
 
             {/* Header */}
             <div className="mb-6">

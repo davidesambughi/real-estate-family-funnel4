@@ -2,7 +2,9 @@
   "HomePage": {
     "title": "Inicio",
     "metaTitle": "TrustFamily Relocation - Mejores colegios internacionales y barrios en Portugal",
-    "metaDescription": "Guía independiente para mudarse a Portugal. Compare los mejores colegios internacionales, encuentre barrios aptos para familias y obtenga asesoramiento experto en relocalización."
+    "metaDescription": "Guía independiente para mudarse a Portugal. Compare los mejores colegios internacionales, encuentre barrios aptos para familias y obtenga asesoramiento experto en relocalización.",
+    "testimonialsOverline": "Qué dicen las familias",
+    "testimonialsH2": "Historias reales de familias que dieron el paso"
   },
   "Locale": {
     "en": "Inglés",
@@ -27,9 +29,7 @@
   "Hero": {
     "overline": "La guía independiente · Portugal 2026",
     "title": "Asegure el Futuro de Sus Hijos en Portugal",
-    "subtitle": "TrustFamily es la guía independiente para familias internacionales que se trasladan a Portugal. Comparamos los principales colegios internacionales cerca de Lisboa — programas IB, británico y americano en St. Julian's, TASIS Portugal, CAISL y United Lisbon — mapeamos barrios como Cascais, Sintra y Parque das Nações, y le guiamos paso a paso por las opciones de visa D7, D8 y Golden Visa. Dos años de visitas presenciales, 200+ familias, sin relaciones comerciales: la investigación estructurada y honesta que necesita antes de comprometerse.",
-    "cta": "Encuentre su colegio",
-    "ctaSecondary": "Iniciar evaluación"
+    "subtitle": "TrustFamily es la guía independiente para familias internacionales que se trasladan a Portugal. Comparamos los principales colegios internacionales cerca de Lisboa — programas IB, británico y americano en St. Julian's, TASIS Portugal, CAISL y United Lisbon — mapeamos barrios como Cascais, Sintra y Parque das Nações, y le guiamos paso a paso por las opciones de visa D7, D8 y Golden Visa. Dos años de visitas presenciales, 200+ familias, sin relaciones comerciales: la investigación estructurada y honesta que necesita antes de comprometerse."
   },
   "TrustBar": {
     "independent": "Datos 100% independientes",
@@ -139,15 +139,84 @@
   },
   "AboutPage": {
     "metaTitle": "Sobre TrustFamily — Inteligencia independiente sobre colegios y relocalización en Portugal",
-    "metaDescription": "TrustFamily es una plataforma independiente que ayuda a familias internacionales a reubicarse en Portugal con confianza. Verificamos colegios, barrios y datos de relocalización — sin colocaciones pagadas y sin conflictos de interés."
+    "metaDescription": "TrustFamily es una plataforma independiente que ayuda a familias internacionales a reubicarse en Portugal con confianza. Verificamos colegios, barrios y datos de relocalización — sin colocaciones pagadas y sin conflictos de interés.",
+    "h1": "La guía de confianza para familias que se trasladan a Portugal",
+    "opening": "TrustFamily fue creado con una sola premisa: las familias que se reubican merecen información verificada e imparcial — no contenido patrocinado disfrazado de consejo. Proporcionamos inteligencia independiente sobre colegios y barrios para que pueda tomar una de las decisiones más importantes para sus hijos con confianza.",
+    "stat1Value": "200+",
+    "stat1Label": "familias orientadas",
+    "stat2Value": "50+",
+    "stat2Label": "visitas a colegios realizadas",
+    "stat3Value": "4",
+    "stat3Label": "colegios de primer nivel evaluados de forma independiente",
+    "stat4Value": "5",
+    "stat4Label": "barrios mapeados en detalle",
+    "whatWeDoH2": "Qué hace TrustFamily",
+    "whatWeDo1": "Investigamos, visitamos y verificamos los mejores colegios internacionales y barrios para expatriados en Portugal — y publicamos esa información de forma gratuita. Nuestra cobertura se centra actualmente en el área metropolitana de Lisboa, donde la concentración de colegios internacionales e infraestructura para expatriados es la más alta del país.",
+    "whatWeDo2": "Para cada colegio, publicamos tasas de aceptación reales, análisis completos de tasas (no solo las cuotas base), comparaciones curriculares y veredictos editoriales basados en visitas presenciales. Para cada barrio, mapeamos tiempos de desplazamiento a los colegios relevantes, describimos la comunidad de expatriados y evaluamos la idoneidad del estilo de vida familiar.",
+    "whatWeDo3": "También ofrecemos un cuestionario gratuito School Finder que empareja a las familias con el colegio y el barrio correctos en menos de 60 segundos — basado en el presupuesto, preferencia de estilo de vida, plan de estudios y plazo de mudanza.",
+    "howWeOperateH2": "Cómo operamos",
+    "principle1Title": "La independencia es innegociable",
+    "principle1Body": "TrustFamily no acepta pagos, comisiones ni honorarios de referencia de colegios, agencias inmobiliarias o empresas de relocalización. Cada evaluación está completamente autofinanciada. Esta es la única manera de que nuestros datos puedan ser confiables.",
+    "principle2Title": "Datos antes que opiniones",
+    "principle2Body": "Visitamos los colegios en persona, entrevistamos a las familias actuales y verificamos las tasas y tasas de aceptación publicadas antes de publicar nada. Si no podemos verificarlo, no lo publicamos.",
+    "principle3Title": "La autoridad se gana, no se reclama",
+    "principle3Body": "No nos llamamos expertos porque tenemos un sitio web. Ganamos credibilidad a través de la especificidad — datos de tasas de aceptación, tiempos de desplazamiento reales, análisis completos de tasas y las cosas que los colegios no anuncian.",
+    "principle4Title": "Sus datos son suyos",
+    "principle4Body": "Recopilamos datos de intención estructurados para mejorar nuestras recomendaciones. No vendemos datos brutos de usuarios a terceros. Si alguna vez introducimos asociaciones de pago, se divulgarán explícitamente y por separado de nuestro contenido editorial.",
+    "whoWeServeH2": "Quién usa TrustFamily",
+    "whoWeServe1": "Nuestro público principal son familias internacionales adineradas — típicamente del Reino Unido, EE. UU., Alemania, Francia, Países Bajos y Emiratos Árabes Unidos — que están considerando trasladarse a Portugal y quieren tomar decisiones sobre colegios y barrios basadas en datos verificados, no en marketing.",
+    "whoWeServe2": "Son familias para quienes la calidad del colegio es el principal filtro para elegir dónde vivir, y que están dispuestas a invertir significativamente en la educación de sus hijos. Son lo suficientemente experimentadas como para ser escépticas ante los consejos genéricos de relocalización — y lo suficientemente exigentes como para esperar especificidad, honestidad e independencia.",
+    "whatWeDoNotH2": "Qué no hace TrustFamily",
+    "doNot1": "No aceptamos pago de colegios, agencias ni terceros a cambio de cobertura editorial.",
+    "doNot2": "No clasificamos colegios según el gasto publicitario ni acuerdos de asociación.",
+    "doNot3": "No vendemos datos brutos de usuarios a colegios, agencias inmobiliarias ni plataformas de marketing.",
+    "doNot4": "No garantizamos la admisión escolar — todas las tasas de aceptación son promedios históricos.",
+    "doNot5": "No proporcionamos asesoramiento legal o de visados — consulte siempre a un abogado de inmigración autorizado.",
+    "ctaH2": "¿Listo para encontrar su coincidencia?",
+    "ctaText": "Comience con nuestro cuestionario School Finder o explore la comparación completa de colegios.",
+    "ctaBtn1": "Hacer el Cuestionario School Finder",
+    "ctaBtn2": "Ver Todos los Colegios"
   },
   "SchoolFinderPage": {
     "metaTitle": "Buscador de Colegios — Encuentre su colegio internacional ideal en Portugal | TrustFamily",
-    "metaDescription": "Responda 4 preguntas y encuentre el colegio internacional y barrio adecuados en Portugal. Gratuito, imparcial, basado en su presupuesto, preferencia curricular y estilo de vida."
+    "metaDescription": "Responda 4 preguntas y encuentre el colegio internacional y barrio adecuados en Portugal. Gratuito, imparcial, basado en su presupuesto, preferencia curricular y estilo de vida.",
+    "overline": "Gratuito · 60 segundos",
+    "h1": "Encuentre el colegio perfecto en Portugal",
+    "subtitle": "Responda 4 preguntas sobre su presupuesto, estilo de vida, preferencia curricular y plazo. Encontramos el colegio adecuado y el barrio adecuado — juntos.",
+    "step1Label": "Su presupuesto",
+    "step1Desc": "Tasas anuales de €12.000 a €32.000+ — le correspondemos con opciones realistas.",
+    "step2Label": "Su estilo de vida",
+    "step2Desc": "Costa, ciudad o naturaleza — Portugal tiene el barrio adecuado para cada familia.",
+    "step3Label": "Preferencia curricular",
+    "step3Desc": "IGCSE británico, AP americano o Diploma IB — explicamos la diferencia claramente.",
+    "step4Label": "Su plazo",
+    "step4Desc": "Mudanza en 3 meses o solo explorando — calibramos la urgencia de sus resultados.",
+    "badge1": "100% gratuito e independiente",
+    "badge2": "60 segundos para completar",
+    "badge3": "Colegio + barrio combinados juntos",
+    "ctaBtn": "Iniciar el Buscador de Colegios →",
+    "ctaSubtext": "Sin registro para ver sus resultados",
+    "faqHeading": "Preguntas Frecuentes",
+    "faq1q": "¿Qué tan precisas son las coincidencias de colegios?",
+    "faq1a": "Nuestra lógica de coincidencia se basa en 4 criterios ponderados: presupuesto, estilo de vida, plan de estudios y plazo de mudanza. Los resultados muestran los 2 colegios más compatibles de nuestra lista verificada de 4 colegios internacionales de primer nivel cerca de Lisboa. Siempre debe visitar en persona antes de comprometerse.",
+    "faq2q": "¿Qué pasa si ningún colegio parece el adecuado?",
+    "faq2a": "El cuestionario muestra la mejor opción de nuestra lista actual. Para una revisión más profunda y personalizada — incluidos colegios fuera de nuestra base de datos actual — contáctenos directamente. Estamos añadiendo más colegios en 2026.",
+    "faq3q": "¿TrustFamily recibe pagos de los colegios?",
+    "faq3a": "No. TrustFamily no acepta pagos, comisiones ni honorarios de referencia de los colegios. Nuestras evaluaciones son completamente independientes. Esto es innegociable para nosotros."
   },
   "BlogPage": {
     "metaTitle": "Blog — Guías de colegios y relocalización en Portugal | TrustFamily",
-    "metaDescription": "Artículos de expertos sobre cómo elegir colegios internacionales en Portugal, comparar barrios de Lisboa para familias expatriadas y análisis reales de costes de relocalización."
+    "metaDescription": "Artículos de expertos sobre cómo elegir colegios internacionales en Portugal, comparar barrios de Lisboa para familias expatriadas y análisis reales de costes de relocalización.",
+    "h1": "Guías de Colegios y Reubicación",
+    "subtitle": "Guías de primera mano de un equipo que ha ayudado a más de 200 familias a mudarse a Portugal.",
+    "readMore": "Leer la guía completa →"
+  },
+  "BlogDetail": {
+    "byline": "Editorial TrustFamily",
+    "ctaHeading": "¿Listo para profundizar?",
+    "ctaDescription": "Usa nuestras guías independientes para comparar colegios y barrios — o haz el quiz School Finder de 60 segundos.",
+    "ctaSchoolFinder": "Quiz School Finder",
+    "backToAll": "← Todos los artículos"
   },
   "SchoolDetail": {
     "contactBtn": "Contactar asesor escolar",

@@ -17,6 +17,39 @@ export interface GeoCoordinates {
   lng: number;
 }
 
+// ── i18n translation buckets (Opzione C) ─────────────────────────────────────
+// Only `en` is required; other locales are optional and fall back to `en`.
+
+export interface SchoolTranslation {
+  description: string;
+  verdict: string;
+  parentWhisper: string;
+  highlights: string[];
+  trustBadges: string[];
+}
+
+export interface TestimonialTranslation {
+  quote: string;
+}
+
+export interface Testimonial {
+  id: number;
+  attribution: string;
+  detail: string;
+  translations: { en: TestimonialTranslation } & Partial<Record<LocaleKey, TestimonialTranslation>>;
+}
+
+export interface NeighborhoodTranslation {
+  vibe: string;
+  description: string;
+  highlights: string[];
+  commuteContext: string;
+  vibeAdjectives: string[];
+  amenities: string[];
+}
+
+export type LocaleKey = 'pt' | 'de' | 'fr' | 'nl' | 'es';
+
 export interface School {
   // ── Core identity ───────────────────────────────────────────────
   id: string;
@@ -25,25 +58,21 @@ export interface School {
   location: string;
   neighborhoodSlug: string;
 
-  // ── Academic profile ────────────────────────────────────────────
+  // ── Academic profile (non-translatable) ─────────────────────────
   curriculum: string;
   fees: string;
-  description: string;
-  highlights: string[];
 
   // ── Trust Intelligence ──────────────────────────────────────────
-  trustBadges: string[];
   inspectionDate?: string;
   acceptanceRate?: string;
   visitCount?: number;
-
-  // ── Phase 4: Editorial & GEO content ───────────────────────────
-  verdict: string;
-  parentWhisper: string;
   feeDocument?: string;
 
   // ── Phase 4: SEO/GEO structured data ───────────────────────────
   coordinates: GeoCoordinates;
+
+  // ── i18n translations ───────────────────────────────────────────
+  translations: { en: SchoolTranslation } & Partial<Record<LocaleKey, SchoolTranslation>>;
 }
 
 export interface Neighborhood {
@@ -53,16 +82,9 @@ export interface Neighborhood {
   name: string;
   location: string;
 
-  // ── Editorial profile ───────────────────────────────────────────
-  vibe: string;
-  description: string;
-  highlights: string[];
-
-  // ── Phase 4: Commute & lifestyle content ────────────────────────
-  commuteContext: string;
-  vibeAdjectives: string[];
-  amenities: string[];
-
   // ── Phase 4: SEO/GEO structured data ───────────────────────────
   coordinates: GeoCoordinates;
+
+  // ── i18n translations ───────────────────────────────────────────
+  translations: { en: NeighborhoodTranslation } & Partial<Record<LocaleKey, NeighborhoodTranslation>>;
 }

@@ -2,7 +2,9 @@
   "HomePage": {
     "title": "Início",
     "metaTitle": "TrustFamily Relocation - Melhores Escolas Internacionais e Bairros em Portugal",
-    "metaDescription": "Guia independente para se mudar para Portugal. Compare as melhores escolas internacionais, encontre bairros seguros para famílias e obtenha conselhos especializados de relocalização."
+    "metaDescription": "Guia independente para se mudar para Portugal. Compare as melhores escolas internacionais, encontre bairros seguros para famílias e obtenha conselhos especializados de relocalização.",
+    "testimonialsOverline": "O que dizem as famílias",
+    "testimonialsH2": "Histórias reais de famílias que fizeram a mudança"
   },
   "Locale": {
     "en": "Inglês",
@@ -27,9 +29,7 @@
   "Hero": {
     "overline": "O guia independente · Portugal 2026",
     "title": "Garanta o Futuro dos Seus Filhos em Portugal",
-    "subtitle": "TrustFamily é o guia independente para famílias internacionais que se mudam para Portugal. Comparamos as principais escolas internacionais perto de Lisboa — currículos IB, Britânico e Americano na St. Julian's, TASIS Portugal, CAISL e United Lisbon — mapeamos bairros como Cascais, Sintra e Parque das Nações, e orientamo-lo passo a passo nos vistos D7, D8 e Golden Visa. Dois anos de visitas presenciais, 200+ famílias, sem relações comerciais: a investigação que precisa antes de decidir.",
-    "cta": "Encontre a Escola Ideal",
-    "ctaSecondary": "Iniciar Revisão de Escolas"
+    "subtitle": "TrustFamily é o guia independente para famílias internacionais que se mudam para Portugal. Comparamos as principais escolas internacionais perto de Lisboa — currículos IB, Britânico e Americano na St. Julian's, TASIS Portugal, CAISL e United Lisbon — mapeamos bairros como Cascais, Sintra e Parque das Nações, e orientamo-lo passo a passo nos vistos D7, D8 e Golden Visa. Dois anos de visitas presenciais, 200+ famílias, sem relações comerciais: a investigação que precisa antes de decidir."
   },
   "TrustBar": {
     "independent": "Dados 100% Independentes",
@@ -139,15 +139,84 @@
   },
   "AboutPage": {
     "metaTitle": "Sobre a TrustFamily — Inteligência Independente sobre Escolas e Relocalização em Portugal",
-    "metaDescription": "A TrustFamily é uma plataforma independente que ajuda famílias internacionais a realojar-se em Portugal com confiança. Verificamos escolas, bairros e dados de relocalização — sem colocações pagas e sem conflitos de interesse."
+    "metaDescription": "A TrustFamily é uma plataforma independente que ajuda famílias internacionais a realojar-se em Portugal com confiança. Verificamos escolas, bairros e dados de relocalização — sem colocações pagas e sem conflitos de interesse.",
+    "h1": "O guia de confiança para famílias que se mudam para Portugal",
+    "opening": "A TrustFamily foi criada com uma premissa: as famílias que se relocalizam merecem informação verificada e imparcial — não conteúdo patrocinado disfarçado de conselho. Fornecemos inteligência independente sobre escolas e bairros para que possa tomar uma das decisões mais importantes para os seus filhos com confiança.",
+    "stat1Value": "200+",
+    "stat1Label": "famílias orientadas",
+    "stat2Value": "50+",
+    "stat2Label": "visitas a escolas realizadas",
+    "stat3Value": "4",
+    "stat3Label": "escolas de topo avaliadas de forma independente",
+    "stat4Value": "5",
+    "stat4Label": "bairros mapeados em detalhe",
+    "whatWeDoH2": "O que a TrustFamily faz",
+    "whatWeDo1": "Investigamos, visitamos e verificamos as melhores escolas internacionais e bairros para expatriados em Portugal — e publicamos essa informação gratuitamente. A nossa cobertura centra-se atualmente na Grande Lisboa, onde a concentração de escolas internacionais e infraestrutura para expatriados é a mais elevada do país.",
+    "whatWeDo2": "Para cada escola, publicamos taxas de aceitação reais, análises detalhadas de propinas (não apenas os valores de base), comparações de currículo e veredictos editoriais baseados em visitas presenciais. Para cada bairro, mapeamos tempos de deslocação para as escolas relevantes, descrevemos a comunidade de expatriados e avaliamos a adequação ao estilo de vida familiar.",
+    "whatWeDo3": "Disponibilizamos também um questionário gratuito School Finder que corresponde famílias à escola e ao bairro certos em menos de 60 segundos — com base no orçamento, preferência de estilo de vida, currículo e prazo de mudança.",
+    "howWeOperateH2": "Como operamos",
+    "principle1Title": "A independência é inegociável",
+    "principle1Body": "A TrustFamily não aceita pagamentos, comissões ou taxas de referência de escolas, agências imobiliárias ou empresas de relocalização. Cada avaliação é totalmente autofinanciada. É a única forma de os nossos dados poderem ser confiáveis.",
+    "principle2Title": "Dados antes de opiniões",
+    "principle2Body": "Visitamos escolas pessoalmente, entrevistamos famílias atuais e verificamos propinas e taxas de aceitação publicadas antes de publicar qualquer coisa. Se não conseguirmos verificar, não publicamos.",
+    "principle3Title": "A autoridade é conquistada, não reivindicada",
+    "principle3Body": "Não nos chamamos especialistas por termos um site. Ganhamos credibilidade através da especificidade — dados de taxas de aceitação, tempos de deslocação reais, análises detalhadas de propinas e as coisas que as escolas não divulgam.",
+    "principle4Title": "Os seus dados são seus",
+    "principle4Body": "Recolhemos dados de intenção estruturados para melhorar as nossas recomendações. Não vendemos dados brutos de utilizadores a terceiros. Se alguma vez introduzirmos parcerias pagas, serão divulgadas explicitamente e separadamente do nosso conteúdo editorial.",
+    "whoWeServeH2": "Quem usa a TrustFamily",
+    "whoWeServe1": "O nosso público principal são famílias internacionais abastadas — tipicamente do Reino Unido, EUA, Alemanha, França, Países Baixos e Emirados Árabes Unidos — que estão a considerar mudar-se para Portugal e querem tomar decisões sobre escolas e bairros com base em dados verificados, não em marketing.",
+    "whoWeServe2": "São famílias para quem a qualidade da escola é o principal filtro na escolha do local de residência, e que estão dispostas a investir significativamente na educação dos seus filhos. São experientes o suficiente para serem céticas em relação a conselhos genéricos de relocalização — e exigentes o suficiente para esperar especificidade, honestidade e independência.",
+    "whatWeDoNotH2": "O que a TrustFamily não faz",
+    "doNot1": "Não aceitamos pagamento de escolas, agências ou terceiros em troca de cobertura editorial.",
+    "doNot2": "Não classificamos escolas com base em despesas de publicidade ou acordos de parceria.",
+    "doNot3": "Não vendemos dados brutos de utilizadores a escolas, agências imobiliárias ou plataformas de marketing.",
+    "doNot4": "Não garantimos admissão escolar — todas as taxas de aceitação são médias históricas.",
+    "doNot5": "Não fornecemos aconselhamento jurídico ou de vistos — consulte sempre um advogado de imigração licenciado.",
+    "ctaH2": "Pronto para encontrar a sua combinação?",
+    "ctaText": "Comece com o nosso questionário School Finder ou explore a comparação completa de escolas.",
+    "ctaBtn1": "Fazer o Questionário School Finder",
+    "ctaBtn2": "Ver Todas as Escolas"
   },
   "SchoolFinderPage": {
     "metaTitle": "Encontrar Escola — Encontre a Escola Internacional Ideal em Portugal | TrustFamily",
-    "metaDescription": "Responda a 4 perguntas e seja correspondido com a escola internacional e bairro certos em Portugal. Gratuito, imparcial, baseado no seu orçamento, preferência curricular e estilo de vida."
+    "metaDescription": "Responda a 4 perguntas e seja correspondido com a escola internacional e bairro certos em Portugal. Gratuito, imparcial, baseado no seu orçamento, preferência curricular e estilo de vida.",
+    "overline": "Gratuito · 60 segundos",
+    "h1": "Encontre a Escola Perfeita em Portugal",
+    "subtitle": "Responda a 4 perguntas sobre o seu orçamento, estilo de vida, preferência curricular e prazo. Encontramos a escola certa e o bairro certo — juntos.",
+    "step1Label": "O seu orçamento",
+    "step1Desc": "Propinas anuais de €12.000 a €32.000+ — correspondemos a opções realistas.",
+    "step2Label": "O seu estilo de vida",
+    "step2Desc": "Litoral, cidade ou natureza — Portugal tem o bairro certo para cada família.",
+    "step3Label": "Preferência curricular",
+    "step3Desc": "British IGCSE, American AP ou Diploma IB — explicamos a diferença claramente.",
+    "step4Label": "O seu prazo",
+    "step4Desc": "A mudar em 3 meses ou apenas a explorar — calibramos a urgência dos seus resultados.",
+    "badge1": "100% gratuito e independente",
+    "badge2": "60 segundos para completar",
+    "badge3": "Escola + bairro combinados juntos",
+    "ctaBtn": "Iniciar o Localizador de Escolas →",
+    "ctaSubtext": "Sem registo para ver os seus resultados",
+    "faqHeading": "Perguntas Frequentes",
+    "faq1q": "Qual é a precisão das correspondências de escolas?",
+    "faq1a": "A nossa lógica de correspondência baseia-se em 4 critérios ponderados: orçamento, estilo de vida, currículo e prazo de mudança. Os resultados apresentam as 2 escolas mais compatíveis da nossa lista verificada de 4 escolas internacionais de topo perto de Lisboa. Deve sempre visitar pessoalmente antes de se comprometer.",
+    "faq2q": "E se nenhuma das escolas parecer adequada?",
+    "faq2a": "O questionário apresenta a melhor opção da nossa lista atual. Para uma análise mais aprofundada e personalizada — incluindo escolas fora da nossa base de dados atual — contacte-nos diretamente. Estamos a adicionar mais escolas em 2026.",
+    "faq3q": "A TrustFamily é paga pelas escolas?",
+    "faq3a": "Não. A TrustFamily não aceita pagamentos, comissões ou taxas de referência das escolas. As nossas avaliações são totalmente independentes. Isto é inegociável para nós."
   },
   "BlogPage": {
     "metaTitle": "Blog — Guias de Escolas e Relocalização Portugal | TrustFamily",
-    "metaDescription": "Artigos especializados sobre como escolher escolas internacionais em Portugal, comparar bairros de Lisboa para famílias expatriadas e análises reais dos custos de relocalização."
+    "metaDescription": "Artigos especializados sobre como escolher escolas internacionais em Portugal, comparar bairros de Lisboa para famílias expatriadas e análises reais dos custos de relocalização.",
+    "h1": "Guias de Escolas e Relocalização",
+    "subtitle": "Guias de primeira mão de uma equipa que já ajudou mais de 200 famílias a mudar-se para Portugal.",
+    "readMore": "Ler o guia completo →"
+  },
+  "BlogDetail": {
+    "byline": "Editorial TrustFamily",
+    "ctaHeading": "Pronto para saber mais?",
+    "ctaDescription": "Use os nossos guias independentes para comparar escolas e bairros — ou faça o quiz School Finder de 60 segundos.",
+    "ctaSchoolFinder": "Quiz School Finder",
+    "backToAll": "← Todos os artigos"
   },
   "SchoolDetail": {
     "contactBtn": "Contactar Consultor Escolar",

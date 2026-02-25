@@ -7,6 +7,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { schoolsData } from "@/lib/schools-data";
 import { getTranslations } from "next-intl/server";
 import { School, Users, BarChart } from "lucide-react";
+import { StickyTOC } from "@/components/StickyTOC";
 
 
 interface PageProps {
@@ -87,7 +88,7 @@ export default function Page() {
             "item": {
                 "@type": "EducationalOrganization",
                 "name": school.name,
-                "description": school.description,
+                "description": school.translations.en.description,
                 "url": `https://trustfamily.com/en/school/${school.slug}`,
                 "address": { "@type": "PostalAddress", "addressLocality": school.location, "addressCountry": "PT" },
                 "geo": { "@type": "GeoCoordinates", "latitude": school.coordinates.lat, "longitude": school.coordinates.lng },
@@ -112,6 +113,7 @@ export default function Page() {
             <JsonLd data={faqSchema} />
             <JsonLd data={speakableSchema} />
             <Breadcrumbs />
+            <StickyTOC sections={sections} />
 
             {/* Header */}
             <div className="mb-6">

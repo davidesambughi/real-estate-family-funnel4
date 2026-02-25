@@ -3,6 +3,7 @@ import { Link } from "@/i18n/navigation";
 import { JsonLd } from "@/components/JsonLd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
+import { getTranslations } from "next-intl/server";
 import { blogArticles, getBlogArticle } from "@/lib/blog-data";
 import type { Metadata } from "next";
 
@@ -57,8 +58,9 @@ export function generateStaticParams() {
 }
 
 export default async function BlogPostPage({ params }: PageProps) {
-  const { slug } = await params;
+  const { slug, locale } = await params;
   const article = getBlogArticle(slug);
+  const t = await getTranslations({ locale, namespace: "BlogDetail" });
 
   if (!article) notFound();
 
@@ -118,7 +120,7 @@ export default async function BlogPostPage({ params }: PageProps) {
         <span>·</span>
         <span>{article.readTime}</span>
         <span>·</span>
-        <span>TrustFamily Editorial</span>
+        <span>{t("byline")}</span>
       </div>
 
       {/* Title */}
@@ -144,16 +146,16 @@ export default async function BlogPostPage({ params }: PageProps) {
 
       {/* CTA */}
       <div className="mt-12 bg-brand-50 border border-border rounded-2xl p-6 text-center">
-        <h2 className="font-serif font-semibold text-xl text-ink-primary mb-2">Ready to go deeper?</h2>
+        <h2 className="font-serif font-semibold text-xl text-ink-primary mb-2">{t("ctaHeading")}</h2>
         <p className="text-ink-muted text-sm mb-5">
-          Use our independent guides to compare schools and neighborhoods — or take the 60-second School Finder quiz.
+          {t("ctaDescription")}
         </p>
         <div className="flex flex-col sm:flex-row justify-center gap-3">
           <Button size="lg" asChild>
             <Link href={article.cta.href}>{article.cta.text}</Link>
           </Button>
           <Button size="lg" variant="outline" asChild>
-            <Link href="/school-finder">School Finder Quiz</Link>
+            <Link href="/school-finder">{t("ctaSchoolFinder")}</Link>
           </Button>
         </div>
       </div>
@@ -164,7 +166,7 @@ export default async function BlogPostPage({ params }: PageProps) {
           href="/blog"
           className="text-sm text-ink-muted hover:text-brand transition-colors"
         >
-          ← All articles
+          {t("backToAll")}
         </Link>
       </div>
 
