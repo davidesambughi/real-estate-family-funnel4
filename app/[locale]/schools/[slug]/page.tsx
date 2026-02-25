@@ -8,7 +8,8 @@ import { schoolsData } from "@/lib/schools-data";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Check, MapPin, GraduationCap, Coins } from "lucide-react";
+import { Check, MapPin, GraduationCap, Coins, Quote, Sparkles } from "lucide-react";
+
 import { SchoolMap } from "@/components/features/SchoolMap";
 
 interface PageProps {
@@ -93,11 +94,13 @@ export default async function SchoolDetailPage(props: PageProps) {
             "latitude": school.coordinates.lat,
             "longitude": school.coordinates.lng,
         },
-        ...(school.acceptanceRate && { "additionalProperty": {
-            "@type": "PropertyValue",
-            "name": "acceptanceRate",
-            "value": school.acceptanceRate,
-        }}),
+        ...(school.acceptanceRate && {
+            "additionalProperty": {
+                "@type": "PropertyValue",
+                "name": "acceptanceRate",
+                "value": school.acceptanceRate,
+            }
+        }),
         ...(school.inspectionDate && { "dateModified": school.inspectionDate }),
     };
 
@@ -150,20 +153,25 @@ export default async function SchoolDetailPage(props: PageProps) {
                     </section>
 
                     {/* THE VERDICT */}
-                    <section className="rounded-xl bg-brand-50 border border-border px-6 py-5">
-                        <div className="flex items-center gap-2 mb-2">
-                            <p className="section-overline">{t("verdictLabel")}</p>
+                    <section className="rounded-xl bg-warm-light/30 border border-warm/20 px-6 py-5 shadow-(--shadow-hair)">
+                        <div className="flex items-center gap-2 mb-3">
+                            <div className="bg-warm-light/50 p-1.5 rounded-lg text-warm shadow-(--shadow-hair)">
+                                <Sparkles className="h-4 w-4" />
+                            </div>
+                            <p className="text-xs font-bold text-warm uppercase tracking-wider">{t("verdictLabel")}</p>
                         </div>
-                        <p className="text-blue-900 font-medium leading-snug">{school.verdict}</p>
+                        <p className="text-ink-primary font-medium leading-relaxed">{school.verdict}</p>
                     </section>
 
                     {/* PARENT WHISPER */}
-                    <section className="rounded-xl bg-slate-50 border border-slate-100 px-6 py-5">
-                        <div className="flex items-center gap-2 mb-2">
-                            <span className="text-slate-400">💬</span>
-                            <h2 className="text-sm font-bold text-slate-500 uppercase tracking-wide">{t("parentWhisperLabel")}</h2>
+                    <section className="rounded-xl bg-surface-subtle border border-border px-6 py-5">
+                        <div className="flex items-center gap-2 mb-3">
+                            <div className="bg-white p-1.5 rounded-lg text-ink-muted shadow-(--shadow-hair) border border-border">
+                                <Quote className="h-4 w-4" />
+                            </div>
+                            <h2 className="text-xs font-bold text-ink-muted uppercase tracking-wider">{t("parentWhisperLabel")}</h2>
                         </div>
-                        <p className="text-slate-600 italic leading-snug">{school.parentWhisper}</p>
+                        <p className="text-ink-secondary italic leading-relaxed">{school.parentWhisper}</p>
                     </section>
 
                     <section>

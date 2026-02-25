@@ -5,6 +5,8 @@ import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
+import { Sun, ShieldCheck, GraduationCap, ChevronRight } from "lucide-react";
+
 
 interface PageProps {
     params: Promise<{ locale: string }>;
@@ -267,14 +269,16 @@ export default function RelocationGuidePage() {
                     </p>
                     <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-6">
                         {[
-                            { emoji: "🌤️", title: "Climate", desc: "300+ sunny days per year in Lisbon. Mild winters, warm summers without extreme heat." },
-                            { emoji: "🔒", title: "Safety", desc: "Portugal ranks in the top 7 safest countries globally (Global Peace Index 2025)." },
-                            { emoji: "🏫", title: "Education", desc: "4 top international schools within 45 min of Lisbon — IB, British, and American curricula." },
+                            { icon: <Sun className="h-5 w-5" />, title: "Climate", desc: "300+ sunny days per year in Lisbon. Mild winters, warm summers without extreme heat." },
+                            { icon: <ShieldCheck className="h-5 w-5" />, title: "Safety", desc: "Portugal ranks in the top 7 safest countries globally (Global Peace Index 2025)." },
+                            { icon: <GraduationCap className="h-5 w-5" />, title: "Education", desc: "4 top international schools within 45 min of Lisbon — IB, British, and American curricula." },
                         ].map((item) => (
-                            <div key={item.title} className="bg-slate-50 rounded-xl p-5 border border-slate-100">
-                                <span className="text-2xl mb-2 block">{item.emoji}</span>
-                                <h3 className="font-semibold text-slate-900 mb-1">{item.title}</h3>
-                                <p className="text-sm text-slate-500">{item.desc}</p>
+                            <div key={item.title} className="bg-card rounded-2xl p-6 border border-border shadow-(--shadow-hair) hover:shadow-md transition-all">
+                                <div className="bg-warm-light/30 text-warm p-2.5 rounded-xl w-fit mb-4 shadow-(--shadow-hair)">
+                                    {item.icon}
+                                </div>
+                                <h3 className="font-semibold text-ink-primary mb-2 text-h4 leading-tight">{item.title}</h3>
+                                <p className="text-body-sm text-ink-secondary leading-relaxed">{item.desc}</p>
                             </div>
                         ))}
                     </div>

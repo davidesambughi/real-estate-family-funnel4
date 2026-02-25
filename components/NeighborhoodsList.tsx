@@ -17,7 +17,8 @@ import { Link } from "@/i18n/navigation";
 import { Card, CardHeader, CardTitle, CardContent, CardDescription, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { neighborhoodsData } from "@/lib/neighborhoods-data";
-import { MapPin, Car } from "lucide-react";
+import { MapPin, Car, Sparkles } from "lucide-react";
+
 
 export function NeighborhoodsList() {
     return (
@@ -38,8 +39,9 @@ export function NeighborhoodsList() {
 
                         {/* Vibe tagline badge */}
                         <div className="mt-2">
-                            <span className="inline-block bg-trust-light text-trust text-xs font-semibold px-2.5 py-1 rounded-full border border-trust/20">
-                                ✨ {neighborhood.vibe}
+                            <span className="inline-flex items-center gap-1.5 bg-warm-light/30 text-warm text-xs font-semibold px-2.5 py-1 rounded-full border border-warm/20 shadow-(--shadow-hair)">
+                                <Sparkles className="h-3 w-3" />
+                                {neighborhood.vibe}
                             </span>
                         </div>
                     </CardHeader>

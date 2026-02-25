@@ -9,7 +9,8 @@ import { schoolsData } from "@/lib/schools-data";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Card, CardHeader, CardTitle, CardContent, CardDescription, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { MapPin, Check, GraduationCap, Coins } from "lucide-react";
+import { MapPin, Check, GraduationCap, Coins, Car, Sparkles } from "lucide-react";
+
 import { NeighborhoodMap } from "@/components/features/NeighborhoodMap";
 
 interface PageProps {
@@ -169,12 +170,14 @@ export default async function NeighborhoodDetailPage(props: PageProps) {
 
                     {/* COMMUTE CONTEXT */}
                     {neighborhood.commuteContext && (
-                        <section className="rounded-xl bg-amber-50 border border-amber-100 px-6 py-5">
-                            <div className="flex items-center gap-2 mb-2">
-                                <span className="text-amber-600">🚗</span>
-                                <h2 className="text-sm font-bold text-amber-700 uppercase tracking-wide">{t("commuteContextLabel")}</h2>
+                        <section className="rounded-xl bg-warm-light/30 border border-warm/20 px-6 py-5 shadow-(--shadow-hair)">
+                            <div className="flex items-center gap-2 mb-3">
+                                <div className="bg-warm-light/50 p-1.5 rounded-lg text-warm shadow-(--shadow-hair)">
+                                    <Car className="h-4 w-4" />
+                                </div>
+                                <h2 className="text-xs font-bold text-warm uppercase tracking-wider">{t("commuteContextLabel")}</h2>
                             </div>
-                            <p className="text-amber-800 text-sm leading-snug">{neighborhood.commuteContext}</p>
+                            <p className="text-ink-secondary text-sm leading-relaxed font-medium">{neighborhood.commuteContext}</p>
                         </section>
                     )}
 

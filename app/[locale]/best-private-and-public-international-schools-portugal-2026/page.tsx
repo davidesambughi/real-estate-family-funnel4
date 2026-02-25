@@ -6,6 +6,8 @@ import { SchoolsList } from "@/components/SchoolsList";
 import { JsonLd } from "@/components/JsonLd";
 import { schoolsData } from "@/lib/schools-data";
 import { getTranslations } from "next-intl/server";
+import { School, Users, BarChart } from "lucide-react";
+
 
 interface PageProps {
     params: Promise<{ locale: string }>;
@@ -369,14 +371,16 @@ export default function Page() {
                     </p>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-5">
                         {[
-                            { emoji: "🏫", title: "On-site visits", desc: "Minimum 3 visits per school, including during term time." },
-                            { emoji: "👨‍👩‍👧", title: "Family interviews", desc: "Structured interviews with current and recent families — not admissions staff." },
-                            { emoji: "📊", title: "Data verification", desc: "Fees, acceptance rates, and IB results verified against primary sources." },
+                            { icon: <School className="h-5 w-5" />, title: "On-site visits", desc: "Minimum 3 visits per school, including during term time." },
+                            { icon: <Users className="h-5 w-5" />, title: "Family interviews", desc: "Structured interviews with current and recent families — not admissions staff." },
+                            { icon: <BarChart className="h-5 w-5" />, title: "Data verification", desc: "Fees, acceptance rates, and IB results verified against primary sources." },
                         ].map((item) => (
-                            <div key={item.title} className="bg-surface-subtle border border-border rounded-xl p-5 text-center">
-                                <span className="text-3xl mb-3 block">{item.emoji}</span>
-                                <h3 className="font-semibold text-ink-primary mb-2 text-sm">{item.title}</h3>
-                                <p className="text-xs text-ink-secondary leading-relaxed">{item.desc}</p>
+                            <div key={item.title} className="bg-card border border-border rounded-xl p-5 text-center shadow-(--shadow-hair) hover:shadow-md transition-all">
+                                <div className="bg-warm-light/30 text-warm p-2.5 rounded-xl mx-auto w-fit mb-4 shadow-(--shadow-hair)">
+                                    {item.icon}
+                                </div>
+                                <h3 className="font-semibold text-ink-primary mb-2 text-h4 leading-tight">{item.title}</h3>
+                                <p className="text-body-sm text-ink-secondary leading-relaxed">{item.desc}</p>
                             </div>
                         ))}
                     </div>

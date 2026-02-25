@@ -2,7 +2,7 @@ import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
-import { CheckCircle2, Clock, Target } from "lucide-react";
+import { CheckCircle2, Clock, Target, Wallet, Palmtree, GraduationCap, Calendar } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 
@@ -51,22 +51,22 @@ export const revalidate = false;
 
 const steps = [
     {
-        icon: "💰",
+        icon: Wallet,
         label: "Your budget",
         desc: "Annual school fees from €12,000 to €32,000+ — we match you to realistic options.",
     },
     {
-        icon: "🏖️",
+        icon: Palmtree,
         label: "Your lifestyle",
         desc: "Coastal, city, or nature — Portugal has the right neighborhood for each family.",
     },
     {
-        icon: "🎓",
+        icon: GraduationCap,
         label: "Curriculum preference",
         desc: "British IGCSE, American AP, or IB Diploma — we explain the difference clearly.",
     },
     {
-        icon: "📅",
+        icon: Calendar,
         label: "Your timeline",
         desc: "Moving in 3 months or just exploring — we calibrate the urgency of your results.",
     },
@@ -99,37 +99,39 @@ export default function SchoolFinderPage() {
     };
 
     return (
-        <div className="container mx-auto py-12 px-6 max-w-4xl">
+        <div className="container mx-auto py-20 px-6 max-w-4xl">
             <JsonLd data={faqSchema} />
             <Breadcrumbs />
 
             {/* Header */}
-            <div className="text-center mb-12">
-                <p className="section-overline mb-4">Free · 60 seconds</p>
-                <h1 className="font-serif font-semibold text-4xl text-ink-primary mb-4">
+            <div className="text-center mb-16">
+                <p className="section-overline mb-4 text-brand">Free · 60 seconds</p>
+                <h1 className="section-heading mb-6">
                     Find Your Perfect School in Portugal
                 </h1>
-                <p className="text-lg text-ink-secondary max-w-2xl mx-auto">
+                <p className="section-body max-w-2xl mx-auto">
                     Answer 4 questions about your budget, lifestyle, curriculum preference, and timeline.
                     We match you with the right school <em>and</em> the right neighborhood — together.
                 </p>
             </div>
 
             {/* How it works */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-12">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-16">
                 {steps.map((step) => (
-                    <div key={step.label} className="flex items-start gap-4 p-5 bg-surface-subtle rounded-xl border border-border">
-                        <span className="text-2xl mt-0.5">{step.icon}</span>
+                    <div key={step.label} className="flex items-start gap-5 p-6 bg-card rounded-2xl border border-border shadow-(--shadow-hair) hover:shadow-(--shadow-lift) transition-all duration-300">
+                        <div className="bg-warm-light/30 p-2.5 rounded-xl text-warm shrink-0">
+                            <step.icon className="h-6 w-6" strokeWidth={1.5} />
+                        </div>
                         <div>
-                            <p className="font-semibold text-ink-primary mb-1">{step.label}</p>
-                            <p className="text-sm text-ink-muted leading-relaxed">{step.desc}</p>
+                            <p className="font-semibold text-ink-primary mb-1 text-h4 leading-tight">{step.label}</p>
+                            <p className="text-body-sm text-ink-secondary leading-relaxed">{step.desc}</p>
                         </div>
                     </div>
                 ))}
             </div>
 
             {/* Trust strip */}
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-12 text-sm text-ink-muted">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-16 text-body-sm text-ink-muted">
                 <div className="flex items-center gap-2">
                     <CheckCircle2 className="h-4 w-4 text-trust" />
                     100% free & independent
@@ -145,19 +147,19 @@ export default function SchoolFinderPage() {
             </div>
 
             {/* CTA */}
-            <div className="text-center mb-16">
-                <Button size="lg" className="text-lg px-10 py-6 h-auto shadow-xl shadow-blue-900/10" asChild>
+            <div className="text-center mb-24">
+                <Button size="lg" className="shadow-(--shadow-lift)" asChild>
                     <Link href={{ pathname: "/", hash: "quiz" }}>
                         Start the School Finder →
                     </Link>
                 </Button>
-                <p className="text-xs text-ink-muted mt-3">No sign-up required to see your results</p>
+                <p className="text-caption text-ink-muted mt-4">No sign-up required to see your results</p>
             </div>
 
             {/* FAQ */}
-            <section className="bg-surface-subtle rounded-2xl p-8">
-                <h2 className="font-serif font-semibold text-xl text-ink-primary mb-6">Common Questions</h2>
-                <div className="space-y-5">
+            <section className="bg-card rounded-3xl p-8 md:p-12 border border-border shadow-(--shadow-lift)">
+                <h2 className="font-serif font-semibold text-h2 text-ink-primary mb-8">Common Questions</h2>
+                <div className="space-y-8">
                     {[
                         {
                             q: "How accurate are the school matches?",
@@ -172,9 +174,9 @@ export default function SchoolFinderPage() {
                             a: "No. TrustFamily accepts no payments, commissions, or referral fees from schools. Our assessments are fully independent. This is non-negotiable for us.",
                         },
                     ].map(({ q, a }) => (
-                        <div key={q} className="border-b border-border pb-5 last:border-0 last:pb-0">
-                            <h3 className="font-semibold text-ink-primary mb-2">{q}</h3>
-                            <p className="text-sm text-slate-600 leading-relaxed">{a}</p>
+                        <div key={q} className="border-b border-border/50 pb-8 last:border-0 last:pb-0">
+                            <h3 className="font-semibold text-ink-primary mb-3 text-h4">{q}</h3>
+                            <p className="text-body-sm text-ink-secondary leading-relaxed">{a}</p>
                         </div>
                     ))}
                 </div>
