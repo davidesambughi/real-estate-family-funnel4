@@ -1,5 +1,9 @@
 # SOLID + KISS + DRY Refactor Checklist — TrustFamily Relocation Funnel
 
+> ⏸ **POST-LANCIO — Non iniziare nessun blocco prima del go-live.**
+> Per priorità pre-lancio → `LAUNCH_CHECKLIST.md`
+> Nessun blocco di questo documento è stato ancora iniziato (tutti i checkbox sono vuoti).
+
 > **Versione**: 2.0 | **Aggiornato**: 2026-02-19
 > **Filtro applicato**: KISS (Keep It Simple) + YAGNI (You Ain't Gonna Need It) — ogni blocco è stato valutato per ROI reale, non purezza teorica.
 >

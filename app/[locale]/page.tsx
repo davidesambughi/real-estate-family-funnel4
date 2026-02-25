@@ -25,7 +25,8 @@ import { Link as I18nLink } from "@/i18n/navigation";
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 
-export const revalidate = 3600;
+// ISR: homepage content is stable — regenerate every 12 h
+export const revalidate = 43200;
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params;
@@ -35,6 +36,18 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: t("metaTitle"),
     description: t("metaDescription"),
+    alternates: {
+      canonical: `${base}/${locale}`,
+      languages: {
+        'en': `${base}/en`,
+        'pt': `${base}/pt`,
+        'de': `${base}/de`,
+        'fr': `${base}/fr`,
+        'nl': `${base}/nl`,
+        'es': `${base}/es`,
+        'x-default': `${base}/en`,
+      },
+    },
     openGraph: {
       title: t("metaTitle"),
       description: t("metaDescription"),
@@ -42,6 +55,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       siteName: "TrustFamily",
       locale,
       type: "website",
+      images: [{ url: `${base}/opengraph-image`, width: 1200, height: 630, alt: 'TrustFamily — International Schools & Neighborhoods in Portugal' }],
     },
     twitter: {
       card: "summary_large_image",
@@ -182,7 +196,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                 </div>
                 {/* Editorial image — fills sidebar gap below stats */}
                 <div>
-                  <div className="relative w-full aspect-[4/3] overflow-hidden">
+                  <div className="relative w-full aspect-4/3 overflow-hidden">
                     <Image
                       src="/repiro2-img.png"
                       alt="Family in Lisbon, Portugal — TrustFamily relocation 2026"
@@ -284,7 +298,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         {/* ── RESPIRO — editorial image moment ───────────────────────
             Full-bleed image break in the article flow.
         ──────────────────────────────────────────────────────────── */}
-        <div className="relative w-full aspect-[21/9] overflow-hidden">
+        <div className="relative w-full aspect-21/9 overflow-hidden">
           <Image
             src="/homepage-respiro1-img.png"
             alt="Family life in Portugal — TrustFamily relocation"

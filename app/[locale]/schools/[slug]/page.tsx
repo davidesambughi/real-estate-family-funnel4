@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Link } from "@/i18n/navigation";
+import { routing } from "@/i18n/routing";
 import { getTranslations } from "next-intl/server";
 import { JsonLd } from "@/components/JsonLd";
 import { schoolsData } from "@/lib/schools-data";
@@ -27,27 +28,26 @@ export async function generateMetadata({ params }: PageProps) {
     const base = process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com';
     const title = `${school.name} — International School Portugal | TrustFamily`;
     const description = `${school.description} Curriculum: ${school.curriculum}. Annual fees: ${school.fees}. Location: ${school.location}.`;
+    const schoolPaths = routing.pathnames['/schools/[slug]'] as Record<string, string>;
+    const canonical = `${base}/en${schoolPaths.en.replace('[slug]', school.slug)}`;
+    const languages = Object.fromEntries(
+        (routing.locales as readonly string[]).map(loc => [
+            loc,
+            `${base}/${loc}${schoolPaths[loc].replace('[slug]', school.slug)}`,
+        ])
+    ) as Record<string, string>;
+    languages['x-default'] = canonical;
     return {
         title,
         description,
-        alternates: {
-            canonical: `${base}/en/school/${school.slug}`,
-            languages: {
-                'en': `${base}/en/school/${school.slug}`,
-                'pt': `${base}/pt/escola/${school.slug}`,
-                'de': `${base}/de/schule/${school.slug}`,
-                'fr': `${base}/fr/ecole/${school.slug}`,
-                'nl': `${base}/nl/school/${school.slug}`,
-                'es': `${base}/es/escuela/${school.slug}`,
-                'x-default': `${base}/en/school/${school.slug}`,
-            },
-        },
+        alternates: { canonical, languages },
         openGraph: {
             title,
             description,
-            url: `${base}/en/school/${school.slug}`,
+            url: canonical,
             siteName: "TrustFamily",
             type: "website",
+            images: [{ url: `${base}/opengraph-image`, width: 1200, height: 630, alt: 'TrustFamily — International Schools & Neighborhoods in Portugal' }],
         },
         twitter: {
             card: "summary_large_image",
@@ -68,12 +68,14 @@ export function generateStaticParams() {
 }
 
 export default async function SchoolDetailPage(props: PageProps) {
-    const params = await props.params;
-    const school = schoolsData.find((s) => s.slug === params.slug);
+    const { slug, locale } = await props.params;
+    const school = schoolsData.find((s) => s.slug === slug);
 
     if (!school) {
         notFound();
     }
+
+    const t = await getTranslations({ locale, namespace: "SchoolDetail" });
 
     const schoolSchema = {
         "@context": "https://schema.org",
@@ -135,7 +137,7 @@ export default async function SchoolDetailPage(props: PageProps) {
                     </div>
                 </div>
                 <div className="flex gap-4">
-                    <Button size="lg">Contact School Advisor</Button>
+                    <Button size="lg">{t("contactBtn")}</Button>
                 </div>
             </div>
 
@@ -143,14 +145,14 @@ export default async function SchoolDetailPage(props: PageProps) {
                 {/* Main Content */}
                 <div className="lg:col-span-2 space-y-8">
                     <section className="prose max-w-none">
-                        <h2 className="font-serif font-semibold text-2xl text-ink-primary mb-4">About the School</h2>
+                        <h2 className="font-serif font-semibold text-2xl text-ink-primary mb-4">{t("aboutHeading")}</h2>
                         <p className="text-lg leading-relaxed text-muted-foreground">{school.description}</p>
                     </section>
 
                     {/* THE VERDICT */}
                     <section className="rounded-xl bg-brand-50 border border-border px-6 py-5">
                         <div className="flex items-center gap-2 mb-2">
-                            <p className="section-overline">The Verdict</p>
+                            <p className="section-overline">{t("verdictLabel")}</p>
                         </div>
                         <p className="text-blue-900 font-medium leading-snug">{school.verdict}</p>
                     </section>
@@ -159,13 +161,13 @@ export default async function SchoolDetailPage(props: PageProps) {
                     <section className="rounded-xl bg-slate-50 border border-slate-100 px-6 py-5">
                         <div className="flex items-center gap-2 mb-2">
                             <span className="text-slate-400">💬</span>
-                            <h2 className="text-sm font-bold text-slate-500 uppercase tracking-wide">Parent Whisper</h2>
+                            <h2 className="text-sm font-bold text-slate-500 uppercase tracking-wide">{t("parentWhisperLabel")}</h2>
                         </div>
                         <p className="text-slate-600 italic leading-snug">{school.parentWhisper}</p>
                     </section>
 
                     <section>
-                        <h2 className="font-serif font-semibold text-2xl text-ink-primary mb-4">Key Highlights</h2>
+                        <h2 className="font-serif font-semibold text-2xl text-ink-primary mb-4">{t("keyHighlightsHeading")}</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             {school.highlights.map((highlight: string, index: number) => (
                                 <div key={index} className="flex items-center gap-3 p-4 bg-slate-50 rounded-lg">
@@ -181,20 +183,20 @@ export default async function SchoolDetailPage(props: PageProps) {
                 <div className="space-y-6">
                     <Card>
                         <CardHeader>
-                            <CardTitle>School Details</CardTitle>
+                            <CardTitle>{t("detailsCardTitle")}</CardTitle>
                         </CardHeader>
                         <CardContent className="space-y-4">
                             <div>
                                 <div className="flex items-center gap-2 mb-1 text-muted-foreground">
                                     <GraduationCap className="h-4 w-4" />
-                                    <span className="text-sm font-medium">Curriculum</span>
+                                    <span className="text-sm font-medium">{t("curriculumLabel")}</span>
                                 </div>
                                 <p className="font-medium">{school.curriculum}</p>
                             </div>
                             <div className="border-t pt-4">
                                 <div className="flex items-center gap-2 mb-1 text-muted-foreground">
                                     <Coins className="h-4 w-4" />
-                                    <span className="text-sm font-medium">Annual Fees</span>
+                                    <span className="text-sm font-medium">{t("annualFeesLabel")}</span>
                                 </div>
                                 <p className="font-medium">{school.fees}</p>
                             </div>
@@ -203,15 +205,15 @@ export default async function SchoolDetailPage(props: PageProps) {
 
                     <Card className="bg-blue-50 border-blue-100">
                         <CardHeader>
-                            <CardTitle className="text-blue-900">Neighborhood Match</CardTitle>
+                            <CardTitle className="text-blue-900">{t("neighborhoodMatchTitle")}</CardTitle>
                         </CardHeader>
                         <CardContent>
                             <p className="text-sm text-blue-800 mb-4">
-                                Looking for a home near {school.name}? Check out our guide to {school.neighborhoodSlug}.
+                                {t("neighborhoodMatchText", { schoolName: school.name, neighborhood: school.neighborhoodSlug })}
                             </p>
                             <Button variant="outline" className="w-full bg-white text-blue-900 border-blue-200 hover:bg-blue-100" asChild>
                                 <Link href={{ pathname: '/neighborhoods/[slug]', params: { slug: school.neighborhoodSlug } }}>
-                                    Explore {school.neighborhoodSlug}
+                                    {t("neighborhoodExploreBtn", { neighborhood: school.neighborhoodSlug })}
                                 </Link>
                             </Button>
                         </CardContent>
@@ -219,7 +221,7 @@ export default async function SchoolDetailPage(props: PageProps) {
 
                     {/* Location Map stub */}
                     <div>
-                        <h3 className="text-lg font-semibold mb-3">School Location</h3>
+                        <h3 className="text-lg font-semibold mb-3">{t("locationHeading")}</h3>
                         <SchoolMap
                             schoolName={school.name}
                             location={school.location}

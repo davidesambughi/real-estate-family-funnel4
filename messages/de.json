@@ -98,5 +98,81 @@
     "title": "Seite nicht gefunden",
     "description": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
     "backHome": "Zurück zur Startseite"
+  },
+  "Form": {
+    "success": {
+      "title": "Vielen Dank!",
+      "message": "Ihre Anfrage wurde erhalten. Wir melden uns in Kürze mit Ihrem persönlichen Leitfaden.",
+      "resetBtn": "Eine weitere Anfrage senden"
+    },
+    "fields": {
+      "fullName": "Vollständiger Name *",
+      "fullNamePlaceholder": "Max Mustermann",
+      "nationality": "Nationalität *",
+      "nationalityPlaceholder": "z.B. Deutsch",
+      "email": "E-Mail *",
+      "emailPlaceholder": "max@beispiel.de",
+      "phone": "Telefon (Optional)",
+      "phonePlaceholder": "+49 123 456 789",
+      "school": "Gewünschte Schule (Optional)",
+      "schoolPlaceholder": "Schule auswählen",
+      "neighborhood": "Gewünschte Gegend (Optional)",
+      "neighborhoodPlaceholder": "Gegend auswählen",
+      "message": "Fragen oder Kommentare",
+      "messagePlaceholder": "Erzählen Sie uns, was Sie suchen..."
+    },
+    "submitBtn": "Persönlichen Leitfaden erhalten",
+    "submittingBtn": "Wird gesendet...",
+    "privacyNote": "Wir respektieren Ihre Privatsphäre. Kein Spam, niemals."
+  },
+  "SchoolsGuidePage": {
+    "metaTitle": "Beste internationale Schulen Portugal 2026 — Privat & Öffentlich | TrustFamily",
+    "metaDescription": "Unabhängiger Leitfaden zu den besten privaten und öffentlichen internationalen Schulen in Portugal 2026. Vergleichen Sie IB-, britische und amerikanische Lehrpläne, Gebühren und Annahmequoten."
+  },
+  "NeighborhoodsGuidePage": {
+    "metaTitle": "Beste familienfreundliche Stadtteile Portugal 2026 — Lissabon, Cascais, Sintra | TrustFamily",
+    "metaDescription": "Finden Sie die besten familienfreundlichen Stadtteile in Portugal für Expats. Vergleichen Sie Cascais, Sintra, Parque das Nações und mehr — Sicherheit, Schulen, Atmosphäre und Pendeln."
+  },
+  "RelocationGuidePage": {
+    "metaTitle": "Familien-Umzugsleitfaden Portugal 2026 — Visa, Schulen, Wohnen & Kosten | TrustFamily",
+    "metaDescription": "Vollständiger Leitfaden für den Familienumzug nach Portugal 2026. Umfasst Visa (D7, Digital Nomad, EU), Wohnkosten, internationale Schulen, Gesundheitsversorgung und einen 12-Monats-Zeitplan."
+  },
+  "AboutPage": {
+    "metaTitle": "Über TrustFamily — Unabhängige Schul- und Umzugsintelligenz für Portugal",
+    "metaDescription": "TrustFamily ist eine unabhängige Plattform, die internationalen Familien hilft, sicher nach Portugal umzuziehen. Wir prüfen Schulen, Stadtteile und Umzugsdaten — ohne bezahlte Platzierungen und ohne Interessenkonflikte."
+  },
+  "SchoolFinderPage": {
+    "metaTitle": "Schulfinder — Finden Sie die perfekte internationale Schule in Portugal | TrustFamily",
+    "metaDescription": "Beantworten Sie 4 Fragen und finden Sie die richtige internationale Schule und Nachbarschaft in Portugal. Kostenlos, unvoreingenommen, basierend auf Ihrem Budget und Lehrplanpräferenz."
+  },
+  "BlogPage": {
+    "metaTitle": "Blog — Schul- und Umzugsratgeber Portugal | TrustFamily",
+    "metaDescription": "Expertenbeiträge zur Auswahl internationaler Schulen in Portugal, zum Vergleich von Lissaboner Stadtteilen für Expat-Familien und zu realen Umzugskostenanalysen."
+  },
+  "SchoolDetail": {
+    "contactBtn": "Schulberater kontaktieren",
+    "aboutHeading": "Über die Schule",
+    "verdictLabel": "Das Urteil",
+    "parentWhisperLabel": "Elternmeinung",
+    "keyHighlightsHeading": "Wichtige Highlights",
+    "detailsCardTitle": "Schuldetails",
+    "curriculumLabel": "Lehrplan",
+    "annualFeesLabel": "Jahresgebühren",
+    "neighborhoodMatchTitle": "Passender Stadtteil",
+    "neighborhoodMatchText": "Suchen Sie ein Zuhause in der Nähe von {schoolName}? Lesen Sie unseren Leitfaden zu {neighborhood}.",
+    "neighborhoodExploreBtn": "{neighborhood} erkunden",
+    "locationHeading": "Schulstandort"
+  },
+  "NeighborhoodDetail": {
+    "contactBtn": "Umzugsexperten kontaktieren",
+    "aboutHeading": "Über {name}",
+    "whyFamiliesHeading": "Warum Familien es lieben",
+    "commuteContextLabel": "Pendelkontext",
+    "lifestyleAmenitiesHeading": "Lifestyle & Ausstattung",
+    "schoolsInAreaHeading": "Schulen in {name}",
+    "noSchoolsText": "Noch keine internationalen Schulen speziell in diesem Stadtteil gelistet. Überprüfen Sie benachbarte Gebiete.",
+    "vibeCheckTitle": "Stimmungscheck",
+    "vibeCheckBody": "Perfekt für Familien, die einen bestimmten Lebensstil suchen.",
+    "exploreAreaHeading": "Die Gegend erkunden"
   }
 }

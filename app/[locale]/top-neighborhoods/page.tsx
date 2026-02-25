@@ -13,11 +13,10 @@ interface PageProps {
 
 export async function generateMetadata({ params }: PageProps) {
     const { locale } = await params;
-    const t = await getTranslations({ locale, namespace: "Metadata" });
-    void t;
+    const t = await getTranslations({ locale, namespace: "NeighborhoodsGuidePage" });
     const base = process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com';
-    const title = "Best Family-Friendly Neighborhoods Portugal 2026 — Lisbon, Cascais, Sintra | TrustFamily";
-    const description = "Find the best family-friendly neighborhoods in Portugal for expats. Compare Cascais, Sintra, Parque das Nações, Campo de Ourique and more — safety, schools, vibe, and commutes.";
+    const title = t("metaTitle");
+    const description = t("metaDescription");
     return {
         title,
         description,
@@ -39,6 +38,7 @@ export async function generateMetadata({ params }: PageProps) {
             url: `${base}/en/family-friendly-neighborhoods-portugal`,
             siteName: "TrustFamily",
             type: "article",
+            images: [{ url: `${base}/opengraph-image`, width: 1200, height: 630, alt: 'TrustFamily — International Schools & Neighborhoods in Portugal' }],
         },
         twitter: {
             card: "summary_large_image",
@@ -98,10 +98,10 @@ export default function Page() {
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
-            { "@type": "Question", "name": "Where do expat families live in Lisbon?", "acceptedAnswer": { "@type": "Answer", "text": "Cascais is the most popular choice for expat families in the Lisbon area, followed by Estoril and Sintra. Within Lisbon itself, Campo de Ourique and Parque das Nações are top picks for their safety, walkability, and access to international schools." } },
-            { "@type": "Question", "name": "What is the best neighborhood for families near St. Julian's School?", "acceptedAnswer": { "@type": "Answer", "text": "Cascais and Estoril are the closest neighborhoods to St. Julian's School in Carcavelos — just 15–20 minutes by car. Both offer Atlantic beaches, a large international expat community, and a direct train line to Lisbon." } },
-            { "@type": "Question", "name": "Is Cascais a good place to live for families?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Cascais is consistently rated the top expat family destination in Portugal. It offers excellent international schools (St. Julian's is nearby), beaches, a safe walkable centre, and a 30-minute train to Lisbon. The international community is one of the largest in the country." } },
-            { "@type": "Question", "name": "How far is Sintra from international schools?", "acceptedAnswer": { "@type": "Answer", "text": "Sintra is home to both TASIS Portugal (10 minutes by car) and Carlucci American International School — CAISL (15 minutes). Families living in Sintra have easy access to two of Portugal's top international schools." } },
+            { "@type": "Question", "name": "Where do expat families live in Lisbon?", "acceptedAnswer": { "@type": "Answer", "text": "Cascais leads for coastal families, followed by Estoril and Sintra. Within the city: Campo de Ourique (walkable, community feel) and Parque das Nações (modern, riverfront) are top picks." } },
+            { "@type": "Question", "name": "What neighborhood is closest to St. Julian's School?", "acceptedAnswer": { "@type": "Answer", "text": "Cascais (15 min) and Estoril (20 min) are the closest. Both are on the Cascais Line train and share the Atlantic coastline." } },
+            { "@type": "Question", "name": "Is Sintra good for families with international school-age children?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — TASIS Portugal and CAISL are both within 15 minutes by car. The trade-offs are distance to Lisbon (45 min by train) and a cooler, hillier climate." } },
+            { "@type": "Question", "name": "Which Lisbon neighborhood is best for families without a car?", "acceptedAnswer": { "@type": "Answer", "text": "Parque das Nações (walking distance to United Lisbon International School, excellent metro access) and Campo de Ourique (flat, walkable, well-served by public transport) are the strongest choices." } },
         ],
     };
 

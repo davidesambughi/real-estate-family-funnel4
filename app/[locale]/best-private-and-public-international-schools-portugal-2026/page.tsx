@@ -13,11 +13,10 @@ interface PageProps {
 
 export async function generateMetadata({ params }: PageProps) {
     const { locale } = await params;
-    const t = await getTranslations({ locale, namespace: "Metadata" });
-    void t;
+    const t = await getTranslations({ locale, namespace: "SchoolsGuidePage" });
     const base = process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com';
-    const title = "Best International Schools Portugal 2026 — Top Private & Public | TrustFamily";
-    const description = "Independent guide to the best private and public international schools in Portugal 2026. Compare IB, British, and American curricula, fees, locations, and acceptance rates.";
+    const title = t("metaTitle");
+    const description = t("metaDescription");
     return {
         title,
         description,
@@ -39,6 +38,7 @@ export async function generateMetadata({ params }: PageProps) {
             url: `${base}/en/best-private-and-public-international-schools-portugal-2026`,
             siteName: "TrustFamily",
             type: "article",
+            images: [{ url: `${base}/opengraph-image`, width: 1200, height: 630, alt: 'TrustFamily — International Schools & Neighborhoods in Portugal' }],
         },
         twitter: {
             card: "summary_large_image",
@@ -97,10 +97,10 @@ export default function Page() {
         "@context": "https://schema.org",
         "@type": "FAQPage",
         "mainEntity": [
-            { "@type": "Question", "name": "What is the best international school in Portugal?", "acceptedAnswer": { "@type": "Answer", "text": "St. Julian's School in Carcavelos (Cascais) is widely considered the best international school in Portugal, offering the British curriculum and IB Diploma with an acceptance rate of just 8%. TASIS Portugal in Sintra and Carlucci American International School (CAISL) are also highly regarded for American curriculum families." } },
-            { "@type": "Question", "name": "How much do international schools cost in Portugal?", "acceptedAnswer": { "@type": "Answer", "text": "Annual fees at international schools in Portugal range from approximately €12,000 to €32,000. United Lisbon International School starts at €12,000, while TASIS Portugal can reach €32,000 per year. Most families budget between €15,000 and €25,000 per child per year." } },
-            { "@type": "Question", "name": "Which international schools in Portugal offer the IB Diploma?", "acceptedAnswer": { "@type": "Answer", "text": "All four top international schools in Portugal — St. Julian's School, TASIS Portugal, Carlucci American International School (CAISL), and United Lisbon International School — offer the IB Diploma Programme. St. Julian's also offers the full British curriculum (IGCSE)." } },
-            { "@type": "Question", "name": "What area of Portugal is best for families with children?", "acceptedAnswer": { "@type": "Answer", "text": "Cascais is the top choice for expat families in Portugal — it combines direct access to St. Julian's School with Atlantic beaches, a large international community, and a 30-minute train commute to Lisbon. Sintra is ideal for families whose children attend TASIS Portugal or CAISL." } },
+            { "@type": "Question", "name": "What is the best international school in Portugal?", "acceptedAnswer": { "@type": "Answer", "text": "St. Julian's School in Carcavelos, Cascais — with an 8% acceptance rate and top IB results — is broadly considered the best. For American curriculum families, CAISL offers the best value with US State Department backing." } },
+            { "@type": "Question", "name": "How much do international schools cost in Portugal?", "acceptedAnswer": { "@type": "Answer", "text": "Annual fees range from €12,000 (United Lisbon) to €32,000 (TASIS Portugal). Most families budget €15,000–25,000 per child all-in. Many schools also charge a one-time registration fee of €500–3,000." } },
+            { "@type": "Question", "name": "Which area is best for families near international schools?", "acceptedAnswer": { "@type": "Answer", "text": "Cascais and Estoril for St. Julian's School (coast lifestyle). Sintra for TASIS and CAISL (nature, hills). Parque das Nações for United Lisbon International School (city living)." } },
+            { "@type": "Question", "name": "Do I need to visit schools in person before applying?", "acceptedAnswer": { "@type": "Answer", "text": "Yes — always. The difference between a school's marketing and its actual atmosphere can be significant. Request a shadow day for your child at each shortlisted school before committing to an enrolment contract." } },
         ],
     };
 

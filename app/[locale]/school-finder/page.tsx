@@ -3,39 +3,51 @@ import { Button } from "@/components/ui/button";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { CheckCircle2, Clock, Target } from "lucide-react";
+import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
+
+interface PageProps {
+    params: Promise<{ locale: string }>;
+}
 
 const BASE = process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com';
 
-export const metadata: Metadata = {
-    title: "School Finder — Find Your Perfect International School in Portugal | TrustFamily",
-    description:
-        "Answer 4 questions and get matched with the right international school and neighborhood in Portugal. Free, unbiased, based on your budget, curriculum preference, and lifestyle.",
-    alternates: {
-        canonical: `${BASE}/en/school-finder`,
-        languages: {
-            'en': `${BASE}/en/school-finder`,
-            'pt': `${BASE}/pt/encontrar-escola`,
-            'de': `${BASE}/de/schulfinder`,
-            'fr': `${BASE}/fr/trouver-ecole`,
-            'nl': `${BASE}/nl/school-zoeker`,
-            'es': `${BASE}/es/buscador-escuelas`,
-            'x-default': `${BASE}/en/school-finder`,
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: "SchoolFinderPage" });
+    return {
+        title: t("metaTitle"),
+        description: t("metaDescription"),
+        alternates: {
+            canonical: `${BASE}/en/school-finder`,
+            languages: {
+                'en': `${BASE}/en/school-finder`,
+                'pt': `${BASE}/pt/encontrar-escola`,
+                'de': `${BASE}/de/schulfinder`,
+                'fr': `${BASE}/fr/trouver-ecole`,
+                'nl': `${BASE}/nl/school-zoeker`,
+                'es': `${BASE}/es/buscador-escuelas`,
+                'x-default': `${BASE}/en/school-finder`,
+            },
         },
-    },
-    openGraph: {
-        title: "School Finder — Find Your Perfect International School in Portugal | TrustFamily",
-        description: "Answer 4 questions and get matched with the right international school and neighborhood in Portugal. Free, unbiased.",
-        url: `${BASE}/en/school-finder`,
-        siteName: "TrustFamily",
-        type: "website",
-    },
-    twitter: {
-        card: "summary_large_image",
-        title: "School Finder — Find Your Perfect International School in Portugal",
-        description: "Answer 4 questions and get matched with the right international school and neighborhood in Portugal. Free, unbiased.",
-    },
-};
+        openGraph: {
+            title: t("metaTitle"),
+            description: t("metaDescription"),
+            url: `${BASE}/en/school-finder`,
+            siteName: "TrustFamily",
+            type: "website",
+            images: [{ url: `${BASE}/opengraph-image`, width: 1200, height: 630, alt: 'TrustFamily — International Schools & Neighborhoods in Portugal' }],
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: t("metaTitle"),
+            description: t("metaDescription"),
+        },
+    };
+}
+
+// Content is static — translated labels baked at build time per locale
+export const revalidate = false;
 
 const steps = [
     {

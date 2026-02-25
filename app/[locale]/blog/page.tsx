@@ -1,6 +1,7 @@
 import { JsonLd } from "@/components/JsonLd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Link } from "@/i18n/navigation";
+import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
 import { blogArticles } from "@/lib/blog-data";
 
@@ -11,16 +12,21 @@ import { blogArticles } from "@/lib/blog-data";
  * GEO: Blog schema with valid URLs, Article authorship signals, freshness dates.
  * Phase 5: Replace static data with CMS (Sanity / Contentful) fetch.
  */
+interface PageProps {
+  params: Promise<{ locale: string }>;
+}
+
 const BASE = process.env.NEXT_PUBLIC_BASE_URL || "https://trustfamily.com";
 
 // ISR: regenerate every 24 h when new articles are published
 export const revalidate = 86400;
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "BlogPage" });
   return {
-    title: "Blog — School & Relocation Guides Portugal | TrustFamily",
-    description:
-      "Expert articles on selecting international schools in Portugal, comparing Lisbon neighborhoods for expat families, and real relocation cost breakdowns.",
+    title: t("metaTitle"),
+    description: t("metaDescription"),
     robots: { index: true, follow: true },
     alternates: {
       canonical: `${BASE}/en/blog`,
@@ -29,18 +35,17 @@ export async function generateMetadata(): Promise<Metadata> {
       },
     },
     openGraph: {
-      title: "Blog — School & Relocation Guides Portugal | TrustFamily",
-      description:
-        "Expert articles on selecting international schools in Portugal, comparing Lisbon neighborhoods for expat families, and real relocation cost breakdowns.",
+      title: t("metaTitle"),
+      description: t("metaDescription"),
       url: `${BASE}/en/blog`,
       siteName: "TrustFamily",
       type: "website",
+      images: [{ url: `${BASE}/opengraph-image`, width: 1200, height: 630, alt: 'TrustFamily — International Schools & Neighborhoods in Portugal' }],
     },
     twitter: {
       card: "summary_large_image",
-      title: "Blog — School & Relocation Guides Portugal | TrustFamily",
-      description:
-        "Expert articles on selecting international schools in Portugal, comparing Lisbon neighborhoods for expat families, and real relocation cost breakdowns.",
+      title: t("metaTitle"),
+      description: t("metaDescription"),
     },
   };
 }

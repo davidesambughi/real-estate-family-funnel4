@@ -98,5 +98,81 @@
     "title": "Page introuvable",
     "description": "La page que vous recherchez n'existe pas ou a été déplacée.",
     "backHome": "Retour à l'accueil"
+  },
+  "Form": {
+    "success": {
+      "title": "Merci !",
+      "message": "Votre demande a bien été reçue. Nous vous contacterons bientôt avec votre guide personnalisé.",
+      "resetBtn": "Envoyer une autre demande"
+    },
+    "fields": {
+      "fullName": "Nom complet *",
+      "fullNamePlaceholder": "Jean Dupont",
+      "nationality": "Nationalité *",
+      "nationalityPlaceholder": "ex. Français",
+      "email": "Email *",
+      "emailPlaceholder": "jean@exemple.fr",
+      "phone": "Téléphone (Optionnel)",
+      "phonePlaceholder": "+33 6 12 34 56 78",
+      "school": "École souhaitée (Optionnel)",
+      "schoolPlaceholder": "Sélectionner une école",
+      "neighborhood": "Quartier souhaité (Optionnel)",
+      "neighborhoodPlaceholder": "Sélectionner un quartier",
+      "message": "Questions ou commentaires",
+      "messagePlaceholder": "Dites-nous ce que vous recherchez..."
+    },
+    "submitBtn": "Obtenir mon guide personnalisé",
+    "submittingBtn": "Envoi en cours...",
+    "privacyNote": "Nous respectons votre vie privée. Aucun spam, jamais."
+  },
+  "SchoolsGuidePage": {
+    "metaTitle": "Meilleures écoles internationales Portugal 2026 — Privées & Publiques | TrustFamily",
+    "metaDescription": "Guide indépendant des meilleures écoles internationales privées et publiques au Portugal 2026. Comparez les programmes IB, britanniques et américains, les frais et les taux d'admission."
+  },
+  "NeighborhoodsGuidePage": {
+    "metaTitle": "Meilleurs quartiers familiaux Portugal 2026 — Lisbonne, Cascais, Sintra | TrustFamily",
+    "metaDescription": "Trouvez les meilleurs quartiers familiaux au Portugal pour les expatriés. Comparez Cascais, Sintra, Parque das Nações et plus — sécurité, écoles, ambiance et trajets."
+  },
+  "RelocationGuidePage": {
+    "metaTitle": "Guide de Relocalisation Familiale Portugal 2026 — Visas, Écoles, Logement | TrustFamily",
+    "metaDescription": "Guide complet pour relocaliser votre famille au Portugal en 2026. Couvre les visas (D7, Nomade Digital, UE), les coûts du logement, les écoles internationales et un calendrier de 12 mois."
+  },
+  "AboutPage": {
+    "metaTitle": "À propos de TrustFamily — Intelligence indépendante sur les écoles et la relocalisation au Portugal",
+    "metaDescription": "TrustFamily est une plateforme indépendante aidant les familles internationales à s'installer au Portugal en toute confiance. Nous vérifions les écoles, les quartiers et les données de relocalisation — sans placements payants ni conflits d'intérêts."
+  },
+  "SchoolFinderPage": {
+    "metaTitle": "Trouver une école — Trouvez votre école internationale idéale au Portugal | TrustFamily",
+    "metaDescription": "Répondez à 4 questions et trouvez la bonne école internationale et le bon quartier au Portugal. Gratuit, impartial, basé sur votre budget et vos préférences."
+  },
+  "BlogPage": {
+    "metaTitle": "Blog — Guides d'écoles et de relocalisation au Portugal | TrustFamily",
+    "metaDescription": "Articles d'experts sur le choix des écoles internationales au Portugal, la comparaison des quartiers de Lisbonne pour les familles expatriées et des analyses réelles des coûts de relocalisation."
+  },
+  "SchoolDetail": {
+    "contactBtn": "Contacter un conseiller scolaire",
+    "aboutHeading": "À propos de l'école",
+    "verdictLabel": "Le Verdict",
+    "parentWhisperLabel": "Avis des parents",
+    "keyHighlightsHeading": "Points forts",
+    "detailsCardTitle": "Détails de l'école",
+    "curriculumLabel": "Programme",
+    "annualFeesLabel": "Frais annuels",
+    "neighborhoodMatchTitle": "Quartier correspondant",
+    "neighborhoodMatchText": "Vous cherchez un logement près de {schoolName} ? Consultez notre guide sur {neighborhood}.",
+    "neighborhoodExploreBtn": "Explorer {neighborhood}",
+    "locationHeading": "Emplacement de l'école"
+  },
+  "NeighborhoodDetail": {
+    "contactBtn": "Contacter un expert en relocalisation",
+    "aboutHeading": "À propos de {name}",
+    "whyFamiliesHeading": "Pourquoi les familles l'adorent",
+    "commuteContextLabel": "Contexte de trajet",
+    "lifestyleAmenitiesHeading": "Mode de vie et commodités",
+    "schoolsInAreaHeading": "Écoles à {name}",
+    "noSchoolsText": "Aucune école internationale répertoriée spécifiquement dans ce quartier pour l'instant. Vérifiez les zones voisines.",
+    "vibeCheckTitle": "Vérification de l'ambiance",
+    "vibeCheckBody": "Parfait pour les familles à la recherche d'un style de vie spécifique.",
+    "exploreAreaHeading": "Explorer le quartier"
   }
 }

@@ -1,4 +1,9 @@
 # SEO & GEO Audit — Progress Tracker
+
+> **STATO (2026-02-25):** 4 sessioni completate. Tutti i blocchi pre-lancio sono risolti.
+> Gli item rimanenti aperti (sameAs, OG locale-aware, alt text, UTM tracking, Search Console, Analytics, IndexNow) sono **post-lancio**.
+> Per priorità pre-lancio → `LAUNCH_CHECKLIST.md`
+
 **Audit date:** February 2026 | **Branch base:** `testing-languages-and-routing`
 
 Legenda: `[C]` Critico · `[H]` Alto · `[M]` Medio · `[L]` Basso
@@ -85,11 +90,26 @@ Legenda: `[C]` Critico · `[H]` Alto · `[M]` Medio · `[L]` Basso
 - [x] `[L]` Skip navigation link ("Skip to main content") — accessibilità WCAG 2.1 AA → `app/[locale]/layout.tsx`
 - [ ] `[L]` Service Worker / offline strategy
 - [ ] `[L]` Bundle analyzer setup (`@next/bundle-analyzer`)
-- [ ] `[L]` LLM referral tracking (UTM per ChatGPT, Perplexity, Gemini referral)
+- [ ] `[M]` LLM referral tracking (UTM per ChatGPT, Perplexity, Gemini referral) — spostato a [M], dato strategico 2026
 - [x] `[L]` Regole robots.txt per AI bot (GPTBot, CCBot, PerplexityBot) → `public/robots.txt`
   - Training bots (GPTBot, CCBot, anthropic-ai): Disallow
   - Inference/search bots (PerplexityBot, ChatGPT-User, Google-Extended, YouBot): Allow
 - [ ] `[L]` IndexNow / Google Indexing API integration
+
+---
+
+## MEDI — aggiunti in sessione 4
+
+- [ ] `[M]` Core Web Vitals audit — LCP element su ogni pagina, CLS su layout shifts, INP su componenti interattivi (quiz, form). Verificare con PageSpeed Insights o Vercel Speed Insights post-deploy.
+- [ ] `[M]` LLM referral UTM tracking — UTM params su CTA link (`?utm_source=chatgpt&utm_medium=referral` ecc.) per tracciare referral da ChatGPT, Perplexity, Gemini in Analytics
+
+---
+
+## BASSI — aggiunti in sessione 4
+
+- [ ] `[L]` Valuta noindex su pagine non indicizzabili — `school-finder` è editorial landing (tieni indexed); valuta `robots: noindex` su eventuali URL con query params di stato quiz (se generano URL unici)
+- [ ] `[L]` Valuta struttura blog flat vs categorie — `/blog/[slug]` flat è ok per ≤10 articoli; se si scala a 20+, categorie (`/blog/schools/[slug]`, `/blog/neighborhoods/[slug]`) aiutano il crawl budget e la topical authority. Decisione da prendere prima dell'indicizzazione.
+- [ ] `[L]` Valida TUTTI gli schema con Google Rich Results Test post-deploy — pagine da validare: homepage (Organization+WebSite), 3 guide pillar (FAQPage+HowTo/Speakable), blog detail (Article), school detail (EducationalOrganization+BreadcrumbList), neighborhood detail (Place+BreadcrumbList)
 
 ---
 
@@ -163,12 +183,42 @@ Legenda: `[C]` Critico · `[H]` Alto · `[M]` Medio · `[L]` Basso
 
 ---
 
+---
+
+### Sessione 4 — 2026-02-25
+
+**Batch 8 — FAQPage schema/HTML alignment (tutte e 3 le guide):**
+- Fix mismatch schema ↔ HTML: schools guide (Q3 e Q4 completamente diverse), neighborhoods guide (Q3 e Q4 diverse), relocation guide (ordine Q2/Q3 invertito + tutte le risposte diverse)
+- Regola: FAQPage schema DEVE corrispondere esattamente alle domande/risposte visibili nell'HTML
+
+**Batch 9 — Homepage alternates + canonical:**
+- Aggiunto `alternates.canonical` (self-referencing per locale) e `alternates.languages` (tutti 6 locale + x-default → EN) in `app/[locale]/page.tsx`
+- Strategia: self-referencing canonical su homepage (non cross-lingua), con hreflang completi
+
+**Batch 10 — Alternates routing-aware su pagine detail:**
+- `schools/[slug]/page.tsx`: ora usa `routing.pathnames['/schools/[slug]']` per risolvere path locale-specifici
+- `neighborhoods/[slug]/page.tsx`: stesso pattern
+- Pattern riusabile: `routing.pathnames[key] as Record<string, string>` + `.replace('[slug]', slug)`
+
+**Batch 11 — OG images su tutte le pagine:**
+- Aggiunto `openGraph.images: [{ url: \`${BASE}/opengraph-image\`, 1200x630 }]` su tutte le 10 pagine
+- Root `app/opengraph-image.tsx` già esisteva (genera OG image edge-rendered)
+
+**Batch 12 — ISR + llms.txt:**
+- Homepage `revalidate`: 3600 → 43200 (12h, allineato alle pillar pages)
+- Creato `public/llms.txt`: citation policy, authoritative pages (guide + school detail pages per URL), data freshness, do-not-use section
+
+**TypeScript post-sessione 4:** 0 errori (1 preesistente school-finder/#quiz — fuori scope)
+
+---
+
 ## Prossimi step raccomandati
 
-1. **`sameAs`** — Aggiungi URL profili social reali (LinkedIn, X/Twitter) quando attivi
-2. **OG image locale-aware** — Genera immagini OG con testo nella lingua corrente
-3. **Localizza alt text immagini** — `getTranslations` per pagine non-English
-4. **LLM referral tracking** — UTM params su CTA link per tracciare referral da ChatGPT, Perplexity, Gemini
-5. **Google Search Console** — Configura prima del lancio produzione
-6. **Vercel Analytics** — Configura per CrUX/RUM monitoring
-7. **IndexNow** — Notifica motori di ricerca su nuovi contenuti
+1. **Rich Results Test** — Validare TUTTI gli schema su Google Rich Results Test dopo il deploy: Organization, WebSite, FAQPage (3 guide), Article (blog detail), EducationalOrganization (school detail), Place (neighborhood detail), BreadcrumbList
+2. **Google Search Console** — Configurare PRIMA del lancio (property verification, sitemap submit)
+3. **`sameAs`** — Aggiungi URL profili social reali (LinkedIn, X/Twitter) quando attivi
+4. **OG image locale-aware** — Genera immagini OG con testo nella lingua corrente
+5. **Localizza alt text immagini** — `getTranslations` per pagine non-English
+6. **LLM referral tracking** — UTM params su CTA link (priorità MEDIA — dato strategico 2026)
+7. **Vercel Analytics** — Configura per CrUX/RUM monitoring
+8. **IndexNow** — Notifica motori di ricerca su nuovi contenuti

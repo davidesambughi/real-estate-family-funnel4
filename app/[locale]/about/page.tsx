@@ -2,15 +2,21 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
+import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
+
+interface PageProps {
+    params: Promise<{ locale: string }>;
+}
 
 const BASE = process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com';
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: "AboutPage" });
     return {
-        title: "About TrustFamily — Independent School & Relocation Intelligence for Portugal",
-        description:
-            "TrustFamily is an independent platform helping affluent international families relocate to Portugal with confidence. We verify schools, neighborhoods, and relocation data — with no paid placements and no conflicts of interest.",
+        title: t("metaTitle"),
+        description: t("metaDescription"),
         alternates: {
             canonical: `${BASE}/en/about`,
             languages: {
@@ -24,16 +30,17 @@ export async function generateMetadata(): Promise<Metadata> {
             },
         },
         openGraph: {
-            title: "About TrustFamily — Independent School & Relocation Intelligence for Portugal",
-            description: "TrustFamily is an independent platform helping affluent international families relocate to Portugal with confidence.",
+            title: t("metaTitle"),
+            description: t("metaDescription"),
             url: `${BASE}/en/about`,
             siteName: "TrustFamily",
             type: "website",
+            images: [{ url: `${BASE}/opengraph-image`, width: 1200, height: 630, alt: 'TrustFamily — International Schools & Neighborhoods in Portugal' }],
         },
         twitter: {
             card: "summary_large_image",
-            title: "About TrustFamily — Independent School & Relocation Intelligence",
-            description: "TrustFamily is an independent platform helping affluent international families relocate to Portugal with confidence.",
+            title: t("metaTitle"),
+            description: t("metaDescription"),
         },
     };
 }

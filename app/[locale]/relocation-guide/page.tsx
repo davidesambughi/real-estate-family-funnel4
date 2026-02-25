@@ -3,15 +3,21 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { JsonLd } from "@/components/JsonLd";
 import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
+import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
+
+interface PageProps {
+    params: Promise<{ locale: string }>;
+}
 
 const BASE = process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com';
 
-export async function generateMetadata(): Promise<Metadata> {
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: "RelocationGuidePage" });
     return {
-        title: "Family Relocation Guide Portugal 2026 — Visas, Schools, Housing & Costs | TrustFamily",
-        description:
-            "Complete guide to relocating your family to Portugal in 2026. Covers visas (D7, Digital Nomad, EU), housing costs, international schools, healthcare, and a 12-month timeline. Independent, verified.",
+        title: t("metaTitle"),
+        description: t("metaDescription"),
         alternates: {
             canonical: `${BASE}/en/family-relocation-guide-2026`,
             languages: {
@@ -25,17 +31,18 @@ export async function generateMetadata(): Promise<Metadata> {
             },
         },
         openGraph: {
-            title: "Family Relocation Guide Portugal 2026 | TrustFamily",
-            description: "Complete guide to relocating your family to Portugal in 2026. Visas, schools, housing, healthcare, and a 12-month timeline.",
+            title: t("metaTitle"),
+            description: t("metaDescription"),
             url: `${BASE}/en/family-relocation-guide-2026`,
             siteName: "TrustFamily",
             locale: "en",
             type: "article",
+            images: [{ url: `${BASE}/opengraph-image`, width: 1200, height: 630, alt: 'TrustFamily — International Schools & Neighborhoods in Portugal' }],
         },
         twitter: {
             card: "summary_large_image",
-            title: "Family Relocation Guide Portugal 2026 | TrustFamily",
-            description: "Complete guide to relocating your family to Portugal in 2026. Visas, schools, housing, healthcare, and a 12-month timeline.",
+            title: t("metaTitle"),
+            description: t("metaDescription"),
         },
     };
 }
@@ -127,31 +134,31 @@ export default function RelocationGuidePage() {
                 "name": "What visa do I need to move to Portugal with my family?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "EU/EEA/Swiss citizens can move to Portugal without a visa and simply register as residents. Non-EU families most commonly apply for the D7 Passive Income Visa (requires proof of stable income, ~€760/month per adult) or the Digital Nomad Visa (D8, requires remote employment). The Golden Visa program in Portugal was significantly restricted in 2024 and no longer covers most real estate investments.",
+                    "text": "EU/EEA citizens need no visa — just register as residents. Non-EU families most commonly use the D7 Passive Income Visa or the D8 Digital Nomad Visa. The Golden Visa no longer covers real estate purchases as of 2024. Always verify with a licensed immigration lawyer.",
                 },
             },
             {
                 "@type": "Question",
-                "name": "How much does it cost to live in Portugal as a family?",
+                "name": "When should I apply to international schools?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "A family of 4 in the Lisbon area (Cascais or Sintra) typically spends €5,000–8,000/month all-in, including rent (€2,500–4,500), groceries (€800–1,200), school transport, and activities. International school fees are separate and range from €12,000 to €32,000 per child per year.",
+                    "text": "For September entry, apply the October–December before. St. Julian's often has a 12–18 month waitlist. Apply to 2–3 schools simultaneously — acceptance rates range from 8% to 45%.",
                 },
             },
             {
                 "@type": "Question",
-                "name": "When should I apply to international schools in Portugal?",
+                "name": "How much does it cost to live in Portugal as a family of 4?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "For entry in September, most international schools in Portugal open applications in October–December of the preceding year. St. Julian's School — with an 8% acceptance rate — often has a waiting list of 12–18 months. Apply as early as possible and apply to 2–3 schools simultaneously.",
+                    "text": "Excluding school fees: €4,650–8,750/month depending on lifestyle. School fees add €12,000–32,000 per child per year on top of living costs.",
                 },
             },
             {
                 "@type": "Question",
-                "name": "Is the Portuguese public healthcare system good for expat families?",
+                "name": "Is the public healthcare system good enough for expat families?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "The Portuguese National Health Service (SNS) is available to registered residents and provides solid primary and emergency care. Most expat families supplement with private health insurance (€200–500/month for a family of 4) for faster access to specialists and English-speaking doctors. Major private providers include Luz Saúde, CUF, and HPA.",
+                    "text": "Solid for emergencies and primary care. Most expat families add private insurance (€200–500/month for a family of 4) for specialist access and English-speaking doctors. Providers: CUF, Luz Saúde, HPA.",
                 },
             },
         ],

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { notFound } from "next/navigation";
 import { Link } from "@/i18n/navigation";
+import { routing } from "@/i18n/routing";
 import { getTranslations } from "next-intl/server";
 import { JsonLd } from "@/components/JsonLd";
 import { neighborhoodsData } from "@/lib/neighborhoods-data";
@@ -28,27 +29,26 @@ export async function generateMetadata({ params }: PageProps) {
     const base = process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com';
     const title = `${neighborhood.name} — Family Friendly Neighborhood Portugal | TrustFamily`;
     const description = `${neighborhood.description} Vibe: ${neighborhood.vibe}. ${neighborhood.highlights.join(", ")}.`;
+    const neighborhoodPaths = routing.pathnames['/neighborhoods/[slug]'] as Record<string, string>;
+    const canonical = `${base}/en${neighborhoodPaths.en.replace('[slug]', neighborhood.slug)}`;
+    const languages = Object.fromEntries(
+        (routing.locales as readonly string[]).map(loc => [
+            loc,
+            `${base}/${loc}${neighborhoodPaths[loc].replace('[slug]', neighborhood.slug)}`,
+        ])
+    ) as Record<string, string>;
+    languages['x-default'] = canonical;
     return {
         title,
         description,
-        alternates: {
-            canonical: `${base}/en/neighborhood/${neighborhood.slug}`,
-            languages: {
-                'en': `${base}/en/neighborhood/${neighborhood.slug}`,
-                'pt': `${base}/pt/bairro/${neighborhood.slug}`,
-                'de': `${base}/de/nachbarschaft/${neighborhood.slug}`,
-                'fr': `${base}/fr/quartier/${neighborhood.slug}`,
-                'nl': `${base}/nl/buurt/${neighborhood.slug}`,
-                'es': `${base}/es/barrio/${neighborhood.slug}`,
-                'x-default': `${base}/en/neighborhood/${neighborhood.slug}`,
-            },
-        },
+        alternates: { canonical, languages },
         openGraph: {
             title,
             description,
-            url: `${base}/en/neighborhood/${neighborhood.slug}`,
+            url: canonical,
             siteName: "TrustFamily",
             type: "website",
+            images: [{ url: `${base}/opengraph-image`, width: 1200, height: 630, alt: 'TrustFamily — International Schools & Neighborhoods in Portugal' }],
         },
         twitter: {
             card: "summary_large_image",
@@ -69,12 +69,14 @@ export function generateStaticParams() {
 }
 
 export default async function NeighborhoodDetailPage(props: PageProps) {
-    const params = await props.params;
-    const neighborhood = neighborhoodsData.find((n) => n.slug === params.slug);
+    const { slug, locale } = await props.params;
+    const neighborhood = neighborhoodsData.find((n) => n.slug === slug);
 
     if (!neighborhood) {
         notFound();
     }
+
+    const t = await getTranslations({ locale, namespace: "NeighborhoodDetail" });
 
     const placeSchema = {
         "@context": "https://schema.org",
@@ -141,7 +143,7 @@ export default async function NeighborhoodDetailPage(props: PageProps) {
                     </div>
                 </div>
                 <div className="flex gap-4">
-                    <Button size="lg">Contact Relocation Expert</Button>
+                    <Button size="lg">{t("contactBtn")}</Button>
                 </div>
             </div>
 
@@ -149,12 +151,12 @@ export default async function NeighborhoodDetailPage(props: PageProps) {
                 {/* Main Content */}
                 <div className="lg:col-span-2 space-y-8">
                     <section className="prose max-w-none">
-                        <h2 className="text-2xl font-bold mb-4">About {neighborhood.name}</h2>
+                        <h2 className="text-2xl font-bold mb-4">{t("aboutHeading", { name: neighborhood.name })}</h2>
                         <p className="text-lg leading-relaxed text-muted-foreground">{neighborhood.description}</p>
                     </section>
 
                     <section>
-                        <h2 className="text-2xl font-bold mb-4">Why Families Love It</h2>
+                        <h2 className="text-2xl font-bold mb-4">{t("whyFamiliesHeading")}</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             {neighborhood.highlights.map((highlight: string, index: number) => (
                                 <div key={index} className="flex items-center gap-3 p-4 bg-slate-50 rounded-lg">
@@ -170,7 +172,7 @@ export default async function NeighborhoodDetailPage(props: PageProps) {
                         <section className="rounded-xl bg-amber-50 border border-amber-100 px-6 py-5">
                             <div className="flex items-center gap-2 mb-2">
                                 <span className="text-amber-600">🚗</span>
-                                <h2 className="text-sm font-bold text-amber-700 uppercase tracking-wide">Commute Context</h2>
+                                <h2 className="text-sm font-bold text-amber-700 uppercase tracking-wide">{t("commuteContextLabel")}</h2>
                             </div>
                             <p className="text-amber-800 text-sm leading-snug">{neighborhood.commuteContext}</p>
                         </section>
@@ -179,7 +181,7 @@ export default async function NeighborhoodDetailPage(props: PageProps) {
                     {/* VIBE ADJECTIVES + AMENITIES */}
                     {(neighborhood.vibeAdjectives?.length || neighborhood.amenities?.length) && (
                         <section>
-                            <h2 className="text-2xl font-bold mb-4">Lifestyle & Amenities</h2>
+                            <h2 className="text-2xl font-bold mb-4">{t("lifestyleAmenitiesHeading")}</h2>
                             {neighborhood.vibeAdjectives?.length && (
                                 <div className="flex flex-wrap gap-2 mb-4">
                                     {neighborhood.vibeAdjectives.map((adj: string) => (
@@ -200,7 +202,7 @@ export default async function NeighborhoodDetailPage(props: PageProps) {
                     )}
 
                     <section>
-                        <h2 className="text-2xl font-bold mb-4">Schools in {neighborhood.name}</h2>
+                        <h2 className="text-2xl font-bold mb-4">{t("schoolsInAreaHeading", { name: neighborhood.name })}</h2>
                         {schoolsInArea.length > 0 ? (
                             <div className="grid grid-cols-1 gap-6">
                                 {schoolsInArea.map((school) => (
@@ -234,7 +236,7 @@ export default async function NeighborhoodDetailPage(props: PageProps) {
                                 ))}
                             </div>
                         ) : (
-                            <p className="text-muted-foreground italic">No international schools listed specifically in this neighborhood yet. Check nearby areas.</p>
+                            <p className="text-muted-foreground italic">{t("noSchoolsText")}</p>
                         )}
                     </section>
                 </div>
@@ -243,21 +245,21 @@ export default async function NeighborhoodDetailPage(props: PageProps) {
                 <div className="space-y-6">
                     <Card className="bg-blue-50 border-blue-100">
                         <CardHeader>
-                            <CardTitle className="text-blue-900">Vibe Check</CardTitle>
+                            <CardTitle className="text-blue-900">{t("vibeCheckTitle")}</CardTitle>
                         </CardHeader>
                         <CardContent>
                             <p className="text-lg font-medium text-blue-800 mb-2">
                                 {neighborhood.vibe}
                             </p>
                             <p className="text-sm text-blue-700">
-                                Perfect for families looking for a specific lifestyle.
+                                {t("vibeCheckBody")}
                             </p>
                         </CardContent>
                     </Card>
 
                     {/* Amenity Radar stub */}
                     <div>
-                        <h3 className="text-lg font-semibold mb-3">Explore the Area</h3>
+                        <h3 className="text-lg font-semibold mb-3">{t("exploreAreaHeading")}</h3>
                         <NeighborhoodMap
                             neighborhoodName={neighborhood.name}
                             city="Lisbon"

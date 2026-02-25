@@ -1,4 +1,11 @@
 # TrustFamily — Piano Redesign Magazine Layout
+
+> **STATO (2026-02-24):**
+> - **Homepage** → ✅ COMPLETATA (Hero, PillarsCardsSection, Testimonials, page.tsx come `<article>`)
+> - **Pillar pages** → ⏸ DECISIONE POST-LANCIO — funzionali e SEO-corrette, redesign non bloccante per go-live
+>
+> Questo documento è operativo solo dopo il lancio. Per priorità pre-lancio → `LAUNCH_CHECKLIST.md`
+
 **Sessione di avvio:** 2026-02-24
 **Branch:** `testing-languages-and-routing`
 **Scope:** Homepage + 3 Pillar pages (relocation-guide, best-private-schools, top-neighborhoods)

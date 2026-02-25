@@ -98,5 +98,81 @@
     "title": "Pagina niet gevonden",
     "description": "De pagina die u zoekt bestaat niet of is verplaatst.",
     "backHome": "Terug naar home"
+  },
+  "Form": {
+    "success": {
+      "title": "Bedankt!",
+      "message": "Uw aanvraag is ontvangen. Wij nemen binnenkort contact met u op met uw gepersonaliseerde gids.",
+      "resetBtn": "Nog een aanvraag sturen"
+    },
+    "fields": {
+      "fullName": "Volledige naam *",
+      "fullNamePlaceholder": "Jan Jansen",
+      "nationality": "Nationaliteit *",
+      "nationalityPlaceholder": "bijv. Nederlands",
+      "email": "E-mail *",
+      "emailPlaceholder": "jan@voorbeeld.nl",
+      "phone": "Telefoon (Optioneel)",
+      "phonePlaceholder": "+31 6 12 34 56 78",
+      "school": "Gewenste school (Optioneel)",
+      "schoolPlaceholder": "Selecteer een school",
+      "neighborhood": "Gewenste wijk (Optioneel)",
+      "neighborhoodPlaceholder": "Selecteer een wijk",
+      "message": "Vragen of opmerkingen",
+      "messagePlaceholder": "Vertel ons wat u zoekt..."
+    },
+    "submitBtn": "Ontvang uw gepersonaliseerde gids",
+    "submittingBtn": "Bezig met verzenden...",
+    "privacyNote": "Wij respecteren uw privacy. Geen spam, nooit."
+  },
+  "SchoolsGuidePage": {
+    "metaTitle": "Beste internationale scholen Portugal 2026 — Privaat & Openbaar | TrustFamily",
+    "metaDescription": "Onafhankelijke gids voor de beste private en openbare internationale scholen in Portugal 2026. Vergelijk IB-, Britse en Amerikaanse curricula, schoolgeld en acceptatiepercentages."
+  },
+  "NeighborhoodsGuidePage": {
+    "metaTitle": "Beste gezinsvriendelijke buurten Portugal 2026 — Lissabon, Cascais, Sintra | TrustFamily",
+    "metaDescription": "Vind de beste gezinsvriendelijke buurten in Portugal voor expats. Vergelijk Cascais, Sintra, Parque das Nações en meer — veiligheid, scholen, sfeer en woon-werkverkeer."
+  },
+  "RelocationGuidePage": {
+    "metaTitle": "Gezinsverhuisgids Portugal 2026 — Visa, Scholen, Huisvesting & Kosten | TrustFamily",
+    "metaDescription": "Complete gids voor het verhuizen van uw gezin naar Portugal in 2026. Behandelt visa (D7, Digital Nomad, EU), woonkosten, internationale scholen, gezondheidszorg en een 12-maandenplan."
+  },
+  "AboutPage": {
+    "metaTitle": "Over TrustFamily — Onafhankelijke school- en verhuisinformatie voor Portugal",
+    "metaDescription": "TrustFamily is een onafhankelijk platform dat internationale gezinnen helpt met vertrouwen naar Portugal te verhuizen. Wij verifiëren scholen, buurten en verhuisgegevens — zonder betaalde plaatsingen en zonder belangenconflicten."
+  },
+  "SchoolFinderPage": {
+    "metaTitle": "Schoolzoeker — Vind uw perfecte internationale school in Portugal | TrustFamily",
+    "metaDescription": "Beantwoord 4 vragen en word gekoppeld aan de juiste internationale school en buurt in Portugal. Gratis, onbevooroordeeld, op basis van uw budget en curriculumvoorkeur."
+  },
+  "BlogPage": {
+    "metaTitle": "Blog — School- en verhuisgidsen Portugal | TrustFamily",
+    "metaDescription": "Deskundige artikelen over het kiezen van internationale scholen in Portugal, het vergelijken van Lissabonse buurten voor expatgezinnen en echte kostenanalyses."
+  },
+  "SchoolDetail": {
+    "contactBtn": "Schooladviseur contacteren",
+    "aboutHeading": "Over de school",
+    "verdictLabel": "Het Oordeel",
+    "parentWhisperLabel": "Oudermening",
+    "keyHighlightsHeading": "Belangrijkste hoogtepunten",
+    "detailsCardTitle": "Schooldetails",
+    "curriculumLabel": "Curriculum",
+    "annualFeesLabel": "Jaarlijks schoolgeld",
+    "neighborhoodMatchTitle": "Passende buurt",
+    "neighborhoodMatchText": "Op zoek naar een woning in de buurt van {schoolName}? Bekijk onze gids voor {neighborhood}.",
+    "neighborhoodExploreBtn": "{neighborhood} verkennen",
+    "locationHeading": "Schoollocatie"
+  },
+  "NeighborhoodDetail": {
+    "contactBtn": "Verhuisexpert contacteren",
+    "aboutHeading": "Over {name}",
+    "whyFamiliesHeading": "Waarom gezinnen er van houden",
+    "commuteContextLabel": "Reiscontext",
+    "lifestyleAmenitiesHeading": "Levensstijl & Voorzieningen",
+    "schoolsInAreaHeading": "Scholen in {name}",
+    "noSchoolsText": "Nog geen internationale scholen specifiek in deze buurt vermeld. Controleer nabijgelegen gebieden.",
+    "vibeCheckTitle": "Sfeercheck",
+    "vibeCheckBody": "Perfect voor gezinnen die op zoek zijn naar een specifieke levensstijl.",
+    "exploreAreaHeading": "De omgeving verkennen"
   }
 }

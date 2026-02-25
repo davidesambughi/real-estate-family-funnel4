@@ -96,5 +96,81 @@
     "title": "Page not found",
     "description": "Sorry, the page you are looking for doesn't exist or has been moved.",
     "backHome": "Back to Home"
+  },
+  "Form": {
+    "success": {
+      "title": "Thank You!",
+      "message": "Your request has been received. We will be in touch shortly with your personalized guide.",
+      "resetBtn": "Send another request"
+    },
+    "fields": {
+      "fullName": "Full Name *",
+      "fullNamePlaceholder": "John Doe",
+      "nationality": "Nationality *",
+      "nationalityPlaceholder": "e.g. American",
+      "email": "Email *",
+      "emailPlaceholder": "john@example.com",
+      "phone": "Phone (Optional)",
+      "phonePlaceholder": "+1 234 567 890",
+      "school": "Interested School (Optional)",
+      "schoolPlaceholder": "Select a school",
+      "neighborhood": "Interested Area (Optional)",
+      "neighborhoodPlaceholder": "Select an area",
+      "message": "Questions or Comments",
+      "messagePlaceholder": "Tell us what you are looking for..."
+    },
+    "submitBtn": "Get Your Personalized Guide",
+    "submittingBtn": "Sending...",
+    "privacyNote": "We respect your privacy. No spam, ever."
+  },
+  "SchoolsGuidePage": {
+    "metaTitle": "Best International Schools Portugal 2026 — Top Private & Public | TrustFamily",
+    "metaDescription": "Independent guide to the best private and public international schools in Portugal 2026. Compare IB, British, and American curricula, fees, locations, and acceptance rates."
+  },
+  "NeighborhoodsGuidePage": {
+    "metaTitle": "Best Family-Friendly Neighborhoods Portugal 2026 — Lisbon, Cascais, Sintra | TrustFamily",
+    "metaDescription": "Find the best family-friendly neighborhoods in Portugal for expats. Compare Cascais, Sintra, Parque das Nações, Campo de Ourique and more — safety, schools, vibe, and commutes."
+  },
+  "RelocationGuidePage": {
+    "metaTitle": "Family Relocation Guide Portugal 2026 — Visas, Schools, Housing & Costs | TrustFamily",
+    "metaDescription": "Complete guide to relocating your family to Portugal in 2026. Covers visas (D7, Digital Nomad, EU), housing costs, international schools, healthcare, and a 12-month timeline. Independent, verified."
+  },
+  "AboutPage": {
+    "metaTitle": "About TrustFamily — Independent School & Relocation Intelligence for Portugal",
+    "metaDescription": "TrustFamily is an independent platform helping affluent international families relocate to Portugal with confidence. We verify schools, neighborhoods, and relocation data — with no paid placements and no conflicts of interest."
+  },
+  "SchoolFinderPage": {
+    "metaTitle": "School Finder — Find Your Perfect International School in Portugal | TrustFamily",
+    "metaDescription": "Answer 4 questions and get matched with the right international school and neighborhood in Portugal. Free, unbiased, based on your budget, curriculum preference, and lifestyle."
+  },
+  "BlogPage": {
+    "metaTitle": "Blog — School & Relocation Guides Portugal | TrustFamily",
+    "metaDescription": "Expert articles on selecting international schools in Portugal, comparing Lisbon neighborhoods for expat families, and real relocation cost breakdowns."
+  },
+  "SchoolDetail": {
+    "contactBtn": "Contact School Advisor",
+    "aboutHeading": "About the School",
+    "verdictLabel": "The Verdict",
+    "parentWhisperLabel": "Parent Whisper",
+    "keyHighlightsHeading": "Key Highlights",
+    "detailsCardTitle": "School Details",
+    "curriculumLabel": "Curriculum",
+    "annualFeesLabel": "Annual Fees",
+    "neighborhoodMatchTitle": "Neighborhood Match",
+    "neighborhoodMatchText": "Looking for a home near {schoolName}? Check out our guide to {neighborhood}.",
+    "neighborhoodExploreBtn": "Explore {neighborhood}",
+    "locationHeading": "School Location"
+  },
+  "NeighborhoodDetail": {
+    "contactBtn": "Contact Relocation Expert",
+    "aboutHeading": "About {name}",
+    "whyFamiliesHeading": "Why Families Love It",
+    "commuteContextLabel": "Commute Context",
+    "lifestyleAmenitiesHeading": "Lifestyle & Amenities",
+    "schoolsInAreaHeading": "Schools in {name}",
+    "noSchoolsText": "No international schools listed specifically in this neighborhood yet. Check nearby areas.",
+    "vibeCheckTitle": "Vibe Check",
+    "vibeCheckBody": "Perfect for families looking for a specific lifestyle.",
+    "exploreAreaHeading": "Explore the Area"
   }
 }
