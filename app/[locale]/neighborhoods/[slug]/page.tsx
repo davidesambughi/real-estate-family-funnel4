@@ -87,6 +87,7 @@ export default async function NeighborhoodDetailPage(props: PageProps) {
     const placeSchema = {
         "@context": "https://schema.org",
         "@type": "Place",
+        "@id": `${process.env.NEXT_PUBLIC_BASE_URL || "https://trustfamily.com"}/en/neighborhood/${neighborhood.slug}#place`,
         "name": neighborhood.name,
         "description": enT.description,
         "url": `${process.env.NEXT_PUBLIC_BASE_URL || "https://trustfamily.com"}/neighborhood/${neighborhood.slug}`,
@@ -224,7 +225,7 @@ export default async function NeighborhoodDetailPage(props: PageProps) {
                                                     </CardDescription>
                                                 </div>
                                                 <Button variant="outline" size="sm" asChild>
-                                                    <Link href={{ pathname: '/schools/[slug]', params: { slug: school.slug } }}>View School</Link>
+                                                    <Link href={{ pathname: '/schools/[slug]', params: { slug: school.slug } }}>{t("viewSchoolBtn")}</Link>
                                                 </Button>
                                             </div>
                                         </CardHeader>

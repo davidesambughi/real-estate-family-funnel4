@@ -86,6 +86,7 @@ export default async function SchoolDetailPage(props: PageProps) {
     const schoolSchema = {
         "@context": "https://schema.org",
         "@type": "EducationalOrganization",
+        "@id": `${process.env.NEXT_PUBLIC_BASE_URL || "https://trustfamily.com"}/en/school/${school.slug}#school`,
         "name": school.name,
         "description": enT.description,
         "url": `${process.env.NEXT_PUBLIC_BASE_URL || "https://trustfamily.com"}/school/${school.slug}`,

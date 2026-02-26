@@ -30,14 +30,19 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     alternates: {
       canonical: canonicalUrl,
       languages: {
-        en: `${BASE}/en/blog/${article.slug}`,
-        "x-default": `${BASE}/en/blog/${article.slug}`,
+        'en': `${BASE}/en/blog/${article.slug}`,
+        'pt': `${BASE}/pt/blog/${article.slug}`,
+        'de': `${BASE}/de/blog/${article.slug}`,
+        'fr': `${BASE}/fr/blog/${article.slug}`,
+        'nl': `${BASE}/nl/blog/${article.slug}`,
+        'es': `${BASE}/es/blog/${article.slug}`,
+        'x-default': `${BASE}/en/blog/${article.slug}`,
       },
     },
     openGraph: {
       title: `${article.title} | TrustFamily`,
       description: article.intro.slice(0, 160),
-      url: `${BASE}/${locale}/blog/${article.slug}`,
+      url: canonicalUrl,
       siteName: "TrustFamily",
       type: "article",
       publishedTime: article.datePublished,

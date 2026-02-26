@@ -38,7 +38,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
             description: t("metaDescription"),
             url: `${BASE}/en/family-relocation-guide-2026`,
             siteName: "TrustFamily",
-            locale: "en",
+            locale: "en_US",
             type: "article",
             images: [{ url: `${BASE}/opengraph-image`, width: 1200, height: 630, alt: 'TrustFamily — International Schools & Neighborhoods in Portugal' }],
         },

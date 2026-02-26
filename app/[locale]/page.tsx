@@ -32,6 +32,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "HomePage" });
   const base = process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com';
+  const ogLocaleMap: Record<string, string> = {
+    en: 'en_US', pt: 'pt_PT', de: 'de_DE', fr: 'fr_FR', nl: 'nl_NL', es: 'es_ES',
+  };
 
   return {
     title: t("metaTitle"),
@@ -53,7 +56,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
       description: t("metaDescription"),
       url: `${base}/${locale}`,
       siteName: "TrustFamily",
-      locale,
+      locale: ogLocaleMap[locale] ?? locale,
       type: "website",
       images: [{ url: `${base}/opengraph-image`, width: 1200, height: 630, alt: 'TrustFamily — International Schools & Neighborhoods in Portugal' }],
     },
@@ -73,6 +76,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
   const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": `${base}/#organization`,
     "name": "TrustFamily",
     "url": base,
     "logo": {

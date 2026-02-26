@@ -80,7 +80,7 @@ export default function Page() {
         "@type": "ItemList",
         "name": "Best International Schools in Portugal 2026",
         "description": "Independent ranking of the top private and public international schools in Portugal, comparing IB, British and American curricula.",
-        "url": "https://trustfamily.com/en/best-private-and-public-international-schools-portugal-2026",
+        "url": `${process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com'}/en/best-private-and-public-international-schools-portugal-2026`,
         "numberOfItems": schoolsData.length,
         "itemListElement": schoolsData.map((school, i) => ({
             "@type": "ListItem",
@@ -89,7 +89,7 @@ export default function Page() {
                 "@type": "EducationalOrganization",
                 "name": school.name,
                 "description": school.translations.en.description,
-                "url": `https://trustfamily.com/en/school/${school.slug}`,
+                "url": `${process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com'}/en/school/${school.slug}`,
                 "address": { "@type": "PostalAddress", "addressLocality": school.location, "addressCountry": "PT" },
                 "geo": { "@type": "GeoCoordinates", "latitude": school.coordinates.lat, "longitude": school.coordinates.lng },
             },

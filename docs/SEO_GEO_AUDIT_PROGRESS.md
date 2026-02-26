@@ -105,6 +105,35 @@ Legenda: `[C]` Critico · `[H]` Alto · `[M]` Medio · `[L]` Basso
 
 ---
 
+## GAP emersi in sessione 5 — audit architetturale 2026-02-26
+> **Tutti risolti in sessione 5 (2026-02-26)** — `npx tsc --noEmit` → zero errori post-fix.
+
+### ALTI — SEO entity & hreflang
+
+- [x] `[H]` Aggiungi `@id` a tutti e 3 gli schema entity — senza URI stabile Google Knowledge Graph non collega l'entità tra pagine
+  - `app/[locale]/page.tsx` — Organization: `"@id": "${base}/#organization"` ✅
+  - `app/[locale]/schools/[slug]/page.tsx` — EducationalOrganization: `"@id": ".../en/school/${slug}#school"` ✅
+  - `app/[locale]/neighborhoods/[slug]/page.tsx` — Place: `"@id": ".../en/neighborhood/${slug}#place"` ✅
+
+- [x] `[H]` Aggiungi hreflang completi (tutti 6 locale) al blog listing e blog articles
+  - `app/[locale]/blog/page.tsx` — aggiunto `en, pt, de, fr, nl, es, x-default` ✅
+  - `app/[locale]/blog/[slug]/page.tsx` — stesso pattern + fix OG `url` → usa `canonicalUrl` ✅
+  - Fix bonus: OG `url` del blog detail puntava al locale path invece del canonico EN
+
+### MEDI — schema & metadata
+
+- [x] `[M]` Fix ItemList schema in schools pillar — URL hardcodato → env var
+  - `app/[locale]/best-private-and-public-international-schools-portugal-2026/page.tsx` ✅
+  - Fix applicato su 2 occorrenze: url ItemList + url EducationalOrganization nei list items
+
+- [x] `[M]` OG `locale` field — formato conforme alla Open Graph spec
+  - `app/[locale]/layout.tsx` — `ogLocaleMap` inline, `locale: ogLocaleMap[locale] ?? locale` ✅
+  - `app/[locale]/page.tsx` — stesso pattern ✅
+  - `app/[locale]/relocation-guide/page.tsx` — `"en"` → `"en_US"` ✅
+  - Confermato: nessun altro `locale: "en"` hardcodato nel codebase post-fix
+
+---
+
 ## BASSI — aggiunti in sessione 4
 
 - [ ] `[L]` Valuta noindex su pagine non indicizzabili — `school-finder` è editorial landing (tieni indexed); valuta `robots: noindex` su eventuali URL con query params di stato quiz (se generano URL unici)
@@ -222,3 +251,24 @@ Legenda: `[C]` Critico · `[H]` Alto · `[M]` Medio · `[L]` Basso
 6. **LLM referral tracking** — UTM params su CTA link (priorità MEDIA — dato strategico 2026)
 7. **Vercel Analytics** — Configura per CrUX/RUM monitoring
 8. **IndexNow** — Notifica motori di ricerca su nuovi contenuti
+
+---
+
+### Sessione 5 — 2026-02-26
+
+**Sprint 1 completato — audit architetturale + fix code:**
+
+- Fix `viewSchoolBtn` hardcoded EN → `t("viewSchoolBtn")` in `neighborhoods/[slug]/page.tsx:227` ✅
+- Fix ItemList schema: 2 URL `https://trustfamily.com` hardcodati → `process.env.NEXT_PUBLIC_BASE_URL` in `best-private.../page.tsx` ✅
+- Aggiunti `@id` canonici su tutti e 3 gli schema entity (Organization, EducationalOrganization, Place) ✅
+- OG locale format: `ogLocaleMap` in layout + homepage (dinamico) e relocation-guide (hardcoded `"en_US"`) ✅
+- Blog hreflang: aggiunto tutti 6 locale in `blog/page.tsx` e `blog/[slug]/page.tsx` ✅
+- Fix bonus: OG `url` blog detail → usa `canonicalUrl` (era `${locale}/blog/slug`, corretto a `/en/blog/slug`) ✅
+- Confermato: `school-finder` TS error già risolto in commit precedente (non era un open item reale)
+- Confermato: form i18n già completato in sessione 6 (LAUNCH_CHECKLIST sincronizzato)
+- `npx tsc --noEmit` → **zero errori** post-sprint ✅
+
+**Stato pre-lancio dopo sessione 5:**
+- P0 aperti: CRM integration, immagini reali
+- P1 aperti: Maps stub/decision
+- Tutto SEO/schema: completato o post-lancio deliberato

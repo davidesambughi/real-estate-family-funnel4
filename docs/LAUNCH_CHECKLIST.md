@@ -16,26 +16,10 @@
 - [ ] Test end-to-end: submit form → lead ricevuto
 
 ### 2. Fix i18n — stringhe EN hardcoded nel form
-**File:** `components/form.tsx`, `components/features/quiz/QuizResult.tsx`
-**Problema:** Utenti DE/FR/NL/ES/PT vedono "Thank You!", "Full Name *", "Get Your Personalized Guide" in inglese.
-**Stringhe da convertire in `form.tsx`:**
-- [ ] `"Thank You!"` → `t("success.title")`
-- [ ] `"Your request has been received..."` → `t("success.message")`
-- [ ] `"Send another request"` → `t("success.resetBtn")`
-- [ ] `"Full Name *"` → `t("fields.fullName")`
-- [ ] `"Nationality *"` → `t("fields.nationality")`
-- [ ] `"Email *"` → `t("fields.email")`
-- [ ] `"Phone (Optional)"` → `t("fields.phone")`
-- [ ] `"Interested School (Optional)"` → `t("fields.school")`
-- [ ] `"Interested Area (Optional)"` → `t("fields.neighborhood")`
-- [ ] `"Select a school"` → `t("fields.schoolPlaceholder")`
-- [ ] `"Select an area"` → `t("fields.neighborhoodPlaceholder")`
-- [ ] `"Get Your Personalized Guide"` → `t("submitBtn")`
-- [ ] `"Sending..."` → `t("submittingBtn")`
-- [ ] `"We respect your privacy..."` → `t("privacyNote")`
-- [ ] Aggiungere namespace `LeadForm` a tutti e 6 i `messages/*.json`
-**In `QuizResult.tsx`:**
-- [ ] `"Best Match"` hardcoded → chiave `Quiz.bestMatchBadge` in tutti e 6 i JSON
+**✅ COMPLETATO — sessione 6 (2026-02-25)**
+Tutte le stringhe del form sono state convertite in chiavi namespace `Form`.
+Confermato da `docs/TRANSLATION_AUDIT.md` — 249 chiavi × 6 locale, tutti i namespace completi.
+Il LAUNCH_CHECKLIST non era stato sincronizzato dopo la sessione 6.
 
 ---
 
@@ -57,9 +41,9 @@
 - [ ] **Opzione B (completa):** Connettere Mapbox o Google Maps embed — i dati `coordinates` sono già in `schools-data.ts` e `neighborhoods-data.ts`
 
 ### 5. Fix TypeScript error preesistente
-**File:** `app/[locale]/school-finder/page.tsx:138`
-**Problema:** `href="/#quiz"` non è una typed route next-intl — warning nel build log.
-**Fix:** Usare `href={{ pathname: "/", hash: "quiz" }}`
+**✅ COMPLETATO — commit precedente**
+`app/[locale]/school-finder/page.tsx` usa già `href={{ pathname: "/", hash: "quiz" }}` alla riga 140.
+Confermato da `npx tsc --noEmit` — zero errori. LAUNCH_CHECKLIST non era sincronizzato.
 
 ---
 
@@ -67,7 +51,7 @@
 
 | Area | Documento di riferimento |
 |------|--------------------------|
-| SEO/GEO backlog (`sameAs` social, OG locale-aware, Search Console, Analytics, IndexNow) | `SEO_GEO_AUDIT_PROGRESS.md` |
+| SEO/GEO backlog (`sameAs` social, OG image locale-aware, alt text, Search Console, Analytics, IndexNow) | `SEO_GEO_AUDIT_PROGRESS.md` |
 | Redesign pillar pages (magazine layout — homepage già completata) | `MAGAZINE_REDESIGN_PLAN.md` |
 | Refactoring architetturale (DAL, JSON-LD extraction, hooks, testing) | `SOLID_REFACTOR_CHECKLIST.md` |
 

@@ -43,6 +43,10 @@ export async function generateMetadata({
   // x-default points to the English version as the canonical fallback
   languages['x-default'] = `${baseUrl}/en`;
 
+  const ogLocaleMap: Record<string, string> = {
+    en: 'en_US', pt: 'pt_PT', de: 'de_DE', fr: 'fr_FR', nl: 'nl_NL', es: 'es_ES',
+  };
+
   return {
     title: t('title'),
     description: t('description'),
@@ -52,7 +56,7 @@ export async function generateMetadata({
     },
     openGraph: {
       siteName: "TrustFamily",
-      locale,
+      locale: ogLocaleMap[locale] ?? locale,
       type: "website",
     },
     twitter: {
