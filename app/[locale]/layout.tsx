@@ -34,7 +34,7 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'Metadata' });
 
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://real-estate-family-funnel4-2.vercel.app';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com';
 
   const languages: Record<string, string> = {};
   routing.locales.forEach((l) => {
