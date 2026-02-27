@@ -183,7 +183,7 @@ export default async function SchoolDetailPage(props: PageProps) {
                     <section>
                         <h2 className="font-serif font-semibold text-2xl text-ink-primary mb-4">{t("keyHighlightsHeading")}</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            {schoolT.highlights.map((highlight: string, index: number) => (
+                            {(schoolT.highlights ?? []).map((highlight: string, index: number) => (
                                 <div key={index} className="flex items-center gap-3 p-4 bg-slate-50 rounded-lg">
                                     <Check className="h-5 w-5 text-green-600" />
                                     <span className="font-medium">{highlight}</span>

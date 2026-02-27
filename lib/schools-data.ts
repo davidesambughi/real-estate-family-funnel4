@@ -11,7 +11,9 @@ export function getSchoolT(school: School, locale: string): SchoolTranslation {
     ?? school.translations.en;
 }
 
-export const schoolsData: School[] = [
+import rawSchools from "./data/raw/schools-database.json";
+
+const curatedSchools: School[] = [
   {
     id: "1",
     slug: "st-julians-school",
@@ -313,3 +315,37 @@ export const schoolsData: School[] = [
     },
   },
 ];
+
+const importedSchools: School[] = (rawSchools as any[]).map((s) => ({
+  id: s.id,
+  slug: s.id,
+  name: s.name,
+  location: s.location?.city ? `${s.location.city}${s.location.region ? `, ${s.location.region}` : ''}` : "Portugal",
+  neighborhoodSlug: "portugal",
+  curriculum: s.academics?.curriculum ? s.academics.curriculum.join(", ") : "Various",
+  fees: s.fees?.annual_min_eur
+    ? `€${s.fees.annual_min_eur.toLocaleString('en-US')}` +
+      (s.fees.annual_max_eur && s.fees.annual_max_eur !== s.fees.annual_min_eur
+        ? ` – €${s.fees.annual_max_eur.toLocaleString('en-US')}`
+        : "")
+    : "Contact school",
+  acceptanceRate: s.enrollment?.acceptance_rate || undefined,
+  coordinates: s.location?.coordinates || { lat: 38.7223, lng: -9.1393 },
+  translations: {
+    en: {}
+  },
+}));
+
+const curatedSlugs = new Set([
+  ...curatedSchools.map(c => c.slug),
+  // Raw JSON ids for curated schools whose slug differs from the JSON id
+  "st-julian's-school-lisbon",
+  "tasis-portugal-lisbon",
+  "carlucci-american-international-school-of-lisbon",
+]);
+const curatedNames = new Set(curatedSchools.map(c => c.name.toLowerCase()));
+const filteredImports = importedSchools.filter(
+  s => !curatedSlugs.has(s.slug) && !curatedNames.has(s.name.toLowerCase())
+);
+
+export const schoolsData: School[] = [...curatedSchools, ...filteredImports];
