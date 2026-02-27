@@ -4,7 +4,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { getTranslations } from "next-intl/server";
-import { blogArticles, getBlogArticle } from "@/lib/blog-data";
+import { blogArticles, getBlogArticle } from "@/lib/data";
 import type { Metadata } from "next";
 
 // ISR: regenerate every 24 h — article content is stable but may be updated

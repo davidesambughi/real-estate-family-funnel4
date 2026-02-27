@@ -15,7 +15,7 @@
 import { Link } from "@/i18n/navigation";
 import { Card, CardHeader, CardTitle, CardContent, CardDescription, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { schoolsData, getSchoolT } from "@/lib/schools-data";
+import { schoolsData, getSchoolT } from "@/lib/data";
 import { MapPin, GraduationCap, Coins, CalendarCheck, Quote, Sparkles, Users } from "lucide-react";
 import { MethodologyBadge } from "./MethodologyBadge";
 import { getLocale, getTranslations } from "next-intl/server";
@@ -37,7 +37,7 @@ export async function SchoolsList() {
                             {/* Trust badges + acceptance rate row */}
                             <div className="flex justify-between items-start gap-2 mb-3">
                                 <div className="flex flex-wrap gap-1.5">
-                                    {schoolT.trustBadges?.map((badge) => (
+                                    {schoolT.trustBadges && schoolT.trustBadges.map((badge) => (
                                         <MethodologyBadge key={badge} type="independent" label={badge} />
                                     ))}
                                 </div>
@@ -61,9 +61,11 @@ export async function SchoolsList() {
 
                         <CardContent className="flex-1 space-y-4">
                             {/* Description */}
-                            <p className="text-sm text-ink-secondary line-clamp-3 leading-relaxed">
-                                {schoolT.description}
-                            </p>
+                            {schoolT.description && (
+                                <p className="text-sm text-ink-secondary line-clamp-3 leading-relaxed">
+                                    {schoolT.description}
+                                </p>
+                            )}
 
                             {/* Key stats */}
                             <div className="flex flex-col gap-2 text-sm border-t border-border pt-3">
@@ -87,26 +89,30 @@ export async function SchoolsList() {
                             </div>
 
                             {/* THE VERDICT */}
-                            <div className="rounded-xl bg-brand-light border border-brand/20 px-4 py-3">
-                                <div className="flex items-center gap-1.5 mb-1.5">
-                                    <Sparkles className="h-3.5 w-3.5 text-brand" />
-                                    <span className="text-xs font-bold text-brand uppercase tracking-wide">{t("verdictLabel")}</span>
+                            {schoolT.verdict && (
+                                <div className="rounded-xl bg-brand-light border border-brand/20 px-4 py-3">
+                                    <div className="flex items-center gap-1.5 mb-1.5">
+                                        <Sparkles className="h-3.5 w-3.5 text-brand" />
+                                        <span className="text-xs font-bold text-brand uppercase tracking-wide">{t("verdictLabel")}</span>
+                                    </div>
+                                    <p className="text-sm font-medium text-ink-primary leading-snug">
+                                        {schoolT.verdict}
+                                    </p>
                                 </div>
-                                <p className="text-sm font-medium text-ink-primary leading-snug">
-                                    {schoolT.verdict}
-                                </p>
-                            </div>
+                            )}
 
                             {/* PARENT WHISPER */}
-                            <div className="rounded-xl bg-surface-subtle border border-border px-4 py-3">
-                                <div className="flex items-center gap-1.5 mb-1.5">
-                                    <Quote className="h-3.5 w-3.5 text-ink-muted" />
-                                    <span className="text-xs font-bold text-ink-muted uppercase tracking-wide">{t("parentWhisperLabel")}</span>
+                            {schoolT.parentWhisper && (
+                                <div className="rounded-xl bg-surface-subtle border border-border px-4 py-3">
+                                    <div className="flex items-center gap-1.5 mb-1.5">
+                                        <Quote className="h-3.5 w-3.5 text-ink-muted" />
+                                        <span className="text-xs font-bold text-ink-muted uppercase tracking-wide">{t("parentWhisperLabel")}</span>
+                                    </div>
+                                    <p className="text-sm text-ink-secondary italic leading-snug">
+                                        {schoolT.parentWhisper}
+                                    </p>
                                 </div>
-                                <p className="text-sm text-ink-secondary italic leading-snug">
-                                    {schoolT.parentWhisper}
-                                </p>
-                            </div>
+                            )}
                         </CardContent>
 
                         <CardFooter className="pt-2">

@@ -4,7 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { routing } from "@/i18n/routing";
 import { getTranslations } from "next-intl/server";
 import { JsonLd } from "@/components/JsonLd";
-import { schoolsData, getSchoolT } from "@/lib/schools-data";
+import { schoolsData, getSchoolT } from "@/lib/data";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";

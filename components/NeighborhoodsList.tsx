@@ -16,7 +16,7 @@
 import { Link } from "@/i18n/navigation";
 import { Card, CardHeader, CardTitle, CardContent, CardDescription, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { neighborhoodsData, getNeighborhoodT } from "@/lib/neighborhoods-data";
+import { neighborhoodsData, getNeighborhoodT } from "@/lib/data";
 import { MapPin, Car, Sparkles } from "lucide-react";
 import { getLocale } from "next-intl/server";
 

@@ -4,8 +4,7 @@ import { Link } from "@/i18n/navigation";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { schoolsData, getSchoolT } from "@/lib/schools-data";
-import { neighborhoodsData, getNeighborhoodT } from "@/lib/neighborhoods-data";
+import { schoolsData, getSchoolT, neighborhoodsData, getNeighborhoodT } from "@/lib/data";
 import { MapPin, GraduationCap, Star, RotateCcw } from "lucide-react";
 import { useLocale } from "next-intl";
 

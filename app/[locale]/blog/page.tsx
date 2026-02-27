@@ -3,7 +3,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Link } from "@/i18n/navigation";
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
-import { blogArticles } from "@/lib/blog-data";
+import { blogArticles } from "@/lib/data";
 
 /**
  * Blog listing page — shows teasers with links to individual /blog/[slug] pages.

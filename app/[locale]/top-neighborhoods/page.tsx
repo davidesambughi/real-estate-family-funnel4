@@ -4,7 +4,7 @@ import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { NeighborhoodsList } from "@/components/NeighborhoodsList";
 import { JsonLd } from "@/components/JsonLd";
-import { neighborhoodsData } from "@/lib/neighborhoods-data";
+import { neighborhoodsData } from "@/lib/data";
 import { getTranslations } from "next-intl/server";
 import { StickyTOC } from "@/components/StickyTOC";
 

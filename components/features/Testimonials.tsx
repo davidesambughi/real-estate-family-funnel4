@@ -5,7 +5,7 @@
  */
 
 import { getLocale } from "next-intl/server";
-import { featuredTestimonials, supportingTestimonials, getTestimonialT } from "@/lib/testimonials-data";
+import { featuredTestimonials, supportingTestimonials, getTestimonialT } from "@/lib/data";
 
 export async function Testimonials() {
     const locale = await getLocale();

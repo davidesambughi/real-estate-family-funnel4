@@ -1,8 +1,6 @@
 import { MetadataRoute } from 'next';
 import { routing } from '@/i18n/routing';
-import { schoolsData } from '@/lib/schools-data';
-import { neighborhoodsData } from '@/lib/neighborhoods-data';
-import { blogArticles } from '@/lib/blog-data';
+import { schoolsData, neighborhoodsData, blogArticles } from '@/lib/data';
 
 const host = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
 
