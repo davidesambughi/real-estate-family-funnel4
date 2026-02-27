@@ -242,7 +242,8 @@
     "noSchoolsText": "Noch keine internationalen Schulen speziell in diesem Stadtteil gelistet. Überprüfen Sie benachbarte Gebiete.",
     "vibeCheckTitle": "Stimmungscheck",
     "vibeCheckBody": "Perfekt für Familien, die einen bestimmten Lebensstil suchen.",
-    "exploreAreaHeading": "Die Gegend erkunden"
+    "exploreAreaHeading": "Die Gegend erkunden",
+    "viewSchoolBtn": "Schule ansehen"
   },
   "Common": {
     "scrollToTop": "Nach oben"

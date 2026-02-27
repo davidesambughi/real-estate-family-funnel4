@@ -242,7 +242,8 @@
     "noSchoolsText": "Aucune école internationale répertoriée spécifiquement dans ce quartier pour l'instant. Vérifiez les zones voisines.",
     "vibeCheckTitle": "Vérification de l'ambiance",
     "vibeCheckBody": "Parfait pour les familles à la recherche d'un style de vie spécifique.",
-    "exploreAreaHeading": "Explorer le quartier"
+    "exploreAreaHeading": "Explorer le quartier",
+    "viewSchoolBtn": "Voir l'école"
   },
   "Common": {
     "scrollToTop": "Retour en haut"
