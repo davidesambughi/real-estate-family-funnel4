@@ -1,4 +1,5 @@
 import type { Neighborhood, NeighborhoodTranslation } from "../types";
+import rawNeighborhoods from "./raw/neighborhoods-database.json";
 
 export type { Neighborhood };
 
@@ -11,7 +12,7 @@ export function getNeighborhoodT(neighborhood: Neighborhood, locale: string): Ne
     ?? neighborhood.translations.en;
 }
 
-export const neighborhoodsData: Neighborhood[] = [
+const curatedNeighborhoods: Neighborhood[] = [
   {
     id: "1",
     slug: "cascais",
@@ -328,3 +329,48 @@ export const neighborhoodsData: Neighborhood[] = [
     },
   },
 ];
+
+function buildCommuteContext(n: any): string {
+  const parts: string[] = [];
+  const c = n.location?.commute_to_lisbon_center;
+  if (c?.nearest_metro_station) parts.push(`Metro: ${c.nearest_metro_station}`);
+  if (c?.nearest_train_station) parts.push(`Train: ${c.nearest_train_station}`);
+  if (c?.by_car_min) parts.push(`${c.by_car_min} min to Lisbon by car`);
+  else if (c?.by_train_min) parts.push(`${c.by_train_min} min to Lisbon by train`);
+  if (n.location?.airport_distance_km) {
+    parts.push(`${n.location.airport_distance_km} km to ${n.location.airport_name ?? "airport"}`);
+  }
+  return parts.join(" · ") || (n.location?.region ?? n.location?.district ?? "Portugal");
+}
+
+const importedNeighborhoods: Neighborhood[] = (rawNeighborhoods as any[]).map((n) => ({
+  id: n.id,
+  slug: n.id,
+  name: n.name,
+  location: n.location?.city
+    ? `${n.location.city}${n.location.region && n.location.region !== n.location.city ? `, ${n.location.region}` : ""}`
+    : "Portugal",
+  coordinates: n.location?.coordinates ?? { lat: 39.3999, lng: -8.2245 },
+  translations: {
+    en: {
+      vibe: n.type ?? (n.lifestyle?.best_for?.[0] ?? "Residential"),
+      description:
+        n.lifestyle?.vibe_description ??
+        `${n.name} is located in ${n.location?.region ?? "Portugal"}.`,
+      highlights: ((n.pros_cons?.pros ?? []) as string[]).slice(0, 3),
+      commuteContext: buildCommuteContext(n),
+      vibeAdjectives: ((n.lifestyle?.best_for ?? []) as string[]).slice(0, 5),
+      amenities: ((n.lifestyle?.local_highlights ?? []) as string[])
+        .slice(0, 5)
+        .map((h) => `📍 ${h}`),
+    },
+  },
+}));
+
+const curatedSlugs = new Set(curatedNeighborhoods.map((n) => n.slug));
+const curatedNames = new Set(curatedNeighborhoods.map((n) => n.name.toLowerCase()));
+const filteredImports = importedNeighborhoods.filter(
+  (n) => !curatedSlugs.has(n.slug) && !curatedNames.has(n.name.toLowerCase())
+);
+
+export const neighborhoodsData: Neighborhood[] = [...curatedNeighborhoods, ...filteredImports];

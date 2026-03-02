@@ -6,8 +6,8 @@
  * and editorial components (Hero, PillarsCardsSection, Testimonials) are
  * embedded within the article prose — not stacked as autonomous sections.
  *
- * Editorial prose: English only (consistent with pillar pages).
- * Translated UI text lives in the sub-components via useTranslations.
+ * Prose content: fully i18n'd via lib/content/homepage.ts (Option C pattern).
+ * UI labels live in messages/*.json — useTranslations in sub-components.
  *
  * SEO: H1 in Hero (via i18n). H2s on prose sections carry keyword variants.
  * GEO: each paragraph is a citable, self-contained unit. Key entities
@@ -24,6 +24,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { Link as I18nLink } from "@/i18n/navigation";
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
+import { getHomeContent } from "@/lib/content/homepage";
 
 // ISR: homepage content is stable — regenerate every 12 h
 export const revalidate = 43200;
@@ -71,6 +72,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function Home({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "HomePage" });
+  const c = getHomeContent(locale);
   const base = process.env.NEXT_PUBLIC_BASE_URL || "https://trustfamily.com";
 
   const organizationSchema = {
@@ -154,32 +156,32 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               {/* Main prose column */}
               <div className="max-w-2xl">
                 <h2 id="why-portugal-families" className="article-heading mb-6">
-                  Why Portugal has become the first choice for relocating families
+                  {c.block1.h2}
                 </h2>
 
                 <p className="text-body text-ink-secondary leading-relaxed mb-5">
-                  Something shifted around 2022. The data was already pointing in one direction — and by 2024, Portugal had moved from an aspirational destination to the most researched relocation option in Europe among international families with school-age children. The reasons are layered, but they are not accidental, and they are unlikely to reverse.
+                  {c.block1.p1}
                 </p>
 
                 <p className="text-body text-ink-secondary leading-relaxed mb-5">
-                  Relocating to Portugal with a family means landing in a country that ranks among the top seven safest globally (
-                    <a
-                      href="https://www.economicsandpeace.org/research/global-peace-index/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-brand underline underline-offset-2 hover:text-brand/80"
-                    >
-                      Global Peace Index 2025, Institute for Economics and Peace
-                    </a>
-                  ), records more than 300 sunny days per year in the Lisbon area, and offers a concentration of world-class international schools within a 45-minute radius of a major European capital. That specific combination — safety, climate, education quality, and urban accessibility — does not exist in the same proportion anywhere else on the continent.
+                  {c.block1.p2Pre}
+                  <a
+                    href="https://www.economicsandpeace.org/research/global-peace-index/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-brand underline underline-offset-2 hover:text-brand/80"
+                  >
+                    {c.block1.p2LinkText}
+                  </a>
+                  {c.block1.p2Post}
                 </p>
 
                 <p className="text-body text-ink-secondary leading-relaxed mb-5">
-                  The Lisbon area is home to four leading international schools: St.&nbsp;Julian&apos;s School in Carcavelos (British curriculum and IB Diploma), TASIS Portugal and Carlucci American International School (CAISL) in Sintra (American and IB curricula), and United Lisbon International School in Parque das Nações (American and IB). For a family relocating from London, Amsterdam, Munich, or New York, the curriculum compatibility is not a compromise — it is often an upgrade in terms of class size, pastoral care, and international community.
+                  {c.block1.p3}
                 </p>
 
                 <p className="text-body text-ink-secondary leading-relaxed">
-                  The cost asymmetry is real, though frequently misunderstood. Portugal is not inexpensive in absolute terms — particularly when international school fees, which range from €12,000 to €32,000 per child per year, are factored in. What it offers is quality-adjusted value: a lifestyle comparable to the London commuter belt or the Geneva suburbs, at roughly half the total cost of living, in a climate measurably better for outdoor family life.
+                  {c.block1.p4}
                 </p>
               </div>
 
@@ -189,14 +191,14 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                   <p className="font-serif text-[68px] font-bold leading-none text-brand/20 select-none" aria-hidden="true">#7</p>
                   <hr className="border-brand/20 my-3" />
                   <p className="text-body-sm text-ink-secondary leading-snug">
-                    Portugal&rsquo;s global safety ranking — Global Peace Index 2025. One of the safest countries in the world to raise children.
+                    {c.block1.stat1Desc}
                   </p>
                 </div>
                 <div>
                   <p className="font-serif text-[68px] font-bold leading-none text-brand/20 select-none" aria-hidden="true">300+</p>
                   <hr className="border-brand/20 my-3" />
                   <p className="text-body-sm text-ink-secondary leading-snug">
-                    Sunny days per year in Lisbon. Atlantic climate — mild winters, warm summers, year-round outdoor life for families.
+                    {c.block1.stat2Desc}
                   </p>
                 </div>
                 {/* Editorial image — fills sidebar gap below stats */}
@@ -204,7 +206,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                   <div className="relative w-full aspect-4/3 overflow-hidden">
                     <Image
                       src="/repiro2-img.png"
-                      alt="Family in Lisbon, Portugal — TrustFamily relocation 2026"
+                      alt={c.block1.imageAlt}
                       fill
                       loading="lazy"
                       sizes="260px"
@@ -212,7 +214,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                     />
                   </div>
                   <p className="text-caption text-ink-muted mt-2 leading-snug">
-                    Lisbon&rsquo;s waterfront — the setting that families describe as the moment the decision became easy.
+                    {c.block1.imageCaption}
                   </p>
                 </div>
               </aside>
@@ -242,19 +244,19 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
 
               <div className="max-w-2xl">
                 <h2 id="school-first-principle" className="article-heading mb-6">
-                  The school decision is the relocation decision
+                  {c.block2.h2}
                 </h2>
 
                 <p className="text-body text-ink-secondary leading-relaxed mb-5">
-                  Every family we work with arrives believing the school choice and the neighborhood choice are two parallel decisions. They are not. In the Lisbon area, the school drives the neighborhood — because the morning school run, if misjudged, can absorb 90 minutes of daily family life in traffic. This is the single most consequential structural mistake that relocating families make, and it is almost entirely preventable with the right sequencing of decisions.
+                  {c.block2.p1}
                 </p>
 
                 <p className="text-body text-ink-secondary leading-relaxed mb-5">
-                  St.&nbsp;Julian&apos;s School, in Carcavelos, draws its community primarily from Cascais and Estoril — a 15-to-20 minute coastal drive. TASIS Portugal and CAISL, both in Sintra, are most naturally paired with a residence in Sintra itself or the surrounding hills. United Lisbon International School, in Parque das Nações, is walkable from the riverfront apartments surrounding it. Choose a neighborhood first, and you risk a daily commute that erodes the quality of life the move was supposed to provide.
+                  {c.block2.p2}
                 </p>
 
                 <p className="text-body text-ink-secondary leading-relaxed">
-                  Most international schools near Lisbon open applications for September entry in October or November of the preceding year. St.&nbsp;Julian&apos;s often closes its waitlist well before January. The families who arrive well-placed are those who applied 12 to 18 months in advance, to two or three schools simultaneously. The application is not a formality — it is the first real commitment of the relocation.
+                  {c.block2.p3}
                 </p>
               </div>
 
@@ -264,15 +266,15 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
                   <p className="font-serif text-[68px] font-bold leading-none text-brand/20 select-none" aria-hidden="true">8%</p>
                   <hr className="border-brand/20 my-3" />
                   <p className="text-body-sm text-ink-secondary leading-snug">
-                    Acceptance rate at St.&nbsp;Julian&apos;s School — the most selective international school in Portugal. Apply to two or three schools simultaneously, and apply early.
+                    {c.block2.statDesc}
                   </p>
                 </div>
                 <blockquote className="border-l-2 border-brand/30 pl-4">
                   <p className="font-serif italic text-body text-ink-primary leading-relaxed">
-                    &ldquo;Choose the school first. The neighborhood follows. The commute is the quality of life.&rdquo;
+                    {c.block2.blockquote}
                   </p>
                   <footer className="mt-2">
-                    <p className="text-caption text-ink-muted">TrustFamily research principle</p>
+                    <p className="text-caption text-ink-muted">{c.block2.blockquoteAuthor}</p>
                   </footer>
                 </blockquote>
               </aside>
@@ -288,11 +290,11 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         <div className="px-6 pt-8 pb-6 border-t border-border">
           <div className="max-w-7xl mx-auto">
             <p className="text-body text-ink-secondary leading-relaxed max-w-2xl">
-              Not sure which school fits your family&apos;s priorities — curriculum, lifestyle, or budget? Our{" "}
+              {c.quizBridge.pre}
               <I18nLink href="/school-finder" className="text-brand underline underline-offset-2 hover:text-brand/80">
-                School Finder
-              </I18nLink>{" "}
-              matches your situation to the right school and neighborhood in 60 seconds.
+                {c.quizBridge.linkText}
+              </I18nLink>
+              {c.quizBridge.post}
             </p>
           </div>
         </div>
@@ -306,7 +308,7 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
         <div className="relative w-full aspect-21/9 overflow-hidden">
           <Image
             src="/homepage-respiro1-img.png"
-            alt="Family life in Portugal — TrustFamily relocation"
+            alt={c.respiroAlt}
             fill
             loading="lazy"
             sizes="100vw"
@@ -328,32 +330,32 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
               {/* Left: E-E-A-T prose */}
               <div className="max-w-2xl">
                 <h2 id="independent-intelligence" className="article-heading mb-6">
-                  What independent intelligence looks like in practice
+                  {c.block3.h2}
                 </h2>
 
                 <p className="text-body text-ink-secondary leading-relaxed mb-5">
-                  TrustFamily was built from a specific frustration: the near-total absence of honest, structured, non-commercial information for families seriously considering a move to Portugal. The market offered two things — relocation agencies with financial relationships with specific schools and landlords, and expat forums where individual experience often ran ahead of verified fact. Neither served families making a decision worth hundreds of thousands of euros in school fees, housing deposits, and life reorganisation.
+                  {c.block3.p1}
                 </p>
 
                 <p className="text-body text-ink-secondary leading-relaxed mb-5">
-                  Every school profile in our guides reflects in-person visits, direct conversations with admissions teams and parent communities, and careful verification of the data points that actually matter: real acceptance rates (not the selective figures schools publish), the full fee structure including registration and capital levy charges, curriculum transition considerations for children arriving mid-programme, and the texture of each school&apos;s culture that does not appear in any prospectus.
+                  {c.block3.p2}
                 </p>
 
                 <p className="text-body text-ink-secondary leading-relaxed mb-8">
-                  No school pays for placement here. No property company refers traffic to these guides. There are no affiliate links. The neighborhood commute data is observed at actual school-run times, not mapping software estimates in off-peak conditions. The visa information — covering the D7 Passive Income Visa, the D8 Digital Nomad Visa, and the restructured Golden Visa program — is reviewed against{" "}
+                  {c.block3.p3Pre}
                   <a
                     href="https://www.aima.gov.pt"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-brand underline underline-offset-2 hover:text-brand/80"
                   >
-                    official AIMA guidance
-                  </a>{" "}
-                  and updated when the rules change, as they did significantly between 2023 and 2025.
+                    {c.block3.p3LinkText}
+                  </a>
+                  {c.block3.p3Post}
                 </p>
 
                 <p className="text-body text-ink-secondary leading-relaxed pl-4 border-l-2 border-brand/30 italic">
-                  The information that matters most — visa changes, admission openings, school fee updates — moves faster than most guides can keep pace with. Join the families already following TrustFamily&apos;s research updates for 2026.
+                  {c.block3.quote}
                 </p>
               </div>
 

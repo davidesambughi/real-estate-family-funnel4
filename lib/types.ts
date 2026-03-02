@@ -21,11 +21,11 @@ export interface GeoCoordinates {
 // Only `en` is required; other locales are optional and fall back to `en`.
 
 export interface SchoolTranslation {
-  description: string;
-  verdict: string;
-  parentWhisper: string;
-  highlights: string[];
-  trustBadges: string[];
+  description?: string;
+  verdict?: string;
+  parentWhisper?: string;
+  highlights?: string[];
+  trustBadges?: string[];
 }
 
 export interface TestimonialTranslation {
@@ -36,7 +36,9 @@ export interface Testimonial {
   id: number;
   attribution: string;
   detail: string;
-  translations: { en: TestimonialTranslation } & Partial<Record<LocaleKey, TestimonialTranslation>>;
+  translations: { en: TestimonialTranslation } & Partial<
+    Record<LocaleKey, TestimonialTranslation>
+  >;
 }
 
 export interface NeighborhoodTranslation {
@@ -48,7 +50,7 @@ export interface NeighborhoodTranslation {
   amenities: string[];
 }
 
-export type LocaleKey = 'pt' | 'de' | 'fr' | 'nl' | 'es';
+export type LocaleKey = "pt" | "de" | "fr" | "nl" | "es";
 
 export interface School {
   // ── Core identity ───────────────────────────────────────────────
@@ -72,7 +74,9 @@ export interface School {
   coordinates: GeoCoordinates;
 
   // ── i18n translations ───────────────────────────────────────────
-  translations: { en: SchoolTranslation } & Partial<Record<LocaleKey, SchoolTranslation>>;
+  translations: { en: SchoolTranslation } & Partial<
+    Record<LocaleKey, SchoolTranslation>
+  >;
 }
 
 export interface Neighborhood {
@@ -86,5 +90,7 @@ export interface Neighborhood {
   coordinates: GeoCoordinates;
 
   // ── i18n translations ───────────────────────────────────────────
-  translations: { en: NeighborhoodTranslation } & Partial<Record<LocaleKey, NeighborhoodTranslation>>;
+  translations: { en: NeighborhoodTranslation } & Partial<
+    Record<LocaleKey, NeighborhoodTranslation>
+  >;
 }
