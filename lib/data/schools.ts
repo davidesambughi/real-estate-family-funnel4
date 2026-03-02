@@ -316,25 +316,120 @@ const curatedSchools: School[] = [
   },
 ];
 
-const importedSchools: School[] = (rawSchools as any[]).map((s) => ({
-  id: s.id,
-  slug: s.id,
-  name: s.name,
-  location: s.location?.city ? `${s.location.city}${s.location.region ? `, ${s.location.region}` : ''}` : "Portugal",
-  neighborhoodSlug: "portugal",
-  curriculum: s.academics?.curriculum ? s.academics.curriculum.join(", ") : "Various",
-  fees: s.fees?.annual_min_eur
-    ? `€${s.fees.annual_min_eur.toLocaleString('en-US')}` +
-      (s.fees.annual_max_eur && s.fees.annual_max_eur !== s.fees.annual_min_eur
-        ? ` – €${s.fees.annual_max_eur.toLocaleString('en-US')}`
-        : "")
-    : "Contact school",
-  acceptanceRate: s.enrollment?.acceptance_rate || undefined,
-  coordinates: s.location?.coordinates || { lat: 38.7223, lng: -9.1393 },
-  translations: {
-    en: {}
-  },
-}));
+/** Decode URL-encoded IDs and convert to clean URL slugs, transliterating accented chars */
+function sanitizeSlug(id: string): string {
+  return decodeURIComponent(id)
+    .replace(/[àáâãäå]/g, "a")
+    .replace(/[èéêë]/g, "e")
+    .replace(/[ìíîï]/g, "i")
+    .replace(/[òóôõö]/g, "o")
+    .replace(/[ùúûü]/g, "u")
+    .replace(/[ýÿ]/g, "y")
+    .replace(/[ñ]/g, "n")
+    .replace(/[ç]/g, "c")
+    .toLowerCase()
+    .replace(/['']/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+/** Build a factual auto-description from available structured data */
+function buildAutoDescription(s: {
+  name: string;
+  type?: string | null;
+  location?: { city?: string | null };
+  academics?: { curriculum?: string[] | null; qualifications?: string[] | null };
+  enrollment?: { age_range_years?: string | null; total_students?: number | null };
+  fees?: { annual_min_eur?: number | null; annual_max_eur?: number | null };
+  expat_family_features?: { english_as_primary?: boolean | null };
+}): string {
+  const parts: string[] = [];
+  const city = s.location?.city ? `${s.location.city}, Portugal` : "Portugal";
+  const schoolType =
+    s.type?.toLowerCase() === "international" ? "international" : "private";
+  const article = schoolType === "international" ? "an" : "a";
+  parts.push(`${s.name} is ${article} ${schoolType} school in ${city}.`);
+  if (s.academics?.curriculum?.length) {
+    parts.push(`Curriculum: ${s.academics.curriculum.join(", ")}.`);
+  }
+  if (s.academics?.qualifications?.length) {
+    parts.push(`Qualifications: ${s.academics.qualifications.join(", ")}.`);
+  }
+  if (s.enrollment?.age_range_years) {
+    parts.push(`Ages ${s.enrollment.age_range_years}.`);
+  }
+  if (s.fees?.annual_min_eur) {
+    const min = Math.round(s.fees.annual_min_eur).toLocaleString("en-US");
+    const maxSuffix =
+      s.fees.annual_max_eur &&
+      s.fees.annual_max_eur !== s.fees.annual_min_eur
+        ? ` – €${Math.round(s.fees.annual_max_eur).toLocaleString("en-US")}`
+        : "";
+    parts.push(`Annual fees: €${min}${maxSuffix}.`);
+  }
+  if (s.expat_family_features?.english_as_primary === true) {
+    parts.push("English is the primary language of instruction.");
+  }
+  if (s.enrollment?.total_students) {
+    parts.push(`${s.enrollment.total_students} students enrolled.`);
+  }
+  return parts.join(" ");
+}
+
+const importedSchools: School[] = (rawSchools as any[])
+  // Filter out non-school entries and low-quality data
+  .filter((s) =>
+    s.name &&
+    !s.name.startsWith("Wikipedia:") &&
+    s.meta?.data_confidence !== "Low"
+  )
+  .map((s) => {
+    const slug = sanitizeSlug(s.id);
+    const autoDescription = buildAutoDescription(s);
+    const schoolBusRaw = s.expat_family_features?.school_bus_routes;
+    const schoolBusRoutes =
+      schoolBusRaw == null
+        ? undefined
+        : Array.isArray(schoolBusRaw)
+          ? schoolBusRaw.length > 0
+          : Boolean(schoolBusRaw);
+
+    return {
+      id: s.id,
+      slug,
+      name: s.name,
+      location: s.location?.city
+        ? `${s.location.city}${s.location.region ? `, ${s.location.region}` : ""}`
+        : "Portugal",
+      // B1 fix: no neighborhoodSlug for imported schools — avoids 404 on /neighborhoods/portugal
+      curriculum:
+        s.academics?.curriculum?.length > 0
+          ? s.academics.curriculum.join(", ")
+          : "International",
+      fees: s.fees?.annual_min_eur
+        ? `€${Math.round(s.fees.annual_min_eur).toLocaleString("en-US")}` +
+          (s.fees.annual_max_eur &&
+          s.fees.annual_max_eur !== s.fees.annual_min_eur
+            ? ` – €${Math.round(s.fees.annual_max_eur).toLocaleString("en-US")}`
+            : "")
+        : "Contact school",
+      acceptanceRate: s.enrollment?.acceptance_rate || undefined,
+      coordinates: s.location?.coordinates || { lat: 38.7223, lng: -9.1393 },
+      // New enriched fields from improved scraper
+      ageRange: s.enrollment?.age_range_years || undefined,
+      schoolType: s.type || undefined,
+      website: s.contact?.website || undefined,
+      englishAsPrimary: s.expat_family_features?.english_as_primary ?? undefined,
+      schoolBusRoutes,
+      dataConfidence: s.meta?.data_confidence || undefined,
+      studentCount: s.enrollment?.total_students || undefined,
+      translations: {
+        en: {
+          description: autoDescription || undefined,
+        },
+      },
+    };
+  });
 
 const curatedSlugs = new Set([
   ...curatedSchools.map(c => c.slug),

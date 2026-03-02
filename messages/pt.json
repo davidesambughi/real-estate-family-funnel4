@@ -226,6 +226,7 @@
     "keyHighlightsHeading": "Principais Destaques",
     "detailsCardTitle": "Detalhes da Escola",
     "curriculumLabel": "Currículo",
+    "ageRangeLabel": "Faixa etária",
     "annualFeesLabel": "Propinas Anuais",
     "neighborhoodMatchTitle": "Bairro Correspondente",
     "neighborhoodMatchText": "Procura casa perto de {schoolName}? Consulte o nosso guia para {neighborhood}.",

@@ -8,7 +8,7 @@ import { schoolsData, getSchoolT } from "@/lib/data";
 import { Breadcrumbs } from "@/components/Breadcrumbs";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Check, MapPin, GraduationCap, Coins, Quote, Sparkles } from "lucide-react";
+import { Check, MapPin, GraduationCap, Coins, Quote, Sparkles, Globe, Bus, Users } from "lucide-react";
 
 import { SchoolMap } from "@/components/features/SchoolMap";
 
@@ -153,44 +153,52 @@ export default async function SchoolDetailPage(props: PageProps) {
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 {/* Main Content */}
                 <div className="lg:col-span-2 space-y-8">
-                    <section className="prose max-w-none">
-                        <h2 className="font-serif font-semibold text-2xl text-ink-primary mb-4">{t("aboutHeading")}</h2>
-                        <p className="text-lg leading-relaxed text-muted-foreground">{schoolT.description}</p>
-                    </section>
+                    {schoolT.description && (
+                        <section className="prose max-w-none">
+                            <h2 className="font-serif font-semibold text-2xl text-ink-primary mb-4">{t("aboutHeading")}</h2>
+                            <p className="text-lg leading-relaxed text-muted-foreground">{schoolT.description}</p>
+                        </section>
+                    )}
 
-                    {/* THE VERDICT */}
-                    <section className="rounded-xl bg-warm-light/30 border border-warm/20 px-6 py-5 shadow-(--shadow-hair)">
-                        <div className="flex items-center gap-2 mb-3">
-                            <div className="bg-warm-light/50 p-1.5 rounded-lg text-warm shadow-(--shadow-hair)">
-                                <Sparkles className="h-4 w-4" />
-                            </div>
-                            <p className="text-xs font-bold text-warm uppercase tracking-wider">{t("verdictLabel")}</p>
-                        </div>
-                        <p className="text-ink-primary font-medium leading-relaxed">{schoolT.verdict}</p>
-                    </section>
-
-                    {/* PARENT WHISPER */}
-                    <section className="rounded-xl bg-surface-subtle border border-border px-6 py-5">
-                        <div className="flex items-center gap-2 mb-3">
-                            <div className="bg-white p-1.5 rounded-lg text-ink-muted shadow-(--shadow-hair) border border-border">
-                                <Quote className="h-4 w-4" />
-                            </div>
-                            <h2 className="text-xs font-bold text-ink-muted uppercase tracking-wider">{t("parentWhisperLabel")}</h2>
-                        </div>
-                        <p className="text-ink-secondary italic leading-relaxed">{schoolT.parentWhisper}</p>
-                    </section>
-
-                    <section>
-                        <h2 className="font-serif font-semibold text-2xl text-ink-primary mb-4">{t("keyHighlightsHeading")}</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            {(schoolT.highlights ?? []).map((highlight: string, index: number) => (
-                                <div key={index} className="flex items-center gap-3 p-4 bg-slate-50 rounded-lg">
-                                    <Check className="h-5 w-5 text-green-600" />
-                                    <span className="font-medium">{highlight}</span>
+                    {/* THE VERDICT — curated schools only */}
+                    {schoolT.verdict && (
+                        <section className="rounded-xl bg-warm-light/30 border border-warm/20 px-6 py-5 shadow-(--shadow-hair)">
+                            <div className="flex items-center gap-2 mb-3">
+                                <div className="bg-warm-light/50 p-1.5 rounded-lg text-warm shadow-(--shadow-hair)">
+                                    <Sparkles className="h-4 w-4" />
                                 </div>
-                            ))}
-                        </div>
-                    </section>
+                                <p className="text-xs font-bold text-warm uppercase tracking-wider">{t("verdictLabel")}</p>
+                            </div>
+                            <p className="text-ink-primary font-medium leading-relaxed">{schoolT.verdict}</p>
+                        </section>
+                    )}
+
+                    {/* PARENT WHISPER — curated schools only */}
+                    {schoolT.parentWhisper && (
+                        <section className="rounded-xl bg-surface-subtle border border-border px-6 py-5">
+                            <div className="flex items-center gap-2 mb-3">
+                                <div className="bg-white p-1.5 rounded-lg text-ink-muted shadow-(--shadow-hair) border border-border">
+                                    <Quote className="h-4 w-4" />
+                                </div>
+                                <h2 className="text-xs font-bold text-ink-muted uppercase tracking-wider">{t("parentWhisperLabel")}</h2>
+                            </div>
+                            <p className="text-ink-secondary italic leading-relaxed">{schoolT.parentWhisper}</p>
+                        </section>
+                    )}
+
+                    {schoolT.highlights && schoolT.highlights.length > 0 && (
+                        <section>
+                            <h2 className="font-serif font-semibold text-2xl text-ink-primary mb-4">{t("keyHighlightsHeading")}</h2>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                {schoolT.highlights.map((highlight: string, index: number) => (
+                                    <div key={index} className="flex items-center gap-3 p-4 bg-slate-50 rounded-lg">
+                                        <Check className="h-5 w-5 text-green-600" />
+                                        <span className="font-medium">{highlight}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </section>
+                    )}
                 </div>
 
                 {/* Sidebar */}
@@ -214,24 +222,68 @@ export default async function SchoolDetailPage(props: PageProps) {
                                 </div>
                                 <p className="font-medium">{school.fees}</p>
                             </div>
+                            {school.ageRange && (
+                                <div className="border-t pt-4">
+                                    <div className="flex items-center gap-2 mb-1 text-muted-foreground">
+                                        <Users className="h-4 w-4" />
+                                        <span className="text-sm font-medium">{t("ageRangeLabel")}</span>
+                                    </div>
+                                    <p className="font-medium">{school.ageRange}</p>
+                                </div>
+                            )}
+                            {school.studentCount && (
+                                <div className="border-t pt-4">
+                                    <span className="text-sm text-muted-foreground">{school.studentCount} students enrolled</span>
+                                </div>
+                            )}
+                            {school.englishAsPrimary && (
+                                <div className="border-t pt-4">
+                                    <div className="flex items-center gap-2 text-green-700">
+                                        <Check className="h-4 w-4" />
+                                        <span className="text-sm font-medium">English-medium instruction</span>
+                                    </div>
+                                </div>
+                            )}
+                            {school.schoolBusRoutes && (
+                                <div className="border-t pt-4">
+                                    <div className="flex items-center gap-2 text-muted-foreground">
+                                        <Bus className="h-4 w-4" />
+                                        <span className="text-sm font-medium">School bus available</span>
+                                    </div>
+                                </div>
+                            )}
+                            {school.website && (
+                                <div className="border-t pt-4">
+                                    <div className="flex items-center gap-2 mb-1 text-muted-foreground">
+                                        <Globe className="h-4 w-4" />
+                                        <span className="text-sm font-medium">Website</span>
+                                    </div>
+                                    <a href={school.website} target="_blank" rel="noopener noreferrer" className="text-sm text-blue-600 hover:underline break-all">
+                                        {school.website.replace(/^https?:\/\//, "")}
+                                    </a>
+                                </div>
+                            )}
                         </CardContent>
                     </Card>
 
-                    <Card className="bg-blue-50 border-blue-100">
-                        <CardHeader>
-                            <CardTitle className="text-blue-900">{t("neighborhoodMatchTitle")}</CardTitle>
-                        </CardHeader>
-                        <CardContent>
-                            <p className="text-sm text-blue-800 mb-4">
-                                {t("neighborhoodMatchText", { schoolName: school.name, neighborhood: school.neighborhoodSlug })}
-                            </p>
-                            <Button variant="outline" className="w-full bg-white text-blue-900 border-blue-200 hover:bg-blue-100" asChild>
-                                <Link href={{ pathname: '/neighborhoods/[slug]', params: { slug: school.neighborhoodSlug } }}>
-                                    {t("neighborhoodExploreBtn", { neighborhood: school.neighborhoodSlug })}
-                                </Link>
-                            </Button>
-                        </CardContent>
-                    </Card>
+                    {/* B1 fix: only show neighborhood card for curated schools with a real slug */}
+                    {school.neighborhoodSlug && (
+                        <Card className="bg-blue-50 border-blue-100">
+                            <CardHeader>
+                                <CardTitle className="text-blue-900">{t("neighborhoodMatchTitle")}</CardTitle>
+                            </CardHeader>
+                            <CardContent>
+                                <p className="text-sm text-blue-800 mb-4">
+                                    {t("neighborhoodMatchText", { schoolName: school.name, neighborhood: school.neighborhoodSlug })}
+                                </p>
+                                <Button variant="outline" className="w-full bg-white text-blue-900 border-blue-200 hover:bg-blue-100" asChild>
+                                    <Link href={{ pathname: '/neighborhoods/[slug]', params: { slug: school.neighborhoodSlug } }}>
+                                        {t("neighborhoodExploreBtn", { neighborhood: school.neighborhoodSlug })}
+                                    </Link>
+                                </Button>
+                            </CardContent>
+                        </Card>
+                    )}
 
                     {/* Location Map stub */}
                     <div>

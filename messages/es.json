@@ -226,6 +226,7 @@
     "keyHighlightsHeading": "Puntos destacados",
     "detailsCardTitle": "Detalles del colegio",
     "curriculumLabel": "Plan de estudios",
+    "ageRangeLabel": "Rango de edad",
     "annualFeesLabel": "Tasas anuales",
     "neighborhoodMatchTitle": "Barrio correspondiente",
     "neighborhoodMatchText": "¿Busca casa cerca de {schoolName}? Consulte nuestra guía sobre {neighborhood}.",

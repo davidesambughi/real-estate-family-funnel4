@@ -17,6 +17,52 @@ export interface GeoCoordinates {
   lng: number;
 }
 
+// ── Neighborhood structured data (non-translatable) ──────────────────────────
+
+export interface NeighborhoodRealEstate {
+  avgRent1BedEur?: number;
+  avgRent2BedEur?: number;
+  avgRent3BedEur?: number;
+  avgPricePerSqmBuyEur?: number;
+  priceRangeLabel?: string;    // "Low" | "Mid" | "High" | "Very High"
+  priceTrendYoyPct?: number;   // YoY % change (positive = rising)
+  dataDate?: string;           // e.g. "2025-Q4"
+}
+
+export interface NeighborhoodFamilyLiving {
+  familyFriendlyScore?: number; // 0–10
+  safetyScore?: number;         // 0–10
+  walkabilityScore?: number;    // 0–10
+  greenSpacesScore?: number;    // 0–10
+  beachAccess?: boolean;
+  beachDistanceKm?: number;
+  noiseLevel?: string;          // "Quiet" | "Moderate" | "Busy" | "Active"
+}
+
+export interface NeighborhoodDemographics {
+  expatPopulationPct?: number;
+  predominantExpatNationalities?: string[];
+  englishFriendliness?: string; // "High" | "Medium" | "Low"
+}
+
+export interface NeighborhoodCostOfLiving {
+  totalMonthlyEstimateEur?: number;
+  comparedToLisbonCenterPct?: number; // negative = cheaper than Lisbon
+  costLevel?: string;                 // "Average" | "High" | "Low" | "Very High"
+}
+
+export interface NeighborhoodExpatCommunity {
+  strength?: string;             // "Strong" | "Moderate" | "Low"
+  digitalNomadFriendly?: boolean;
+  nhrTaxRegimePopular?: boolean;
+}
+
+export interface NeighborhoodTransportInfo {
+  publicTransportQuality?: string; // "Good" | "Fair" | "Limited"
+  metroAccess?: boolean;
+  trainLines?: string[];
+}
+
 // ── i18n translation buckets (Opzione C) ─────────────────────────────────────
 // Only `en` is required; other locales are optional and fall back to `en`.
 
@@ -44,7 +90,8 @@ export interface Testimonial {
 export interface NeighborhoodTranslation {
   vibe: string;
   description: string;
-  highlights: string[];
+  highlights: string[];        // pros / reasons families love it
+  cons?: string[];             // optional: only populated from JSON import (EN only)
   commuteContext: string;
   vibeAdjectives: string[];
   amenities: string[];
@@ -58,7 +105,7 @@ export interface School {
   slug: string;
   name: string;
   location: string;
-  neighborhoodSlug: string;
+  neighborhoodSlug?: string;  // optional: curated schools set this; imported schools don't
 
   // ── Academic profile (non-translatable) ─────────────────────────
   curriculum: string;
@@ -69,6 +116,15 @@ export interface School {
   acceptanceRate?: string;
   visitCount?: number;
   feeDocument?: string;
+
+  // ── Enriched data from scraper (imported schools) ────────────────
+  ageRange?: string;           // e.g. "3–18"
+  schoolType?: string;         // "International" | "Private" | etc.
+  website?: string;            // school website URL
+  englishAsPrimary?: boolean;  // English is primary language of instruction
+  schoolBusRoutes?: boolean;   // school bus service available
+  dataConfidence?: "High" | "Medium" | "Low";
+  studentCount?: number;       // total students enrolled
 
   // ── Phase 4: SEO/GEO structured data ───────────────────────────
   coordinates: GeoCoordinates;
@@ -86,8 +142,16 @@ export interface Neighborhood {
   name: string;
   location: string;
 
-  // ── Phase 4: SEO/GEO structured data ───────────────────────────
+  // ── SEO/GEO structured data ─────────────────────────────────────
   coordinates: GeoCoordinates;
+
+  // ── Structured data (non-translatable, from JSON database) ──────
+  realEstate?: NeighborhoodRealEstate;
+  familyLiving?: NeighborhoodFamilyLiving;
+  demographics?: NeighborhoodDemographics;
+  costOfLiving?: NeighborhoodCostOfLiving;
+  expatCommunity?: NeighborhoodExpatCommunity;
+  transport?: NeighborhoodTransportInfo;
 
   // ── i18n translations ───────────────────────────────────────────
   translations: { en: NeighborhoodTranslation } & Partial<

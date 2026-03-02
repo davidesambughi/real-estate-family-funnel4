@@ -226,6 +226,7 @@
     "keyHighlightsHeading": "Points forts",
     "detailsCardTitle": "Détails de l'école",
     "curriculumLabel": "Programme",
+    "ageRangeLabel": "Tranche d'âge",
     "annualFeesLabel": "Frais annuels",
     "neighborhoodMatchTitle": "Quartier correspondant",
     "neighborhoodMatchText": "Vous cherchez un logement près de {schoolName} ? Consultez notre guide sur {neighborhood}.",

@@ -343,29 +343,87 @@ function buildCommuteContext(n: any): string {
   return parts.join(" · ") || (n.location?.region ?? n.location?.district ?? "Portugal");
 }
 
-const importedNeighborhoods: Neighborhood[] = (rawNeighborhoods as any[]).map((n) => ({
-  id: n.id,
-  slug: n.id,
-  name: n.name,
-  location: n.location?.city
-    ? `${n.location.city}${n.location.region && n.location.region !== n.location.city ? `, ${n.location.region}` : ""}`
-    : "Portugal",
-  coordinates: n.location?.coordinates ?? { lat: 39.3999, lng: -8.2245 },
-  translations: {
-    en: {
-      vibe: n.type ?? (n.lifestyle?.best_for?.[0] ?? "Residential"),
-      description:
-        n.lifestyle?.vibe_description ??
-        `${n.name} is located in ${n.location?.region ?? "Portugal"}.`,
-      highlights: ((n.pros_cons?.pros ?? []) as string[]).slice(0, 3),
-      commuteContext: buildCommuteContext(n),
-      vibeAdjectives: ((n.lifestyle?.best_for ?? []) as string[]).slice(0, 5),
-      amenities: ((n.lifestyle?.local_highlights ?? []) as string[])
-        .slice(0, 5)
-        .map((h) => `📍 ${h}`),
+const importedNeighborhoods: Neighborhood[] = (rawNeighborhoods as any[]).map((n) => {
+  const re = n.real_estate;
+  const fl = n.family_living;
+  const dem = n.demographics;
+  const col = n.cost_of_living;
+  const ec = n.expat_community;
+  const tr = n.transport;
+
+  return {
+    id: n.id,
+    slug: n.id,
+    name: n.name,
+    location: n.location?.city
+      ? `${n.location.city}${n.location.region && n.location.region !== n.location.city ? `, ${n.location.region}` : ""}`
+      : "Portugal",
+    coordinates: n.location?.coordinates ?? { lat: 39.3999, lng: -8.2245 },
+
+    // ── Structured data ────────────────────────────────────────────
+    realEstate: re ? {
+      avgRent1BedEur:       re.avg_rent_1bed_eur      ?? undefined,
+      avgRent2BedEur:       re.avg_rent_2bed_eur      ?? undefined,
+      avgRent3BedEur:       re.avg_rent_3bed_eur      ?? undefined,
+      avgPricePerSqmBuyEur: re.avg_price_per_sqm_buy_eur ?? undefined,
+      priceRangeLabel:      re.price_range_label      ?? undefined,
+      priceTrendYoyPct:     re.price_trend_yoy_pct    ?? undefined,
+      dataDate:             re.data_date              ?? undefined,
+    } : undefined,
+
+    familyLiving: fl ? {
+      familyFriendlyScore: fl.family_friendly_score ?? undefined,
+      safetyScore:         fl.safety_score          ?? undefined,
+      walkabilityScore:    fl.walkability_score      ?? undefined,
+      greenSpacesScore:    fl.green_spaces_score     ?? undefined,
+      beachAccess:         fl.beach_access           ?? undefined,
+      beachDistanceKm:     fl.beach_distance_km      ?? undefined,
+      noiseLevel:          fl.noise_level            ?? undefined,
+    } : undefined,
+
+    demographics: dem ? {
+      expatPopulationPct:              dem.expat_population_pct ?? undefined,
+      predominantExpatNationalities:   dem.predominant_expat_nationalities?.length
+                                         ? dem.predominant_expat_nationalities
+                                         : undefined,
+      englishFriendliness:             dem.english_friendliness ?? undefined,
+    } : undefined,
+
+    costOfLiving: col ? {
+      totalMonthlyEstimateEur:    col.monthly_family_budget_estimate_eur?.total_estimate ?? undefined,
+      comparedToLisbonCenterPct:  col.compared_to_lisbon_center_pct ?? undefined,
+      costLevel:                  col.cost_level ?? undefined,
+    } : undefined,
+
+    expatCommunity: ec ? {
+      strength:             ec.expat_community_strength  ?? undefined,
+      digitalNomadFriendly: ec.digital_nomad_friendly    ?? undefined,
+      nhrTaxRegimePopular:  ec.nhr_tax_regime_popular    ?? undefined,
+    } : undefined,
+
+    transport: tr ? {
+      publicTransportQuality: tr.public_transport_quality ?? undefined,
+      metroAccess:            tr.metro_access             ?? undefined,
+      trainLines:             tr.train_lines?.length ? tr.train_lines : undefined,
+    } : undefined,
+
+    // ── i18n translations ──────────────────────────────────────────
+    translations: {
+      en: {
+        vibe:         n.type ?? (n.lifestyle?.best_for?.[0] ?? "Residential"),
+        description:  n.lifestyle?.vibe_description
+                        ?? `${n.name} is located in ${n.location?.region ?? "Portugal"}.`,
+        highlights:   ((n.pros_cons?.pros ?? []) as string[]).slice(0, 4),
+        cons:         ((n.pros_cons?.cons ?? []) as string[]).slice(0, 4),
+        commuteContext: buildCommuteContext(n),
+        vibeAdjectives: ((n.lifestyle?.best_for ?? []) as string[]).slice(0, 5),
+        amenities:    ((n.lifestyle?.local_highlights ?? []) as string[])
+                        .slice(0, 6)
+                        .map((h) => `📍 ${h}`),
+      },
     },
-  },
-}));
+  };
+});
 
 const curatedSlugs = new Set(curatedNeighborhoods.map((n) => n.slug));
 const curatedNames = new Set(curatedNeighborhoods.map((n) => n.name.toLowerCase()));

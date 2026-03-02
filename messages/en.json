@@ -226,6 +226,7 @@
     "keyHighlightsHeading": "Key Highlights",
     "detailsCardTitle": "School Details",
     "curriculumLabel": "Curriculum",
+    "ageRangeLabel": "Age Range",
     "annualFeesLabel": "Annual Fees",
     "neighborhoodMatchTitle": "Neighborhood Match",
     "neighborhoodMatchText": "Looking for a home near {schoolName}? Check out our guide to {neighborhood}.",
