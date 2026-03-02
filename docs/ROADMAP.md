@@ -19,7 +19,7 @@
 | Nuovo JSON scuole (scraper v2) | 🔴 | ✅ | curriculum 100% pulito, age_range, qualifications, english_as_primary, data_confidence |
 | Fix B1: `neighborhoodSlug: "portugal"` → 404 | 🔴 | ✅ | `neighborhoodSlug` ora opzionale; card Neighborhood Match condizionale |
 | Fix B2: pagine detail scuole imported → contenuto vuoto | 🔴 | ✅ | Auto-description fattuale generata da dati strutturati |
-| Filtro entry invalide (Wikipedia:FAQ) | 🔴 | ✅ | 92 → 91 scuole valide |
+| Filtro entry invalide (Wikipedia:FAQ + Low confidence) | 🔴 | ✅ | 92 raw → 77 valide (15 filtrate: Low confidence + Wikipedia) |
 | Slug sanitization (URL-encoding + accenti) | 🟡 | ✅ | `lycee-francais-charles-lepierre`, `colegio-dom-diogo-de-sousa` |
 | Nuovi campi sidebar: ageRange, website, englishAsPrimary, schoolBusRoutes, studentCount | 🟡 | ✅ | Mostrati condizionalmente nel detail page |
 | Fix B3: BreadcrumbList URL singolare vs plurale | 🟡 | ✅ | Non era un bug: `/school/[slug]` singolare è corretto per EN routing |
@@ -55,7 +55,7 @@
 ### 2.1 — Liste scuole e quartieri
 | Task | Priorità | Stato | Note |
 |---|---|---|---|
-| Paginazione scuole (es. 12 per pagina) | 🟡 | ❌ | 91 card contemporaneamente è lento e inutilizzabile |
+| Paginazione scuole (es. 12 per pagina) | 🟡 | ❌ | 77 card contemporaneamente è lento e inutilizzabile |
 | Filtri scuole (curriculum, zona, budget) | 🟡 | ❌ | Dati ora puliti → filtraggio per curriculum è fattibile |
 | Paginazione quartieri | 🟡 | ❌ | 64 card contemporaneamente |
 | Filtri quartieri (zona, tipo, budget) | 🟡 | ❌ | |
@@ -93,7 +93,7 @@
 | Google Search Console setup | 🟢 | Prima del primo indexing |
 | Rich Results Test su tutti gli schema | 🟢 | Post-deploy |
 | i18n quartieri imported (59 quartieri, 5 lingue) | 🟢 | Descrizioni solo in EN; traduzione = post-lancio |
-| Testo narrativo scuole imported (88 scuole) | 🟢 | Opzione A: scraping headless (Playwright); Opzione B: generazione AI batch via Claude API |
+| Testo narrativo scuole imported (73 scuole) | 🟢 | Opzione A: scraping headless (Playwright); Opzione B: generazione AI batch via Claude API |
 | OG image locale-aware | 🟢 | |
 | `sameAs` Organization schema | 🟢 | Quando profili social attivi |
 | LLM referral UTM tracking | 🟢 | |
@@ -112,7 +112,7 @@
 1. **CRM/form**: collegare il lead magnet form a un servizio email (decidere: Resend, Mailchimp, HubSpot)
 2. **ContactBtn**: collegare il bottone Contact nelle school/neighborhood detail pages alla form o CRM
 3. **School Finder quiz**: verifica end-to-end — il quiz produce risultati corretti? I link portano alle giuste scuole?
-4. **(opzionale) Paginazione scuole**: 91 card contemporaneamente → non scalabile, ma non bloccante
+4. **(opzionale) Paginazione scuole**: 77 card contemporaneamente → non scalabile, ma non bloccante
 
 **Chiarimenti necessari:**
 - Quale CRM/email per il form? (Resend è il più semplice per Next.js; HubSpot se vuoi CRM completo)

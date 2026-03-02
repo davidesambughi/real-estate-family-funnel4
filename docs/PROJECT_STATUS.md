@@ -8,7 +8,7 @@
 Una guida completa, autorevole e multilingua per famiglie internazionali che si trasferiscono in Portogallo.
 
 **Tre pilastri:**
-1. **Scuole internazionali** — confronto completo, dati verificati, 90+ scuole
+1. **Scuole internazionali** — confronto completo, dati verificati, 77 scuole
 2. **Quartieri family-friendly** — guida completa, 60+ quartieri, dati immobiliari + stile di vita
 3. **Relocation guide** — visti, timeline, come fare la mossa giusta
 
@@ -28,7 +28,7 @@ Una guida completa, autorevole e multilingua per famiglie internazionali che si 
 | About | ✅ Completo | |
 | School Finder (quiz) | ⚠️ Da verificare | Quiz esiste, integrazione end-to-end non verificata |
 | **Scuole: 4 curated** | ✅ Completo | Testo editoriale, 6 locali, schema, tutto |
-| **Scuole: 88 imported** | ✅ Dati strutturali completi (sessione 8) | Auto-description fattuale; no testo narrativo (post-lancio) |
+| **Scuole: 73 imported** | ✅ Dati strutturali completi (sessione 8) | Auto-description fattuale; no testo narrativo (post-lancio) |
 | **Quartieri: 5 curated** | ✅ Completo | Testo editoriale, 6 locali, schema, tutto |
 | **Quartieri: 59 imported** | ✅ Mapping completo (sessione 7) | Tutti i campi JSON ora mappati e renderizzati |
 | CRM / Form | ❌ Non integrato | P0 bloccante |
@@ -40,18 +40,18 @@ Una guida completa, autorevole e multilingua per famiglie internazionali che si 
 ## DATA STATUS — ANALISI OGGETTIVA
 
 ### Scuole (schools-database.json)
-> **92 entries totali** | 4 curated (contenuto editoriale completo) | 88 imported (dati strutturali grezzi)
+> **92 entries raw** → **77 valide** (15 filtrate: Low confidence + Wikipedia) | 4 curated (contenuto editoriale completo) | 73 imported (dati strutturali grezzi)
 
-**Disponibilità dati nel JSON grezzo:**
+**Disponibilità dati nel JSON grezzo (92 raw, 77 valide dopo filtering):**
 ```
 nome             : 92/92 (100%) ✅
 coordinate       : 92/92 (100%) ✅
 fees (min/max)   : 77/92 (84%)  ✅
-curriculum       : 49/92 (53%)  ⚠️ (35 entries con garbage text dallo scraper)
-acceptance rate  :  0/92 (0%)   ❌ non raccolto dallo scraper
-description      :  0/92 (0%)   ❌ non raccolto dallo scraper
-facilities       :  0/92 (0%)   ❌ non raccolto dallo scraper
-expat_features   :  0/92 (0%)   ❌ non raccolto dallo scraper
+curriculum       : 77/77 (100%) ✅ (scraper v2 — dato pulito)
+acceptance rate  :  0/77 (0%)   ❌ non raccolto dallo scraper
+description      :  0/77 (0%)   ❌ non raccolto dallo scraper
+facilities       :  0/77 (0%)   ❌ non raccolto dallo scraper
+expat_features   :  0/77 (0%)   ❌ non raccolto dallo scraper
 ```
 
 **Causa del problema:** Lo scraper ha raccolto dati strutturati da directory pubblici (international-schools-database.com) ma non ha estratto testo descrittivo. I campi narrativi (`description`, `verdict`, `parentWhisper`, `highlights`, `trustBadges`) non esistono nel JSON sorgente — non è un bug di rendering.
@@ -65,7 +65,7 @@ expat_features   :  0/92 (0%)   ❌ non raccolto dallo scraper
 - Slug sanitization: URL-encoding decodificato + traslitterazione accenti (é→e, ç→c)
 - Nuovi campi nel sidebar: ageRange, website, englishAsPrimary, schoolBusRoutes, studentCount
 
-**Testo narrativo (post-lancio):** Le 88 scuole non hanno descrizioni editoriali — solo auto-description fattuale. Per narrativa reale: Opzione A = scraping headless (Playwright), Opzione B = generazione AI batch via Claude API.
+**Testo narrativo (post-lancio):** Le 73 scuole imported non hanno descrizioni editoriali — solo auto-description fattuale. Per narrativa reale: Opzione A = scraping headless (Playwright), Opzione B = generazione AI batch via Claude API.
 
 ---
 
@@ -114,7 +114,7 @@ commute_to_lisbon       : 44/64 (69%)  ⚠️ parziale
 
 ### FASE 1 — Stabilizzazione dati (BLOCCANTE)
 
-**F1.A — Scuole: strategia per le 88 imported**
+**F1.A — Scuole: strategia per le 73 imported**
 
 Il JSON grezzo non contiene testo descrittivo. Tre opzioni:
 
@@ -152,7 +152,7 @@ Fix rapido, 30 minuti.
 
 | Feature | Priorità | Note |
 |---|---|---|
-| Paginazione / filtri scuole | ALTA | 92 card contemporaneamente = lento e inutilizzabile |
+| Paginazione / filtri scuole | ALTA | 77 card contemporaneamente = lento e inutilizzabile |
 | Filtri quartieri (per zona, budget, tipo) | ALTA | 64 card = stesso problema |
 | Immagini reali (4 scuole curated) | ALTA | `schools-img.jpg` è placeholder generico |
 | Mappa embedded (Google Maps Embed iframe) | MEDIA | Stub attuale è accettabile ma non ottimale |
@@ -166,7 +166,7 @@ Fix rapido, 30 minuti.
 | Feature | Note |
 |---|---|
 | i18n quartieri imported | Tradurre descrizioni dei 59 quartieri imported in 5 lingue |
-| Testo editoriale scuole imported | Arricchire le 88 scuole con descrizioni reali (richiede ricerca manuale o nuovo scraping con focus su testo) |
+| Testo editoriale scuole imported | Arricchire le 73 scuole imported con descrizioni reali (richiede ricerca manuale o nuovo scraping con focus su testo) |
 | OG image locale-aware | |
 | Google Search Console | |
 | Vercel Analytics | |
