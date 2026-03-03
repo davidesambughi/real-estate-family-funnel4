@@ -60,7 +60,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
 
   // ── 2. Dynamic school pages ──────────────────────────────────────────────────
-  const schoolEntries: MetadataRoute.Sitemap = schoolsData.flatMap((school) =>
+  // Only curated schools (with editorial content) are indexed. Imported schools
+  // have noindex on their pages and are excluded here to avoid wasting crawl budget.
+  const curatedSchools = schoolsData.filter((s) => Boolean(s.translations.en.verdict));
+  const schoolEntries: MetadataRoute.Sitemap = curatedSchools.flatMap((school) =>
     routing.locales.map((locale) => {
       // Logical key for dynamic route: '/schools/[slug]'
       const logicalKey = '/schools/[slug]';

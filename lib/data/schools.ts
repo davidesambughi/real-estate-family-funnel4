@@ -423,6 +423,28 @@ const importedSchools: School[] = (rawSchools as any[])
       schoolBusRoutes,
       dataConfidence: s.meta?.data_confidence || undefined,
       studentCount: s.enrollment?.total_students || undefined,
+      admissionProcess:
+        typeof s.admission_process === "string" && s.admission_process.trim()
+          ? s.admission_process.trim()
+          : undefined,
+      extracurriculars:
+        Array.isArray(s.expat_family_features?.extracurricular_activities) &&
+        s.expat_family_features.extracurricular_activities.length > 0
+          ? s.expat_family_features.extracurricular_activities
+          : undefined,
+      transport:
+        typeof s.expat_family_features?.transport === "string" &&
+        s.expat_family_features.transport.trim()
+          ? s.expat_family_features.transport.trim()
+          : undefined,
+      languageSupport:
+        typeof s.language_support === "string" && s.language_support.trim()
+          ? s.language_support.trim()
+          : undefined,
+      rawDescription:
+        Array.isArray(s.description) && s.description.length > 0
+          ? s.description
+          : undefined,
       translations: {
         en: {
           description: autoDescription || undefined,

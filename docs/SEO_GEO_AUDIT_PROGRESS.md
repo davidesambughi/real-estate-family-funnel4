@@ -142,6 +142,25 @@ Legenda: `[C]` Critico · `[H]` Alto · `[M]` Medio · `[L]` Basso
 
 ---
 
+## GAP emersi in sessione 10 — audit codebase 2026-03-03
+
+> Verificati leggendo il codice sorgente effettivo.
+
+### Schema mismatch
+
+- [ ] `[M]` **FAQPage school-finder: 2 item nello schema, 3 FAQ nell'HTML** — `school-finder/page.tsx:69-92` renderizza 3 FAQ (faq1q/faq2q/faq3q) ma il JSON-LD ha solo 2 `mainEntity`. Fix: aggiungere il 3° item allo schema.
+
+### i18n minori
+
+- [ ] `[L]` **"Your Results" hardcoded EN in QuizResult** — `QuizResult.tsx:39` ha `<p>Your Results</p>` invece di usare `t.resultsTitle` già disponibile nella prop `translations`.
+- [ ] `[L]` **NeighborhoodMap amenity labels hardcoded EN** — `NeighborhoodMap.tsx:20-23`: "Schools", "Cafés", "Parks" non sono i18n'd. "Explore on Maps" a riga 73 idem.
+
+### Form / CRM
+
+- ℹ️ **Form UI è completo** (7 campi, Zod, 6 locali, server action). Solo il backend manca (`submitLead` fa `console.log`). Non è un gap SEO ma è un blocker funzionale pre-lancio.
+
+---
+
 ## INFRASTRUTTURA / MONITORAGGIO — da pianificare
 
 - [ ] Google Search Console configurato per lingua/paese (6 proprietà o 1 con filter)

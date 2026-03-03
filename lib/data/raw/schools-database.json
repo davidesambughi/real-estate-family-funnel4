@@ -1,173 +1,11 @@
 [
   {
-    "id": "col%c3%a9gio_dom_diogo_de_sousa",
-    "name": "Colégio Dom Diogo de Sousa",
-    "type": null,
-    "status": null,
-    "location": {
-      "address": null,
-      "neighborhood": null,
-      "city": null,
-      "region": null,
-      "coordinates": null,
-      "commute_from_lisbon_center": null,
-      "nearby_neighborhoods": null
-    },
-    "contact": {
-      "phone": null,
-      "email": null,
-      "website": "http://portal.cdds.pt",
-      "admissions_url": null,
-      "social_media": null
-    },
-    "academics": {
-      "curriculum": [
-        "Private"
-      ],
-      "language_of_instruction": null,
-      "languages_taught": null,
-      "qualifications": null,
-      "accreditations": null
-    },
-    "enrollment": {
-      "age_range_years": null,
-      "grade_range": null,
-      "total_students": null,
-      "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
-    },
-    "fees": {
-      "annual_min_eur": null,
-      "annual_max_eur": null,
-      "currency": "EUR",
-      "academic_year": null,
-      "enrollment_fee": null,
-      "registration_fee": null,
-      "boarding_available": null,
-      "boarding_fees_annual": null,
-      "fee_notes": null,
-      "scholarships_available": null
-    },
-    "facilities": {
-      "campus_size_ha": null,
-      "sports": null,
-      "arts": null,
-      "tech": null,
-      "other": null
-    },
-    "expat_family_features": {
-      "expat_community_strength": null,
-      "relocation_support": null,
-      "visa_guidance": null,
-      "portuguese_integration_program": null,
-      "english_as_primary": null,
-      "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
-      "after_school_care": null,
-      "school_bus_routes": null,
-      "university_counseling": null,
-      "notable_alumni": null
-    },
-    "meta": {
-      "founding_year": null,
-      "ownership": null,
-      "group_affiliation": null,
-      "source_urls": [
-        "https://en.wikipedia.org/wiki/Col%C3%A9gio_Dom_Diogo_de_Sousa"
-      ],
-      "last_verified": "2026-03-02",
-      "data_confidence": "Low"
-    }
-  },
-  {
-    "id": "col%c3%a9gio_internacional_infanta_d._maria_de_portugal",
-    "name": "Colégio Internacional Infanta D. Maria de Portugal",
-    "type": null,
-    "status": null,
-    "location": {
-      "address": null,
-      "neighborhood": null,
-      "city": null,
-      "region": null,
-      "coordinates": null,
-      "commute_from_lisbon_center": null,
-      "nearby_neighborhoods": null
-    },
-    "contact": {
-      "phone": null,
-      "email": null,
-      "website": null,
-      "admissions_url": null,
-      "social_media": null
-    },
-    "academics": {
-      "curriculum": null,
-      "language_of_instruction": null,
-      "languages_taught": null,
-      "qualifications": null,
-      "accreditations": null
-    },
-    "enrollment": {
-      "age_range_years": null,
-      "grade_range": null,
-      "total_students": null,
-      "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
-    },
-    "fees": {
-      "annual_min_eur": null,
-      "annual_max_eur": null,
-      "currency": "EUR",
-      "academic_year": null,
-      "enrollment_fee": null,
-      "registration_fee": null,
-      "boarding_available": null,
-      "boarding_fees_annual": null,
-      "fee_notes": null,
-      "scholarships_available": null
-    },
-    "facilities": {
-      "campus_size_ha": null,
-      "sports": null,
-      "arts": null,
-      "tech": null,
-      "other": null
-    },
-    "expat_family_features": {
-      "expat_community_strength": null,
-      "relocation_support": null,
-      "visa_guidance": null,
-      "portuguese_integration_program": null,
-      "english_as_primary": null,
-      "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
-      "after_school_care": null,
-      "school_bus_routes": null,
-      "university_counseling": null,
-      "notable_alumni": null
-    },
-    "meta": {
-      "founding_year": null,
-      "ownership": null,
-      "group_affiliation": null,
-      "source_urls": [
-        "https://en.wikipedia.org/wiki/Col%C3%A9gio_Internacional_Infanta_D._Maria_de_Portugal"
-      ],
-      "last_verified": "2026-03-02",
-      "data_confidence": "Low"
-    }
-  },
-  {
     "id": "col%c3%a9gio_luso-internacional_do_porto",
     "name": "Colégio Luso-Internacional do Porto",
     "type": null,
     "status": null,
     "location": {
-      "address": null,
+      "address": "ry 16 2026 OPOMUN 2026 - Debate Overview OPOMUN 2026 brought together a diverse group of young delegates united by a shared commitment to diplomacy, collaboration, and global problem‑solving",
       "neighborhood": null,
       "city": null,
       "region": null,
@@ -186,7 +24,9 @@
       "curriculum": [
         "Private international school"
       ],
-      "language_of_instruction": null,
+      "language_of_instruction": [
+        "English"
+      ],
       "languages_taught": null,
       "qualifications": null,
       "accreditations": null
@@ -196,8 +36,7 @@
       "grade_range": null,
       "total_students": null,
       "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
+      "student_nationalities": null
     },
     "fees": {
       "annual_min_eur": null,
@@ -225,12 +64,15 @@
       "portuguese_integration_program": null,
       "english_as_primary": null,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": null,
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Debate",
+        "Music"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -240,254 +82,13 @@
         "https://en.wikipedia.org/wiki/Col%C3%A9gio_Luso-Internacional_do_Porto"
       ],
       "last_verified": "2026-03-02",
-      "data_confidence": "Low"
-    }
-  },
-  {
-    "id": "col%c3%a9gio_marista_de_carcavelos",
-    "name": "Colégio Marista de Carcavelos",
-    "type": null,
-    "status": null,
-    "location": {
-      "address": null,
-      "neighborhood": null,
-      "city": null,
-      "region": null,
-      "coordinates": null,
-      "commute_from_lisbon_center": null,
-      "nearby_neighborhoods": null
+      "data_confidence": "Medium"
     },
-    "contact": {
-      "phone": null,
-      "email": null,
-      "website": "https://marista-carcavelos.org/conteudos/organizacao",
-      "admissions_url": null,
-      "social_media": null
-    },
-    "academics": {
-      "curriculum": [
-        "Parochial"
-      ],
-      "language_of_instruction": null,
-      "languages_taught": null,
-      "qualifications": null,
-      "accreditations": null
-    },
-    "enrollment": {
-      "age_range_years": null,
-      "grade_range": null,
-      "total_students": null,
-      "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
-    },
-    "fees": {
-      "annual_min_eur": null,
-      "annual_max_eur": null,
-      "currency": "EUR",
-      "academic_year": null,
-      "enrollment_fee": null,
-      "registration_fee": null,
-      "boarding_available": null,
-      "boarding_fees_annual": null,
-      "fee_notes": null,
-      "scholarships_available": null
-    },
-    "facilities": {
-      "campus_size_ha": null,
-      "sports": null,
-      "arts": null,
-      "tech": null,
-      "other": null
-    },
-    "expat_family_features": {
-      "expat_community_strength": null,
-      "relocation_support": null,
-      "visa_guidance": null,
-      "portuguese_integration_program": null,
-      "english_as_primary": null,
-      "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
-      "after_school_care": null,
-      "school_bus_routes": null,
-      "university_counseling": null,
-      "notable_alumni": null
-    },
-    "meta": {
-      "founding_year": null,
-      "ownership": null,
-      "group_affiliation": null,
-      "source_urls": [
-        "https://en.wikipedia.org/wiki/Col%C3%A9gio_Marista_de_Carcavelos"
-      ],
-      "last_verified": "2026-03-02",
-      "data_confidence": "Low"
-    }
-  },
-  {
-    "id": "col%c3%a9gio_planalto",
-    "name": "Colégio Planalto",
-    "type": null,
-    "status": null,
-    "location": {
-      "address": null,
-      "neighborhood": null,
-      "city": null,
-      "region": null,
-      "coordinates": null,
-      "commute_from_lisbon_center": null,
-      "nearby_neighborhoods": null
-    },
-    "contact": {
-      "phone": null,
-      "email": null,
-      "website": "http://www.colegioplanalto.pt",
-      "admissions_url": null,
-      "social_media": null
-    },
-    "academics": {
-      "curriculum": [
-        "Private school"
-      ],
-      "language_of_instruction": null,
-      "languages_taught": null,
-      "qualifications": null,
-      "accreditations": null
-    },
-    "enrollment": {
-      "age_range_years": null,
-      "grade_range": null,
-      "total_students": null,
-      "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
-    },
-    "fees": {
-      "annual_min_eur": null,
-      "annual_max_eur": null,
-      "currency": "EUR",
-      "academic_year": null,
-      "enrollment_fee": null,
-      "registration_fee": null,
-      "boarding_available": null,
-      "boarding_fees_annual": null,
-      "fee_notes": null,
-      "scholarships_available": null
-    },
-    "facilities": {
-      "campus_size_ha": null,
-      "sports": null,
-      "arts": null,
-      "tech": null,
-      "other": null
-    },
-    "expat_family_features": {
-      "expat_community_strength": null,
-      "relocation_support": null,
-      "visa_guidance": null,
-      "portuguese_integration_program": null,
-      "english_as_primary": null,
-      "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
-      "after_school_care": null,
-      "school_bus_routes": null,
-      "university_counseling": null,
-      "notable_alumni": null
-    },
-    "meta": {
-      "founding_year": null,
-      "ownership": null,
-      "group_affiliation": null,
-      "source_urls": [
-        "https://en.wikipedia.org/wiki/Col%C3%A9gio_Planalto"
-      ],
-      "last_verified": "2026-03-02",
-      "data_confidence": "Low"
-    }
-  },
-  {
-    "id": "externato_marista_de_lisboa",
-    "name": "Externato Marista de Lisboa",
-    "type": null,
-    "status": null,
-    "location": {
-      "address": null,
-      "neighborhood": null,
-      "city": null,
-      "region": null,
-      "coordinates": null,
-      "commute_from_lisbon_center": null,
-      "nearby_neighborhoods": null
-    },
-    "contact": {
-      "phone": null,
-      "email": null,
-      "website": "http://www.ext.marista-lisboa.org/",
-      "admissions_url": null,
-      "social_media": null
-    },
-    "academics": {
-      "curriculum": [
-        "Marist Brothers, Catholic"
-      ],
-      "language_of_instruction": null,
-      "languages_taught": null,
-      "qualifications": null,
-      "accreditations": null
-    },
-    "enrollment": {
-      "age_range_years": null,
-      "grade_range": null,
-      "total_students": null,
-      "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
-    },
-    "fees": {
-      "annual_min_eur": null,
-      "annual_max_eur": null,
-      "currency": "EUR",
-      "academic_year": null,
-      "enrollment_fee": null,
-      "registration_fee": null,
-      "boarding_available": null,
-      "boarding_fees_annual": null,
-      "fee_notes": null,
-      "scholarships_available": null
-    },
-    "facilities": {
-      "campus_size_ha": null,
-      "sports": null,
-      "arts": null,
-      "tech": null,
-      "other": null
-    },
-    "expat_family_features": {
-      "expat_community_strength": null,
-      "relocation_support": null,
-      "visa_guidance": null,
-      "portuguese_integration_program": null,
-      "english_as_primary": null,
-      "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
-      "after_school_care": null,
-      "school_bus_routes": null,
-      "university_counseling": null,
-      "notable_alumni": null
-    },
-    "meta": {
-      "founding_year": null,
-      "ownership": null,
-      "group_affiliation": null,
-      "source_urls": [
-        "https://en.wikipedia.org/wiki/Externato_Marista_de_Lisboa"
-      ],
-      "last_verified": "2026-03-02",
-      "data_confidence": "Low"
-    }
+    "description": [
+      "STEM approach"
+    ],
+    "admission_process": "Admissions Want to be a Clipper? Join us Find out how Much more than a school Shaping extraordinary individuals CLIP Teams Professionalised Sports Visit website CLIP Clubs Extra-curricular activities and summer schools Visit website CLIP AdvancEd Languages courses, consulting and training Visit webs",
+    "language_support": null
   },
   {
     "id": "instituto_espa%c3%b1ol_giner_de_los_r%c3%ados",
@@ -514,7 +115,11 @@
       "curriculum": [
         "Spanish International School"
       ],
-      "language_of_instruction": null,
+      "language_of_instruction": [
+        "Spanish",
+        "English",
+        "French"
+      ],
       "languages_taught": null,
       "qualifications": null,
       "accreditations": null
@@ -524,8 +129,7 @@
       "grade_range": null,
       "total_students": null,
       "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
+      "student_nationalities": null
     },
     "fees": {
       "annual_min_eur": null,
@@ -553,12 +157,11 @@
       "portuguese_integration_program": null,
       "english_as_primary": null,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": null,
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": null,
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -569,7 +172,13 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "Low"
-    }
+    },
+    "description": [
+      "IB approach",
+      "STEM approach"
+    ],
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "international_school_s%c3%a3o_louren%c3%a7o",
@@ -604,8 +213,7 @@
       "grade_range": null,
       "total_students": null,
       "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
+      "student_nationalities": null
     },
     "fees": {
       "annual_min_eur": null,
@@ -633,12 +241,11 @@
       "portuguese_integration_program": null,
       "english_as_primary": null,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": null,
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": null,
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -649,336 +256,20 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "Low"
-    }
-  },
-  {
-    "id": "lyc%c3%a9e_fran%c3%a7ais_international_de_porto",
-    "name": "Lycée Français International de Porto",
-    "type": null,
-    "status": null,
-    "location": {
-      "address": null,
-      "neighborhood": null,
-      "city": null,
-      "region": null,
-      "coordinates": null,
-      "commute_from_lisbon_center": null,
-      "nearby_neighborhoods": null
     },
-    "contact": {
-      "phone": null,
-      "email": null,
-      "website": "https://www.lfip.pt/en",
-      "admissions_url": null,
-      "social_media": null
-    },
-    "academics": {
-      "curriculum": null,
-      "language_of_instruction": null,
-      "languages_taught": null,
-      "qualifications": null,
-      "accreditations": null
-    },
-    "enrollment": {
-      "age_range_years": null,
-      "grade_range": null,
-      "total_students": null,
-      "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
-    },
-    "fees": {
-      "annual_min_eur": null,
-      "annual_max_eur": null,
-      "currency": "EUR",
-      "academic_year": null,
-      "enrollment_fee": null,
-      "registration_fee": null,
-      "boarding_available": null,
-      "boarding_fees_annual": null,
-      "fee_notes": null,
-      "scholarships_available": null
-    },
-    "facilities": {
-      "campus_size_ha": null,
-      "sports": null,
-      "arts": null,
-      "tech": null,
-      "other": null
-    },
-    "expat_family_features": {
-      "expat_community_strength": null,
-      "relocation_support": null,
-      "visa_guidance": null,
-      "portuguese_integration_program": null,
-      "english_as_primary": null,
-      "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
-      "after_school_care": null,
-      "school_bus_routes": null,
-      "university_counseling": null,
-      "notable_alumni": null
-    },
-    "meta": {
-      "founding_year": null,
-      "ownership": null,
-      "group_affiliation": null,
-      "source_urls": [
-        "https://en.wikipedia.org/wiki/Lyc%C3%A9e_Fran%C3%A7ais_International_de_Porto"
-      ],
-      "last_verified": "2026-03-02",
-      "data_confidence": "Low"
-    }
-  },
-  {
-    "id": "lyc%c3%a9e_fran%c3%a7ais_charles_lepierre",
-    "name": "Lycée français Charles Lepierre",
-    "type": null,
-    "status": null,
-    "location": {
-      "address": null,
-      "neighborhood": null,
-      "city": null,
-      "region": null,
-      "coordinates": null,
-      "commute_from_lisbon_center": null,
-      "nearby_neighborhoods": null
-    },
-    "contact": {
-      "phone": null,
-      "email": null,
-      "website": "http://lfcl-lisbonne.eu/",
-      "admissions_url": null,
-      "social_media": null
-    },
-    "academics": {
-      "curriculum": null,
-      "language_of_instruction": null,
-      "languages_taught": null,
-      "qualifications": null,
-      "accreditations": null
-    },
-    "enrollment": {
-      "age_range_years": null,
-      "grade_range": null,
-      "total_students": null,
-      "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
-    },
-    "fees": {
-      "annual_min_eur": null,
-      "annual_max_eur": null,
-      "currency": "EUR",
-      "academic_year": null,
-      "enrollment_fee": null,
-      "registration_fee": null,
-      "boarding_available": null,
-      "boarding_fees_annual": null,
-      "fee_notes": null,
-      "scholarships_available": null
-    },
-    "facilities": {
-      "campus_size_ha": null,
-      "sports": null,
-      "arts": null,
-      "tech": null,
-      "other": null
-    },
-    "expat_family_features": {
-      "expat_community_strength": null,
-      "relocation_support": null,
-      "visa_guidance": null,
-      "portuguese_integration_program": null,
-      "english_as_primary": null,
-      "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
-      "after_school_care": null,
-      "school_bus_routes": null,
-      "university_counseling": null,
-      "notable_alumni": null
-    },
-    "meta": {
-      "founding_year": null,
-      "ownership": null,
-      "group_affiliation": null,
-      "source_urls": [
-        "https://en.wikipedia.org/wiki/Lyc%C3%A9e_fran%C3%A7ais_Charles_Lepierre"
-      ],
-      "last_verified": "2026-03-02",
-      "data_confidence": "Low"
-    }
-  },
-  {
-    "id": "st._john_de_britto_college",
-    "name": "St. John de Britto College",
-    "type": null,
-    "status": null,
-    "location": {
-      "address": null,
-      "neighborhood": null,
-      "city": null,
-      "region": null,
-      "coordinates": null,
-      "commute_from_lisbon_center": null,
-      "nearby_neighborhoods": null
-    },
-    "contact": {
-      "phone": null,
-      "email": null,
-      "website": "http://www.csjb.pt",
-      "admissions_url": null,
-      "social_media": null
-    },
-    "academics": {
-      "curriculum": [
-        "Private primary and secondary school"
-      ],
-      "language_of_instruction": null,
-      "languages_taught": null,
-      "qualifications": null,
-      "accreditations": null
-    },
-    "enrollment": {
-      "age_range_years": null,
-      "grade_range": null,
-      "total_students": null,
-      "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
-    },
-    "fees": {
-      "annual_min_eur": null,
-      "annual_max_eur": null,
-      "currency": "EUR",
-      "academic_year": null,
-      "enrollment_fee": null,
-      "registration_fee": null,
-      "boarding_available": null,
-      "boarding_fees_annual": null,
-      "fee_notes": null,
-      "scholarships_available": null
-    },
-    "facilities": {
-      "campus_size_ha": null,
-      "sports": null,
-      "arts": null,
-      "tech": null,
-      "other": null
-    },
-    "expat_family_features": {
-      "expat_community_strength": null,
-      "relocation_support": null,
-      "visa_guidance": null,
-      "portuguese_integration_program": null,
-      "english_as_primary": null,
-      "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
-      "after_school_care": null,
-      "school_bus_routes": null,
-      "university_counseling": null,
-      "notable_alumni": null
-    },
-    "meta": {
-      "founding_year": null,
-      "ownership": null,
-      "group_affiliation": null,
-      "source_urls": [
-        "https://en.wikipedia.org/wiki/St._John_de_Britto_College"
-      ],
-      "last_verified": "2026-03-02",
-      "data_confidence": "Low"
-    }
-  },
-  {
-    "id": "categorization#why_might_a_category_list_not_be_up_to_date?",
-    "name": "Wikipedia:FAQ/Categorization",
-    "type": null,
-    "status": null,
-    "location": {
-      "address": null,
-      "neighborhood": null,
-      "city": null,
-      "region": null,
-      "coordinates": null,
-      "commute_from_lisbon_center": null,
-      "nearby_neighborhoods": null
-    },
-    "contact": {
-      "phone": null,
-      "email": null,
-      "website": null,
-      "admissions_url": null,
-      "social_media": null
-    },
-    "academics": {
-      "curriculum": null,
-      "language_of_instruction": null,
-      "languages_taught": null,
-      "qualifications": null,
-      "accreditations": null
-    },
-    "enrollment": {
-      "age_range_years": null,
-      "grade_range": null,
-      "total_students": null,
-      "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
-    },
-    "fees": {
-      "annual_min_eur": null,
-      "annual_max_eur": null,
-      "currency": "EUR",
-      "academic_year": null,
-      "enrollment_fee": null,
-      "registration_fee": null,
-      "boarding_available": null,
-      "boarding_fees_annual": null,
-      "fee_notes": null,
-      "scholarships_available": null
-    },
-    "facilities": {
-      "campus_size_ha": null,
-      "sports": null,
-      "arts": null,
-      "tech": null,
-      "other": null
-    },
-    "expat_family_features": {
-      "expat_community_strength": null,
-      "relocation_support": null,
-      "visa_guidance": null,
-      "portuguese_integration_program": null,
-      "english_as_primary": null,
-      "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
-      "after_school_care": null,
-      "school_bus_routes": null,
-      "university_counseling": null,
-      "notable_alumni": null
-    },
-    "meta": {
-      "founding_year": null,
-      "ownership": null,
-      "group_affiliation": null,
-      "source_urls": [
-        "https://en.wikipedia.org/wiki/Wikipedia:FAQ/Categorization#Why_might_a_category_list_not_be_up_to_date?"
-      ],
-      "last_verified": "2026-03-02",
-      "data_confidence": "Low"
-    }
+    "description": null,
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "aljezur-international-school-algarve",
     "name": "Aljezur International School",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "IB approach",
+      "STEM approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Apartado 71, EC Aljezur, 8670-999, Portugal",
@@ -994,7 +285,7 @@
     },
     "contact": {
       "phone": null,
-      "email": null,
+      "email": "admin@aljezur-international.org",
       "website": "https://aljezur-international.org/",
       "admissions_url": null,
       "social_media": null
@@ -1024,8 +315,7 @@
       "grade_range": "Year 6 – Year 13",
       "total_students": 80,
       "class_size_avg": 12,
-      "student_nationalities": 26,
-      "acceptance_rate": null
+      "student_nationalities": 26
     },
     "fees": {
       "annual_min_eur": 7200.0,
@@ -1053,14 +343,15 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -1072,14 +363,22 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "aspire-international-school-algarve",
     "name": "Aspire International School",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Located in the heart of the Algarve between Vale do Lobo and Quinta do Lago",
+      "Approx. 16 students",
+      "IB approach",
+      "British curriculum approach",
+      "Ages 3 to 5"
+    ],
     "highlights": null,
     "location": {
       "address": "Rua Manuel Teixeira Gomes,8135-106 Almancil, , Portugal",
@@ -1094,7 +393,7 @@
       "nearby_neighborhoods": null
     },
     "contact": {
-      "phone": null,
+      "phone": "24 085 085",
       "email": null,
       "website": "https://www.aspireinternational.school/",
       "admissions_url": null,
@@ -1122,8 +421,7 @@
       "grade_range": "Nursery – Year 13",
       "total_students": null,
       "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
+      "student_nationalities": null
     },
     "fees": {
       "annual_min_eur": 6595.0,
@@ -1151,12 +449,14 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": null,
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Dance"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -1167,14 +467,19 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "Medium"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "barlavento-international-primary-school-algarve",
     "name": "Barlavento International Primary School",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Located in the Western Algarve of sunny Portugal",
+      "IB approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Sitio Ferrel, Espiche, , 8600-109 LUZ LGS, , Algarve, Portugal",
@@ -1215,8 +520,7 @@
       "grade_range": "Reception – Year 6",
       "total_students": 84,
       "class_size_avg": 20,
-      "student_nationalities": 27,
-      "acceptance_rate": null
+      "student_nationalities": 27
     },
     "fees": {
       "annual_min_eur": 7050.0,
@@ -1244,12 +548,14 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Drama"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -1260,14 +566,19 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "brave-generation-academy-algarve",
     "name": "Brave Generation Academy, Algarve",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "IB approach",
+      "STEM approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Loja 4 e 5, Nucleu Gil Eanes, Marina de, 8600-315 Lagos, Portugal, Lagos 2 Hub: Ages 12 to 18, Address:, Avenida dos Descobrimentos, Edifício “Fabrica da Ribeira”, Loja C, Lagos, 8600-315, Portugal, Lagoa Hub: Ages 12 to 18, Address:, R. 25 de Abril 59, 8400-336 Lagoa, Portugal, Vila Sol Hub: Ages 12 to 18, Address:, R. 1 85, 8125-307 Quarteira, Portugal, Loulé Hub: Ages 12 to 18, Address:, R. Maria Campina 32, 8100-500 Loulé, Portugal, Tavira Hub: Ages 12 to 18, Address:, Av. Zeca Afonso 5C, 8800-741 Tavira, Portugal",
@@ -1318,8 +629,7 @@
       "grade_range": "Year 7 – Year 13",
       "total_students": 30,
       "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
+      "student_nationalities": null
     },
     "fees": {
       "annual_min_eur": 7140.0,
@@ -1347,12 +657,14 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Dance"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -1363,14 +675,21 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "bright-international-school-algarve",
     "name": "Bright International School",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Approx. 0 students",
+      "30 nationalities represented",
+      "IB approach",
+      "Cambridge approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Parque Industrial de Loulé, Zona B, Lote 14, , 8100-272 Pinheiro, Loulé, Portugal",
@@ -1386,7 +705,7 @@
     },
     "contact": {
       "phone": null,
-      "email": null,
+      "email": "office@bright-is.com",
       "website": "https://bright-is.com/",
       "admissions_url": null,
       "social_media": null
@@ -1414,8 +733,7 @@
       "grade_range": "Nursery – Year 11",
       "total_students": 150,
       "class_size_avg": 12,
-      "student_nationalities": 30,
-      "acceptance_rate": null
+      "student_nationalities": 30
     },
     "fees": {
       "annual_min_eur": 8750.0,
@@ -1443,14 +761,16 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Music"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -1461,7 +781,9 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": true
   },
   {
     "id": "colegio-bernardette-romeira-algarve",
@@ -1484,7 +806,7 @@
     },
     "contact": {
       "phone": null,
-      "email": null,
+      "email": "secretaria@cbr.edu.pt",
       "website": "https://colegiobernardetteromeira.pt/en#gsc.tab=0",
       "admissions_url": null,
       "social_media": null
@@ -1513,8 +835,7 @@
       "grade_range": "Nursery – Year 10",
       "total_students": 260,
       "class_size_avg": 16,
-      "student_nationalities": 5,
-      "acceptance_rate": null
+      "student_nationalities": 5
     },
     "fees": {
       "annual_min_eur": null,
@@ -1542,14 +863,17 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Basketball",
+        "Swimming"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -1560,14 +884,19 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "colegio-santiago-internacional-algarve",
     "name": "Colégio Santiago Internacional",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Located in a beautiful ancient building",
+      "IB approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Praça Zacarias Guerreiro, nº29 - Tavira, Faro - 8800, Portugal",
@@ -1583,7 +912,7 @@
     },
     "contact": {
       "phone": null,
-      "email": null,
+      "email": "info@colegiointernacionaltavira.pt",
       "website": "https://www.colegiointernacionaltavira.pt/",
       "admissions_url": null,
       "social_media": null
@@ -1612,8 +941,7 @@
       "grade_range": "Reception – Year 13",
       "total_students": 65,
       "class_size_avg": null,
-      "student_nationalities": 14,
-      "acceptance_rate": null
+      "student_nationalities": 14
     },
     "fees": {
       "annual_min_eur": 5235.0,
@@ -1641,14 +969,16 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Music"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -1659,14 +989,19 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "deutsche-schule-algarve",
     "name": "Deutsche Schule Algarve",
     "type": "German International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "IB approach",
+      "bilingual approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Sitio do Lobito, , P-8300-054 Silves, Portugal",
@@ -1709,8 +1044,7 @@
       "grade_range": "Reception – Year 13",
       "total_students": null,
       "class_size_avg": 8,
-      "student_nationalities": null,
-      "acceptance_rate": null
+      "student_nationalities": null
     },
     "fees": {
       "annual_min_eur": null,
@@ -1738,14 +1072,15 @@
       "portuguese_integration_program": null,
       "english_as_primary": false,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -1757,14 +1092,23 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "eden-montessori-international-school-algarve",
     "name": "Eden Montessori International School",
     "type": "Montessori",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Founded in 2018",
+      "IB approach",
+      "International Baccalaureate approach",
+      "Montessori approach",
+      "bilingual approach",
+      "STEM approach"
+    ],
     "highlights": null,
     "location": {
       "address": "1229 Estrada Vale de Pedras, , 8200-317 Albufeira, , Portugal",
@@ -1780,7 +1124,7 @@
     },
     "contact": {
       "phone": null,
-      "email": null,
+      "email": "admissionseden@gmail.com",
       "website": "https://edenmontessori.pt/",
       "admissions_url": null,
       "social_media": null
@@ -1806,8 +1150,7 @@
       "grade_range": "Nursery – Year 7",
       "total_students": 50,
       "class_size_avg": 21,
-      "student_nationalities": 16,
-      "acceptance_rate": null
+      "student_nationalities": 16
     },
     "fees": {
       "annual_min_eur": 6340.0,
@@ -1835,12 +1178,14 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Entrepreneurship"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -1851,14 +1196,18 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "educan-algarve",
     "name": "Educan, Algarve",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "IB approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Rua de Portugal n.º3, 8100-554 Loulé, Portugal",
@@ -1874,7 +1223,7 @@
     },
     "contact": {
       "phone": null,
-      "email": null,
+      "email": "admin@educan-algarve.com",
       "website": "https://www.educan-algarve.com/",
       "admissions_url": null,
       "social_media": null
@@ -1904,8 +1253,7 @@
       "grade_range": "Reception – Year 11",
       "total_students": 40,
       "class_size_avg": 6,
-      "student_nationalities": 18,
-      "acceptance_rate": null
+      "student_nationalities": 18
     },
     "fees": {
       "annual_min_eur": 6405.0,
@@ -1933,12 +1281,11 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": null,
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -1949,14 +1296,21 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "montalvo-international-school-algarve",
     "name": "Montalvo International School",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Founded in 2023",
+      "Located in the City of Loulé",
+      "IB approach",
+      "STEM approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Av. Marçal Pacheco 37, 8100-567 Loulé, Portugal",
@@ -1971,8 +1325,8 @@
       "nearby_neighborhoods": null
     },
     "contact": {
-      "phone": null,
-      "email": null,
+      "phone": "23 456 7890",
+      "email": "mail@example.com",
       "website": "https://algarve.montalvoschools.com/",
       "admissions_url": null,
       "social_media": null
@@ -2004,8 +1358,7 @@
       "grade_range": "Year 8 – Year 13",
       "total_students": 10,
       "class_size_avg": null,
-      "student_nationalities": 8,
-      "acceptance_rate": null
+      "student_nationalities": 8
     },
     "fees": {
       "annual_min_eur": 11250.0,
@@ -2033,12 +1386,13 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -2049,14 +1403,18 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "nederlands-onderwijs-algarve-portugal",
     "name": "Nederlands Onderwijs Algarve Portugal",
     "type": "Dutch International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Accredited by BSO"
+    ],
     "highlights": null,
     "location": {
       "address": "R. da Cruz de Portugal, , 8300-135 Silves, , Portuga",
@@ -2071,8 +1429,8 @@
       "nearby_neighborhoods": null
     },
     "contact": {
-      "phone": null,
-      "email": null,
+      "phone": "+351 962380193",
+      "email": "info@noap.info",
       "website": "https://noap.pt/",
       "admissions_url": null,
       "social_media": null
@@ -2098,8 +1456,7 @@
       "grade_range": "Nursery – Year 9",
       "total_students": 50,
       "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
+      "student_nationalities": null
     },
     "fees": {
       "annual_min_eur": 5500.0,
@@ -2127,12 +1484,13 @@
       "portuguese_integration_program": null,
       "english_as_primary": false,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": null,
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -2143,14 +1501,23 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "nobel-algarve-british-international-school",
     "name": "Nobel Algarve British International School",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Founded in 1972",
+      "Located in Almancil",
+      "Approx. 12 students",
+      "IB approach",
+      "International Baccalaureate approach",
+      "British curriculum approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Barros Brancos, EN125, 8401-901 Lagoa, Portugal, Almancil Campus: Ages 3 to 15, Address:, Caminho das Pereiras, 8135-022 Almancil, Portugal, The school has British and Portuguese sections.",
@@ -2197,8 +1564,7 @@
       "grade_range": "Nursery – Year 13",
       "total_students": 1000,
       "class_size_avg": 16,
-      "student_nationalities": 43,
-      "acceptance_rate": null
+      "student_nationalities": 43
     },
     "fees": {
       "annual_min_eur": null,
@@ -2226,14 +1592,15 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -2245,14 +1612,22 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "vale-verde-international-school-algarve",
     "name": "Vale Verde International School",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "27 nationalities represented",
+      "IB approach",
+      "Cambridge approach",
+      "bilingual approach",
+      "STEM approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Alagoas, , Estrada do Burgau, , 8600-120 Luz-Lagos , , Portugal",
@@ -2294,8 +1669,7 @@
       "grade_range": "Reception – Year 13",
       "total_students": 148,
       "class_size_avg": null,
-      "student_nationalities": 27,
-      "acceptance_rate": null
+      "student_nationalities": 27
     },
     "fees": {
       "annual_min_eur": 7143.0,
@@ -2323,14 +1697,18 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Dance",
+        "Music",
+        "Theatre"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -2343,14 +1721,23 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "vilamoura-international-school-algarve",
     "name": "Vilamoura International School",
     "type": "International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Founded in 1984",
+      "Approx. 000 students",
+      "IB approach",
+      "International Baccalaureate approach",
+      "Cambridge approach",
+      "Ages 3 to 18"
+    ],
     "highlights": null,
     "location": {
       "address": "Sitio das Quintinhas, 8125-911 Loulé, Portugal",
@@ -2397,8 +1784,7 @@
       "grade_range": "Nursery – Year 13",
       "total_students": 800,
       "class_size_avg": 20,
-      "student_nationalities": 45,
-      "acceptance_rate": null
+      "student_nationalities": 45
     },
     "fees": {
       "annual_min_eur": 7135.0,
@@ -2426,14 +1812,15 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -2445,14 +1832,19 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": true
   },
   {
     "id": "brave-generation-academy-braga",
     "name": "Brave Generation Academy, Braga",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "IB approach",
+      "STEM approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Praça Mun. 10 R/C Dtº, 4700-319 Braga, Portugal",
@@ -2503,8 +1895,7 @@
       "grade_range": "Year 7 – Year 13",
       "total_students": 30,
       "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
+      "student_nationalities": null
     },
     "fees": {
       "annual_min_eur": 7140.0,
@@ -2532,12 +1923,14 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Dance"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -2548,14 +1941,19 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "brave-generation-academy-ofir-braga",
     "name": "Brave Generation Academy, Ofir",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "IB approach",
+      "STEM approach"
+    ],
     "highlights": null,
     "location": {
       "address": "R. Raúl Sousa Martins 99, 4740-405 Fão, Portugal",
@@ -2606,8 +2004,7 @@
       "grade_range": "Year 7 – Year 13",
       "total_students": 30,
       "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
+      "student_nationalities": null
     },
     "fees": {
       "annual_min_eur": 7140.0,
@@ -2635,12 +2032,14 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Dance"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -2651,14 +2050,19 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "clib-the-braga-international-school",
     "name": "CLIB - The Braga International School",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Founded in 1999",
+      "IB approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Rua da Igreja Velha – Gualtar, , 4710-069 Braga, Portugal",
@@ -2674,7 +2078,7 @@
     },
     "contact": {
       "phone": null,
-      "email": null,
+      "email": "r.publicas@clib.pt",
       "website": "https://clib.pt/",
       "admissions_url": null,
       "social_media": null
@@ -2701,8 +2105,7 @@
       "grade_range": "Nursery – Year 13",
       "total_students": 350,
       "class_size_avg": 25,
-      "student_nationalities": 45,
-      "acceptance_rate": null
+      "student_nationalities": 45
     },
     "fees": {
       "annual_min_eur": null,
@@ -2730,14 +2133,15 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Debate"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -2748,14 +2152,20 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "joao-paulo-international-school-braga",
     "name": "João Paulo International School",
     "type": "International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "IB approach",
+      "International Baccalaureate approach",
+      "bilingual approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Rua de S. Frutuoso n.º 40,, , Dume (S. Martinho) 4700-085 Braga, , Portugal, Braga | 7 Fontes: Ages 3 to 11, Address:, Rua José Gabriel Bacelar n.º 154,, , 4710 Braga, , Portugal, Braga | Dume: Ages 11 to 18, Address:, Rua de S. Frutuoso n.º 40,, , Dume (S. Martinho) 4700-085 Braga, , Portugal, Students in Joao Paulo International School choose either 100% Portuguese or 100% English curriculum., School details, We have organised the information available for this school into 10 sections and 39 questions. Click or tap on the name of each section to read more., Nationalities, Number of students, Approximately 2000 students., Number of nationalities represented in the school, Around 19 nationalities., Most common nationality, Portuguese., Languages, Native English and Portuguese speaking teachers, Yes. Most teachers are native Portuguese speakers. The school also employs qualified native and near-native English teachers., Language support for students not fluent in English and Portuguese, Yes. The school provides Portuguese as a Foreign Language (PFL) support classes when necessary., Additional language classes offered by the school, Spanish, German and French are offered, depending on grade level and student demand., Classroom, Max. number of students per class, Up to 25 students., Average number of students per class, Around 23 students., Does the school employ teaching assistants?, Yes, especially in early years education and in classes that require additional learning support., Use of technology in the classroom, Classrooms are equipped with computers, interactive whiteboards or projectors, and digital learning platforms to support teaching, research, assessment, and communication., From Year 7 onwards, the school implements the Apple Education Project, in which students use iPads as a core learning tool across different subjects, promoting digital literacy, creativity, collaboration, and responsible use of technology., Is the school ready to use virtual classrooms when needed? (e.g. teaching lessons online if the school is closed, e.g. during COVID-19 closures), Yes. The school is fully prepared to deliver online lessons through video-conferencing platforms and digital learning environments in emergency situations., Do students practice religion at the school? What religion?, Yes. The school follows a Catholic educational tradition., How does the school accommodate non-religious students or students of a different religion?, The school promotes respect and inclusion. Participation in religious activities is not compulsory, and students of other beliefs are fully respected and integrated., Academics, External examinations or assessments available, Students complete the Portuguese national examinations. The school also prepares students for international programmes, including the International Baccalaureate (IB) and IGCSEs, depending on the academic pathway., Do teachers assign homework to their students?, Yes., Approximate hours of homework given, Depending on the students’ age and grade level, Student support, Dedicated staff/programs for students with special learning needs, Yes., Learning support offered, The school provides learning support teachers, individualized education plans, differentiated instruction strategies, and close cooperation with families and external specialists when required., The school supports gifted, able and talented students, Through curriculum enrichment, project-based learning, academic challenges, participation in competitions, and personalised learning pathways., Student access to education psychologist, Yes., Admissions, Entry evaluation for students, Yes., Brief description of entry evaluation required, The evaluation may include academic testing, language assessment, and an interview with the student and parents., Waiting list, Yes, for certain year groups., Deadline for registration (new academic year), There is no set deadline for registration for the new academic year. Admissions are subject to availability., Students can join after academic year begins, Yes, subject to availability., School day, School start time, At 8AM, School finish time, At 8PM, Supervised care before/after school, Yes., School bus service available, Yes, including intercity routes., School provided lunches, Yes, in the school cafeteria., Food alternatives for special dietary needs (ie. vegan, kosher, halal etc), Yes, including vegetarian, vegan, allergy-friendly and religious dietary options., Uniform required, Yes., Extracurricular activities, Extracurricular activities or clubs offered, Sports clubs, ballet, music, choir, drama, robotics, visual arts, languages, study support, and social responsibility projects., Sports activities included, Football, volleyball, basketball, athletics, gymnastics and other age-appropriate physical education activities., Sports teams or sport competitions available for students, Yes., Facilities, Facilities at the school, Library, science laboratories, ICT rooms, art and music rooms, auditorium, cafeteria, study areas and pastoral support spaces., Sports facilities at the school, Indoor sports hall, outdoor football fields, multipurpose courts and playground areas., About the school, Qualities and characteristics best defining the school, Colégio João Paulo II is defined by academic excellence, strong human and Christian values, close teacher-student relationships, a safe and welcoming environment, and a commitment to the integral development of each student., Teaching approach of the school, The school adopts a student-centred and values-based educational approach, combining high academic standards with personal, social and ethical development. Teaching emphasizes critical thinking, autonomy, creativity, digital literacy and responsibility., Students at João Paulo International School choose either a 100% Portuguese or a 100% English curriculum. Through initiatives such as the Apple Education Project from Year 7 onwards, the school integrates technology in a meaningful way to enhance learning and prepare students for the challenges of higher education and modern society., Do you know, João Paulo International School, ?, How would you rate it?",
@@ -2771,7 +2181,7 @@
     },
     "contact": {
       "phone": null,
-      "email": null,
+      "email": "secretaria@cjp.com.pt",
       "website": "https://cjp.com.pt/en/",
       "admissions_url": null,
       "social_media": null
@@ -2802,8 +2212,7 @@
       "grade_range": "Nursery – Year 13",
       "total_students": 2000,
       "class_size_avg": 23,
-      "student_nationalities": 19,
-      "acceptance_rate": null
+      "student_nationalities": 19
     },
     "fees": {
       "annual_min_eur": null,
@@ -2831,14 +2240,17 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art"
+      ],
+      "transport": {
+        "school_bus": true
+      }
     },
     "meta": {
       "founding_year": null,
@@ -2849,14 +2261,19 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": "ADMISSIONS Admissions Process Tuition Fees FAQ EMPLOYMENT Why work at CJPII? CJPII Commitment Spontaneous Application INTERNATIONAL FAMILIES Online Store eCommunity Office 365 School Calendar ENROLLMENT About us – COLÉGIO JOÃO PAULO II Skip to main content Search Close Search MORE THAN A SCHOOL ABOU",
+    "language_support": null
   },
   {
     "id": "brave-generation-academy-caldas-da-rainha",
     "name": "Brave Generation Academy, Caldas da Rainha",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "IB approach",
+      "STEM approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Praça 5 de Outubro 29 B R/C Esquerdo, Caldas da Rainha, Portugal",
@@ -2907,8 +2324,7 @@
       "grade_range": "Year 7 – Year 13",
       "total_students": 30,
       "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
+      "student_nationalities": null
     },
     "fees": {
       "annual_min_eur": 7140.0,
@@ -2936,12 +2352,14 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Dance"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -2952,14 +2370,19 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "brave-generation-academy-ericeira",
     "name": "Brave Generation Academy, Ericeira",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "IB approach",
+      "STEM approach"
+    ],
     "highlights": null,
     "location": {
       "address": "R. Alto da Camacha 2, 2655-006 Ericeira, Portugal",
@@ -3010,8 +2433,7 @@
       "grade_range": "Year 7 – Year 13",
       "total_students": 30,
       "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
+      "student_nationalities": null
     },
     "fees": {
       "annual_min_eur": 7140.0,
@@ -3039,12 +2461,14 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Dance"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -3055,14 +2479,19 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "brave-generation-academy-fundao",
     "name": "Brave Generation Academy, Fundão",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "IB approach",
+      "STEM approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Fundão, Portugal",
@@ -3113,8 +2542,7 @@
       "grade_range": "Year 7 – Year 13",
       "total_students": 30,
       "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
+      "student_nationalities": null
     },
     "fees": {
       "annual_min_eur": 7140.0,
@@ -3142,12 +2570,14 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Dance"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -3158,14 +2588,19 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "brave-generation-academy-leiria",
     "name": "Brave Generation Academy, Leiria",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "IB approach",
+      "STEM approach"
+    ],
     "highlights": null,
     "location": {
       "address": "R. Miguel Bombarda 31, 2400-080 Leiria, Portugal",
@@ -3216,8 +2651,7 @@
       "grade_range": "Year 7 – Year 13",
       "total_students": 30,
       "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
+      "student_nationalities": null
     },
     "fees": {
       "annual_min_eur": 7140.0,
@@ -3245,12 +2679,14 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Dance"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -3261,14 +2697,19 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "leiria-international-school",
     "name": "Leiria International School",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "IB approach",
+      "Cambridge approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Rua Dom João Pereira Venâncio, nº164, , 2430-290 Marinha Grande, Leiria , , Portugal",
@@ -3284,7 +2725,7 @@
     },
     "contact": {
       "phone": null,
-      "email": null,
+      "email": "office@leiriainternationalschool.com",
       "website": "https://www.leiriainternationalschool.com/",
       "admissions_url": null,
       "social_media": null
@@ -3312,8 +2753,7 @@
       "grade_range": "Nursery – Year 13",
       "total_students": 400,
       "class_size_avg": 15,
-      "student_nationalities": 20,
-      "acceptance_rate": null
+      "student_nationalities": 20
     },
     "fees": {
       "annual_min_eur": null,
@@ -3341,14 +2781,15 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -3359,14 +2800,22 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "almada-international-school-lisbon",
     "name": "Almada International School",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Approx. 300 students",
+      "25 nationalities represented",
+      "IB approach",
+      "Cambridge approach",
+      "bilingual approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Azinhaga da Urraca, nº1, , 2815-619 Sobreda, Portugal",
@@ -3382,7 +2831,7 @@
     },
     "contact": {
       "phone": null,
-      "email": null,
+      "email": "info@ais-edu.pt",
       "website": "https://ais-edu.pt/",
       "admissions_url": null,
       "social_media": null
@@ -3410,8 +2859,7 @@
       "grade_range": "Nursery – Year 5",
       "total_students": 242,
       "class_size_avg": 24,
-      "student_nationalities": 29,
-      "acceptance_rate": null
+      "student_nationalities": 29
     },
     "fees": {
       "annual_min_eur": 7205.0,
@@ -3439,12 +2887,13 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -3455,14 +2904,20 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "aprendizes-lisbon",
     "name": "Aprendizes",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Approx. 2026 students",
+      "IB approach",
+      "STEM approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Rua dos Depósitos de Águas. 2750-561, , Cascais, Lisbon, Portugal",
@@ -3507,8 +2962,7 @@
       "grade_range": "Nursery – Year 13",
       "total_students": 500,
       "class_size_avg": 16,
-      "student_nationalities": 38,
-      "acceptance_rate": null
+      "student_nationalities": 38
     },
     "fees": {
       "annual_min_eur": 11568.0,
@@ -3536,12 +2990,16 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Chess",
+        "Dance",
+        "Music"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -3552,14 +3010,22 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "astoria-international-school-lisbon",
     "name": "Astoria International School",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Located in a central and peaceful area of the city",
+      "IB approach",
+      "bilingual approach",
+      "trilingual approach",
+      "STEM approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Av. Alm. Gago Coutinho 88-88A, 1700-031 Lisboa, Portugal",
@@ -3575,7 +3041,7 @@
     },
     "contact": {
       "phone": null,
-      "email": null,
+      "email": "info@colegioeuropeu-astoria.com",
       "website": "https://colegioeuropeu-astoria.com/",
       "admissions_url": null,
       "social_media": null
@@ -3605,8 +3071,7 @@
       "grade_range": "Nursery – Year 10",
       "total_students": 270,
       "class_size_avg": 17,
-      "student_nationalities": 19,
-      "acceptance_rate": null
+      "student_nationalities": 19
     },
     "fees": {
       "annual_min_eur": null,
@@ -3634,12 +3099,14 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Dance"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -3651,14 +3118,20 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": "enrollment form, AIS will send an email to schedule a visit with the Psychology and Guidance Department, where the AIS educational project and admission conditions will be presented.",
+    "language_support": null
   },
   {
     "id": "beyond-international-school-lisbon",
     "name": "Beyond International School",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "IB approach",
+      "Cambridge approach",
+      "bilingual approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Rua Soeiro Pereira Gomes, n.º 59,, , 2730-178 Barcarena – Queluz, , Portugal",
@@ -3674,7 +3147,7 @@
     },
     "contact": {
       "phone": null,
-      "email": null,
+      "email": "info@beyondschool.pt",
       "website": "https://beyondschool.pt/",
       "admissions_url": null,
       "social_media": null
@@ -3698,8 +3171,7 @@
       "grade_range": "Nursery – Year 8",
       "total_students": null,
       "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
+      "student_nationalities": null
     },
     "fees": {
       "annual_min_eur": 9860.0,
@@ -3727,14 +3199,15 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -3745,14 +3218,19 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "brave-generation-academy-lisbon",
     "name": "Brave Generation Academy, Lisbon",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "IB approach",
+      "STEM approach"
+    ],
     "highlights": null,
     "location": {
       "address": "R. da Areia 2750, 2750-642 Cascais, Portugal, Cascais Hub: Ages 12 to 18, Address:, Alameda Combatentes da Grande Guerra 25A, 2750-416 Cascais, Portugal, Cascais Baía Hub: Ages 12 to 18, Address:, Praça 5 de Outubro Antigo Edifício dos Bombeiros 45, 2750-642 Cascais, Portugal, Parede Hub: Ages 12 to 18, Address:, Rua Vasco da Gama n 60 C, 2775-297 Parede, Portugal, CCB Hub: Ages 12 to 18, Address:, Centro Cultural de Belém (CCB), Sala José Ribeiro da Fonte, 1449-003, Portugal, Campolide Hub: Ages 12 to 18, Address:, Rua de Campolide nº 24ª, Campolide, 1070-026, Portugal, Expo Hub: Ages 12 to 18, Address:, Avenida de Pádua Nº 10 I, Santa Maria dos Olivais, 1000-897, Lisbon, Portugal",
@@ -3779,7 +3257,10 @@
         "American",
         "Portuguese"
       ],
-      "language_of_instruction": null,
+      "language_of_instruction": [
+        "Portuguese",
+        "English"
+      ],
       "languages_taught": [
         "Yes",
         "BGA offers a variety of language courses within our curriculum",
@@ -3801,8 +3282,7 @@
       "grade_range": "Year 7 – Year 13",
       "total_students": 30,
       "class_size_avg": null,
-      "student_nationalities": 12,
-      "acceptance_rate": null
+      "student_nationalities": 12
     },
     "fees": {
       "annual_min_eur": 7140.0,
@@ -3830,12 +3310,14 @@
       "portuguese_integration_program": null,
       "english_as_primary": null,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Dance"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -3846,14 +3328,20 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "butterflies-school-lisbon",
     "name": "Butterflies School",
     "type": "International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "IB approach",
+      "Cambridge approach",
+      "bilingual approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Alameda da Beloura 1, Quinta da Beloura,, , 2710-697, Linhó. Sintra, Portugal",
@@ -3869,7 +3357,7 @@
     },
     "contact": {
       "phone": null,
-      "email": null,
+      "email": "hello@butterflieseducation.com",
       "website": "https://butterflieseducation.com/",
       "admissions_url": null,
       "social_media": null
@@ -3894,8 +3382,7 @@
       "grade_range": "Nursery – Year 5",
       "total_students": null,
       "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
+      "student_nationalities": null
     },
     "fees": {
       "annual_min_eur": 7650.0,
@@ -3923,12 +3410,14 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": null,
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Music"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -3939,7 +3428,9 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "Medium"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "carlucci-american-international-school-of-lisbon",
@@ -3962,7 +3453,7 @@
     },
     "contact": {
       "phone": null,
-      "email": null,
+      "email": "info@caislisbon.org",
       "website": "https://www.caislisbon.org/",
       "admissions_url": null,
       "social_media": null
@@ -3989,8 +3480,7 @@
       "grade_range": "Nursery – Year 13",
       "total_students": 755,
       "class_size_avg": 20,
-      "student_nationalities": 62,
-      "acceptance_rate": null
+      "student_nationalities": 62
     },
     "fees": {
       "annual_min_eur": 12128.0,
@@ -4018,14 +3508,13 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": null,
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -4038,14 +3527,22 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "cesario-verde-international-school-portugal-lisbon",
     "name": "Cesário Verde International School Portugal",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Located in one of the most privileged and central areas of Lisbon",
+      "IB approach",
+      "Cambridge approach",
+      "bilingual approach",
+      "STEM approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Av. Infante D. Henrique, Lot 308 | 1950-421 Lisbon, , Portugal",
@@ -4061,7 +3558,7 @@
     },
     "contact": {
       "phone": null,
-      "email": null,
+      "email": "geral@cesarioverde.com",
       "website": "https://cesarioverde.com/",
       "admissions_url": null,
       "social_media": null
@@ -4086,8 +3583,7 @@
       "grade_range": "Nursery – Year 10",
       "total_students": null,
       "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
+      "student_nationalities": null
     },
     "fees": {
       "annual_min_eur": null,
@@ -4115,12 +3611,17 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": null,
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Dance",
+        "Music",
+        "Robotics",
+        "Soccer"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -4131,87 +3632,9 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "Medium"
-    }
-  },
-  {
-    "id": "deutsche-school",
-    "name": "Deutsche School",
-    "type": null,
-    "status": null,
-    "location": {
-      "address": null,
-      "neighborhood": null,
-      "city": "Lisbon",
-      "region": "Lisbon",
-      "coordinates": null,
-      "commute_from_lisbon_center": null,
-      "nearby_neighborhoods": null
     },
-    "contact": {
-      "phone": null,
-      "email": null,
-      "website": null,
-      "admissions_url": null,
-      "social_media": null
-    },
-    "academics": {
-      "curriculum": null,
-      "language_of_instruction": null,
-      "languages_taught": null,
-      "qualifications": null,
-      "accreditations": null
-    },
-    "enrollment": {
-      "age_range_years": null,
-      "grade_range": null,
-      "total_students": null,
-      "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
-    },
-    "fees": {
-      "annual_min_eur": null,
-      "annual_max_eur": null,
-      "currency": "EUR",
-      "academic_year": null,
-      "enrollment_fee": null,
-      "registration_fee": null,
-      "boarding_available": null,
-      "boarding_fees_annual": null,
-      "fee_notes": null,
-      "scholarships_available": null
-    },
-    "facilities": {
-      "campus_size_ha": null,
-      "sports": null,
-      "arts": null,
-      "tech": null,
-      "other": null
-    },
-    "expat_family_features": {
-      "expat_community_strength": null,
-      "relocation_support": null,
-      "visa_guidance": null,
-      "portuguese_integration_program": null,
-      "english_as_primary": null,
-      "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
-      "after_school_care": null,
-      "school_bus_routes": null,
-      "university_counseling": null,
-      "notable_alumni": null
-    },
-    "meta": {
-      "founding_year": null,
-      "ownership": null,
-      "group_affiliation": null,
-      "source_urls": [
-        "https://www.globalcitizensolutions.com/international-schools-in-portugal"
-      ],
-      "last_verified": "2026-03-02",
-      "data_confidence": "Low"
-    }
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "deutsche-schule-lissabon-lisbon",
@@ -4261,8 +3684,7 @@
       "grade_range": "Nursery – Year 13",
       "total_students": 1080,
       "class_size_avg": null,
-      "student_nationalities": 20,
-      "acceptance_rate": null
+      "student_nationalities": 20
     },
     "fees": {
       "annual_min_eur": 8141.0,
@@ -4290,14 +3712,13 @@
       "portuguese_integration_program": null,
       "english_as_primary": false,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": null,
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -4309,14 +3730,18 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "egi-educating-global-innovators-lisbon",
     "name": "EGI - Educating Global Innovators",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "IB approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Rua da Fundição de Oeiras, 20A, , 2780-117 Oeiras, Portugal",
@@ -4332,7 +3757,7 @@
     },
     "contact": {
       "phone": null,
-      "email": null,
+      "email": "info@egi-education.com",
       "website": "https://egi-education.com/",
       "admissions_url": null,
       "social_media": null
@@ -4357,8 +3782,7 @@
       "grade_range": "Nursery – Year 6",
       "total_students": 45,
       "class_size_avg": 7,
-      "student_nationalities": 6,
-      "acceptance_rate": null
+      "student_nationalities": 6
     },
     "fees": {
       "annual_min_eur": 13215.0,
@@ -4386,12 +3810,15 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": null,
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Dance",
+        "Music"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -4402,14 +3829,22 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "greene-s-college-oxford-estoril-lisbon",
     "name": "Greene's College Oxford, Estoril",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Founded in 2011",
+      "IB approach",
+      "Cambridge approach",
+      "American curriculum approach",
+      "STEM approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Rua Dom Afonso Henriques, nº 1614, , 2765-576 Estoril, , Portugal, Lisbon Campus: Ages 14 to 18, Address:, Rua da Escola Politécnica,, , N°38 3° piso,, , Príncipe Real, , 1250-102 Lisbon,, , Portugal.",
@@ -4425,7 +3860,7 @@
     },
     "contact": {
       "phone": null,
-      "email": null,
+      "email": "enquiries@greenes.pt",
       "website": "https://pt.greenesoxford.com/",
       "admissions_url": null,
       "social_media": null
@@ -4461,8 +3896,7 @@
       "grade_range": "Year 9 – Year 13",
       "total_students": 145,
       "class_size_avg": 2,
-      "student_nationalities": 15,
-      "acceptance_rate": null
+      "student_nationalities": 15
     },
     "fees": {
       "annual_min_eur": 15100.0,
@@ -4490,12 +3924,14 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Dance"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -4506,14 +3942,22 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "hypha-international-school-lisbon",
     "name": "Hypha International School",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "0 nationalities represented",
+      "IB approach",
+      "Cambridge approach",
+      "Montessori approach",
+      "project-based approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Rua Dr. Sa Carneiro 80 in Colares, Sintra, Portugal",
@@ -4529,7 +3973,7 @@
     },
     "contact": {
       "phone": null,
-      "email": null,
+      "email": "admissions@hyphaportugal.com",
       "website": "https://hyphaportugal.com/",
       "admissions_url": null,
       "social_media": null
@@ -4555,8 +3999,7 @@
       "grade_range": "Nursery – Year 5",
       "total_students": 56,
       "class_size_avg": 16,
-      "student_nationalities": 17,
-      "acceptance_rate": null
+      "student_nationalities": 17
     },
     "fees": {
       "annual_min_eur": 9700.0,
@@ -4584,14 +4027,16 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Dance"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -4602,14 +4047,20 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "ips-cascais-british-international-school-lisbon",
     "name": "IPS Cascais British International School",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Located in Bicesse",
+      "40 nationalities represented",
+      "IB approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Rua da Lagoa 171,, , Bicesse,, , Alcabideche, , 2645-344, , Portugal",
@@ -4650,8 +4101,7 @@
       "grade_range": "Nursery – Year 10",
       "total_students": 350,
       "class_size_avg": 19,
-      "student_nationalities": 34,
-      "acceptance_rate": null
+      "student_nationalities": 34
     },
     "fees": {
       "annual_min_eur": 11548.0,
@@ -4679,14 +4129,24 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Coding",
+        "Dance",
+        "Music",
+        "Tennis"
+      ],
+      "transport": {
+        "school_bus": true,
+        "zones_covered": [
+          "Malveira da Serra"
+        ]
+      }
     },
     "meta": {
       "founding_year": null,
@@ -4697,14 +4157,22 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "international-christian-school-of-cascais-lisbon",
     "name": "International Christian School of Cascais",
     "type": "Religious",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Founded in 1980",
+      "Located in the village of Cascais",
+      "IB approach",
+      "American curriculum approach",
+      "STEM approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Avenida de Sintra, 1154, , 2750-494 Cascais Portugal",
@@ -4719,7 +4187,7 @@
       "nearby_neighborhoods": null
     },
     "contact": {
-      "phone": null,
+      "phone": "+351 21 484 2279",
       "email": null,
       "website": "https://icsc.pt/",
       "admissions_url": null,
@@ -4746,8 +4214,7 @@
       "grade_range": "Nursery – Year 13",
       "total_students": 80,
       "class_size_avg": 12,
-      "student_nationalities": 18,
-      "acceptance_rate": null
+      "student_nationalities": 18
     },
     "fees": {
       "annual_min_eur": null,
@@ -4775,14 +4242,18 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Dance"
+      ],
+      "transport": {
+        "school_bus": true
+      }
     },
     "meta": {
       "founding_year": null,
@@ -4794,14 +4265,23 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "international-sharing-school-taguspark-lisbon",
     "name": "International Sharing School Taguspark",
     "type": "International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Founded in 1980",
+      "Approx. 467 students",
+      "50 nationalities represented",
+      "IB approach",
+      "International Baccalaureate approach",
+      "STEM approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Av. Dr. Mário Soares 14, 2740-119 Porto Salvo, Lisbon, Portugal",
@@ -4849,8 +4329,7 @@
       "grade_range": "Nursery – Year 13",
       "total_students": 600,
       "class_size_avg": 20,
-      "student_nationalities": 50,
-      "acceptance_rate": null
+      "student_nationalities": 50
     },
     "fees": {
       "annual_min_eur": 11400.0,
@@ -4878,14 +4357,28 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Basketball",
+        "Dance",
+        "Football",
+        "Golf",
+        "Swimming",
+        "Tennis",
+        "Volleyball"
+      ],
+      "transport": {
+        "school_bus": true,
+        "zones_covered": [
+          "Lisbon",
+          "availability"
+        ]
+      }
     },
     "meta": {
       "founding_year": null,
@@ -4896,14 +4389,24 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "king's-college-school-cascais-lisbon",
     "name": "King's College School Cascais",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Approx. 000 students",
+      "IB approach",
+      "International Baccalaureate approach",
+      "Cambridge approach",
+      "British curriculum approach",
+      "bilingual approach",
+      "STEM approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Rua Cesário Verde, 395 Pampilheira 2750-657 Cascais, Portugal",
@@ -4947,8 +4450,7 @@
       "grade_range": "Nursery – Year 11",
       "total_students": 400,
       "class_size_avg": 10,
-      "student_nationalities": null,
-      "acceptance_rate": null
+      "student_nationalities": null
     },
     "fees": {
       "annual_min_eur": 11754.0,
@@ -4976,12 +4478,17 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Dance",
+        "Drama",
+        "Film",
+        "Music"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -4992,14 +4499,18 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "l'ecole-trilingue-lisbon",
     "name": "L'École Trilingue",
     "type": "French International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "trilingual approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Av. do Restelo 21, Lisboa, Portugal",
@@ -5015,7 +4526,7 @@
     },
     "contact": {
       "phone": null,
-      "email": null,
+      "email": "admin@lecoletrilingue.com",
       "website": "https://lecoletrilingue.com/en",
       "admissions_url": null,
       "social_media": null
@@ -5041,8 +4552,7 @@
       "grade_range": "Nursery – Year 3",
       "total_students": null,
       "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
+      "student_nationalities": null
     },
     "fees": {
       "annual_min_eur": 7000.0,
@@ -5070,12 +4580,11 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": null,
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": null,
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -5086,14 +4595,21 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "Medium"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "lisbon-montessori-school",
     "name": "Lisbon Montessori School",
     "type": "Montessori",
     "status": "Active",
-    "description": null,
+    "description": [
+      "IB approach",
+      "Montessori approach",
+      "bilingual approach",
+      "STEM approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Rua de Santana 1696, Alto do Cobre, Cascais",
@@ -5109,7 +4625,7 @@
     },
     "contact": {
       "phone": null,
-      "email": null,
+      "email": "hello@lisbonmontessori.org",
       "website": "https://lisbonmontessori.org/",
       "admissions_url": null,
       "social_media": null
@@ -5136,8 +4652,7 @@
       "grade_range": "Nursery – Year 7",
       "total_students": 100,
       "class_size_avg": 25,
-      "student_nationalities": 27,
-      "acceptance_rate": null
+      "student_nationalities": 27
     },
     "fees": {
       "annual_min_eur": 9190.0,
@@ -5165,12 +4680,14 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Dance"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -5181,94 +4698,19 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
-  },
-  {
-    "id": "lycée-français-charles-lepierre-lisbonne",
-    "name": "Lycée Français Charles Lepierre Lisbonne",
-    "type": null,
-    "status": null,
-    "location": {
-      "address": null,
-      "neighborhood": null,
-      "city": "Lisbon",
-      "region": "Lisbon",
-      "coordinates": null,
-      "commute_from_lisbon_center": null,
-      "nearby_neighborhoods": null
     },
-    "contact": {
-      "phone": null,
-      "email": null,
-      "website": null,
-      "admissions_url": null,
-      "social_media": null
-    },
-    "academics": {
-      "curriculum": null,
-      "language_of_instruction": null,
-      "languages_taught": null,
-      "qualifications": null,
-      "accreditations": null
-    },
-    "enrollment": {
-      "age_range_years": null,
-      "grade_range": null,
-      "total_students": null,
-      "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
-    },
-    "fees": {
-      "annual_min_eur": null,
-      "annual_max_eur": null,
-      "currency": "EUR",
-      "academic_year": null,
-      "enrollment_fee": null,
-      "registration_fee": null,
-      "boarding_available": null,
-      "boarding_fees_annual": null,
-      "fee_notes": null,
-      "scholarships_available": null
-    },
-    "facilities": {
-      "campus_size_ha": null,
-      "sports": null,
-      "arts": null,
-      "tech": null,
-      "other": null
-    },
-    "expat_family_features": {
-      "expat_community_strength": null,
-      "relocation_support": null,
-      "visa_guidance": null,
-      "portuguese_integration_program": null,
-      "english_as_primary": null,
-      "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
-      "after_school_care": null,
-      "school_bus_routes": null,
-      "university_counseling": null,
-      "notable_alumni": null
-    },
-    "meta": {
-      "founding_year": null,
-      "ownership": null,
-      "group_affiliation": null,
-      "source_urls": [
-        "https://www.globalcitizensolutions.com/international-schools-in-portugal"
-      ],
-      "last_verified": "2026-03-02",
-      "data_confidence": "Low"
-    }
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "lyc-e-francais-charles-lepi-rre-lisbonne",
     "name": "Lycée Français Charles Lepiérre Lisbonne",
     "type": "French International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "0 nationalities represented",
+      "IB approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Avenida Duarte Pacheco, 32, , 1070-112 Lisbonne Portugal",
@@ -5313,8 +4755,7 @@
       "grade_range": "Nursery – Year 13",
       "total_students": 2000,
       "class_size_avg": null,
-      "student_nationalities": 15,
-      "acceptance_rate": null
+      "student_nationalities": 15
     },
     "fees": {
       "annual_min_eur": 5452.0,
@@ -5342,14 +4783,15 @@
       "portuguese_integration_program": null,
       "english_as_primary": false,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -5360,94 +4802,20 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
-  },
-  {
-    "id": "l’ecole-trillingue",
-    "name": "L’Ecole Trillingue",
-    "type": null,
-    "status": null,
-    "location": {
-      "address": null,
-      "neighborhood": null,
-      "city": "Lisbon",
-      "region": "Lisbon",
-      "coordinates": null,
-      "commute_from_lisbon_center": null,
-      "nearby_neighborhoods": null
     },
-    "contact": {
-      "phone": null,
-      "email": null,
-      "website": null,
-      "admissions_url": null,
-      "social_media": null
-    },
-    "academics": {
-      "curriculum": null,
-      "language_of_instruction": null,
-      "languages_taught": null,
-      "qualifications": null,
-      "accreditations": null
-    },
-    "enrollment": {
-      "age_range_years": null,
-      "grade_range": null,
-      "total_students": null,
-      "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
-    },
-    "fees": {
-      "annual_min_eur": null,
-      "annual_max_eur": null,
-      "currency": "EUR",
-      "academic_year": null,
-      "enrollment_fee": null,
-      "registration_fee": null,
-      "boarding_available": null,
-      "boarding_fees_annual": null,
-      "fee_notes": null,
-      "scholarships_available": null
-    },
-    "facilities": {
-      "campus_size_ha": null,
-      "sports": null,
-      "arts": null,
-      "tech": null,
-      "other": null
-    },
-    "expat_family_features": {
-      "expat_community_strength": null,
-      "relocation_support": null,
-      "visa_guidance": null,
-      "portuguese_integration_program": null,
-      "english_as_primary": null,
-      "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
-      "after_school_care": null,
-      "school_bus_routes": null,
-      "university_counseling": null,
-      "notable_alumni": null
-    },
-    "meta": {
-      "founding_year": null,
-      "ownership": null,
-      "group_affiliation": null,
-      "source_urls": [
-        "https://www.globalcitizensolutions.com/international-schools-in-portugal"
-      ],
-      "last_verified": "2026-03-02",
-      "data_confidence": "Low"
-    }
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "montessori-bright-academy-lisbon",
     "name": "Montessori Bright Academy",
     "type": "Montessori",
     "status": "Active",
-    "description": null,
+    "description": [
+      "37 nationalities represented",
+      "IB approach",
+      "Montessori approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Av. Almirante Gago Coutinho, 141, Alvalade, Lisbon, Portugal",
@@ -5463,7 +4831,7 @@
     },
     "contact": {
       "phone": null,
-      "email": null,
+      "email": "office@mbalisbonalvalade.com",
       "website": "https://www.lisbonmontessorischool.com/",
       "admissions_url": null,
       "social_media": null
@@ -5488,8 +4856,7 @@
       "grade_range": "Nursery – Year 7",
       "total_students": 100,
       "class_size_avg": 18,
-      "student_nationalities": 37,
-      "acceptance_rate": null
+      "student_nationalities": 37
     },
     "fees": {
       "annual_min_eur": 8410.0,
@@ -5517,12 +4884,13 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": null,
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -5533,14 +4901,20 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "oeiras-international-school-lisbon",
     "name": "Oeiras International School",
     "type": "International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Approx. 463 students",
+      "IB approach",
+      "International Baccalaureate approach"
+    ],
     "highlights": null,
     "location": {
       "address": "R. Antero de Quental 7, 2730-013 Barcarena, Portugal",
@@ -5556,7 +4930,7 @@
     },
     "contact": {
       "phone": null,
-      "email": null,
+      "email": "office@ois.pt",
       "website": "https://ois.pt/",
       "admissions_url": null,
       "social_media": null
@@ -5585,8 +4959,7 @@
       "grade_range": "Reception – Year 13",
       "total_students": 460,
       "class_size_avg": 16,
-      "student_nationalities": 50,
-      "acceptance_rate": null
+      "student_nationalities": 50
     },
     "fees": {
       "annual_min_eur": 13547.0,
@@ -5614,14 +4987,17 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art"
+      ],
+      "transport": {
+        "school_bus": true
+      }
     },
     "meta": {
       "founding_year": null,
@@ -5634,14 +5010,25 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": "Admissions Open 2026/27  - Year 1 Opening & Limited Places in Y2, Y4 & Y10 Book your Visit! Supporting their Journey We recognise the potential in all of our students, we nurture their unique abilities and support them in becoming independent learners.",
+    "language_support": null
   },
   {
     "id": "park-international-school-lisbon",
     "name": "PaRK International School",
     "type": "International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Founded in 2003",
+      "Located in prime locations in the Lisbon area",
+      "Approx. 000 students",
+      "IB approach",
+      "Cambridge approach",
+      "bilingual approach",
+      "project-based approach",
+      "Ages 1 to 5"
+    ],
     "highlights": null,
     "location": {
       "address": "Estrada de Alfragide, 92 2610-015 Amadora, Portugal, Praca de Espanha Campus: Ages 1 to 8, Address:, Av. Columbano Bordalo Pinheiro, 52 1070-064 Lisbon, Portugal, Restelo Campus: Ages 1 to 10, Address:, Av. das Descobertas, 21 1400-091, Lisbon, Portugal",
@@ -5687,8 +5074,7 @@
       "grade_range": "Nursery – Year 13",
       "total_students": 2,
       "class_size_avg": 23,
-      "student_nationalities": 57,
-      "acceptance_rate": null
+      "student_nationalities": 57
     },
     "fees": {
       "annual_min_eur": 9380.0,
@@ -5716,14 +5102,18 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Dance",
+        "Drama",
+        "Music"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -5735,14 +5125,23 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "prime-school-lisbon",
     "name": "Prime School",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Approx. 300 students",
+      "50 nationalities represented",
+      "IB approach",
+      "Cambridge approach",
+      "bilingual approach",
+      "Ages 3 to 18"
+    ],
     "highlights": null,
     "location": {
       "address": "R. Mestre Neves 20, Sintra - 2710-422 Sintra, Portugal, Estoril Campus: Ages 3 to 18, Address:, R. Antoine de Saint-Éxupery, Estoril, Portugal, Lisbon Campus: Ages 3 to 18, Address:, R. Carlos Lobo de Ávila 4, 1700-099, Lisbon, Portugal, The school's life in pictures, Learn more, School details, We have organised the information available for this school into 11 sections and 44 questions. Click or tap on the name of each section to read more., Nationalities, Number of students, 200 per campus., Number of nationalities represented in the school, +51, Most common nationality, UK, USA, Asia, European and Portuguese., Ratio of local students to international students, 20%, Languages, Native English speaking teachers, Yes most of them., Language support for students not fluent in English, Yes, Prime School have English and Portuguese support classes., Additional language classes offered by the school, Portuguese, French, Spanish, Chinese, and German., Classroom, Max. number of students per class, 15 students., Average number of students per class, 12, Does the school employ teaching assistants?, Yes., Use of technology in the classroom, Each classroom is equipped with a computer and projector, and in addition, we provide an IT room that students can use at their convenience for both studying and leisure activities. The robotic classes are fully equipped with the necessary hardware and software, and for students pursuing a career in aviation, we offer access to a state-of-the-art motion flight simulator., Is the school ready to use virtual classrooms when needed? (e.g. teaching lessons online if the school is closed, e.g. during COVID-19 closures), Indeed, during the last academic period, Prime School implemented an online teaching method in response to the Covid-19 pandemic. The feedback from both students and parents was overwhelmingly positive. For teachers who faced challenges in using technology, our team at Prime School provided IT support to ensure a smooth transition to the online teaching environment., Do students practice religion at the school? What religion?, No., How does the school accommodate non-religious students or students of a different religion?, As an international school, we do not promote any particular religious themes in our curriculum., Academics, External examinations or assessments available, Cambridge International IGCSE, AS & A Level qualifications, Higher National Certificate and Higher National Diploma., Results in these examinations, On average, students who take the Cambridge International IGCSE, AS, and A Level qualifications at our school achieve excellent results. Approximately 60% of students receive an A grade, 40% receive a B grade, and 20% receive a C grade., Do teachers assign homework to their students?, Yes., Approximate hours of homework given, Half an hour per day., Percentage of students who pursue further education post-graduation, 98% of the students.  We also offer Higher National Certificate and Diploma qualifications., Student support, Dedicated staff/programs for students with special learning needs, Yes, we have. We offer a specialised learning system to students with special needs., Learning support offered, Each one is different, so we do not have a standart program, we adapt it to their necessities., The school supports gifted, able and talented students, At Prime School, we are committed to supporting the individual needs of all students, including those who are gifted, able, or talented. We recognize that these students require unique challenges and opportunities to reach their full potential. As such, we offer a range of specialized programs and services to support these students in their academic, social, and emotional growth., Our gifted and talented students benefit from enrichment programs that provide them with opportunities to explore subjects in greater depth, participate in advanced coursework, and engage in research projects. We also offer specialized mentoring programs, individualized learning plans, and access to resources that are tailored to their needs., In addition, we encourage our gifted, able, and talented students to participate in extracurricular activities, clubs, and competitions that align with their interests and talents. We believe that these experiences help to develop their skills, broaden their horizons, and foster a lifelong love of learning., Overall, our school is dedicated to creating an inclusive and supportive learning environment that allows all students to reach their full potential., Student access to education psychologist, Yes., Admissions, Entry evaluation for students, As part of our admission process, we require all prospective students to take an English language assessment and admission exam. This is done on the first week of every school year. This helps us to evaluate their language proficiency and ensure that they are prepared for the academic challenges of our curriculum., Brief description of entry evaluation required, Prime School conducts an evaluation before admitting new students, we typically administer an admission exam that covers various subjects such as Math, Geography, History, Science, English, and more., The purpose of this exam is to assess the student's knowledge base and readiness for the grade level they are seeking admission to., Waiting list, Yes we  have a waiting list for admission to our school., Deadline for registration (new academic year), At our school, there is no specific deadline for registration in a new academic year. We welcome students to enroll at any time during the year, as long as there are available spaces in the relevant grade level., Students can join after academic year begins, Yes., School day, School start time, 08:30, School finish time, 15:30, Supervised care before/after school, While our primary focus is on providing a high-quality academic education, we do offer supervised care for students both before and after the school day. We understand that families have busy schedules and may need additional support, and we aim to provide a safe and structured environment for students during these times. Additionally, we offer a variety of extracurricular activities that are available to students outside of regular school hours, which can provide a fun and engaging way for students to spend their time., School bus service available, Yes, only for Sintra and Estoril, School provided lunches, Yes., Food alternatives for special dietary needs (ie. vegan, kosher, halal etc), Yes., Uniform required, Yes., Extracurricular activities, Extracurricular activities or clubs offered, Flight Simulator, Sailing, Robotics, Music, ICT, Sports, Arts and Drama, Surf, Tennis and Football., Sports activities included, Physical education, Sports teams or sport competitions available for students, Yes, Facilities, Facilities at the school, A state-of-the-art motion flight simulator, Robotic Lab, Science lab, Music/Arts class, Games room, and IT room, library, Sports facilities at the school, Our school features a gymnasium, as well as a court equipped with basketball and football nets, providing ample opportunities for students to engage in physical activity and sports., Boarding, Grades/ages available for boarding, 13 years and above., Boarding facilities at the school, Yes, we are proud to offer a premier boarding school experience that provides students with a nurturing and supportive environment that they can call their home away from home. Our state-of-the-art facilities and dedicated staff provide a safe and comfortable living space for students to thrive both academically and personally. From top-notch academic programs to a range of extracurricular activities, we provide our boarding students with a holistic education that prepares them for success in their future endeavours. We are committed to creating a welcoming community where students can grow, learn, and create lifelong memories., About the school, Qualities and characteristics best defining the school, At Prime School International, we strive to create a dynamic and inclusive learning environment where students can thrive academically, socially, and emotionally. Our dedicated faculty inspires a love for learning while fostering critical thinking, problem-solving skills, and character development. We aim to develop compassionate, responsible, and respectful individuals who make a positive impact in their communities. Our state-of-the-art facilities and technology-rich classrooms provide students with the tools they need to explore their passions, develop their talents, and become well-rounded individuals., But we don't stop there. We are committed to helping our students achieve their academic and career goals. Our experienced guidance counselors work closely with older students to provide individualized support and assistance in choosing their future academic objectives. We monitor and follow up with our students to ensure that they are achieving their goals and receiving the necessary resources to help them succeed. At Prime School International, we believe in providing a holistic education that prepares our students for success in an interconnected and rapidly changing world., Teaching approach of the school, At Prime School International, we use the highly regarded Cambridge curriculum which emphasizes a student-centred approach to learning. Our teachers encourage students to take an active role in their education and promote critical thinking, problem-solving, and independent learning skills. We believe that this approach helps to cultivate lifelong learners who are prepared to succeed in a rapidly changing global society., Learn more, Why choose Prime School?, Estoril Campus, The International Anglo-American School forms part of the Prime School International network, an institution delivering both, Elementary and University Education within a single structure. Each student selects a curriculum tailor-made to meet their educational requirements., As an Anglo-American school, the educational offer is delivered via two curricula, namely;, • Cambridge's British curriculum, • American curriculum, Both curricula are Internationally recognized, preparing students from 3 to 19 years of age for entrance into the world's best Universities.  Students furthermore have the opportunity of pursuing their University courses in our facilities, with Prime International College., Sintra Campus, College Infanta D. Maria de Portugal is an inclusive and popular primary school where excellence is celebrated and everybody is cared for., We form part of the Prime School International network, an institution delivering from Kindergarten to Lower Secondary education for students from 3 to 14 years old. We aim to provide all children with a safe, challenging and stimulating environment, where children can grow personally, socially and academically., We offer an innovative curriculum underpinned by dedicated and imaginative teaching that develops a lifelong sense of purpose and curiosity in learning. To do this we wish to secure a passion for learning as well as an ability to think independently., Lisbon Campus, The Heritage International School forms part of the Prime School International network, an institution delivering both, Elementary and University Education within a single structure. Each student selects a curriculum tailor-made to meet their educational requirements., Cambridge's British curriculum is internationally recognized, preparing students from 3 to 19 years of age for entrance into the world's best Universities.  Students furthermore have the opportunity of pursuing their University courses in our facilities, with Prime International College., Boarding, We present you Prime Boarding - A home away from home  to students from the age of 13.  Located only 10 minutes away from our Estoril campus and 20 minutes away from our Sintra campus., Here, students will feel welcome and accommodated, with transport, meals and a fee that includes, besides the above, school fees, books, uniforms, registration fee and personal accident insurance., As the first International School in the area with a Boarding School, at Prime Boarding students are encouraged to explore who they are and have the opportunity to join in any activity that suits their interests., Learn more, Get in contact with the Admissions team, Admissions Team",
@@ -5790,8 +5189,7 @@
       "grade_range": "Nursery – Year 13",
       "total_students": 200,
       "class_size_avg": 12,
-      "student_nationalities": 51,
-      "acceptance_rate": null
+      "student_nationalities": 51
     },
     "fees": {
       "annual_min_eur": 11885.0,
@@ -5819,14 +5217,16 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Dance"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -5837,14 +5237,22 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "redbridge-international-school-lisbon",
     "name": "Redbridge International School",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Approx. 550 students",
+      "25 nationalities represented",
+      "IB approach",
+      "International Baccalaureate approach",
+      "Cambridge approach"
+    ],
     "highlights": null,
     "location": {
       "address": "R. Francisco Metrass 95, 1350-164 Lisbon, Portugal",
@@ -5891,8 +5299,7 @@
       "grade_range": "Nursery – Year 11",
       "total_students": 515,
       "class_size_avg": 15,
-      "student_nationalities": 47,
-      "acceptance_rate": null
+      "student_nationalities": 47
     },
     "fees": {
       "annual_min_eur": 8600.0,
@@ -5920,12 +5327,13 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -5938,14 +5346,22 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "santo-ant-nio-international-school-lisbon",
     "name": "Santo António International School",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Founded in 2018",
+      "Located in the heart of Monte Estoril",
+      "IB approach",
+      "Cambridge approach",
+      "STEM approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Avenida Sabóia Nº 662 A,, , 2765-277 Estoril, , Portugal",
@@ -5989,8 +5405,7 @@
       "grade_range": "Reception – Year 13",
       "total_students": 175,
       "class_size_avg": 23,
-      "student_nationalities": 31,
-      "acceptance_rate": null
+      "student_nationalities": 31
     },
     "fees": {
       "annual_min_eur": 12660.0,
@@ -6018,12 +5433,16 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Dance",
+        "Football",
+        "Music"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -6034,14 +5453,19 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "sintra-international-christian-academy-in-lisbon",
     "name": "Sintra International Christian Academy",
     "type": "Religious",
     "status": "Active",
-    "description": null,
+    "description": [
+      "IB approach",
+      "STEM approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Avenida Irene Lisboa 54 Rio De Mouro, Lisbon, Portugal",
@@ -6057,7 +5481,7 @@
     },
     "contact": {
       "phone": null,
-      "email": null,
+      "email": "filler@godaddy.com",
       "website": "https://sintrainternationalchristianacademy.org/",
       "admissions_url": null,
       "social_media": null
@@ -6085,8 +5509,7 @@
       "grade_range": "Nursery – Year 13",
       "total_students": 20,
       "class_size_avg": 6,
-      "student_nationalities": 5,
-      "acceptance_rate": null
+      "student_nationalities": 5
     },
     "fees": {
       "annual_min_eur": null,
@@ -6114,14 +5537,15 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -6132,14 +5556,20 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "st-dominic's-international-school-lisbon",
     "name": "St. Dominic's International School",
     "type": "International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Founded in 1997",
+      "IB approach",
+      "International Baccalaureate approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Rua Maria Brown, Outeiro de Polima, , 2785-816, São Domingos de Rana, Portugal",
@@ -6183,8 +5613,7 @@
       "grade_range": "Nursery – Year 13",
       "total_students": 611,
       "class_size_avg": 15,
-      "student_nationalities": 43,
-      "acceptance_rate": null
+      "student_nationalities": 43
     },
     "fees": {
       "annual_min_eur": 11500.0,
@@ -6212,14 +5641,17 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art"
+      ],
+      "transport": {
+        "school_bus": true
+      }
     },
     "meta": {
       "founding_year": null,
@@ -6232,14 +5664,19 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": "Admission How to Book a Visit Step by Step Guide Tuition and Fees Home About Us Mission and Values Why Choose our School Academic Results ISP Schools History Facilities Parent Teacher Association COVID 19 Admissions How to Book a Visit Step by Step Guide Tuition and Fees Employment Our School Early",
+    "language_support": true
   },
   {
     "id": "st-george's-school-lisbon",
     "name": "St. George's School",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "IB approach",
+      "Cambridge approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Rua dos Depósitos de Água, nº 339 - 1º 2750-561 Cascais Portugal",
@@ -6255,7 +5692,7 @@
     },
     "contact": {
       "phone": null,
-      "email": null,
+      "email": "office@stgeorgesschool.pt",
       "website": "http://www.stgeorgesschool.pt/",
       "admissions_url": null,
       "social_media": null
@@ -6284,8 +5721,7 @@
       "grade_range": "Year 5 – Year 13",
       "total_students": null,
       "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
+      "student_nationalities": null
     },
     "fees": {
       "annual_min_eur": 7900.0,
@@ -6313,12 +5749,13 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": null,
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -6329,14 +5766,18 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "Medium"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "st-james'-primary-school-lisbon",
     "name": "St. James' Primary School",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "IB approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Rua dos Depósitos de Água, 339, , Cascais , Lisboa, , 2750-561 Portugal",
@@ -6352,7 +5793,7 @@
     },
     "contact": {
       "phone": null,
-      "email": null,
+      "email": "office@stjamesschool.pt",
       "website": "http://stjamesschool.pt/",
       "admissions_url": null,
       "social_media": null
@@ -6379,8 +5820,7 @@
       "grade_range": "Year 1 – Year 5",
       "total_students": 95,
       "class_size_avg": 15,
-      "student_nationalities": 10,
-      "acceptance_rate": null
+      "student_nationalities": 10
     },
     "fees": {
       "annual_min_eur": 8300.0,
@@ -6408,14 +5848,15 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -6426,14 +5867,22 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": "apply? Fill in our application form and we will get back to you as soon as possible.",
+    "language_support": null
   },
   {
     "id": "st-julian's-school-lisbon",
     "name": "St. Julian's School",
     "type": "International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Founded in 1932",
+      "60 nationalities represented",
+      "IB approach",
+      "bilingual approach",
+      "STEM approach"
+    ],
     "highlights": null,
     "location": {
       "address": "St. Julian's School, Quinta Nova , , 2775-588 Carcavelos, Portugal",
@@ -6448,8 +5897,8 @@
       "nearby_neighborhoods": null
     },
     "contact": {
-      "phone": null,
-      "email": null,
+      "phone": "+351 21 458 5300",
+      "email": "mail@stjulians.com",
       "website": "https://www.stjulians.com/",
       "admissions_url": null,
       "social_media": null
@@ -6482,8 +5931,7 @@
       "grade_range": "Nursery – Year 13",
       "total_students": 1289,
       "class_size_avg": 19,
-      "student_nationalities": 61,
-      "acceptance_rate": null
+      "student_nationalities": 61
     },
     "fees": {
       "annual_min_eur": 12384.0,
@@ -6511,14 +5959,21 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Athletics",
+        "Dance",
+        "Drama",
+        "Football",
+        "Music",
+        "Rugby"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -6531,7 +5986,9 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": "Admissions Process Book a Visit Pre-Prep 3-4 Prep School 5-10 Secondary 11-18 Bilingual 6-14 Welcome from the Head - St.",
+    "language_support": null
   },
   {
     "id": "svenska-skolan-lissabon-lisbon",
@@ -6579,8 +6036,7 @@
       "grade_range": "Nursery – Year 7",
       "total_students": 90,
       "class_size_avg": 15,
-      "student_nationalities": 10,
-      "acceptance_rate": null
+      "student_nationalities": 10
     },
     "fees": {
       "annual_min_eur": 7380.0,
@@ -6608,12 +6064,11 @@
       "portuguese_integration_program": null,
       "english_as_primary": false,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": null,
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -6624,14 +6079,22 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "tasis-portugal-lisbon",
     "name": "TASIS Portugal",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Founded in 2020",
+      "Located in beautiful",
+      "Approx. 959 students",
+      "65 nationalities represented",
+      "IB approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Estrada Nacional No 9, , Quinta da Beloura II, , 2710-697 Sintra Portugal",
@@ -6675,8 +6138,7 @@
       "grade_range": "Nursery – Year 13",
       "total_students": 880,
       "class_size_avg": 24,
-      "student_nationalities": 60,
-      "acceptance_rate": null
+      "student_nationalities": 60
     },
     "fees": {
       "annual_min_eur": 12390.0,
@@ -6704,12 +6166,14 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Theatre"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -6721,7 +6185,9 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": "Apply Applications are considered throughout the year, and interested families are invited to visit the campus.",
+    "language_support": null
   },
   {
     "id": "the-british-school-of-lisbon",
@@ -6769,8 +6235,7 @@
       "grade_range": "Nursery – Year 10",
       "total_students": 160,
       "class_size_avg": 18,
-      "student_nationalities": 30,
-      "acceptance_rate": null
+      "student_nationalities": 30
     },
     "fees": {
       "annual_min_eur": 13110.0,
@@ -6798,14 +6263,17 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Football",
+        "Music"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -6819,14 +6287,24 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "the-lisboan-international-school-lisbon",
     "name": "The Lisboan International School",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "IB approach",
+      "International Baccalaureate approach",
+      "Cambridge approach",
+      "STEM approach",
+      "Accredited by CIS",
+      "Accredited by COBIS",
+      "Ages 3 to 14"
+    ],
     "highlights": null,
     "location": {
       "address": "R. Maria Luísa Holstein, 1300-388 Lisbon, Portugal",
@@ -6842,7 +6320,7 @@
     },
     "contact": {
       "phone": null,
-      "email": null,
+      "email": "info@the-lisboan.school",
       "website": "https://the-lisboan.school/",
       "admissions_url": null,
       "social_media": null
@@ -6869,8 +6347,7 @@
       "grade_range": "Nursery – Year 13",
       "total_students": 1200,
       "class_size_avg": 8,
-      "student_nationalities": 28,
-      "acceptance_rate": null
+      "student_nationalities": 28
     },
     "fees": {
       "annual_min_eur": 11950.0,
@@ -6898,14 +6375,17 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Music",
+        "Orchestra"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -6917,14 +6397,19 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "theodore-international-startup-academy-lisbon",
     "name": "Theodore International Startup Academy",
     "type": "International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "IB approach",
+      "Ages 3 to 12"
+    ],
     "highlights": null,
     "location": {
       "address": "Rua São Sebastião da Pedreira 27, 1050-010 Lisboa, Portugal",
@@ -6940,7 +6425,7 @@
     },
     "contact": {
       "phone": null,
-      "email": null,
+      "email": "portugal@tisaschool.nl",
       "website": "https://tisaschool.pt/",
       "admissions_url": null,
       "social_media": null
@@ -6965,8 +6450,7 @@
       "grade_range": "Nursery – Year 7",
       "total_students": 25,
       "class_size_avg": 7,
-      "student_nationalities": 9,
-      "acceptance_rate": null
+      "student_nationalities": 9
     },
     "fees": {
       "annual_min_eur": 18000.0,
@@ -6994,12 +6478,14 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Entrepreneurship"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -7010,14 +6496,22 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": "Enrollment process Book a School Visit Visit our school, meet the team, and explore how we learn and grow at TISA.",
+    "language_support": null
   },
   {
     "id": "united-lisbon-international-school",
     "name": "United Lisbon International School",
     "type": "International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Located in Lisbon",
+      "Approx. 600 students",
+      "50 nationalities represented",
+      "IB approach",
+      "Accredited by NEASC"
+    ],
     "highlights": null,
     "location": {
       "address": "Avenida Marechal Gomes da Costa, No 9, 1800-255 Lisbon, Portugal",
@@ -7033,7 +6527,7 @@
     },
     "contact": {
       "phone": null,
-      "email": null,
+      "email": "admissions@unitedlisbon.school",
       "website": "https://www.unitedlisbon.school/",
       "admissions_url": null,
       "social_media": null
@@ -7059,8 +6553,7 @@
       "grade_range": "Nursery – Year 13",
       "total_students": 600,
       "class_size_avg": 16,
-      "student_nationalities": 54,
-      "acceptance_rate": null
+      "student_nationalities": 54
     },
     "fees": {
       "annual_min_eur": 11800.0,
@@ -7088,14 +6581,23 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Coding",
+        "Dance",
+        "Drama",
+        "Entrepreneurship",
+        "Football",
+        "Music",
+        "Robotics",
+        "Tennis"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -7107,14 +6609,19 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "brave-generation-academy-madeira",
     "name": "Brave Generation Academy, Madeira",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "IB approach",
+      "STEM approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Estrada Monumental 241c, São Martinho, 9000-103 Funchal, Portugal",
@@ -7165,8 +6672,7 @@
       "grade_range": "Year 7 – Year 13",
       "total_students": 30,
       "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
+      "student_nationalities": null
     },
     "fees": {
       "annual_min_eur": 7140.0,
@@ -7194,12 +6700,14 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Dance"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -7210,14 +6718,22 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "international-sharing-school-madeira",
     "name": "International Sharing School Madeira",
     "type": "International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Founded in 1980",
+      "Approx. 157 students",
+      "35 nationalities represented",
+      "IB approach",
+      "International Baccalaureate approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Caminho dos Saltos 6, 9050-219 Funchal, Madeira Island, Portugal",
@@ -7261,8 +6777,7 @@
       "grade_range": "Nursery – Year 13",
       "total_students": 250,
       "class_size_avg": 20,
-      "student_nationalities": 30,
-      "acceptance_rate": null
+      "student_nationalities": 30
     },
     "fees": {
       "annual_min_eur": 6120.0,
@@ -7290,12 +6805,15 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Coding",
+        "Dance"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -7307,14 +6825,19 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "the-international-school-of-madeira",
     "name": "The International School of Madeira",
     "type": "International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "IB approach",
+      "bilingual approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Calçada do Pico 5, , 9000-206 Funchal, , Portugal",
@@ -7329,8 +6852,8 @@
       "nearby_neighborhoods": null
     },
     "contact": {
-      "phone": null,
-      "email": null,
+      "phone": "91 129 900",
+      "email": "info@ismadeira.com",
       "website": "https://www.ismadeira.com/",
       "admissions_url": null,
       "social_media": null
@@ -7355,8 +6878,7 @@
       "grade_range": "Nursery – Year 5",
       "total_students": null,
       "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
+      "student_nationalities": null
     },
     "fees": {
       "annual_min_eur": 5300.0,
@@ -7384,12 +6906,14 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": null,
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Dance"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -7401,14 +6925,19 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "Medium"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "brave-generation-academy-porto",
     "name": "Brave Generation Academy, Porto",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "IB approach",
+      "STEM approach"
+    ],
     "highlights": null,
     "location": {
       "address": "R. de Paulo da Gama 629, 4150-589 Porto, Portugal",
@@ -7459,8 +6988,7 @@
       "grade_range": "Year 7 – Year 13",
       "total_students": 30,
       "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
+      "student_nationalities": null
     },
     "fees": {
       "annual_min_eur": 7140.0,
@@ -7488,12 +7016,14 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Dance"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -7504,14 +7034,20 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "cjd-international-school-porto",
     "name": "CJD International School",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Founded in 1934",
+      "Approx. 6 students",
+      "IB approach"
+    ],
     "highlights": null,
     "location": {
       "address": "R. do Porto Feliz, 4350-162 Porto, Portugal",
@@ -7526,8 +7062,8 @@
       "nearby_neighborhoods": null
     },
     "contact": {
-      "phone": null,
-      "email": null,
+      "phone": "20 109 083",
+      "email": "secretaria@cjd.pt",
       "website": "https://www.cjd.pt/en/",
       "admissions_url": null,
       "social_media": null
@@ -7552,8 +7088,7 @@
       "grade_range": "Reception – Sixth Form",
       "total_students": 1700,
       "class_size_avg": 18,
-      "student_nationalities": 40,
-      "acceptance_rate": null
+      "student_nationalities": 40
     },
     "fees": {
       "annual_min_eur": 9300.0,
@@ -7581,14 +7116,15 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -7599,14 +7135,18 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "clip-oporto-international-school",
     "name": "CLIP Oporto International School",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "STEM approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Rua de Vila Nova, 1071, , 4100 - 506 Porto, , Portugal",
@@ -7649,8 +7189,7 @@
       "grade_range": "Nursery – Year 13",
       "total_students": 1208,
       "class_size_avg": 17,
-      "student_nationalities": 52,
-      "acceptance_rate": null
+      "student_nationalities": 52
     },
     "fees": {
       "annual_min_eur": 9140.0,
@@ -7678,12 +7217,15 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": null,
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Debate",
+        "Music"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -7695,14 +7237,19 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": "Admissions Want to be a Clipper? Join us Find out how Much more than a school Shaping extraordinary individuals CLIP Teams Professionalised Sports Visit website CLIP Clubs Extra-curricular activities and summer schools Visit website CLIP AdvancEd Languages courses, consulting and training Visit webs",
+    "language_support": null
   },
   {
     "id": "deutsche-schule-zu-porto",
     "name": "Deutsche Schule zu Porto",
     "type": "German International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "IB approach",
+      "STEM approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Rua Guerra Junqueiro, 162, , 4150-386 Porto, , Portugal",
@@ -7717,7 +7264,7 @@
       "nearby_neighborhoods": null
     },
     "contact": {
-      "phone": null,
+      "phone": "26 076 570",
       "email": null,
       "website": "https://dsporto.de/",
       "admissions_url": null,
@@ -7742,8 +7289,7 @@
       "grade_range": "Nursery – Year 13",
       "total_students": 673,
       "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
+      "student_nationalities": null
     },
     "fees": {
       "annual_min_eur": 4860.0,
@@ -7771,12 +7317,14 @@
       "portuguese_integration_program": null,
       "english_as_primary": false,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": null,
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Film"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -7788,7 +7336,9 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "lycee-francais-international-porto",
@@ -7840,8 +7390,7 @@
       "grade_range": "Nursery – Year 13",
       "total_students": 1284,
       "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
+      "student_nationalities": null
     },
     "fees": {
       "annual_min_eur": 5112.0,
@@ -7869,14 +7418,15 @@
       "portuguese_integration_program": null,
       "english_as_primary": false,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -7887,14 +7437,21 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "oceanus-international-school-porto",
     "name": "Oceanus International School",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Founded in 2022",
+      "IB approach",
+      "Cambridge approach",
+      "bilingual approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Rua da Aldeia nº 238, 4405-540 Valadares, Portugal",
@@ -7909,8 +7466,8 @@
       "nearby_neighborhoods": null
     },
     "contact": {
-      "phone": null,
-      "email": null,
+      "phone": "27 127 791",
+      "email": "geral@colegiooceanus.pt",
       "website": "https://colegiooceanus.pt/en/",
       "admissions_url": null,
       "social_media": null
@@ -7935,8 +7492,7 @@
       "grade_range": "Nursery – Year 6",
       "total_students": null,
       "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
+      "student_nationalities": null
     },
     "fees": {
       "annual_min_eur": 5238.0,
@@ -7964,14 +7520,17 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art"
+      ],
+      "transport": {
+        "school_bus": true
+      }
     },
     "meta": {
       "founding_year": null,
@@ -7982,14 +7541,19 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "oporto-british-school",
     "name": "Oporto British School",
     "type": "International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Approx. 577 students",
+      "IB approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Rua da Cerca, 338, , 4150-201 Porto, , Portugal",
@@ -8004,8 +7568,8 @@
       "nearby_neighborhoods": null
     },
     "contact": {
-      "phone": null,
-      "email": null,
+      "phone": "26 166 660",
+      "email": "school@obs.edu.pt",
       "website": "https://www.obs.edu.pt/",
       "admissions_url": null,
       "social_media": null
@@ -8036,8 +7600,7 @@
       "grade_range": "Nursery – Year 13",
       "total_students": 577,
       "class_size_avg": 15,
-      "student_nationalities": 30,
-      "acceptance_rate": null
+      "student_nationalities": 30
     },
     "fees": {
       "annual_min_eur": 9690.0,
@@ -8065,12 +7628,14 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Photography"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -8082,14 +7647,18 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "tickles-international-school-porto",
     "name": "Tickles International School",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Cambridge approach"
+    ],
     "highlights": null,
     "location": {
       "address": "R. São João de Brito Nº 344, 4100-283 Porto, Portugal",
@@ -8104,8 +7673,8 @@
       "nearby_neighborhoods": null
     },
     "contact": {
-      "phone": null,
-      "email": null,
+      "phone": "26 182 000",
+      "email": "tickles@tickles.com.pt",
       "website": "https://tickles.com.pt/en/",
       "admissions_url": null,
       "social_media": null
@@ -8130,8 +7699,7 @@
       "grade_range": "Nursery – Year 6",
       "total_students": null,
       "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
+      "student_nationalities": null
     },
     "fees": {
       "annual_min_eur": 5115.0,
@@ -8159,14 +7727,17 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Theatre"
+      ],
+      "transport": {
+        "school_bus": true
+      }
     },
     "meta": {
       "founding_year": null,
@@ -8177,14 +7748,20 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "colegio-do-vale-setubal",
     "name": "Colégio do Vale",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "IB approach",
+      "Cambridge approach",
+      "bilingual approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Avenida de Vale Bem, nº. 24, , 2820-389, Charneca da Caparica, , Portugal",
@@ -8200,7 +7777,7 @@
     },
     "contact": {
       "phone": null,
-      "email": null,
+      "email": "geral@colegiodovale.com",
       "website": "https://www.colegiodovale.pt/en/",
       "admissions_url": null,
       "social_media": null
@@ -8228,8 +7805,7 @@
       "grade_range": "Nursery – Year 2",
       "total_students": null,
       "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
+      "student_nationalities": null
     },
     "fees": {
       "annual_min_eur": null,
@@ -8257,14 +7833,15 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -8275,14 +7852,19 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "Medium"
-    }
+    },
+    "admission_process": "Enroll yout child News Discover the latest news, events, and stories from our community.",
+    "language_support": null
   },
   {
     "id": "foz-school-sesimbra",
     "name": "Foz School",
     "type": "International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "bilingual approach",
+      "project-based approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Portugal",
@@ -8320,8 +7902,7 @@
       "grade_range": "Nursery – Year 9",
       "total_students": null,
       "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
+      "student_nationalities": null
     },
     "fees": {
       "annual_min_eur": null,
@@ -8349,12 +7930,13 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": null,
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -8365,7 +7947,9 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "Medium"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "international-school-of-palmela",
@@ -8387,8 +7971,8 @@
       "nearby_neighborhoods": null
     },
     "contact": {
-      "phone": null,
-      "email": null,
+      "phone": "21 210 5685",
+      "email": "info@cip.edu.pt",
       "website": "https://cip.edu.pt/",
       "admissions_url": null,
       "social_media": null
@@ -8412,8 +7996,7 @@
       "grade_range": "Reception – Year 13",
       "total_students": null,
       "class_size_avg": null,
-      "student_nationalities": null,
-      "acceptance_rate": null
+      "student_nationalities": null
     },
     "fees": {
       "annual_min_eur": null,
@@ -8441,14 +8024,13 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": null,
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -8459,7 +8041,9 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "Medium"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "seixal-international-school-palmela",
@@ -8482,7 +8066,7 @@
     },
     "contact": {
       "phone": null,
-      "email": null,
+      "email": "secretaria@seixalinternationalschool.pt",
       "website": "https://www.seixalinternationalschool.pt/en/",
       "admissions_url": null,
       "social_media": null
@@ -8507,8 +8091,7 @@
       "grade_range": "Nursery – Year 5",
       "total_students": null,
       "class_size_avg": 16,
-      "student_nationalities": 10,
-      "acceptance_rate": null
+      "student_nationalities": 10
     },
     "fees": {
       "annual_min_eur": null,
@@ -8536,14 +8119,15 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -8554,14 +8138,22 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "st-peters-international-school-palmela",
     "name": "St. Peters International School",
     "type": "International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "Located in Palmela",
+      "IB approach",
+      "Cambridge approach",
+      "bilingual approach",
+      "STEM approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Quinta dos Barreleiros, , Volta da Pedra, , 2950-201, Palmela, Portugal",
@@ -8610,8 +8202,7 @@
       "grade_range": "Nursery – Year 13",
       "total_students": 1500,
       "class_size_avg": 25,
-      "student_nationalities": 44,
-      "acceptance_rate": null
+      "student_nationalities": 44
     },
     "fees": {
       "annual_min_eur": 9800.0,
@@ -8639,14 +8230,17 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Coding",
+        "Dance"
+      ],
+      "transport": null
     },
     "meta": {
       "founding_year": null,
@@ -8657,14 +8251,20 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": null,
+    "language_support": null
   },
   {
     "id": "international-school-torres-vedras",
     "name": "International School Torres Vedras",
     "type": "British International",
     "status": "Active",
-    "description": null,
+    "description": [
+      "IB approach",
+      "Cambridge approach",
+      "project-based approach"
+    ],
     "highlights": null,
     "location": {
       "address": "Alameda das Linhas da Portela, 2560-596 Torres Vedras, Portugal",
@@ -8709,8 +8309,7 @@
       "grade_range": "Nursery – Year 13",
       "total_students": 556,
       "class_size_avg": 22,
-      "student_nationalities": 24,
-      "acceptance_rate": null
+      "student_nationalities": 24
     },
     "fees": {
       "annual_min_eur": null,
@@ -8738,14 +8337,25 @@
       "portuguese_integration_program": null,
       "english_as_primary": true,
       "parent_community_active": null,
-      "cultural_diversity_score": null,
-      "safety_rating": null,
       "after_school_care": null,
       "school_bus_routes": [
         "available"
       ],
       "university_counseling": null,
-      "notable_alumni": null
+      "extracurricular_activities": [
+        "Art",
+        "Dance",
+        "Drama",
+        "Football",
+        "Tennis",
+        "Volleyball"
+      ],
+      "transport": {
+        "school_bus": true,
+        "zones_covered": [
+          "our students"
+        ]
+      }
     },
     "meta": {
       "founding_year": null,
@@ -8756,6 +8366,8 @@
       ],
       "last_verified": "2026-03-02",
       "data_confidence": "High"
-    }
+    },
+    "admission_process": "apply their theories through the lenses of concepts; to contextualize and understand the application of their learning in the world around them.",
+    "language_support": null
   }
 ]

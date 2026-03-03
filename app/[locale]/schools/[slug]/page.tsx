@@ -27,6 +27,7 @@ export async function generateMetadata({ params }: PageProps) {
     if (!school) return { title: t("title") };
 
     const schoolT = getSchoolT(school, locale);
+    const isCurated = Boolean(school.translations.en.verdict);
     const base = process.env.NEXT_PUBLIC_BASE_URL || 'https://trustfamily.com';
     const title = `${school.name} — International School Portugal | TrustFamily`;
     const description = `${schoolT.description} Curriculum: ${school.curriculum}. Annual fees: ${school.fees}. Location: ${school.location}.`;
@@ -43,6 +44,7 @@ export async function generateMetadata({ params }: PageProps) {
         title,
         description,
         alternates: { canonical, languages },
+        ...(isCurated ? {} : { robots: { index: false, follow: false } }),
         openGraph: {
             title,
             description,
@@ -62,11 +64,12 @@ export async function generateMetadata({ params }: PageProps) {
 // ISR: regenerate every 24 h so school data stays fresh without full rebuilds
 export const revalidate = 86400;
 
-// Generate static params for all schools
+// Generate static params only for curated schools (editorial content).
+// Imported schools remain accessible on-demand (ISR) but are not pre-built.
 export function generateStaticParams() {
-    return schoolsData.map((school) => ({
-        slug: school.slug,
-    }));
+    return schoolsData
+        .filter((s) => Boolean(s.translations.en.verdict))
+        .map((school) => ({ slug: school.slug }));
 }
 
 export default async function SchoolDetailPage(props: PageProps) {

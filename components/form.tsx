@@ -111,6 +111,21 @@ export default function Form() {
                 />
             </div>
 
+            {/* Honeypot — hidden from real users, filled only by bots */}
+            <div
+                aria-hidden="true"
+                style={{ position: 'absolute', left: '-9999px', width: '1px', height: '1px', overflow: 'hidden' }}
+            >
+                <label htmlFor="trap">Leave this field empty</label>
+                <input
+                    id="trap"
+                    name="trap"
+                    type="text"
+                    tabIndex={-1}
+                    autoComplete="off"
+                />
+            </div>
+
             <Button type="submit" className="w-full text-lg py-6" disabled={isPending}>
                 {isPending ? t("submittingBtn") : t("submitBtn")}
             </Button>

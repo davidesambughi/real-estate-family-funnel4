@@ -125,6 +125,12 @@ export interface School {
   schoolBusRoutes?: boolean;   // school bus service available
   dataConfidence?: "High" | "Medium" | "Low";
   studentCount?: number;       // total students enrolled
+  // New enriched fields from updated JSON schema
+  admissionProcess?: string;   // scraped admission process text
+  extracurriculars?: string[];  // extracurricular activities list
+  transport?: string;          // transport info (from expat_family_features.transport)
+  languageSupport?: string;    // language support info
+  rawDescription?: string[];   // description keywords/facts array from raw JSON
 
   // ── Phase 4: SEO/GEO structured data ───────────────────────────
   coordinates: GeoCoordinates;

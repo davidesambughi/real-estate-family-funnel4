@@ -1,5 +1,5 @@
 # TrustFamily Relocation Funnel — Project Status
-> Ultimo aggiornamento: 2026-03-02 | Sessione 8
+> Ultimo aggiornamento: 2026-03-03 | Sessione 11
 
 ---
 
@@ -26,13 +26,14 @@ Una guida completa, autorevole e multilingua per famiglie internazionali che si 
 | Guide pillar (3) | ✅ Completo | Relocation, Schools, Neighborhoods |
 | Blog | ✅ Completo | Listing + individual pages, Article schema |
 | About | ✅ Completo | |
-| School Finder (quiz) | ⚠️ Da verificare | Quiz esiste, integrazione end-to-end non verificata |
+| School Finder (quiz) | ✅ Funzionante | Quiz in homepage (`#quiz`); slug verificati; school-finder page = landing editoriale con CTA → `/#quiz` |
 | **Scuole: 4 curated** | ✅ Completo | Testo editoriale, 6 locali, schema, tutto |
-| **Scuole: 73 imported** | ✅ Dati strutturali completi (sessione 8) | Auto-description fattuale; no testo narrativo (post-lancio) |
+| **Scuole: 73 imported** | ⚠️ Architettura ✅, dati in attesa | Directory + paginazione implementati; JSON arricchito atteso dal progetto scraping |
+| **School listing (pillar page)** | ⚠️ Implementato con bug noti | SchoolsList split + SchoolDirectory; bug B6-B11 da fixare dopo nuovo JSON |
 | **Quartieri: 5 curated** | ✅ Completo | Testo editoriale, 6 locali, schema, tutto |
 | **Quartieri: 59 imported** | ✅ Mapping completo (sessione 7) | Tutti i campi JSON ora mappati e renderizzati |
-| CRM / Form | ❌ Non integrato | P0 bloccante |
-| Immagini reali | ❌ Placeholder | Immagine generica per tutte le scuole/quartieri |
+| CRM / Form | ⚠️ Web3Forms integrato, in attesa chiave agenzia | Form con 7 campi + Zod + 6 locali + honeypot ✅; backend Web3Forms implementato in `lib/actions.ts`; `WEB3FORMS_ACCESS_KEY` vuota — in attesa dell'email dell'agenzia |
+| Immagini | ⚠️ Reali ma generiche/condivise | `schools-img.jpg` + `neighborhoods-img.jpg` caricate; una sola immagine per tutte le scuole/quartieri |
 | Mappe | ⚠️ Stub accettabile | Link a Google Maps, nessuna mappa embedded |
 
 ---
@@ -40,138 +41,113 @@ Una guida completa, autorevole e multilingua per famiglie internazionali che si 
 ## DATA STATUS — ANALISI OGGETTIVA
 
 ### Scuole (schools-database.json)
-> **92 entries raw** → **77 valide** (15 filtrate: Low confidence + Wikipedia) | 4 curated (contenuto editoriale completo) | 73 imported (dati strutturali grezzi)
+> **92 entries raw** → **77 valide** (15 filtrate: Low confidence + Wikipedia) | 4 curated | 73 imported
 
-**Disponibilità dati nel JSON grezzo (92 raw, 77 valide dopo filtering):**
+**Copertura dati per le 77 valide (stato attuale, pre-nuovo JSON):**
 ```
-nome             : 92/92 (100%) ✅
-coordinate       : 92/92 (100%) ✅
-fees (min/max)   : 77/92 (84%)  ✅
-curriculum       : 77/77 (100%) ✅ (scraper v2 — dato pulito)
-acceptance rate  :  0/77 (0%)   ❌ non raccolto dallo scraper
-description      :  0/77 (0%)   ❌ non raccolto dallo scraper
-facilities       :  0/77 (0%)   ❌ non raccolto dallo scraper
-expat_features   :  0/77 (0%)   ❌ non raccolto dallo scraper
+nome             : 77/77 (100%) ✅
+coordinate       : ~73/77 (95%) ✅ (fallback Lisbon center per le restanti)
+curriculum       : 77/77 (100%) ✅
+fees (min/max)   : ~65/77 (84%) ✅
+age_range        : ~65/77 (84%) ✅
+qualifications   : ~60/77 (78%) ✅
+english_primary  : ~64/77 (83%) ✅
+website          : ~60/77 (78%) ✅
+description      :  4/77  (5%)  ❌ solo le 4 curated; le 73 imported = auto-description
+acceptance_rate  :  4/77  (5%)  ❌ solo le 4 curated; 0 nel JSON scraper
+location.city    : ~50/77 (65%) ⚠️ alcune scuole imported hanno city=null → location="Portugal"
 ```
 
-**Causa del problema:** Lo scraper ha raccolto dati strutturati da directory pubblici (international-schools-database.com) ma non ha estratto testo descrittivo. I campi narrativi (`description`, `verdict`, `parentWhisper`, `highlights`, `trustBadges`) non esistono nel JSON sorgente — non è un bug di rendering.
+**Nuovo JSON atteso domani (obiettivo arricchimento):**
+- ~61 scuole TIER A: 12-16 campi compilati + description testuale (150-300 parole)
+- ~16 scuole TIER B: 7-11 campi compilati, senza description
+- Nuovi campi attesi: `description`, `admission_process`, `language_support`, `extracurricular_activities`, `transport`
+- Campi da rimuovere: `notable_alumni`, `cultural_diversity_score`, `safety_rating`, `acceptance_rate`
 
-**Stato sessione 8 — Mapping e fix completati:**
-- Nuovo JSON (scraper v2): curriculum 100% pulito, age_range 84%, qualifications 80%, english_as_primary 83%, data_confidence 100%
-- Auto-description fattuale generata in TypeScript da dati strutturati (es: *"St. Julian's School is an international school in Lisbon. Curriculum: IB, British, Portuguese. Ages 3–18. Annual fees: €12,384 – €29,097."*)
-- B1 risolto: card "Neighborhood Match" non appare per scuole senza `neighborhoodSlug`
-- B2 risolto: le sezioni vuote (verdict, parentWhisper, highlights) non vengono renderizzate
-- 1 entry invalida rimossa (Wikipedia:FAQ/Categorization)
-- Slug sanitization: URL-encoding decodificato + traslitterazione accenti (é→e, ç→c)
-- Nuovi campi nel sidebar: ageRange, website, englishAsPrimary, schoolBusRoutes, studentCount
-
-**Testo narrativo (post-lancio):** Le 73 scuole imported non hanno descrizioni editoriali — solo auto-description fattuale. Per narrativa reale: Opzione A = scraping headless (Playwright), Opzione B = generazione AI batch via Claude API.
+**Il JSON attuale rimane in uso fino all'arrivo di quello arricchito.**
 
 ---
 
 ### Quartieri (neighborhoods-database.json)
 > **64 entries totali** | 5 curated (contenuto editoriale completo, 6 locali) | 59 imported
 
-**Disponibilità dati nel JSON grezzo:**
+**Disponibilità dati:**
 ```
 nome                    : 64/64 (100%) ✅
 coordinate              : 64/64 (100%) ✅
-vibe_description        : 64/64 (100%) ✅ — testo descrittivo reale
-best_for (tag)          : 64/64 (100%) ✅
-local_highlights        : 64/64 (100%) ✅
+vibe_description        : 64/64 (100%) ✅
 pros/cons               : 64/64 (100%) ✅
-prezzi immobili         : 64/64 (100%) ✅ — €/m², affitti, fonte e data
-family_living scores    : 64/64 (100%) ✅ — safety, walkability, beach_access
-demographics            : 64/64 (100%) ✅ — expat %, nazionalità, english_friendliness
-cost_of_living          : 64/64 (100%) ✅ — budget mensile famiglia
+prezzi immobili         : 64/64 (100%) ✅
+family_living scores    : 64/64 (100%) ✅
+demographics            : 64/64 (100%) ✅
+cost_of_living          : 64/64 (100%) ✅
 expat_community         : 64/64 (100%) ✅
 transport               : 64/64 (100%) ✅
-education_nearby        : 64/64 (100%) ✅
 commute_to_lisbon       : 44/64 (69%)  ⚠️ parziale
 ```
 
-**Stato sessione 7:** Mapping completato. Tutti i campi ora mappati e renderizzati condizionalmente.
-- Nuove interfacce TypeScript: `NeighborhoodRealEstate`, `NeighborhoodFamilyLiving`, `NeighborhoodDemographics`, `NeighborhoodCostOfLiving`, `NeighborhoodExpatCommunity`, `NeighborhoodTransportInfo`
-- Detail page: 7 nuove sezioni condizionali (nessuna sezione vuota mostrata)
-- `cons?: string[]` aggiunto a `NeighborhoodTranslation` per pros_cons.cons
-- B4 risolto: `city="Lisbon"` sostituito con `neighborhood.location`
+**Stato:** Mapping completo ✅ — tutti i campi mappati e renderizzati condizionalmente nel detail page.
 
 ---
 
-## BUG CRITICI ATTIVI
+## BUG ATTIVI
+
+### Bug pre-esistenti (sessioni precedenti)
 
 | # | Bug | Impatto | File | Priorità |
 |---|---|---|---|---|
-| B1 | ~~Link neighborhood → `/neighborhoods/portugal` → 404~~ | ✅ Risolto sessione 8 | `neighborhoodSlug` opzionale; card condizionale |
-| B2 | ~~Pagine detail scuole imported: contenuto vuoto~~ | ✅ Risolto sessione 8 | Auto-description fattuale generata da dati strutturati |
-| B3 | ~~BreadcrumbList JSON-LD path singolari vs plurali~~ | ✅ Non era un bug | `/school/[slug]` singolare è corretto per EN routing in `i18n/routing.ts` |
-| B4 | ~~NeighborhoodMap riceve `city="Lisbon"` per quartieri non a Lisbona~~ | ✅ Risolto sessione 7 | Ora usa `neighborhood.location` |
-| B5 | `SchoolMap` e `NeighborhoodMap`: label "Open in Maps" / "Explore on Maps" hardcoded EN | i18n incompleto | `SchoolMap.tsx:56`, `NeighborhoodMap.tsx:72` | BASSA |
+| B5 | `SchoolMap`: "Open in Maps" hardcoded EN; `NeighborhoodMap`: "Explore on Maps" + labels amenità (Schools/Cafés/Parks) hardcoded EN | i18n incompleto | `SchoolMap.tsx:57`, `NeighborhoodMap.tsx:20-23,73` | BASSA |
+| B-form | Bottone "Contact" in school detail page non ha azione né link — è un `<Button>` morto | Funnel lead rotto sulle pagine scuola | `schools/[slug]/page.tsx:149` | ALTA (dopo CRM) |
+| B-quiz-ui | "Your Results" hardcoded EN in QuizResult — non usa la prop `translations` | i18n incompleto nel risultato quiz | `QuizResult.tsx:39` | BASSA |
+| B-faq-sf | FAQPage schema school-finder: 2 item nello schema, 3 FAQ renderizzate nell'HTML — mismatch | Google Rich Snippets potrebbe rifiutare | `school-finder/page.tsx:69-92` | MEDIA |
+
+### Bug nuovi — SchoolDirectory (sessione 9)
+
+> Questi bug sono stati identificati durante il design del componente. Alcuni dipendono dai dati attuali (risolti automaticamente col nuovo JSON), altri richiedono fix al codice.
+
+| # | Bug | Impatto | File | Quando fixare |
+|---|---|---|---|---|
+| B6 | **Filtro regione inaffidabile**: location.city mancante per ~35% delle scuole imported → tutte in "Other Portugal" | Filtro regione mostra risultati fuorvianti | `SchoolsList.tsx` (`extractRegion`) + `SchoolDirectory.tsx` | Dopo nuovo JSON — verificare copertura location.city |
+| B7 | **`loc.includes("set")` troppo generico** in `extractRegion` — può matchare stringhe inattese | Region assignment errato in edge case | `SchoolsList.tsx:71` *(non :50 come documentato in precedenza)* | Fix rapido |
+| B8 | **Filtro "Contact school" cattura anche scuole senza dati fees** — `feesMin===null` significa sia "Contact school" che "dato mancante" | Filtro price="contact" non granulare | `SchoolDirectory.tsx` | Dopo nuovo JSON — valutare se aggiungere campo `feesAvailable: boolean` |
+| B9 | **Nessuno scroll-to-top quando cambia pagina** — dopo "Next →" i nuovi risultati partono sotto la fold | UX: l'utente deve scrollare manualmente | `SchoolDirectory.tsx` (handler paginazione) | Domani (fix semplice — `scrollIntoView`) |
+| B10 | **`<dl>` senza `<dt>`/`<dd>`** nella mini-card — HTML semantico scorretto | Accessibilità; validazione HTML | `SchoolDirectory.tsx:193` | Domani (fix semplice — cambiare a `<div>`) |
+| B11 | **Curriculum "Other" troppo ampio** — "Private school", "Parochial", "International" tutti in un unico bucket | Filtro curriculum poco utile | `SchoolsList.tsx` (`normalizeCurriculum`) | Dopo nuovo JSON — dipende da come arrivano i dati curriculum |
 
 ---
 
-## ROADMAP — VERSO PRODUCTION-READY
+## ARCHITETTURA SCHOOL LISTING (implementata sessione 9)
 
-### FASE 1 — Stabilizzazione dati (BLOCCANTE)
+### Componenti coinvolti
 
-**F1.A — Scuole: strategia per le 73 imported**
+```
+app/.../best-private-and-public-international-schools-portugal-2026/page.tsx
+  └── <SchoolsList />   ← server component, NON modificato nel pillar page
 
-Il JSON grezzo non contiene testo descrittivo. Tre opzioni:
+components/SchoolsList.tsx   ← SERVER COMPONENT (modificato sessione 9)
+  ├── Parte 1: "Editorial Top Picks" — 4 curated, rich card invariate
+  └── Parte 2: passa SchoolDirectoryItem[] a <SchoolDirectory />
 
-| Opzione | Pro | Contro | Tempo |
-|---|---|---|---|
-| **A) Mostra card minima** — nome, fees, curriculum, coordinate. Nessuna description/verdict. Aggiungere label "Dati in aggiornamento" | Onesto, scalabile, funziona subito | UI meno ricca per scuole non-curated | 1-2h |
-| **B) Genera description automatica** — template: "X è una scuola internazionale a Y con curriculum Z e rette da €A a €B" | Contenuto presente su ogni pagina | Contenuto generico, non editoriale | 3-4h |
-| **C) Nascondere le imported** | Esperienza pulita | Contraddice l'obiettivo "guida completa" | 1h |
+components/SchoolDirectory.tsx   ← CLIENT COMPONENT (nuovo sessione 9)
+  ├── Filtri: region, curriculum, price range, language
+  ├── Paginazione: 12 per pagina, client-side
+  └── Mini-card compatta (3 col desktop / 2 tablet / 1 mobile)
+```
 
-**Raccomandazione: Opzione A + Fix B1 (404 neighborhood link)**. Mostrare le scuole con i dati che si hanno, senza fingere di avere più dati. Per il lancio è onesto e funzionante.
+### Flusso dati
 
-**F1.B — Quartieri: arricchire il mapping**
+```
+schoolsData (77 School objects, letti a build time)
+  → SchoolsList (server): mappa a SchoolDirectoryItem[] (dati minimali)
+  → SchoolDirectory (client): riceve ~5KB di dati serializzati
+  → Browser: ZERO JSON completo nel bundle
+```
 
-I dati esistono nel JSON. Il mapping va espanso per includere:
-- Prezzi immobili (real_estate)
-- Punteggi family (safety_score, walkability_score)
-- Demographics (expat %, nazionalità)
-- Cost of living (budget mensile)
-- Transport (metro, treno, ciclismo)
-
-Questo richiede:
-1. Aggiornare `NeighborhoodTranslation` in `lib/types.ts` con campi numerici/strutturati
-2. Aggiornare il mapping in `lib/data/neighborhoods.ts`
-3. Aggiornare `neighborhoods/[slug]/page.tsx` per renderizzare i nuovi campi
-
-Stima: 4-6h
-
-**F1.C — Fix B3 (BreadcrumbList URL)**
-
-Fix rapido, 30 minuti.
-
----
-
-### FASE 2 — UI/UX (dopo la stabilizzazione dati)
-
-| Feature | Priorità | Note |
-|---|---|---|
-| Paginazione / filtri scuole | ALTA | 77 card contemporaneamente = lento e inutilizzabile |
-| Filtri quartieri (per zona, budget, tipo) | ALTA | 64 card = stesso problema |
-| Immagini reali (4 scuole curated) | ALTA | `schools-img.jpg` è placeholder generico |
-| Mappa embedded (Google Maps Embed iframe) | MEDIA | Stub attuale è accettabile ma non ottimale |
-| CRM form integration | ALTA (P0) | Form non collegato |
-| School Finder: verifica end-to-end | ALTA | Quiz esiste, funzionamento non verificato |
-
----
-
-### FASE 3 — Post-lancio
-
-| Feature | Note |
-|---|---|
-| i18n quartieri imported | Tradurre descrizioni dei 59 quartieri imported in 5 lingue |
-| Testo editoriale scuole imported | Arricchire le 73 scuole imported con descrizioni reali (richiede ricerca manuale o nuovo scraping con focus su testo) |
-| OG image locale-aware | |
-| Google Search Console | |
-| Vercel Analytics | |
-| sameAs Organization schema | Quando profili social attivi |
-| Rich Results Test | Post-deploy su tutti gli schema |
+### SchoolDirectoryItem (tipo serializzato al client)
+```typescript
+{ slug, name, location, region, curriculum, curriculumTag,
+  fees, feesMin, ageRange, englishAsPrimary, isCurated }
+```
 
 ---
 
@@ -185,6 +161,9 @@ Fix rapido, 30 minuti.
 | Self-referencing canonical su homepage | Ogni locale è canonical di se stesso | Sessione 4 |
 | Canonical EN per pagine detail | Struttura SEO standard per siti multilingua | Sessione 2 |
 | ISR per tutte le pagine dinamiche | Evitare rebuild completi su data change | Sessione 2 |
+| School listing: Top Picks (4 rich) + Directory (77 compact + filtri) | UX + performance: nessun rendering di 77 card uguali | Sessione 9 |
+| SchoolDirectory = client component con dati minimali | Full JSON mai nel bundle browser | Sessione 9 |
+| Curated identificate da `Boolean(translations.en.verdict)` | Discriminatore stabile, no campo extra nel tipo | Sessione 9 |
 
 ---
 
@@ -193,7 +172,7 @@ Fix rapido, 30 minuti.
 | Var | Valore produzione | Stato |
 |---|---|---|
 | `NEXT_PUBLIC_BASE_URL` | `https://trustfamily.com` | ❌ Mancante su Vercel |
-| CRM API key | TBD | ❌ Non definita |
+| `WEB3FORMS_ACCESS_KEY` | chiave da web3forms.com | ⏳ In attesa email agenzia — poi aggiungere su Vercel + `.env.local` |
 
 ---
 
@@ -209,3 +188,6 @@ Fix rapido, 30 minuti.
 | 6 | 2026-03-02 | Audit completo, analisi dati JSON, documentazione PROJECT_STATUS + ROADMAP |
 | 7 | 2026-03-02 | Mapping completo quartieri: 6 nuove interfacce TS, 7 sezioni condizionali nel detail page, fix B4 |
 | 8 | 2026-03-02 | Scuole: JSON scraper v2, auto-description, slug sanitization, fix B1+B2, 7 nuovi campi School type, sidebar arricchita |
+| 9 | 2026-03-02 | Architettura school listing: SchoolsList split (Top Picks + Directory), SchoolDirectory client component con filtri + paginazione; audit bug B6-B11 identificati |
+| 10 | 2026-03-03 | Audit codebase vs documentazione: correzioni PROJECT_STATUS + ROADMAP; nuovi bug B-form, B-quiz-ui, B-faq-sf documentati; status immagini e form CRM corretti |
+| 11 | 2026-03-03 | Form backend: Web3Forms integrato in `lib/actions.ts` (sostituisce console.log); honeypot anti-bot implementato in `components/form.tsx`; `WEB3FORMS_ACCESS_KEY` aggiunta in `.env.local` (vuota, in attesa email agenzia) |
