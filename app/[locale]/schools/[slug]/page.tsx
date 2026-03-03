@@ -239,6 +239,38 @@ export default async function SchoolDetailPage(props: PageProps) {
                                     <span className="text-sm text-muted-foreground">{school.studentCount} students enrolled</span>
                                 </div>
                             )}
+                            {school.classSize && (
+                                <div className="border-t pt-4">
+                                    <div className="flex items-center gap-2 mb-1 text-muted-foreground">
+                                        <Users className="h-4 w-4" />
+                                        <span className="text-sm font-medium">Class size</span>
+                                    </div>
+                                    <p className="font-medium">~{school.classSize} students per class</p>
+                                </div>
+                            )}
+                            {school.nationalities && (
+                                <div className="border-t pt-4">
+                                    <span className="text-sm text-muted-foreground">{school.nationalities}+ student nationalities</span>
+                                </div>
+                            )}
+                            {school.qualifications && school.qualifications.length > 0 && (
+                                <div className="border-t pt-4">
+                                    <div className="flex items-center gap-2 mb-2 text-muted-foreground">
+                                        <GraduationCap className="h-4 w-4" />
+                                        <span className="text-sm font-medium">Qualifications</span>
+                                    </div>
+                                    <div className="flex flex-wrap gap-1.5">
+                                        {school.qualifications.map((q) => (
+                                            <span
+                                                key={q}
+                                                className="text-xs px-2 py-0.5 rounded bg-blue-50 text-blue-700 border border-blue-100"
+                                            >
+                                                {q}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
+                            )}
                             {school.englishAsPrimary && (
                                 <div className="border-t pt-4">
                                     <div className="flex items-center gap-2 text-green-700">

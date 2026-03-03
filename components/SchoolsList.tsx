@@ -143,6 +143,9 @@ export async function SchoolsList() {
     extracurriculars: school.extracurriculars ?? null,
     website: school.website ?? null,
     isFullProfile: computeIsFullProfile(school),
+    qualifications: school.qualifications ?? null,
+    classSize: school.classSize ?? null,
+    nationalities: school.nationalities ?? null,
   }));
 
   return (

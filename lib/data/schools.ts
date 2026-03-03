@@ -445,6 +445,13 @@ const importedSchools: School[] = (rawSchools as any[])
         Array.isArray(s.description) && s.description.length > 0
           ? s.description
           : undefined,
+      qualifications:
+        Array.isArray(s.academics?.qualifications) &&
+        s.academics.qualifications.length > 0
+          ? s.academics.qualifications
+          : undefined,
+      classSize: s.enrollment?.class_size_avg ?? undefined,
+      nationalities: s.enrollment?.student_nationalities ?? undefined,
       translations: {
         en: {
           description: autoDescription || undefined,

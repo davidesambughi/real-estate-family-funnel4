@@ -44,6 +44,12 @@ export type SchoolDirectoryItem = {
   website: string | null;
   /** true when all 7 key profile fields are populated */
   isFullProfile: boolean;
+  /** Qualifications offered (null if not available) */
+  qualifications: string[] | null;
+  /** Average class size (null if not available) */
+  classSize: number | null;
+  /** Number of student nationalities (null if not available) */
+  nationalities: number | null;
 };
 
 type Filters = {
@@ -312,6 +318,16 @@ function SchoolMiniCard({ school }: { school: SchoolDirectoryItem }) {
             <span>Ages {school.ageRange}</span>
           </div>
         )}
+        {(school.classSize || school.nationalities) && (
+          <div className="flex items-center gap-3 text-xs text-ink-muted">
+            {school.classSize && (
+              <span>~{school.classSize} per class</span>
+            )}
+            {school.nationalities && (
+              <span>{school.nationalities} nationalities</span>
+            )}
+          </div>
+        )}
       </dl>
 
       {/* Extracurriculars — only if available */}
@@ -330,6 +346,20 @@ function SchoolMiniCard({ school }: { school: SchoolDirectoryItem }) {
               +{extraCount} more
             </span>
           )}
+        </div>
+      )}
+
+      {/* Qualifications pills */}
+      {school.qualifications && school.qualifications.length > 0 && (
+        <div className="flex flex-wrap gap-1 mb-2">
+          {school.qualifications.slice(0, 4).map((q) => (
+            <span
+              key={q}
+              className="text-xs px-1.5 py-0.5 rounded bg-blue-50 text-blue-700 border border-blue-100"
+            >
+              {q}
+            </span>
+          ))}
         </div>
       )}
 

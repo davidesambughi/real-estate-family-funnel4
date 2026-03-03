@@ -131,6 +131,9 @@ export interface School {
   transport?: string;          // transport info (from expat_family_features.transport)
   languageSupport?: string;    // language support info
   rawDescription?: string[];   // description keywords/facts array from raw JSON
+  qualifications?: string[];   // e.g. ["IGCSE", "A-Level", "IB Diploma"]
+  classSize?: number;          // average students per class
+  nationalities?: number;      // number of student nationalities
 
   // ── Phase 4: SEO/GEO structured data ───────────────────────────
   coordinates: GeoCoordinates;
