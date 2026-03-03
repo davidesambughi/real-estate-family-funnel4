@@ -46,8 +46,30 @@ import { SchoolDirectory, type SchoolDirectoryItem } from "./SchoolDirectory";
 
 // ── Helpers (server-only, run at build / revalidation time) ──────────────────
 
-/** Map a free-form location string to a canonical region for filter buckets. */
-function extractRegion(location: string): string {
+/**
+ * Map raw JSON location.region values to canonical filter buckets.
+ * Used as the primary source when available.
+ */
+function normalizeRawRegion(rawRegion: string): string | null {
+  switch (rawRegion) {
+    case "Algarve":                  return "Algarve";
+    case "Porto Region":
+    case "North Portugal":           return "Porto & North";
+    case "Lisbon":
+    case "Lisbon Region":
+    case "Setúbal Region":           return "Lisbon";
+    case "Central Portugal":         return "Central Portugal";
+    case "Madeira":                  return "Madeira";
+    default:                         return null; // unknown/generic → fall through
+  }
+}
+
+/**
+ * Map a free-form location string to a canonical region for filter buckets.
+ * Checks city-level keywords first (catches Cascais & Sintra specifically),
+ * then falls back to the raw JSON region value, then to "Other Portugal".
+ */
+function extractRegion(location: string, rawRegion?: string): string {
   const loc = location.toLowerCase();
   if (loc.includes("algarve")) return "Algarve";
   if (
@@ -71,6 +93,11 @@ function extractRegion(location: string): string {
     loc.includes("set") // setúbal / setubal
   )
     return "Lisbon";
+  // Fall back to raw JSON region when city matching fails
+  if (rawRegion) {
+    const normalized = normalizeRawRegion(rawRegion);
+    if (normalized) return normalized;
+  }
   return "Other Portugal";
 }
 
@@ -132,7 +159,7 @@ export async function SchoolsList() {
     slug: school.slug,
     name: school.name,
     location: school.location,
-    region: extractRegion(school.location),
+    region: extractRegion(school.location, school.rawRegion),
     curriculum: school.curriculum,
     curriculumTag: normalizeCurriculum(school.curriculum),
     fees: school.fees,
@@ -146,6 +173,7 @@ export async function SchoolsList() {
     qualifications: school.qualifications ?? null,
     classSize: school.classSize ?? null,
     nationalities: school.nationalities ?? null,
+    snippet: school.snippet ?? null,
   }));
 
   return (

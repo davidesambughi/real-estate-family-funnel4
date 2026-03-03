@@ -89,7 +89,12 @@
     ],
     "admission_process": "Admissions Want to be a Clipper? Join us Find out how Much more than a school Shaping extraordinary individuals CLIP Teams Professionalised Sports Visit website CLIP Clubs Extra-curricular activities and summer schools Visit website CLIP AdvancEd Languages courses, consulting and training Visit webs",
     "language_support": null,
-    "narrative_context": "Located in None within the Central Portugal, this area is a region of rolling hills, medieval towns, and a serene countryside. It's perfect for families looking for a more traditional, affordable, and peaceful life away from the main urban sprawls. Colégio Luso-Internacional do Porto stands out as a key educational choice following the Private international school curriculum. With a rich program including art, debate, music, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in None within the Central Portugal, this area is a region of rolling hills, medieval towns, and a serene countryside. It's perfect for families looking for a more traditional, affordable, and peaceful life away from the main urban sprawls. Colégio Luso-Internacional do Porto stands out as a key educational choice following the Private international school curriculum. With a rich program including art, debate, music, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://cms-files.clip.pt/_system/EN/pages/143/content4_field1/960_600.jpg?v=20251227161105",
+      "logo_url": "https://assets.clip.pt/CLIP/gfx/clip_logos/clip_v1.svg",
+      "alt": "Campus and facilities of Colégio Luso-Internacional do Porto in None"
+    }
   },
   {
     "id": "instituto_espa%c3%b1ol_giner_de_los_r%c3%ados",
@@ -180,7 +185,12 @@
     ],
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in None within the Central Portugal, this area is a region of rolling hills, medieval towns, and a serene countryside. It's perfect for families looking for a more traditional, affordable, and peaceful life away from the main urban sprawls. Instituto Español Giner de los Ríos stands out as a key educational choice following the Spanish International School curriculum. It provides a supportive community and a global outlook, making it an excellent bridge for families relocating to Portugal."
+    "narrative_context": "Located in None within the Central Portugal, this area is a region of rolling hills, medieval towns, and a serene countryside. It's perfect for families looking for a more traditional, affordable, and peaceful life away from the main urban sprawls. Instituto Español Giner de los Ríos stands out as a key educational choice following the Spanish International School curriculum. It provides a supportive community and a global outlook, making it an excellent bridge for families relocating to Portugal.",
+    "images": {
+      "cover_url": "https://ginerdelosrios.educacion.es/documents/1649336/243995180/Black+White+Minimalist+Simple+Modern+Creative+Studio+Business+Card.png/742b76dd-ba13-263a-91f7-0b2749a1cc6c?version=1.0&t=1772541047145",
+      "logo_url": "https://ginerdelosrios.educacion.es/documents/d/global/logo-ministerio",
+      "alt": "Campus and facilities of Instituto Español Giner de los Ríos in None"
+    }
   },
   {
     "id": "international_school_s%c3%a3o_louren%c3%a7o",
@@ -262,7 +272,11 @@
     "description": null,
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in None within the Central Portugal, this area is a region of rolling hills, medieval towns, and a serene countryside. It's perfect for families looking for a more traditional, affordable, and peaceful life away from the main urban sprawls. International School São Lourenço stands out as a key educational choice. It provides a supportive community and a global outlook, making it an excellent bridge for families relocating to Portugal."
+    "narrative_context": "Located in None within the Central Portugal, this area is a region of rolling hills, medieval towns, and a serene countryside. It's perfect for families looking for a more traditional, affordable, and peaceful life away from the main urban sprawls. International School São Lourenço stands out as a key educational choice. It provides a supportive community and a global outlook, making it an excellent bridge for families relocating to Portugal.",
+    "images": {
+      "cover_url": null,
+      "logo_url": null
+    }
   },
   {
     "id": "aljezur-international-school-algarve",
@@ -369,7 +383,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Algarve within the Algarve, this area is the sun-drenched southern coast, famous for its golden beaches, world-class golf courses, and a relaxed, outdoor-centric lifestyle. It's a top choice for expat families seeking a slower pace and a safe, scenic environment. Aljezur International School stands out as a key educational choice following the British curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Algarve within the Algarve, this area is the sun-drenched southern coast, famous for its golden beaches, world-class golf courses, and a relaxed, outdoor-centric lifestyle. It's a top choice for expat families seeking a slower pace and a safe, scenic environment. Aljezur International School stands out as a key educational choice following the British curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://aljezur-international.org/wp-content/uploads/2021/03/aljezur-international-school-logo-480x307-1.png",
+      "logo_url": "https://aljezur-international.org/wp-content/uploads/2021/03/aljezur-international-school-logo-480x307-1.png",
+      "alt": "Campus and facilities of Aljezur International School in Algarve"
+    }
   },
   {
     "id": "aspire-international-school-algarve",
@@ -474,7 +493,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Algarve within the Algarve, this area is the sun-drenched southern coast, famous for its golden beaches, world-class golf courses, and a relaxed, outdoor-centric lifestyle. It's a top choice for expat families seeking a slower pace and a safe, scenic environment. Aspire International School stands out as a key educational choice following the British curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Algarve within the Algarve, this area is the sun-drenched southern coast, famous for its golden beaches, world-class golf courses, and a relaxed, outdoor-centric lifestyle. It's a top choice for expat families seeking a slower pace and a safe, scenic environment. Aspire International School stands out as a key educational choice following the British curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://aspireinternational.school/wp-content/uploads/2026/01/AIS-Preschool-1-optimized.jpg",
+      "logo_url": "https://aspireinternational.school/wp-content/uploads/2026/01/Aspire-International-School-Logo.svg",
+      "alt": "Campus and facilities of Aspire International School in Algarve"
+    }
   },
   {
     "id": "barlavento-international-primary-school-algarve",
@@ -574,7 +598,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Algarve within the Algarve, this area is the sun-drenched southern coast, famous for its golden beaches, world-class golf courses, and a relaxed, outdoor-centric lifestyle. It's a top choice for expat families seeking a slower pace and a safe, scenic environment. Barlavento International Primary School stands out as a key educational choice following the British curriculum. With a rich program including art, drama, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Algarve within the Algarve, this area is the sun-drenched southern coast, famous for its golden beaches, world-class golf courses, and a relaxed, outdoor-centric lifestyle. It's a top choice for expat families seeking a slower pace and a safe, scenic environment. Barlavento International Primary School stands out as a key educational choice following the British curriculum. With a rich program including art, drama, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://barlavento-international.org/wp-content/uploads/2020/08/bv-logo-400x248-1.png",
+      "logo_url": "https://barlavento-international.org/wp-content/uploads/2020/08/bv-logo-400x199-1.png",
+      "alt": "Campus and facilities of Barlavento International Primary School in Algarve"
+    }
   },
   {
     "id": "brave-generation-academy-algarve",
@@ -684,7 +713,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Algarve within the Algarve, this area is the sun-drenched southern coast, famous for its golden beaches, world-class golf courses, and a relaxed, outdoor-centric lifestyle. It's a top choice for expat families seeking a slower pace and a safe, scenic environment. Brave Generation Academy, Algarve stands out as a key educational choice following the British, American, Portuguese curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Algarve within the Algarve, this area is the sun-drenched southern coast, famous for its golden beaches, world-class golf courses, and a relaxed, outdoor-centric lifestyle. It's a top choice for expat families seeking a slower pace and a safe, scenic environment. Brave Generation Academy, Algarve stands out as a key educational choice following the British, American, Portuguese curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://info.bravegenerationacademy.com/hubfs/Porto%20Foco%20B-Roll.00_00_32_23.Still003-2.jpg",
+      "logo_url": null,
+      "alt": "Campus and facilities of Brave Generation Academy, Algarve in Algarve"
+    }
   },
   {
     "id": "bright-international-school-algarve",
@@ -791,7 +825,12 @@
     },
     "admission_process": null,
     "language_support": true,
-    "narrative_context": "Located in Algarve within the Algarve, this area is the sun-drenched southern coast, famous for its golden beaches, world-class golf courses, and a relaxed, outdoor-centric lifestyle. It's a top choice for expat families seeking a slower pace and a safe, scenic environment. Bright International School stands out as a key educational choice following the British curriculum. With a rich program including art, music, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Algarve within the Algarve, this area is the sun-drenched southern coast, famous for its golden beaches, world-class golf courses, and a relaxed, outdoor-centric lifestyle. It's a top choice for expat families seeking a slower pace and a safe, scenic environment. Bright International School stands out as a key educational choice following the British curriculum. With a rich program including art, music, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://bright-is.com/wp-content/uploads/2025/02/tour-3-1.jpg",
+      "logo_url": "https://bright-is.com/wp-content/uploads/2025/01/logo-horizontal-transparente-2-1.png",
+      "alt": "Campus and facilities of Bright International School in Algarve"
+    }
   },
   {
     "id": "colegio-bernardette-romeira-algarve",
@@ -895,7 +934,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Algarve within the Algarve, this area is the sun-drenched southern coast, famous for its golden beaches, world-class golf courses, and a relaxed, outdoor-centric lifestyle. It's a top choice for expat families seeking a slower pace and a safe, scenic environment. Colégio Bernardette Romeira stands out as a key educational choice following the British, Portuguese curriculum. With a rich program including art, basketball, swimming, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Algarve within the Algarve, this area is the sun-drenched southern coast, famous for its golden beaches, world-class golf courses, and a relaxed, outdoor-centric lifestyle. It's a top choice for expat families seeking a slower pace and a safe, scenic environment. Colégio Bernardette Romeira stands out as a key educational choice following the British, Portuguese curriculum. With a rich program including art, basketball, swimming, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://colegiobernardetteromeira.pt/images/static/LOGO.png",
+      "logo_url": "https://colegiobernardetteromeira.pt/images/static/logoCabecalho.svg",
+      "alt": "Campus and facilities of Colégio Bernardette Romeira in Algarve"
+    }
   },
   {
     "id": "colegio-santiago-internacional-algarve",
@@ -1001,7 +1045,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Algarve within the Algarve, this area is the sun-drenched southern coast, famous for its golden beaches, world-class golf courses, and a relaxed, outdoor-centric lifestyle. It's a top choice for expat families seeking a slower pace and a safe, scenic environment. Colégio Santiago Internacional stands out as a key educational choice following the British curriculum. With a rich program including art, music, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Algarve within the Algarve, this area is the sun-drenched southern coast, famous for its golden beaches, world-class golf courses, and a relaxed, outdoor-centric lifestyle. It's a top choice for expat families seeking a slower pace and a safe, scenic environment. Colégio Santiago Internacional stands out as a key educational choice following the British curriculum. With a rich program including art, music, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://www.colegiointernacionaltavira.pt/img/brand/brand-mobile.png",
+      "logo_url": null,
+      "alt": "Campus and facilities of Colégio Santiago Internacional in Algarve"
+    }
   },
   {
     "id": "deutsche-schule-algarve",
@@ -1105,7 +1154,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Algarve within the Algarve, this area is the sun-drenched southern coast, famous for its golden beaches, world-class golf courses, and a relaxed, outdoor-centric lifestyle. It's a top choice for expat families seeking a slower pace and a safe, scenic environment. Deutsche Schule Algarve stands out as a key educational choice following the German curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Algarve within the Algarve, this area is the sun-drenched southern coast, famous for its golden beaches, world-class golf courses, and a relaxed, outdoor-centric lifestyle. It's a top choice for expat families seeking a slower pace and a safe, scenic environment. Deutsche Schule Algarve stands out as a key educational choice following the German curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://static.wixstatic.com/media/a5f629_472f46aed4f74d69893706e503393a70%7Emv2.png/v1/fit/w_2500,h_1330,al_c/a5f629_472f46aed4f74d69893706e503393a70%7Emv2.png",
+      "logo_url": "https://static.wixstatic.com/media/a5f629_a553a4e3b8854578b12608cbcdfc08f4~mv2.jpg/v1/fill/w_278,h_108,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/Logo.jpg",
+      "alt": "Campus and facilities of Deutsche Schule Algarve in Algarve"
+    }
   },
   {
     "id": "eden-montessori-international-school-algarve",
@@ -1210,7 +1264,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Algarve within the Algarve, this area is the sun-drenched southern coast, famous for its golden beaches, world-class golf courses, and a relaxed, outdoor-centric lifestyle. It's a top choice for expat families seeking a slower pace and a safe, scenic environment. Since its foundation in 2018, Eden Montessori International School stands out as a key educational choice following the Montessori curriculum. With a rich program including art, entrepreneurship, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Algarve within the Algarve, this area is the sun-drenched southern coast, famous for its golden beaches, world-class golf courses, and a relaxed, outdoor-centric lifestyle. It's a top choice for expat families seeking a slower pace and a safe, scenic environment. Since its foundation in 2018, Eden Montessori International School stands out as a key educational choice following the Montessori curriculum. With a rich program including art, entrepreneurship, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://edenmontessori.pt/wp-content/uploads/2018/04/Eden-Montessori-International-School-Algarve-Portugal-Logo.jpg",
+      "logo_url": null,
+      "alt": "Campus and facilities of Eden Montessori International School in Algarve"
+    }
   },
   {
     "id": "educan-algarve",
@@ -1311,7 +1370,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Algarve within the Algarve, this area is the sun-drenched southern coast, famous for its golden beaches, world-class golf courses, and a relaxed, outdoor-centric lifestyle. It's a top choice for expat families seeking a slower pace and a safe, scenic environment. Educan, Algarve stands out as a key educational choice following the British curriculum. It provides a supportive community and a global outlook, making it an excellent bridge for families relocating to Portugal."
+    "narrative_context": "Located in Algarve within the Algarve, this area is the sun-drenched southern coast, famous for its golden beaches, world-class golf courses, and a relaxed, outdoor-centric lifestyle. It's a top choice for expat families seeking a slower pace and a safe, scenic environment. Educan, Algarve stands out as a key educational choice following the British curriculum. It provides a supportive community and a global outlook, making it an excellent bridge for families relocating to Portugal.",
+    "images": {
+      "cover_url": "https://static.wixstatic.com/media/c7d438_0dd3d0abe6d94720b43fa031633f596f~mv2.png/v1/fill/w_2500,h_1730,al_c/c7d438_0dd3d0abe6d94720b43fa031633f596f~mv2.png",
+      "logo_url": "https://static.wixstatic.com/media/c7d438_558539c1f3fb4caa9edf751782f989c8~mv2.png/v1/crop/x_0,y_551,w_3138,h_2125/fill/w_239,h_162,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/logobranco-removebg.png",
+      "alt": "Campus and facilities of Educan, Algarve in Algarve"
+    }
   },
   {
     "id": "montalvo-international-school-algarve",
@@ -1419,7 +1483,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Algarve within the Algarve, this area is the sun-drenched southern coast, famous for its golden beaches, world-class golf courses, and a relaxed, outdoor-centric lifestyle. It's a top choice for expat families seeking a slower pace and a safe, scenic environment. Since its foundation in 2023, Montalvo International School stands out as a key educational choice following the British curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Algarve within the Algarve, this area is the sun-drenched southern coast, famous for its golden beaches, world-class golf courses, and a relaxed, outdoor-centric lifestyle. It's a top choice for expat families seeking a slower pace and a safe, scenic environment. Since its foundation in 2023, Montalvo International School stands out as a key educational choice following the British curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://algarve.montalvoschools.com/wp-content/uploads/2023/01/MINTS-Main-text-only-thin.png",
+      "logo_url": "https://algarve.montalvoschools.com/wp-content/uploads/2023/04/logo_rp_curto-300x116.png",
+      "alt": "Campus and facilities of Montalvo International School in Algarve"
+    }
   },
   {
     "id": "nederlands-onderwijs-algarve-portugal",
@@ -1518,7 +1587,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Algarve within the Algarve, this area is the sun-drenched southern coast, famous for its golden beaches, world-class golf courses, and a relaxed, outdoor-centric lifestyle. It's a top choice for expat families seeking a slower pace and a safe, scenic environment. Nederlands Onderwijs Algarve Portugal stands out as a key educational choice following the Dutch curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Algarve within the Algarve, this area is the sun-drenched southern coast, famous for its golden beaches, world-class golf courses, and a relaxed, outdoor-centric lifestyle. It's a top choice for expat families seeking a slower pace and a safe, scenic environment. Nederlands Onderwijs Algarve Portugal stands out as a key educational choice following the Dutch curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://noap.pt/wp-content/uploads/2025/07/NOAP-entree-scaled.jpg",
+      "logo_url": "https://noap.pt/wp-content/uploads/2023/07/logo_NOAP-algarve-243x35.png",
+      "alt": "Campus and facilities of Nederlands Onderwijs Algarve Portugal in Algarve"
+    }
   },
   {
     "id": "nobel-algarve-british-international-school",
@@ -1630,7 +1704,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Algarve within the Portugal, this area is a welcoming part of Portugal known for its high quality of life and friendly atmosphere. Since its foundation in 1972, Nobel Algarve British International School stands out as a key educational choice following the British, Portuguese curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Algarve within the Portugal, this area is a welcoming part of Portugal known for its high quality of life and friendly atmosphere. Since its foundation in 1972, Nobel Algarve British International School stands out as a key educational choice following the British, Portuguese curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://resources.finalsite.net/images/v1688737803/globeducatecom/rpqg9yy35m9vjohqedbx/kids-enjoying-outside-learning.jpg",
+      "logo_url": null,
+      "alt": "Campus and facilities of Nobel Algarve British International School in Algarve"
+    }
   },
   {
     "id": "vale-verde-international-school-algarve",
@@ -1740,7 +1819,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Algarve within the Portugal, this area is a welcoming part of Portugal known for its high quality of life and friendly atmosphere. Vale Verde International School stands out as a key educational choice following the British curriculum. With a rich program including art, dance, music, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Algarve within the Portugal, this area is a welcoming part of Portugal known for its high quality of life and friendly atmosphere. Vale Verde International School stands out as a key educational choice following the British curriculum. With a rich program including art, dance, music, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://static.wixstatic.com/media/f86c3b_2ce2223539b9458d9232d70082ea91b8~mv2.jpg/v1/fill/w_680,h_1020,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/_DSC2760ed.jpg",
+      "logo_url": null,
+      "alt": "Campus and facilities of Vale Verde International School in Algarve"
+    }
   },
   {
     "id": "vilamoura-international-school-algarve",
@@ -1852,7 +1936,12 @@
     },
     "admission_process": null,
     "language_support": true,
-    "narrative_context": "Located in Algarve within the Algarve, this area is the sun-drenched southern coast, famous for its golden beaches, world-class golf courses, and a relaxed, outdoor-centric lifestyle. It's a top choice for expat families seeking a slower pace and a safe, scenic environment. Since its foundation in 1984, Vilamoura International School stands out as a key educational choice following the IB, British, Portuguese curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Algarve within the Algarve, this area is the sun-drenched southern coast, famous for its golden beaches, world-class golf courses, and a relaxed, outdoor-centric lifestyle. It's a top choice for expat families seeking a slower pace and a safe, scenic environment. Since its foundation in 1984, Vilamoura International School stands out as a key educational choice following the IB, British, Portuguese curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://d24d7vsshzrslo.cloudfront.net/sites/school55/files/styles/ins_banner_mobile/public/2025-03/54753_CIV.jpg.jpeg?itok=VapKRcoJ",
+      "logo_url": "https://d24d7vsshzrslo.cloudfront.net/sites/school55/files/77533_CIV_Colour_logo_%281%29_0.png",
+      "alt": "Campus and facilities of Vilamoura International School in Algarve"
+    }
   },
   {
     "id": "brave-generation-academy-braga",
@@ -1962,7 +2051,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Braga within the North Portugal, this area is a region of industrial strength and deep tradition, offering a robust quality of life with beautiful green landscapes and a strong community spirit. Brave Generation Academy, Braga stands out as a key educational choice following the British, American, Portuguese curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Braga within the North Portugal, this area is a region of industrial strength and deep tradition, offering a robust quality of life with beautiful green landscapes and a strong community spirit. Brave Generation Academy, Braga stands out as a key educational choice following the British, American, Portuguese curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://info.bravegenerationacademy.com/hubfs/Porto%20Foco%20B-Roll.00_00_32_23.Still003-2.jpg",
+      "logo_url": null,
+      "alt": "Campus and facilities of Brave Generation Academy, Braga in Braga"
+    }
   },
   {
     "id": "brave-generation-academy-ofir-braga",
@@ -2072,7 +2166,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Braga within the North Portugal, this area is a region of industrial strength and deep tradition, offering a robust quality of life with beautiful green landscapes and a strong community spirit. Brave Generation Academy, Ofir stands out as a key educational choice following the British, American, Portuguese curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Braga within the North Portugal, this area is a region of industrial strength and deep tradition, offering a robust quality of life with beautiful green landscapes and a strong community spirit. Brave Generation Academy, Ofir stands out as a key educational choice following the British, American, Portuguese curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://info.bravegenerationacademy.com/hubfs/Porto%20Foco%20B-Roll.00_00_32_23.Still003-2.jpg",
+      "logo_url": null,
+      "alt": "Campus and facilities of Brave Generation Academy, Ofir in Braga"
+    }
   },
   {
     "id": "clib-the-braga-international-school",
@@ -2175,7 +2274,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Braga within the North Portugal, this area is a region of industrial strength and deep tradition, offering a robust quality of life with beautiful green landscapes and a strong community spirit. Since its foundation in 1999, CLIB - The Braga International School stands out as a key educational choice following the British curriculum. With a rich program including debate, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Braga within the North Portugal, this area is a region of industrial strength and deep tradition, offering a robust quality of life with beautiful green landscapes and a strong community spirit. Since its foundation in 1999, CLIB - The Braga International School stands out as a key educational choice following the British curriculum. With a rich program including debate, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://clib.pt/wp-content/uploads/2025/12/Christmas-Wishes-2025-570x360.png",
+      "logo_url": "https://clib.pt/wp-content/uploads/2019/06/clib-logo-v2.png",
+      "alt": "Campus and facilities of CLIB - The Braga International School in Braga"
+    }
   },
   {
     "id": "joao-paulo-international-school-braga",
@@ -2285,7 +2389,12 @@
     },
     "admission_process": "ADMISSIONS Admissions Process Tuition Fees FAQ EMPLOYMENT Why work at CJPII? CJPII Commitment Spontaneous Application INTERNATIONAL FAMILIES Online Store eCommunity Office 365 School Calendar ENROLLMENT About us – COLÉGIO JOÃO PAULO II Skip to main content Search Close Search MORE THAN A SCHOOL ABOU",
     "language_support": null,
-    "narrative_context": "Located in Braga within the North Portugal, this area is a region of industrial strength and deep tradition, offering a robust quality of life with beautiful green landscapes and a strong community spirit. João Paulo International School stands out as a key educational choice following the IB, Portuguese, International curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Braga within the North Portugal, this area is a region of industrial strength and deep tradition, offering a robust quality of life with beautiful green landscapes and a strong community spirit. João Paulo International School stands out as a key educational choice following the IB, Portuguese, International curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://cjp.com.pt/wp-content/uploads/2025/09/cambridge.png",
+      "logo_url": "https://cjp.com.pt/wp-content/uploads/2025/09/LOGO.png",
+      "alt": "Campus and facilities of João Paulo International School in Braga"
+    }
   },
   {
     "id": "brave-generation-academy-caldas-da-rainha",
@@ -2395,7 +2504,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Caldas Da Rainha within the Central Portugal, this area is a region of rolling hills, medieval towns, and a serene countryside. It's perfect for families looking for a more traditional, affordable, and peaceful life away from the main urban sprawls. Brave Generation Academy, Caldas da Rainha stands out as a key educational choice following the British, American, Portuguese curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Caldas Da Rainha within the Central Portugal, this area is a region of rolling hills, medieval towns, and a serene countryside. It's perfect for families looking for a more traditional, affordable, and peaceful life away from the main urban sprawls. Brave Generation Academy, Caldas da Rainha stands out as a key educational choice following the British, American, Portuguese curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://info.bravegenerationacademy.com/hubfs/Porto%20Foco%20B-Roll.00_00_32_23.Still003-2.jpg",
+      "logo_url": null,
+      "alt": "Campus and facilities of Brave Generation Academy, Caldas da Rainha in Caldas Da Rainha"
+    }
   },
   {
     "id": "brave-generation-academy-ericeira",
@@ -2505,7 +2619,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Ericeira within the Central Portugal, this area is a region of rolling hills, medieval towns, and a serene countryside. It's perfect for families looking for a more traditional, affordable, and peaceful life away from the main urban sprawls. Brave Generation Academy, Ericeira stands out as a key educational choice following the British, American, Portuguese curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Ericeira within the Central Portugal, this area is a region of rolling hills, medieval towns, and a serene countryside. It's perfect for families looking for a more traditional, affordable, and peaceful life away from the main urban sprawls. Brave Generation Academy, Ericeira stands out as a key educational choice following the British, American, Portuguese curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://info.bravegenerationacademy.com/hubfs/Porto%20Foco%20B-Roll.00_00_32_23.Still003-2.jpg",
+      "logo_url": null,
+      "alt": "Campus and facilities of Brave Generation Academy, Ericeira in Ericeira"
+    }
   },
   {
     "id": "brave-generation-academy-fundao",
@@ -2615,7 +2734,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Fundao within the Central Portugal, this area is a region of rolling hills, medieval towns, and a serene countryside. It's perfect for families looking for a more traditional, affordable, and peaceful life away from the main urban sprawls. Brave Generation Academy, Fundão stands out as a key educational choice following the British, American, Portuguese curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Fundao within the Central Portugal, this area is a region of rolling hills, medieval towns, and a serene countryside. It's perfect for families looking for a more traditional, affordable, and peaceful life away from the main urban sprawls. Brave Generation Academy, Fundão stands out as a key educational choice following the British, American, Portuguese curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://info.bravegenerationacademy.com/hubfs/Porto%20Foco%20B-Roll.00_00_32_23.Still003-2.jpg",
+      "logo_url": null,
+      "alt": "Campus and facilities of Brave Generation Academy, Fundão in Fundao"
+    }
   },
   {
     "id": "brave-generation-academy-leiria",
@@ -2725,7 +2849,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Leiria within the Central Portugal, this area is a region of rolling hills, medieval towns, and a serene countryside. It's perfect for families looking for a more traditional, affordable, and peaceful life away from the main urban sprawls. Brave Generation Academy, Leiria stands out as a key educational choice following the British, American, Portuguese curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Leiria within the Central Portugal, this area is a region of rolling hills, medieval towns, and a serene countryside. It's perfect for families looking for a more traditional, affordable, and peaceful life away from the main urban sprawls. Brave Generation Academy, Leiria stands out as a key educational choice following the British, American, Portuguese curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://info.bravegenerationacademy.com/hubfs/Porto%20Foco%20B-Roll.00_00_32_23.Still003-2.jpg",
+      "logo_url": null,
+      "alt": "Campus and facilities of Brave Generation Academy, Leiria in Leiria"
+    }
   },
   {
     "id": "leiria-international-school",
@@ -2829,7 +2958,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Leiria within the Central Portugal, this area is a region of rolling hills, medieval towns, and a serene countryside. It's perfect for families looking for a more traditional, affordable, and peaceful life away from the main urban sprawls. Leiria International School stands out as a key educational choice following the British curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Leiria within the Central Portugal, this area is a region of rolling hills, medieval towns, and a serene countryside. It's perfect for families looking for a more traditional, affordable, and peaceful life away from the main urban sprawls. Leiria International School stands out as a key educational choice following the British curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "http://static1.squarespace.com/static/638f6ec556c874446943542e/t/63bec5b9a806736fb80926c3/1673446841943/materiais-56.png?format=1500w",
+      "logo_url": "https://images.squarespace-cdn.com/content/v1/638f6ec556c874446943542e/a2e9aec5-2148-4354-8b94-323a2626fdb0/logo-03.png",
+      "alt": "Campus and facilities of Leiria International School in Leiria"
+    }
   },
   {
     "id": "almada-international-school-lisbon",
@@ -2934,7 +3068,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Almada International School stands out as a key educational choice following the British, Portuguese curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Almada International School stands out as a key educational choice following the British, Portuguese curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://ais-edu.pt/wp-content/uploads/2025/12/nursery.jpg",
+      "logo_url": "https://ais-edu.pt/wp-content/uploads/2025/08/logoc.svg",
+      "alt": "Campus and facilities of Almada International School in Lisbon"
+    }
   },
   {
     "id": "aprendizes-lisbon",
@@ -3041,7 +3180,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Aprendizes stands out as a key educational choice following the British, Portuguese curriculum. With a rich program including art, chess, dance, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Aprendizes stands out as a key educational choice following the British, Portuguese curriculum. With a rich program including art, chess, dance, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "http://static1.squarespace.com/static/5e20ac5f9ae7fc473d3df7b7/t/66e152662ceb1c2e8071dab6/1726042726620/DSCF4637.JPG?format=1500w",
+      "logo_url": "https://images.squarespace-cdn.com/content/v1/5e20ac5f9ae7fc473d3df7b7/460923ee-72b0-468e-8490-59eb95d8aa3d/logo_aprendizes.png",
+      "alt": "Campus and facilities of Aprendizes in Lisbon"
+    }
   },
   {
     "id": "astoria-international-school-lisbon",
@@ -3150,7 +3294,12 @@
     },
     "admission_process": "enrollment form, AIS will send an email to schedule a visit with the Psychology and Guidance Department, where the AIS educational project and admission conditions will be presented.",
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Astoria International School stands out as a key educational choice following the British, Portuguese curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Astoria International School stands out as a key educational choice following the British, Portuguese curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://colegioeuropeu-astoria.com/wp-content/uploads/2025/11/colegio_1.jpg",
+      "logo_url": "https://colegioeuropeu-astoria.com/wp-content/uploads/2024/08/logo_astoria.png",
+      "alt": "Campus and facilities of Astoria International School in Lisbon"
+    }
   },
   {
     "id": "beyond-international-school-lisbon",
@@ -3251,7 +3400,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Beyond International School stands out as a key educational choice following the British curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Beyond International School stands out as a key educational choice following the British curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://beyondschool.pt/wp-content/uploads/2025/04/earlyy.png",
+      "logo_url": "https://beyondschool.pt/wp-content/uploads/2025/01/logobiswhite.svg",
+      "alt": "Campus and facilities of Beyond International School in Lisbon"
+    }
   },
   {
     "id": "brave-generation-academy-lisbon",
@@ -3362,7 +3516,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Brave Generation Academy, Lisbon stands out as a key educational choice following the British, American, Portuguese curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Brave Generation Academy, Lisbon stands out as a key educational choice following the British, American, Portuguese curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://info.bravegenerationacademy.com/hubfs/Porto%20Foco%20B-Roll.00_00_32_23.Still003-2.jpg",
+      "logo_url": null,
+      "alt": "Campus and facilities of Brave Generation Academy, Lisbon in Lisbon"
+    }
   },
   {
     "id": "butterflies-school-lisbon",
@@ -3463,7 +3622,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Butterflies School stands out as a key educational choice following the Portuguese, International curriculum. With a rich program including art, music, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Butterflies School stands out as a key educational choice following the Portuguese, International curriculum. With a rich program including art, music, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://butterflieseducation.com/wp-content/uploads/2025/03/EduardoRamosFotos-65EscolaButerfliyer-683x1024.jpg",
+      "logo_url": "https://butterflieseducation.com/wp-content/uploads/2024/07/cropped-Butterflies_LogoCollection-Full-Logo-300x222.png",
+      "alt": "Campus and facilities of Butterflies School in Lisbon"
+    }
   },
   {
     "id": "carlucci-american-international-school-of-lisbon",
@@ -3563,7 +3727,11 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Portugal, this area is a welcoming part of Portugal known for its high quality of life and friendly atmosphere. Carlucci American International School of Lisbon stands out as a key educational choice following the IB, American curriculum. It provides a supportive community and a global outlook, making it an excellent bridge for families relocating to Portugal."
+    "narrative_context": "Located in Lisbon within the Portugal, this area is a welcoming part of Portugal known for its high quality of life and friendly atmosphere. Carlucci American International School of Lisbon stands out as a key educational choice following the IB, American curriculum. It provides a supportive community and a global outlook, making it an excellent bridge for families relocating to Portugal.",
+    "images": {
+      "cover_url": null,
+      "logo_url": null
+    }
   },
   {
     "id": "cesario-verde-international-school-portugal-lisbon",
@@ -3669,7 +3837,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Cesário Verde International School Portugal stands out as a key educational choice following the British, Portuguese curriculum. With a rich program including art, dance, music, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Cesário Verde International School Portugal stands out as a key educational choice following the British, Portuguese curriculum. With a rich program including art, dance, music, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://cesarioverde.com/wp-content/uploads/sites/10/2024/05/Cesario_negativo.svg",
+      "logo_url": "https://cesarioverde.com/wp-content/uploads/sites/10/2022/11/logo-footer.svg",
+      "alt": "Campus and facilities of Cesário Verde International School Portugal in Lisbon"
+    }
   },
   {
     "id": "deutsche-schule-lissabon-lisbon",
@@ -3768,7 +3941,11 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Deutsche Schule Lissabon stands out as a key educational choice following the German curriculum. It provides a supportive community and a global outlook, making it an excellent bridge for families relocating to Portugal."
+    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Deutsche Schule Lissabon stands out as a key educational choice following the German curriculum. It provides a supportive community and a global outlook, making it an excellent bridge for families relocating to Portugal.",
+    "images": {
+      "cover_url": null,
+      "logo_url": null
+    }
   },
   {
     "id": "egi-educating-global-innovators-lisbon",
@@ -3868,7 +4045,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. EGI - Educating Global Innovators stands out as a key educational choice following the British curriculum. With a rich program including art, dance, music, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. EGI - Educating Global Innovators stands out as a key educational choice following the British curriculum. With a rich program including art, dance, music, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://egi-education.com/assets/img/social-logo.jpg",
+      "logo_url": "https://egi-education.com/assets/img/logo.png",
+      "alt": "Campus and facilities of EGI - Educating Global Innovators in Lisbon"
+    }
   },
   {
     "id": "greene-s-college-oxford-estoril-lisbon",
@@ -3982,7 +4164,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Since its foundation in 2011, Greene's College Oxford, Estoril stands out as a key educational choice following the British curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Since its foundation in 2011, Greene's College Oxford, Estoril stands out as a key educational choice following the British curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://pt.greenesoxford.com/wp-content/uploads/sites/2/2023/01/radcliffe-camera-x-algarve-pool-raw-image-v3-1024x640.jpg",
+      "logo_url": "https://greenesoxford.com/wp-content/uploads/2022/04/greenes-logo-no-text-285x300.png",
+      "alt": "Campus and facilities of Greene's College Oxford, Estoril in Lisbon"
+    }
   },
   {
     "id": "hypha-international-school-lisbon",
@@ -4088,7 +4275,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Hypha International School stands out as a key educational choice following the British, Montessori curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Hypha International School stands out as a key educational choice following the British, Montessori curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://hyphaportugal.com/wp-admin/admin-ajax.php?action=rank_math_overlay_thumb&id=775&type=play&hash=6403aaed3b436c1e399170a90feecc2a",
+      "logo_url": "https://hyphaportugal.com/wp-content/uploads/2024/12/ME_logo2024_horizontal_preto-png.webp",
+      "alt": "Campus and facilities of Hypha International School in Lisbon"
+    }
   },
   {
     "id": "ips-cascais-british-international-school-lisbon",
@@ -4199,7 +4391,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. IPS Cascais British International School stands out as a key educational choice following the British curriculum. With a rich program including art, coding, dance, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. IPS Cascais British International School stands out as a key educational choice following the British curriculum. With a rich program including art, coding, dance, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://resources.finalsite.net/images/v1770824786/globeducatecom/hpenx6v1ubapx3qjbzvw/IPS_Renders_Slider1.png",
+      "logo_url": null,
+      "alt": "Campus and facilities of IPS Cascais British International School in Lisbon"
+    }
   },
   {
     "id": "international-christian-school-of-cascais-lisbon",
@@ -4308,7 +4505,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Portugal, this area is a welcoming part of Portugal known for its high quality of life and friendly atmosphere. Since its foundation in 1980, International Christian School of Cascais stands out as a key educational choice following the American, Christian curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Lisbon within the Portugal, this area is a welcoming part of Portugal known for its high quality of life and friendly atmosphere. Since its foundation in 1980, International Christian School of Cascais stands out as a key educational choice following the American, Christian curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://icsc.pt/wp-content/uploads/2019/11/ischooladvisor-badge-4.6a.jpg",
+      "logo_url": "https://icsc.pt/wp-content/uploads/elementor/thumbs/cropped-ICSC-logo-boat-oq4qihnwg0hnl7slcoaj3kj34s4xdfexof57r3e2ug.png",
+      "alt": "Campus and facilities of International Christian School of Cascais in Lisbon"
+    }
   },
   {
     "id": "international-sharing-school-taguspark-lisbon",
@@ -4433,7 +4635,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Since its foundation in 1980, International Sharing School Taguspark stands out as a key educational choice following the IB curriculum. With a rich program including art, basketball, dance, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Since its foundation in 1980, International Sharing School Taguspark stands out as a key educational choice following the IB curriculum. With a rich program including art, basketball, dance, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://taguspark.sharingschool.org/wp-content/uploads/2025/03/home-hero-1-1-1-1024x642.jpg",
+      "logo_url": "https://taguspark.sharingschool.org/wp-content/uploads/2025/03/European-Language-Label-logo-200x94-2.webp",
+      "alt": "Campus and facilities of International Sharing School Taguspark in Lisbon"
+    }
   },
   {
     "id": "king's-college-school-cascais-lisbon",
@@ -4544,7 +4751,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. King's College School Cascais stands out as a key educational choice following the British curriculum. With a rich program including art, dance, drama, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. King's College School Cascais stands out as a key educational choice following the British curriculum. With a rich program including art, dance, drama, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://d24d7vsshzrslo.cloudfront.net/sites/school48/files/styles/ins_banner_mobile/public/2026-01/83469_lng_kingscol-65.jpg.jpeg?itok=_FAt1IXr",
+      "logo_url": "https://d24d7vsshzrslo.cloudfront.net/sites/school48/files/2021-10/10557_KCS_Cascais_Logo_Landscape_Small_RGB_Colour_svg.svg",
+      "alt": "Campus and facilities of King's College School Cascais in Lisbon"
+    }
   },
   {
     "id": "l'ecole-trilingue-lisbon",
@@ -4641,7 +4853,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. L'École Trilingue stands out as a key educational choice following the French curriculum. It provides a supportive community and a global outlook, making it an excellent bridge for families relocating to Portugal."
+    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. L'École Trilingue stands out as a key educational choice following the French curriculum. It provides a supportive community and a global outlook, making it an excellent bridge for families relocating to Portugal.",
+    "images": {
+      "cover_url": "https://lecoletrilingue.com/en/img/asset/Y292ZXJzL0lNRy0yMDIyMDgyNC1XQTAwMDItMTY2MTkzMzY0My5qcGc=?w=1200&h=630&fit=crop&s=2cc33a308588ae391028d8771c4cfaf0",
+      "logo_url": "https://lecoletrilingue.com/assets/pictures/AEFE-logo-colour_1.png",
+      "alt": "Campus and facilities of L'École Trilingue in Lisbon"
+    }
   },
   {
     "id": "lisbon-montessori-school",
@@ -4745,7 +4962,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Lisbon Montessori School stands out as a key educational choice following the Montessori curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Lisbon Montessori School stands out as a key educational choice following the Montessori curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://lisbonmontessori.org/wp-content/uploads/2024/08/LMS-favicon.png",
+      "logo_url": "https://lisbonmontessori.org/wp-content/uploads/2020/11/lms_web_logo_white.png",
+      "alt": "Campus and facilities of Lisbon Montessori School in Lisbon"
+    }
   },
   {
     "id": "lyc-e-francais-charles-lepi-rre-lisbonne",
@@ -4850,7 +5072,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Lycée Français Charles Lepiérre Lisbonne stands out as a key educational choice following the French curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Lycée Français Charles Lepiérre Lisbonne stands out as a key educational choice following the French curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://www.lfcl.pt/wp-content/uploads/2023/05/logo-aefe.png",
+      "logo_url": "https://www.lfcl.pt/wp-content/uploads/2022/08/Logo-header.png",
+      "alt": "Campus and facilities of Lycée Français Charles Lepiérre Lisbonne in Lisbon"
+    }
   },
   {
     "id": "montessori-bright-academy-lisbon",
@@ -4950,7 +5177,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Montessori Bright Academy stands out as a key educational choice following the Montessori curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Montessori Bright Academy stands out as a key educational choice following the Montessori curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://static.wixstatic.com/media/5aafff_386008df02ca4596975608c9e9c1e51d~mv2.jpg/v1/fill/w_2500,h_1666,al_c/5aafff_386008df02ca4596975608c9e9c1e51d~mv2.jpg",
+      "logo_url": "https://static.wixstatic.com/media/5aafff_d82891808b664f938729a9782ce479f4~mv2.png/v1/fill/w_68,h_67,al_c,q_85,usm_0.66_1.00_0.01,blur_2,enc_avif,quality_auto/logo.png",
+      "alt": "Campus and facilities of Montessori Bright Academy in Lisbon"
+    }
   },
   {
     "id": "oeiras-international-school-lisbon",
@@ -5060,7 +5292,12 @@
     },
     "admission_process": "Admissions Open 2026/27  - Year 1 Opening & Limited Places in Y2, Y4 & Y10 Book your Visit! Supporting their Journey We recognise the potential in all of our students, we nurture their unique abilities and support them in becoming independent learners.",
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Portugal, this area is a welcoming part of Portugal known for its high quality of life and friendly atmosphere. Oeiras International School stands out as a key educational choice following the IB curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Lisbon within the Portugal, this area is a welcoming part of Portugal known for its high quality of life and friendly atmosphere. Oeiras International School stands out as a key educational choice following the IB curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://oeirasischool.wpenginepowered.com/wp-content/themes/oeirasischool/dist/images/header_wave_445bb93a.png",
+      "logo_url": null,
+      "alt": "Campus and facilities of Oeiras International School in Lisbon"
+    }
   },
   {
     "id": "park-international-school-lisbon",
@@ -5176,7 +5413,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Lisbon, this area is a welcoming part of Portugal known for its high quality of life and friendly atmosphere. Since its foundation in 2003, PaRK International School stands out as a key educational choice following the IB, British, Portuguese curriculum. With a rich program including art, dance, drama, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Lisbon within the Lisbon, this area is a welcoming part of Portugal known for its high quality of life and friendly atmosphere. Since its foundation in 2003, PaRK International School stands out as a key educational choice following the IB, British, Portuguese curriculum. With a rich program including art, dance, drama, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://www.park-is.com/sites/school53/files/logo.png",
+      "logo_url": "https://d24d7vsshzrslo.cloudfront.net/sites/school14/files/2024-05/park_logo.svg",
+      "alt": "Campus and facilities of PaRK International School in Lisbon"
+    }
   },
   {
     "id": "prime-school-lisbon",
@@ -5289,7 +5531,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Prime School stands out as a key educational choice following the British, American curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Prime School stands out as a key educational choice following the British, American curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://primeschool.pt/web/image/website/1/social_default_image?unique=5c0c210",
+      "logo_url": "https://primeschool.pt/web/image/535988-d63531fd/logo-primeschool-v2.png",
+      "alt": "Campus and facilities of Prime School in Lisbon"
+    }
   },
   {
     "id": "redbridge-international-school-lisbon",
@@ -5399,7 +5646,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Portugal, this area is a welcoming part of Portugal known for its high quality of life and friendly atmosphere. Redbridge International School stands out as a key educational choice following the British, Portuguese, French curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Lisbon within the Portugal, this area is a welcoming part of Portugal known for its high quality of life and friendly atmosphere. Redbridge International School stands out as a key educational choice following the British, Portuguese, French curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://redbridgeschool.com/wp-content/plugins/revslider/sr6/assets/assets/dummy.png",
+      "logo_url": "https://redbridgeschool.com/wp-content/uploads/2022/06/RedBridge_logo_vector-04-1.png",
+      "alt": "Campus and facilities of Redbridge International School in Lisbon"
+    }
   },
   {
     "id": "santo-ant-nio-international-school-lisbon",
@@ -5507,7 +5759,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Since its foundation in 2018, Santo António International School stands out as a key educational choice following the British curriculum. With a rich program including art, dance, football, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Since its foundation in 2018, Santo António International School stands out as a key educational choice following the British curriculum. With a rich program including art, dance, football, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://www.sais-estoril.com/xms/img/1200x630/f42fa/emM9VCZxPTkwJmZsdHJbXT0/L08zbS8tME0zWnJTbS9tWk1tcy1aYzRzeW81b3R6dGRrcg.jpg",
+      "logo_url": null,
+      "alt": "Campus and facilities of Santo António International School in Lisbon"
+    }
   },
   {
     "id": "sintra-international-christian-academy-in-lisbon",
@@ -5611,7 +5868,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Sintra International Christian Academy stands out as a key educational choice following the American, Christian curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Sintra International Christian Academy stands out as a key educational choice following the American, Christian curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://img1.wsimg.com/isteam/ip/f9cc6257-7111-4daf-8036-f26d7cacc55a/WhatsApp%20Image%202024-08-19%20at%206.29.21%20AM.jpeg",
+      "logo_url": "https://img1.wsimg.com/isteam/ip/f9cc6257-7111-4daf-8036-f26d7cacc55a/logo_full_w.png/:/rs=h:125,cg:true,m/qt=q:95",
+      "alt": "Campus and facilities of Sintra International Christian Academy in Lisbon"
+    }
   },
   {
     "id": "st-dominic's-international-school-lisbon",
@@ -5720,7 +5982,12 @@
     },
     "admission_process": "Admission How to Book a Visit Step by Step Guide Tuition and Fees Home About Us Mission and Values Why Choose our School Academic Results ISP Schools History Facilities Parent Teacher Association COVID 19 Admissions How to Book a Visit Step by Step Guide Tuition and Fees Employment Our School Early",
     "language_support": true,
-    "narrative_context": "Located in Lisbon within the Portugal, this area is a welcoming part of Portugal known for its high quality of life and friendly atmosphere. Since its foundation in 1997, St. Dominic's International School stands out as a key educational choice following the IB curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Lisbon within the Portugal, this area is a welcoming part of Portugal known for its high quality of life and friendly atmosphere. Since its foundation in 1997, St. Dominic's International School stands out as a key educational choice following the IB curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://www.dominics-int.org/wp-content/uploads/2020/12/st-dominics-ophengraph.jpg",
+      "logo_url": "https://www.dominics-int.org/wp-content/uploads/2025/12/cropped-STD_LOGO_COLOR_ISP_HORIZONTAL_BLUE-scaled-1.png",
+      "alt": "Campus and facilities of St. Dominic's International School in Lisbon"
+    }
   },
   {
     "id": "st-george's-school-lisbon",
@@ -5823,7 +6090,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. St. George's School stands out as a key educational choice following the British, Portuguese curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. St. George's School stands out as a key educational choice following the British, Portuguese curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "http://www.stgeorgesschool.pt/wp-content/uploads/2024/12/mERRY-XMAS.png",
+      "logo_url": "http://www.stgeorgesschool.pt/wp-content/uploads/2020/01/st-georges-school-logotipo-3.png",
+      "alt": "Campus and facilities of St. George's School in Lisbon"
+    }
   },
   {
     "id": "st-james'-primary-school-lisbon",
@@ -5925,7 +6197,12 @@
     },
     "admission_process": "apply? Fill in our application form and we will get back to you as soon as possible.",
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. St. James' Primary School stands out as a key educational choice following the British, Portuguese curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. St. James' Primary School stands out as a key educational choice following the British, Portuguese curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "http://stjamesschool.pt/wp-content/uploads/2018/12/we-believe-in-your-future.png",
+      "logo_url": "http://stjamesschool.pt/wp-content/uploads/2020/02/logo-st-james-novo.jpg",
+      "alt": "Campus and facilities of St. James' Primary School in Lisbon"
+    }
   },
   {
     "id": "st-julian's-school-lisbon",
@@ -6045,7 +6322,12 @@
     },
     "admission_process": "Admissions Process Book a Visit Pre-Prep 3-4 Prep School 5-10 Secondary 11-18 Bilingual 6-14 Welcome from the Head - St.",
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Portugal, this area is a welcoming part of Portugal known for its high quality of life and friendly atmosphere. Since its foundation in 1932, St. Julian's School stands out as a key educational choice following the IB, British, Portuguese curriculum. With a rich program including art, athletics, dance, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Lisbon within the Portugal, this area is a welcoming part of Portugal known for its high quality of life and friendly atmosphere. Since its foundation in 1932, St. Julian's School stands out as a key educational choice following the IB, British, Portuguese curriculum. With a rich program including art, athletics, dance, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://www.stjulians.com/wp-content/uploads/2025/07/Untitled-design-30.jpg",
+      "logo_url": "https://www.stjulians.com/wp-content/themes/st-julians-2025-stj/assets/img/logos/logo--white-new2.svg",
+      "alt": "Campus and facilities of St. Julian's School in Lisbon"
+    }
   },
   {
     "id": "svenska-skolan-lissabon-lisbon",
@@ -6139,7 +6421,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Svenska Skolan Lissabon stands out as a key educational choice following the Swedish curriculum. It provides a supportive community and a global outlook, making it an excellent bridge for families relocating to Portugal."
+    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Svenska Skolan Lissabon stands out as a key educational choice following the Swedish curriculum. It provides a supportive community and a global outlook, making it an excellent bridge for families relocating to Portugal.",
+    "images": {
+      "cover_url": "https://svenskaskolanlissabon.com/wp-content/uploads/2024/06/Prancheta-1-copy-9-768x115.png",
+      "logo_url": null,
+      "alt": "Campus and facilities of Svenska Skolan Lissabon in Lisbon"
+    }
   },
   {
     "id": "tasis-portugal-lisbon",
@@ -6246,7 +6533,11 @@
     },
     "admission_process": "Apply Applications are considered throughout the year, and interested families are invited to visit the campus.",
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Since its foundation in 2020, TASIS Portugal stands out as a key educational choice following the British, American curriculum. With a rich program including art, theatre, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Since its foundation in 2020, TASIS Portugal stands out as a key educational choice following the British, American curriculum. With a rich program including art, theatre, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": null,
+      "logo_url": null
+    }
   },
   {
     "id": "the-british-school-of-lisbon",
@@ -6349,7 +6640,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Portugal, this area is a welcoming part of Portugal known for its high quality of life and friendly atmosphere. The British School of Lisbon stands out as a key educational choice following the British curriculum. With a rich program including art, football, music, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Lisbon within the Portugal, this area is a welcoming part of Portugal known for its high quality of life and friendly atmosphere. The British School of Lisbon stands out as a key educational choice following the British curriculum. With a rich program including art, football, music, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "http://static1.squarespace.com/static/611ba70ac5b7942f5da4e0c3/t/6332e7c97d84044621c4df1b/1664280521232/BSL+Compact+Logo.png?format=1500w",
+      "logo_url": "https://images.squarespace-cdn.com/content/v1/611ba70ac5b7942f5da4e0c3/90caa479-3316-4134-a4e4-bb5ca95e74d7/BSL+Compact+Logo.png?format=1500w",
+      "alt": "Campus and facilities of The British School of Lisbon in Lisbon"
+    }
   },
   {
     "id": "the-lisboan-international-school-lisbon",
@@ -6460,7 +6756,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Lisbon, this area is a welcoming part of Portugal known for its high quality of life and friendly atmosphere. The Lisboan International School stands out as a key educational choice following the British curriculum. With a rich program including art, music, orchestra, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Lisbon within the Lisbon, this area is a welcoming part of Portugal known for its high quality of life and friendly atmosphere. The Lisboan International School stands out as a key educational choice following the British curriculum. With a rich program including art, music, orchestra, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://artemiseducationmultisite.kinsta.cloud/the-lisboan-build/wp-content/uploads/sites/2/2024/12/made-lisbon-img.png",
+      "logo_url": "https://the-lisboan.school/wp-content/themes/schoolcms/images/lisboan-logo.svg",
+      "alt": "Campus and facilities of The Lisboan International School in Lisbon"
+    }
   },
   {
     "id": "theodore-international-startup-academy-lisbon",
@@ -6560,7 +6861,12 @@
     },
     "admission_process": "Enrollment process Book a School Visit Visit our school, meet the team, and explore how we learn and grow at TISA.",
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Theodore International Startup Academy stands out as a key educational choice following the International curriculum. With a rich program including art, entrepreneurship, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Lisbon within the Lisbon Region, this area is a dynamic hub blending historic charm with a vibrant international tech scene. It's ideal for families who value metropolitan culture, excellent connections, and a fast-paced yet coastal lifestyle. Theodore International Startup Academy stands out as a key educational choice following the International curriculum. With a rich program including art, entrepreneurship, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://static.tildacdn.net/tild3536-6162-4331-a163-353238373132/Asset_174x.png",
+      "logo_url": "https://thb.tildacdn.net/tild3937-3338-4339-b636-303634346434/-/resize/20x/ib-world-school-logo.png",
+      "alt": "Campus and facilities of Theodore International Startup Academy in Lisbon"
+    }
   },
   {
     "id": "united-lisbon-international-school",
@@ -6674,7 +6980,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Lisbon within the Lisbon, this area is a welcoming part of Portugal known for its high quality of life and friendly atmosphere. United Lisbon International School stands out as a key educational choice following the IB, International curriculum. With a rich program including art, coding, dance, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Lisbon within the Lisbon, this area is a welcoming part of Portugal known for its high quality of life and friendly atmosphere. United Lisbon International School stands out as a key educational choice following the IB, International curriculum. With a rich program including art, coding, dance, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://www.unitedlisbon.school/wp-content/uploads/2021/05/United-Lisbon-International-School-Outdoor-Spaces-1.jpg",
+      "logo_url": "https://www.unitedlisbon.school/wp-content/uploads/elementor/thumbs/United-Lisbon_Logos_Colour-min-q97ev6x9v064h16nuywk139gssiazdm9hyzc91csg0.webp",
+      "alt": "Campus and facilities of United Lisbon International School in Lisbon"
+    }
   },
   {
     "id": "brave-generation-academy-madeira",
@@ -6784,7 +7095,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Madeira within the Madeira, this area is a breathtaking island paradise with a lush subtropical climate. It offers a unique, tranquil lifestyle amidst dramatic landscapes, providing a safe and welcoming haven for international residents. Brave Generation Academy, Madeira stands out as a key educational choice following the British, American, Portuguese curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Madeira within the Madeira, this area is a breathtaking island paradise with a lush subtropical climate. It offers a unique, tranquil lifestyle amidst dramatic landscapes, providing a safe and welcoming haven for international residents. Brave Generation Academy, Madeira stands out as a key educational choice following the British, American, Portuguese curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://info.bravegenerationacademy.com/hubfs/Porto%20Foco%20B-Roll.00_00_32_23.Still003-2.jpg",
+      "logo_url": null,
+      "alt": "Campus and facilities of Brave Generation Academy, Madeira in Madeira"
+    }
   },
   {
     "id": "international-sharing-school-madeira",
@@ -6892,7 +7208,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Madeira within the Portugal, this area is a welcoming part of Portugal known for its high quality of life and friendly atmosphere. Since its foundation in 1980, International Sharing School Madeira stands out as a key educational choice following the IB curriculum. With a rich program including art, coding, dance, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Madeira within the Portugal, this area is a welcoming part of Portugal known for its high quality of life and friendly atmosphere. Since its foundation in 1980, International Sharing School Madeira stands out as a key educational choice following the IB curriculum. With a rich program including art, coding, dance, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://madeira.sharingschool.org/wp-content/uploads/2025/04/home-hero-1-2-1024x642.jpg",
+      "logo_url": "https://madeira.sharingschool.org/wp-content/uploads/2025/04/European-Language-Label-logo-200x94-1.webp",
+      "alt": "Campus and facilities of International Sharing School Madeira in Madeira"
+    }
   },
   {
     "id": "the-international-school-of-madeira",
@@ -6993,7 +7314,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Madeira within the Portugal, this area is a welcoming part of Portugal known for its high quality of life and friendly atmosphere. The International School of Madeira stands out as a key educational choice following the Portuguese, International curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Madeira within the Portugal, this area is a welcoming part of Portugal known for its high quality of life and friendly atmosphere. The International School of Madeira stands out as a key educational choice following the Portuguese, International curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://cdn.prod.website-files.com/6804ee1e2c11bc5a397cfec9/680a4d783857f1e698c3d0f8_OWL_LIGHT_RECT.png",
+      "logo_url": "https://cdn.prod.website-files.com/6804ee1e2c11bc5a397cfec9/680a4d808b1e4d87f6513e08_logo-2a.png",
+      "alt": "Campus and facilities of The International School of Madeira in Madeira"
+    }
   },
   {
     "id": "brave-generation-academy-porto",
@@ -7103,7 +7429,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Porto within the Porto Region, this area is a region renowned for its rich heritage, stunning riverfront, and a strong sense of community. It offers a more authentic Portuguese experience with world-class education and a burgeoning creative industry. Brave Generation Academy, Porto stands out as a key educational choice following the British, American, Portuguese curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Porto within the Porto Region, this area is a region renowned for its rich heritage, stunning riverfront, and a strong sense of community. It offers a more authentic Portuguese experience with world-class education and a burgeoning creative industry. Brave Generation Academy, Porto stands out as a key educational choice following the British, American, Portuguese curriculum. With a rich program including art, dance, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://info.bravegenerationacademy.com/hubfs/Porto%20Foco%20B-Roll.00_00_32_23.Still003-2.jpg",
+      "logo_url": null,
+      "alt": "Campus and facilities of Brave Generation Academy, Porto in Porto"
+    }
   },
   {
     "id": "cjd-international-school-porto",
@@ -7205,7 +7536,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Porto within the Porto Region, this area is a region renowned for its rich heritage, stunning riverfront, and a strong sense of community. It offers a more authentic Portuguese experience with world-class education and a burgeoning creative industry. Since its foundation in 1934, CJD International School stands out as a key educational choice following the British, Portuguese curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Porto within the Porto Region, this area is a region renowned for its rich heritage, stunning riverfront, and a strong sense of community. It offers a more authentic Portuguese experience with world-class education and a burgeoning creative industry. Since its foundation in 1934, CJD International School stands out as a key educational choice following the British, Portuguese curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://www.cjd.pt/en/wp-content/uploads/sites/3/2025/03/CJD_entry.jpg",
+      "logo_url": null,
+      "alt": "Campus and facilities of CJD International School in Porto"
+    }
   },
   {
     "id": "clip-oporto-international-school",
@@ -7308,7 +7644,12 @@
     },
     "admission_process": "Admissions Want to be a Clipper? Join us Find out how Much more than a school Shaping extraordinary individuals CLIP Teams Professionalised Sports Visit website CLIP Clubs Extra-curricular activities and summer schools Visit website CLIP AdvancEd Languages courses, consulting and training Visit webs",
     "language_support": null,
-    "narrative_context": "Located in Porto within the Portugal, this area is a welcoming part of Portugal known for its high quality of life and friendly atmosphere. CLIP Oporto International School stands out as a key educational choice following the British curriculum. With a rich program including art, debate, music, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Porto within the Portugal, this area is a welcoming part of Portugal known for its high quality of life and friendly atmosphere. CLIP Oporto International School stands out as a key educational choice following the British curriculum. With a rich program including art, debate, music, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://cms-files.clip.pt/_system/EN/pages/143/content4_field1/960_600.jpg?v=20251227161105",
+      "logo_url": "https://assets.clip.pt/CLIP/gfx/clip_logos/clip_v1.svg",
+      "alt": "Campus and facilities of CLIP Oporto International School in Porto"
+    }
   },
   {
     "id": "deutsche-schule-zu-porto",
@@ -7408,7 +7749,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Porto within the Porto Region, this area is a region renowned for its rich heritage, stunning riverfront, and a strong sense of community. It offers a more authentic Portuguese experience with world-class education and a burgeoning creative industry. Deutsche Schule zu Porto stands out as a key educational choice following the German curriculum. With a rich program including art, film, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Porto within the Porto Region, this area is a region renowned for its rich heritage, stunning riverfront, and a strong sense of community. It offers a more authentic Portuguese experience with world-class education and a burgeoning creative industry. Deutsche Schule zu Porto stands out as a key educational choice following the German curriculum. With a rich program including art, film, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://dsporto.de/wp-content/uploads/2025/09/dsp-0s1a9757-768x432.jpg",
+      "logo_url": "https://dsporto.de/wp-content/uploads/2025/05/dsp-new-logo-asset-16600x-768x155.png",
+      "alt": "Campus and facilities of Deutsche Schule zu Porto in Porto"
+    }
   },
   {
     "id": "lycee-francais-international-porto",
@@ -7510,7 +7856,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Porto within the Porto Region, this area is a region renowned for its rich heritage, stunning riverfront, and a strong sense of community. It offers a more authentic Portuguese experience with world-class education and a burgeoning creative industry. Lycée Français International Porto stands out as a key educational choice following the French curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Porto within the Porto Region, this area is a region renowned for its rich heritage, stunning riverfront, and a strong sense of community. It offers a more authentic Portuguese experience with world-class education and a burgeoning creative industry. Lycée Français International Porto stands out as a key educational choice following the French curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://www.lfip.pt/sites/default/files/2017-06/Sige3_1.png",
+      "logo_url": "https://www.lfip.pt/sites/default/files/2016-09/eduka-sofware-logo1.png",
+      "alt": "Campus and facilities of Lycée Français International Porto in Porto"
+    }
   },
   {
     "id": "oceanus-international-school-porto",
@@ -7615,7 +7966,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Porto within the Porto Region, this area is a region renowned for its rich heritage, stunning riverfront, and a strong sense of community. It offers a more authentic Portuguese experience with world-class education and a burgeoning creative industry. Since its foundation in 2022, Oceanus International School stands out as a key educational choice following the British, Portuguese curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Porto within the Porto Region, this area is a region renowned for its rich heritage, stunning riverfront, and a strong sense of community. It offers a more authentic Portuguese experience with world-class education and a burgeoning creative industry. Since its foundation in 2022, Oceanus International School stands out as a key educational choice following the British, Portuguese curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://colegiooceanus.pt/wp-content/uploads/2025/11/cambridge.jpg",
+      "logo_url": "https://colegiooceanus.pt/wp-content/uploads/2025/11/logooce.svg",
+      "alt": "Campus and facilities of Oceanus International School in Porto"
+    }
   },
   {
     "id": "oporto-british-school",
@@ -7722,7 +8078,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Porto within the Porto Region, this area is a region renowned for its rich heritage, stunning riverfront, and a strong sense of community. It offers a more authentic Portuguese experience with world-class education and a burgeoning creative industry. Oporto British School stands out as a key educational choice following the IB, British curriculum. With a rich program including art, photography, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Porto within the Porto Region, this area is a region renowned for its rich heritage, stunning riverfront, and a strong sense of community. It offers a more authentic Portuguese experience with world-class education and a burgeoning creative industry. Oporto British School stands out as a key educational choice following the IB, British curriculum. With a rich program including art, photography, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://www.obs.edu.pt/wp-content/uploads/elementor/thumbs/transparent-bg-q9k3bsyuady11ns3agr4kiag40mw6ke9orj6ppwc08.png",
+      "logo_url": "https://www.obs.edu.pt/wp-content/uploads/2021/05/Logo-OBS-1.png",
+      "alt": "Campus and facilities of Oporto British School in Porto"
+    }
   },
   {
     "id": "tickles-international-school-porto",
@@ -7824,7 +8185,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Porto within the Porto Region, this area is a region renowned for its rich heritage, stunning riverfront, and a strong sense of community. It offers a more authentic Portuguese experience with world-class education and a burgeoning creative industry. Tickles International School stands out as a key educational choice following the British, Portuguese curriculum. With a rich program including theatre, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Porto within the Porto Region, this area is a region renowned for its rich heritage, stunning riverfront, and a strong sense of community. It offers a more authentic Portuguese experience with world-class education and a burgeoning creative industry. Tickles International School stands out as a key educational choice following the British, Portuguese curriculum. With a rich program including theatre, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://tickles.com.pt/wp-content/uploads/2025/09/tickles.png",
+      "logo_url": "https://tickles.com.pt/wp-content/uploads/2025/09/tickles.png",
+      "alt": "Campus and facilities of Tickles International School in Porto"
+    }
   },
   {
     "id": "colegio-do-vale-setubal",
@@ -7929,7 +8295,12 @@
     },
     "admission_process": "Enroll yout child News Discover the latest news, events, and stories from our community.",
     "language_support": null,
-    "narrative_context": "Located in Setubal within the Central Portugal, this area is a region of rolling hills, medieval towns, and a serene countryside. It's perfect for families looking for a more traditional, affordable, and peaceful life away from the main urban sprawls. Colégio do Vale stands out as a key educational choice following the British, Portuguese curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Setubal within the Central Portugal, this area is a region of rolling hills, medieval towns, and a serene countryside. It's perfect for families looking for a more traditional, affordable, and peaceful life away from the main urban sprawls. Colégio do Vale stands out as a key educational choice following the British, Portuguese curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://www.colegiodovale.pt/wp-content/uploads/2025/10/colegio-do-vale-home-header3.jpg",
+      "logo_url": null,
+      "alt": "Campus and facilities of Colégio do Vale in Setubal"
+    }
   },
   {
     "id": "foz-school-sesimbra",
@@ -8025,7 +8396,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Setubal within the Central Portugal, this area is a region of rolling hills, medieval towns, and a serene countryside. It's perfect for families looking for a more traditional, affordable, and peaceful life away from the main urban sprawls. Foz School stands out as a key educational choice following the International curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Setubal within the Central Portugal, this area is a region of rolling hills, medieval towns, and a serene countryside. It's perfect for families looking for a more traditional, affordable, and peaceful life away from the main urban sprawls. Foz School stands out as a key educational choice following the International curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://cdn.prod.website-files.com/64da0f1b29460811948172b3/67b5fd886bb7358f49eb4457_3-p-800.png",
+      "logo_url": "https://cdn.prod.website-files.com/64da0f1b29460811948172b3/64de0fca89aeb93f1671b11e_faq_logo.svg",
+      "alt": "Campus and facilities of Foz School in Setubal"
+    }
   },
   {
     "id": "international-school-of-palmela",
@@ -8120,7 +8496,11 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Setubal within the Central Portugal, this area is a region of rolling hills, medieval towns, and a serene countryside. It's perfect for families looking for a more traditional, affordable, and peaceful life away from the main urban sprawls. International School of Palmela stands out as a key educational choice following the British curriculum. It provides a supportive community and a global outlook, making it an excellent bridge for families relocating to Portugal."
+    "narrative_context": "Located in Setubal within the Central Portugal, this area is a region of rolling hills, medieval towns, and a serene countryside. It's perfect for families looking for a more traditional, affordable, and peaceful life away from the main urban sprawls. International School of Palmela stands out as a key educational choice following the British curriculum. It provides a supportive community and a global outlook, making it an excellent bridge for families relocating to Portugal.",
+    "images": {
+      "cover_url": null,
+      "logo_url": "https://cip.edu.pt/wp-content/uploads/2024/07/isp-international_school_of_palmela-logo-white.png"
+    }
   },
   {
     "id": "seixal-international-school-palmela",
@@ -8218,7 +8598,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Setubal within the Setúbal Region, this area is a scenic area south of the Tagus river, known for its stunning Arrábida mountains and beautiful beaches, offering a great alternative to Lisbon for those seeking a more nature-oriented lifestyle. Seixal International School stands out as a key educational choice following the British, Portuguese curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Setubal within the Setúbal Region, this area is a scenic area south of the Tagus river, known for its stunning Arrábida mountains and beautiful beaches, offering a great alternative to Lisbon for those seeking a more nature-oriented lifestyle. Seixal International School stands out as a key educational choice following the British, Portuguese curriculum. With a rich program including art, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://www.seixalinternationalschool.pt/wp-content/uploads/2025/11/cropped-SIS_Logo_testemunhos.jpg",
+      "logo_url": "https://www.seixalinternationalschool.pt/wp-content/uploads/2025/11/SiS-logo-copia.png",
+      "alt": "Campus and facilities of Seixal International School in Setubal"
+    }
   },
   {
     "id": "st-peters-international-school-palmela",
@@ -8332,7 +8717,12 @@
     },
     "admission_process": null,
     "language_support": null,
-    "narrative_context": "Located in Setubal within the Setúbal Region, this area is a scenic area south of the Tagus river, known for its stunning Arrábida mountains and beautiful beaches, offering a great alternative to Lisbon for those seeking a more nature-oriented lifestyle. St. Peters International School stands out as a key educational choice following the IB, British, Portuguese curriculum. With a rich program including art, coding, dance, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Setubal within the Setúbal Region, this area is a scenic area south of the Tagus river, known for its stunning Arrábida mountains and beautiful beaches, offering a great alternative to Lisbon for those seeking a more nature-oriented lifestyle. St. Peters International School stands out as a key educational choice following the IB, British, Portuguese curriculum. With a rich program including art, coding, dance, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://www.st-peters-school.com/sites/school53/files/logo.png",
+      "logo_url": "https://d24d7vsshzrslo.cloudfront.net/sites/school2/files/2023-04/inspired-menu-logo.png",
+      "alt": "Campus and facilities of St. Peters International School in Setubal"
+    }
   },
   {
     "id": "international-school-torres-vedras",
@@ -8448,6 +8838,11 @@
     },
     "admission_process": "apply their theories through the lenses of concepts; to contextualize and understand the application of their learning in the world around them.",
     "language_support": null,
-    "narrative_context": "Located in Torres Vedras within the Central Portugal, this area is a region of rolling hills, medieval towns, and a serene countryside. It's perfect for families looking for a more traditional, affordable, and peaceful life away from the main urban sprawls. International School Torres Vedras stands out as a key educational choice following the British, Portuguese curriculum. With a rich program including art, dance, drama, it offers a well-rounded environment for expat children to thrive."
+    "narrative_context": "Located in Torres Vedras within the Central Portugal, this area is a region of rolling hills, medieval towns, and a serene countryside. It's perfect for families looking for a more traditional, affordable, and peaceful life away from the main urban sprawls. International School Torres Vedras stands out as a key educational choice following the British, Portuguese curriculum. With a rich program including art, dance, drama, it offers a well-rounded environment for expat children to thrive.",
+    "images": {
+      "cover_url": "https://www.eitv.pt/wp-content/uploads/2024/04/Emblema_Cor.png",
+      "logo_url": "https://www.eitv.pt/wp-content/uploads/2021/10/Logo-Forfar-1-1024x385.png",
+      "alt": "Campus and facilities of International School Torres Vedras in Torres Vedras"
+    }
   }
 ]

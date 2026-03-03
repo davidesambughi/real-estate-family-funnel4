@@ -134,6 +134,10 @@ export interface School {
   qualifications?: string[];   // e.g. ["IGCSE", "A-Level", "IB Diploma"]
   classSize?: number;          // average students per class
   nationalities?: number;      // number of student nationalities
+  snippet?: string;            // school-specific sentences from narrative_context
+  coverImageUrl?: string;      // school cover photo URL (from images.cover_url)
+  imageAlt?: string;           // alt text for cover image
+  rawRegion?: string;          // raw location.region value from JSON (e.g. "Lisbon Region")
 
   // ── Phase 4: SEO/GEO structured data ───────────────────────────
   coordinates: GeoCoordinates;

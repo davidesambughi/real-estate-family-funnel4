@@ -445,6 +445,11 @@ const importedSchools: School[] = (rawSchools as any[])
         Array.isArray(s.description) && s.description.length > 0
           ? s.description
           : undefined,
+      snippet: (() => {
+        const nc = typeof s.narrative_context === "string" ? s.narrative_context : "";
+        const idx = nc.indexOf(s.name);
+        return idx >= 0 ? nc.slice(idx).trim() : undefined;
+      })(),
       qualifications:
         Array.isArray(s.academics?.qualifications) &&
         s.academics.qualifications.length > 0
@@ -452,6 +457,18 @@ const importedSchools: School[] = (rawSchools as any[])
           : undefined,
       classSize: s.enrollment?.class_size_avg ?? undefined,
       nationalities: s.enrollment?.student_nationalities ?? undefined,
+      coverImageUrl:
+        typeof s.images?.cover_url === "string" && s.images.cover_url.trim()
+          ? s.images.cover_url.trim()
+          : undefined,
+      imageAlt:
+        typeof s.images?.alt === "string" && s.images.alt.trim()
+          ? s.images.alt.trim()
+          : undefined,
+      rawRegion:
+        typeof s.location?.region === "string" && s.location.region.trim()
+          ? s.location.region.trim()
+          : undefined,
       translations: {
         en: {
           description: autoDescription || undefined,

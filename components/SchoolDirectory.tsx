@@ -50,6 +50,8 @@ export type SchoolDirectoryItem = {
   classSize: number | null;
   /** Number of student nationalities (null if not available) */
   nationalities: number | null;
+  /** School-specific snippet from narrative_context (null if not available) */
+  snippet: string | null;
 };
 
 type Filters = {
@@ -62,6 +64,18 @@ type Filters = {
 // ── Constants ─────────────────────────────────────────────────────────────────
 
 const ITEMS_PER_PAGE = 12;
+
+/** Full names for qualification acronyms — shown as tooltips on hover */
+const QUAL_LABELS: Record<string, string> = {
+  "IGCSE":          "International General Certificate of Secondary Education (ages 14–16)",
+  "GCSE":           "General Certificate of Secondary Education (ages 14–16, UK)",
+  "A-Level":        "Advanced Level — main UK university entry qualification (ages 16–18)",
+  "IB Diploma":     "International Baccalaureate Diploma Programme (ages 16–19)",
+  "AP":             "Advanced Placement — US university-level courses taken in high school",
+  "SAT":            "Scholastic Assessment Test — US college admissions exam",
+  "Abitur":         "German Abitur — secondary school leaving certificate",
+  "Baccalauréat":   "French Baccalauréat — national secondary school diploma",
+};
 
 // ── Main component ────────────────────────────────────────────────────────────
 
@@ -306,6 +320,13 @@ function SchoolMiniCard({ school }: { school: SchoolDirectoryItem }) {
         <span>{school.location}</span>
       </div>
 
+      {/* Snippet — school-specific description */}
+      {school.snippet && (
+        <p className="text-xs text-ink-muted italic leading-relaxed line-clamp-2 mb-3">
+          {school.snippet}
+        </p>
+      )}
+
       {/* Key facts — only render rows with actual data */}
       <dl className="space-y-1 mb-3">
         <div className="flex items-center gap-1.5 text-xs text-ink-secondary">
@@ -349,13 +370,14 @@ function SchoolMiniCard({ school }: { school: SchoolDirectoryItem }) {
         </div>
       )}
 
-      {/* Qualifications pills */}
+      {/* Qualifications pills — acronym with full-name tooltip on hover */}
       {school.qualifications && school.qualifications.length > 0 && (
         <div className="flex flex-wrap gap-1 mb-2">
           {school.qualifications.slice(0, 4).map((q) => (
             <span
               key={q}
-              className="text-xs px-1.5 py-0.5 rounded bg-blue-50 text-blue-700 border border-blue-100"
+              title={QUAL_LABELS[q] ?? q}
+              className="text-xs px-1.5 py-0.5 rounded bg-blue-50 text-blue-700 border border-blue-100 cursor-help"
             >
               {q}
             </span>
@@ -367,7 +389,7 @@ function SchoolMiniCard({ school }: { school: SchoolDirectoryItem }) {
       {school.isCurated ? (
         <Link
           href={{ pathname: "/schools/[slug]", params: { slug: school.slug } }}
-          className="block w-full text-center text-xs font-medium text-brand border border-brand/25 rounded-lg py-2 hover:bg-brand-50 transition-colors"
+          className="block w-full text-center text-xs font-medium text-brand border border-brand/25 rounded-lg py-2 hover:bg-brand-50 transition-colors mt-auto"
         >
           View Profile →
         </Link>
@@ -376,7 +398,7 @@ function SchoolMiniCard({ school }: { school: SchoolDirectoryItem }) {
           href={school.website}
           target="_blank"
           rel="noopener noreferrer"
-          className="block w-full text-center text-xs font-medium text-brand border border-brand/25 rounded-lg py-2 hover:bg-brand-50 transition-colors"
+          className="block w-full text-center text-xs font-medium text-brand border border-brand/25 rounded-lg py-2 hover:bg-brand-50 transition-colors mt-auto"
         >
           Official Website →
         </a>
